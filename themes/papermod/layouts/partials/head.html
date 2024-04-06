@@ -147,6 +147,8 @@
 </noscript>
 
 {{- partial "extend_head.html" . -}}
+{{ partial "google_analytics.html" . }}
+
 
 {{- /* Misc */}}
 {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
