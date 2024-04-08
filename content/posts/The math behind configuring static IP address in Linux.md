@@ -32,65 +32,46 @@ On Virtualbox, do the following:
 
 ```
 [root@localhost ~]# ip a
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-    inet6 ::1/128 scope host
-       valid_lft forever preferred_lft forever
-2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
-    link/ether 08:00:27:09:d9:51 brd ff:ff:ff:ff:ff:ff
-    inet 10.13.164.84/21 brd 10.13.167.255 scope global dynamic noprefixroute enp0s3
-       valid_lft 85778sec preferred_lft 85778sec
-    inet6 fe80::a00:27ff:fe09:d951/64 scope link noprefixroute
-       valid_lft forever preferred_lft forever
 ```
 
-The ip address assigned to this VM on interface `enp0s3` is `10.13.164.84`. The subnet mask is `/21`.
-
+The ip address assigned to this VM on interface `enp0s3` is `192.168.1.65`. The subnet mask is `/24`.
 #### The math behind IP addressing(subnetting)
-
-I know the IP address of VM, which is `10.13.164.84`. Now, I want to find out network address, broadcast address and gateway for the configuration file at `/etc/sysconfig/network-scripts/ifcfg-enp0s3`.
-
+I know the IP address of VM, which is `192.168.1.65`. Now, I want to find out network address, broadcast address and gateway for the configuration file at `/etc/sysconfig/network-scripts/ifcfg-enp0s3`.
 ```
-Address:   10.13.164.84          00001010.00001101.10100 100.01010100
-Netmask:   255.255.248.0 = 21    11111111.11111111.11111 000.00000000
-Wildcard:  0.0.7.255             00000000.00000000.00000 111.11111111
+Address:   192.168.1.65          11000000.10101000.00000001 .01000001
+Netmask:   255.255.255.0 = 24    11111111.11111111.11111111 .00000000
+Wildcard:  0.0.0.255             00000000.00000000.00000000 .11111111
 =>
-Network:   10.13.160.0/21        00001010.00001101.10100 000.00000000 (Class A)
-Broadcast: 10.13.167.255         00001010.00001101.10100 111.11111111
-HostMin:   10.13.160.1           00001010.00001101.10100 000.00000001
-HostMax:   10.13.167.254         00001010.00001101.10100 111.11111110
-Hosts/Net: 2046                  (Private Internet)
+Network:   192.168.1.0/24        11000000.10101000.00000001 .00000000 (Class C)
+Broadcast: 192.168.1.255         11000000.10101000.00000001 .11111111
+HostMin:   192.168.1.1           11000000.10101000.00000001 .00000001
+HostMax:   192.168.1.254         11000000.10101000.00000001 .11111110
+Hosts/Net: 254                   (Private Internet)
 ```
-
 Everything shown above that's relevant to configuring static IP on linux will be mentioned below.
 
 **First**
-Convert IP address of VM and subnet mask to binary and perform AND operation. That'll get you network address. It's not used. In this case, it's `10.13.160.0`.
+Convert IP address of VM and subnet mask to binary and perform Logical AND operation. That'll get you network address. It's not used. In this case, it's `192.168.1.0`.
 
 **Second**
-Add `1` to the network address, it'll yield Gateway address. In this case, gatway address is `10.13.160.1`.
+Add `1` to the network address, it'll yield Gateway address. In this case, gatway address is `192.168.1.1`.
 
 **Third**
 To calculate broadcast address, I will first list the network address and subnet mask below.
 
 ```
-00001010.00001101.10100 000.00000000
-11111111.11111111.11111 000.00000000
+11000000.10101000.00000001 .01000001
+11111111.11111111.11111111 .00000000
 ```
 
-Count upto `21` as it's the subnet mask.
+Count up to `24` as it's the subnet mask.
 
 ```
-00001010.00001101.10100 [000.00000000]
-11111111.11111111.11111 [000.00000000]
+11000000.10101000.00000001 .[01000001]
+11111111.11111111.11111111 .[00000000]
 ```
 
-Now convert all those `0s` to `1s`, it'll give the broadcast address. In this case, it's `10.13.167.255`.
-
-Thus, the usable IP address for this VM ranges from `10.13.160.1` to `10.13.167.254`.
-
+Now convert all those `0s` to `1s`, it'll give the broadcast address. In this case, it's `192.168.1.255`. Thus, the usable IP address for this VM ranges from `192.168.1.1` to `192.168.1.254`. The first and last addresses are not used for hosts.
 ## Step 4: `/etc/sysconfig/network-scripts/ifcfg-enp0s3`
 
 ```
@@ -99,19 +80,19 @@ BOOTPROTO="none"
 DEFROUTE="yes"
 IPV4_FAILURE_FATAL="no"
 NAME="enp0s3"
-UUID="bb5e5b01-946d-493e-b595-1891bb0bab19"
+UUID="bb5e5c01-946d-493e-b595-1891bb0bab19"
 DEVICE="enp0s3"
 ONBOOT="yes"
 ETHTOOL_OPTS="autoneg on"
-IPADDR="10.13.160.2"
-NETMASK="255.255.248.0"
-GATEWAY="10.13.160.1"
+IPADDR="192.168.1.2"
+NETMASK="255.255.255.0"
+GATEWAY="192.168.1.1"
 DNS1="8.8.8.8"
 DNS2="8.8.4.4"
 ```
-
 This is the general format for that file. The details that I need to change here are `IPADDR`,`NETMASK` and `GATEWAY`. Currently, in my case, everything is correct, your IP may vary. Then reboot the VM for the changes to take place. Just, restarting `NetworkManager` won't work, because we're not using it to configure static IP.
 
 References:
-https://jodies.de/ipcalc?host=10.13.164.84&mask1=21&mask2=
+https://jodies.de/ipcalc?host=192.168.1.65&mask1=24&mask2=
+
 https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/9/html/configuring_and_managing_networking/assembly_networkmanager-connection-profiles-in-keyfile-format_configuring-and-managing-networking
