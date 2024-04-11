@@ -34,7 +34,7 @@ On Virtualbox, do the following:
 [root@localhost ~]# ip a
 ```
 
-The ip address assigned to this VM on interface `enp0s3` is `192.168.1.65`. The subnet mask is `/24`.
+The ip address assigned to this VM on interface `enp0s3` is `192.168.1.65`. The subnet mask is `/24`. Note that interface name could be `ifcfg-ens33` in centos linux. And different for every kinds of linux distribution. The best way to find it out is to type out the above command and check yourself.
 #### The math behind IP addressing(subnetting)
 I know the IP address of VM, which is `192.168.1.65`. Now, I want to find out network address, broadcast address and gateway for the configuration file at `/etc/sysconfig/network-scripts/ifcfg-enp0s3`.
 ```
@@ -50,28 +50,28 @@ Hosts/Net: 254                   (Private Internet)
 ```
 Everything shown above that's relevant to configuring static IP on linux will be mentioned below.
 
-**First**
-Convert IP address of VM and subnet mask to binary and perform Logical AND operation. That'll get you network address. It's not used. In this case, it's `192.168.1.0`.
+**Network Address**
+Convert IP address of VM and subnet mask to binary and perform Logical AND operation. That'll get you network address. It's not used because it's the first IP address in a subnet. In this case, it's `192.168.1.0`. [Read more](https://superuser.com/questions/379451/why-can-a-network-address-not-be-a-valid-host-address) about it.
 
-**Second**
-Add `1` to the network address, it'll yield Gateway address. In this case, gatway address is `192.168.1.1`.
+**Gateway Address**
+Add `1` to the network address, it'll yield Gateway address. In this case, gateway address is `192.168.1.1`.
 
-**Third**
+**Broadcast Address**
 To calculate broadcast address, I will first list the network address and subnet mask below.
 
 ```
-11000000.10101000.00000001 .01000001
-11111111.11111111.11111111 .00000000
+11000000.10101000.00000001 .00000000(this is network address)
+11111111.11111111.11111111 .00000000(this is subnet mask)
 ```
 
-Count up to `24` as it's the subnet mask.
+Count up to `24` as it's the subnet mask. The bits in concern are thus the last octet of the network address. i.e `00000000`. Your job is to convert all zeroes present here to ones.
 
 ```
-11000000.10101000.00000001 .[01000001]
-11111111.11111111.11111111 .[00000000]
+11000000.10101000.00000001 .[00000000]
+11000000.10101000.00000001 .[11111111]
 ```
 
-Now convert all those `0s` to `1s`, it'll give the broadcast address. In this case, it's `192.168.1.255`. Thus, the usable IP address for this VM ranges from `192.168.1.1` to `192.168.1.254`. The first and last addresses are not used for hosts.
+Now convert all those `0s` of subnet mask to `1s`, it'll give the broadcast address. In this case, it's `192.168.1.255`. Thus, the usable IP address for this VM ranges from `192.168.1.1` to `192.168.1.254`. The first and last addresses are not used for hosts.
 ## Step 4: `/etc/sysconfig/network-scripts/ifcfg-enp0s3`
 
 ```
