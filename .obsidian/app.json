@@ -1,0 +1,8 @@
+{
+  "attachmentFolderPath": "content/images",
+  "useMarkdownLinks": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "content/posts",
+  "newLinkFormat": "relative",
+  "alwaysUpdateLinks": true
+}

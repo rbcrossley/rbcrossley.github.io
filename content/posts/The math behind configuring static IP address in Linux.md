@@ -54,7 +54,8 @@ Everything shown above that's relevant to configuring static IP on linux will be
 Convert IP address of VM and subnet mask to binary and perform Logical AND operation. That'll get you network address. It's not used because it's the first IP address in a subnet. In this case, it's `192.168.1.0`. [Read more](https://superuser.com/questions/379451/why-can-a-network-address-not-be-a-valid-host-address) about it.
 
 **Gateway Address**
-Add `1` to the network address, it'll yield Gateway address. In this case, gateway address is `192.168.1.1`.
+The concept of gateway address is somewhat confusing.
+Add `1` to the network address, it'll yield Gateway address. In this case, gateway address is `192.168.1.1`. Or follow the general convention that the last usable address of subnet is the address of the gateway i.e `broadcast address-1` is the gateway address. But if you want the VM to connect with the other VMs and internet, you need to choose the IP of gateway same as that of the router. To find the IP address of your router in windows 10, `ipconfig /all` and check `Default Gateway`.
 
 **Broadcast Address**
 To calculate broadcast address, I will first list the network address and subnet mask below.
