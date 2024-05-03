@@ -727,9 +727,6 @@ server{
 
 # References
 https://www.udemy.com/course/nginx-beginner-to-advanced/
-
 https://www.nginx.com/blog
-
 https://docs.nginx.com/nginx/admin-guide/
-
 HTTP The definitive guide, David Gourley
