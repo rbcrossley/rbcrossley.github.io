@@ -254,7 +254,8 @@ Various contexts in nginx are:
 - events
 - http
 - mail
-  ![1](../../static/images/1.png)
+
+  ![image of nginx](/images/1.png)
 
 ## Main context
 
@@ -587,8 +588,9 @@ Change this value to something else, example
 ```
 
 # Reverse Proxy
+![reverse proxy](/images/reverse_proxy.png)
 
-![](../../static/images/Pasted%20image%2020240501145100.png)
+
 Reverse proxy hides the origin server IP. Here NGINX is the reverse proxy.
 
 ## What a Reverse Proxy can do?
@@ -672,8 +674,6 @@ http://192.168.1.3/admin/
 
 request this URL, you should get the contents of your authentication admin server as a response.
 You've to remove the earlier configurations of `webone.conf` and `webtwo.conf` if you want conflict free operation, otherwise you'll get 404 page not found and various types of errors.
-![](../../static/images/Pasted%20image%2020240501151549.png)
-
 ## `X-Real-IP`
 
 Whenever a requests arrives to webserver in reverse proxy, the client is always the "reverse proxy server" instead of the real client. To bind the client IP with webserver IP, we can use X-Real-IP.
@@ -816,7 +816,8 @@ What the configuration is telling is that
 
 ## Traffic Distribution Method: Server Weight
 
-![](../../static/images/Pasted%20image%2020240502165419.png)
+![alt](/images/weight2.png)
+
 In cases where one server is having less hardware resources compared to the second server, we want to distribute the load based on the resources available in the servers. It is done by assigning weight values. More the weight, more the load assigned to it. Example: If there are 2 servers and one is getting weight 8 and another is given weight 2. It means 80% of request will get to the server with weight 8 and remaining 20% will go to the server with weight 2. In the above example scenario, we can make the server with 4GB RAM to have a higher weight value, so that more load is assigned to it.
 Put the below configuration on proxy server's configuration as `proxy.conf`.
 
@@ -840,7 +841,8 @@ In this example, 66% of the requests will go to server 192.168.1.4 whereas rest 
 
 ## Least Connect Method
 
-![](../../static/images/Pasted%20image%2020240502170236.png)
+![alt](/images/least_connect.png)
+
 Imagine a scenario where one server is running a big script that takes lots of time to complete. Whereas, the other server is running a small script that takes few miliseconds to complete.
 If we select round-robin load balancing(which is by default) in this case, it'll cause overload on server that is running a big script that takes lots of time. And the response time will be painfully slow.
 Least connect method helps in this case by making sure that the request goes to a server that has least amount of connections. Imagine the below scenario:
