@@ -1,7 +1,7 @@
 ---
 title: "The math behind configuring static IP address in Linux"
 date: 2024-04-08
-draft: false
+draft: true
 ShowToc: true
 ---
 
@@ -35,8 +35,11 @@ On Virtualbox, do the following:
 ```
 
 The ip address assigned to this VM on interface `enp0s3` is `192.168.1.65`. The subnet mask is `/24`. Note that interface name could be `ifcfg-ens33` in centos linux. And different for every kinds of linux distribution. The best way to find it out is to type out the above command and check yourself.
+
 #### The math behind IP addressing(subnetting)
+
 I know the IP address of VM, which is `192.168.1.65`. Now, I want to find out network address, broadcast address and gateway for the configuration file at `/etc/sysconfig/network-scripts/ifcfg-enp0s3`.
+
 ```
 Address:   192.168.1.65          11000000.10101000.00000001 .01000001
 Netmask:   255.255.255.0 = 24    11111111.11111111.11111111 .00000000
@@ -48,6 +51,7 @@ HostMin:   192.168.1.1           11000000.10101000.00000001 .00000001
 HostMax:   192.168.1.254         11000000.10101000.00000001 .11111110
 Hosts/Net: 254                   (Private Internet)
 ```
+
 Everything shown above that's relevant to configuring static IP on linux will be mentioned below.
 
 **Network Address**
@@ -73,6 +77,7 @@ Count up to `24` as it's the subnet mask. The bits in concern are thus the last 
 ```
 
 Now convert all those `0s` of subnet mask to `1s`, it'll give the broadcast address. In this case, it's `192.168.1.255`. Thus, the usable IP address for this VM ranges from `192.168.1.1` to `192.168.1.254`. The first and last addresses are not used for hosts.
+
 ## Step 4: `/etc/sysconfig/network-scripts/ifcfg-enp0s3`
 
 ```
@@ -91,6 +96,7 @@ GATEWAY="192.168.1.1"
 DNS1="8.8.8.8"
 DNS2="8.8.4.4"
 ```
+
 This is the general format for that file. The details that I need to change here are `IPADDR`,`NETMASK` and `GATEWAY`. Currently, in my case, everything is correct, your IP may vary. Then reboot the VM for the changes to take place. Just, restarting `NetworkManager` won't work, because we're not using it to configure static IP.
 
 References:

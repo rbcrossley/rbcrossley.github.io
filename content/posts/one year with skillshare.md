@@ -1,9 +1,10 @@
 ---
 title: "One year with skillshare, my honest experience"
 date: 2024-04-11
-draft: false
+draft: true
 ShowToc: false
 ---
+
 A year earlier, I subscribed to skillshare. If you're here, you already know what is skillshare. It's a website for online learning.
 
 If you wonder how I purchased skillshare although I am from Nepal where paypal is not available, I have used dollar card from NMB bank in order to purchase skillshare from Nepal.

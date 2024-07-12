@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/Nepali Tech Jobs Scraper to scrape all IT jobs in one place.md",
+                "file": "content/posts/The math behind configuring static IP address in Linux.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/posts/Nepali Tech Jobs Scraper to scrape all IT jobs in one place.md",
+                "file": "content/posts/The math behind configuring static IP address in Linux.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/posts/Nepali Tech Jobs Scraper to scrape all IT jobs in one place.md",
+                "file": "content/posts/The math behind configuring static IP address in Linux.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/posts/Nepali Tech Jobs Scraper to scrape all IT jobs in one place.md"
+                "file": "content/posts/The math behind configuring static IP address in Linux.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "5659204c57929e7d",
   "lastOpenFiles": [
-    "content/posts/The math behind configuring static IP address in Linux.md",
     "content/posts/Nepali Tech Jobs Scraper to scrape all IT jobs in one place.md",
+    "content/posts/The math behind configuring static IP address in Linux.md",
     "content/posts/nginx.md",
     "images/least.md",
     "images",

@@ -1,7 +1,7 @@
 ---
 title: Scrape all IT jobs in Nepal to one place
 date: 2024-05-25
-draft: false
+draft: true
 ShowToc: false
 ---
 

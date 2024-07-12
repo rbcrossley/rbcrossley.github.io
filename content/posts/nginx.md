@@ -1,7 +1,7 @@
 ---
 title: Managing HTTP servers with NGINX
 date: 2024-04-20
-draft: false
+draft: true
 ShowToc: true
 ---
 
@@ -588,8 +588,8 @@ Change this value to something else, example
 ```
 
 # Reverse Proxy
-![reverse proxy](/images/reverse_proxy.png)
 
+![reverse proxy](/images/reverse_proxy.png)
 
 Reverse proxy hides the origin server IP. Here NGINX is the reverse proxy.
 
@@ -674,6 +674,7 @@ http://192.168.1.3/admin/
 
 request this URL, you should get the contents of your authentication admin server as a response.
 You've to remove the earlier configurations of `webone.conf` and `webtwo.conf` if you want conflict free operation, otherwise you'll get 404 page not found and various types of errors.
+
 ## `X-Real-IP`
 
 Whenever a requests arrives to webserver in reverse proxy, the client is always the "reverse proxy server" instead of the real client. To bind the client IP with webserver IP, we can use X-Real-IP.

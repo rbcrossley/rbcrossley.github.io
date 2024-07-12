@@ -1,7 +1,7 @@
 ---
 title: "How to install SSL certificates in nginx web servers in Linux"
 date: 1970-01-01
-draft: false
+draft: true
 ShowToc: true
 ---
 
