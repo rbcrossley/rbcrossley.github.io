@@ -8,16 +8,16 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
-
-# Install the latest version of Astro globally (if needed)
-RUN npm install -g create-astro@latest
+RUN npm ci
 
 # Copy the rest of the application code
 COPY . .
 
-# Expose the port that the app runs on
-EXPOSE 4321
+# Build the Astro site
+RUN npm run build
 
-# Command to start the application
+# Expose the `dist` directory for the host system
+VOLUME ["/app/dist"]
+
+# Default command (for local testing, not used in CI)
 CMD ["npm", "run", "dev"]
