@@ -20,7 +20,7 @@ COPY . .
 RUN npm run build
 
 # # Expose the `dist` directory for the host system
-# VOLUME ["/app/dist"]
+VOLUME ["/app/dist"]
 
 # Default command (for local testing, not used in CI)
 CMD ["npm", "run", "dev"]
