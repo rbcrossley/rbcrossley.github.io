@@ -16,8 +16,8 @@ COPY . .
 # Build the Astro site
 RUN npm run build
 
-# Expose the `dist` directory for the host system
-VOLUME ["/app/dist"]
+# # Expose the `dist` directory for the host system
+# VOLUME ["/app/dist"]
 
 # Default command (for local testing, not used in CI)
 CMD ["npm", "run", "dev"]
