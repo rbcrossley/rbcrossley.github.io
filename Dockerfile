@@ -10,6 +10,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm ci
 
+# Ensure Astro is globally available (optional, only if globally needed)
+RUN npm install -g astro@latest
+
 # Copy the rest of the application code
 COPY . .
 
