@@ -12,41 +12,40 @@ permissions:
   id-token: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # Step 1: Check out the repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18' # You can change this to the version required by your project
+      # Step 2: Set up Docker
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
-      - name: Install dependencies
-        run: npm ci # Ensures a clean installation from the lockfile
+      # Step 3: Build the Docker image
+      - name: Build the Docker image
+        run: docker build -t astro-website .
 
-      - name: Build the Astro site
-        run: npm run build # Generates the static files in the `dist` directory
+      # Step 4: Run the Docker container to generate static files
+      - name: Generate static files with Docker
+        run: |
+          docker run --rm -v ${{ github.workspace }}/dist:/app/dist astro-website astro build
+        # The `-v` option mounts the `dist` directory inside the container to retrieve the build output
 
-      - name: Prepare for GitHub Pages
-        run: echo > ./dist/.nojekyll # Disable Jekyll on GitHub Pages
+      # Step 5: Disable Jekyll for GitHub Pages
+      - name: Disable Jekyll
+        run: echo > ./dist/.nojekyll
 
+      # Step 6: Upload the static files for deployment
       - name: Upload artifact for deployment
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./dist # Directory containing the built site
+          path: ./dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
+      # Step 7: Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+        with:
+          path: ./dist
