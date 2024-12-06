@@ -1,12 +1,6 @@
 ---
-layout: ../layouts/BlogPost.astro
-title: Hello, world!
-slug: hello-world
-description: >-
-  This is an example blog!
-tags:
-  - personal
-added: "May 01 2024"
+title: "First Blog Post"
+description: "This is the description of my first blog post."
+pubDate: 2024-01-01
 ---
-
-This is an example blog post!
+Tasty
