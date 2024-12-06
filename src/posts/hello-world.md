@@ -1,7 +1,11 @@
 ---
-title: "First Blog Post"
-description: "This is the description of my first blog post."
-date: 2024-12-01
-slug: "Thaha xaina k ho yo"
+layout: ../layouts/BlogPost.astro
+title: Markdown Example
+slug: markdown
+description: >-
+  Check out how markdown is rendered!
+tags:
+  - technical
+added: "May 09 2024"
 ---
-Tasty
+Testasfdsf sfsd fsdf sdfdsfdsfdsf
