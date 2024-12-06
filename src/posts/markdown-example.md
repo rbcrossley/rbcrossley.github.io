@@ -1,10 +1,8 @@
 ---
-layout: ../layouts/BlogPost.astro
-title: Markdown Example
-slug: markdown
-description: Check out how markdown is rendered!
-tags:
-  - technical
-added: "May 09 2024"
+title: "My First Post"
+slug: "my-first-post"
+added: "2024-12-01"
+description: "A brief description of my post"
+updated: "2024-12-05"
 ---
-Testasfdsf sfsd fsdf sdfdsfdsfdsf
+Nepal is a beauty
