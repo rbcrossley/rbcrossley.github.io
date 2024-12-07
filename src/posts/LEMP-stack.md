@@ -3,6 +3,7 @@ title: "Install wordpress on Rocky Linux 9 using NGINX as a webserver"
 slug: "wordpress-LEMP-stack"
 added: "2024-12-07"
 description: ""
+layout: ../layouts/BlogPost.astro
 ---
 LEMP stack stands for:
 - Linux

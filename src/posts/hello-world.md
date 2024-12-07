@@ -1,8 +1,12 @@
 ---
-title: "My First Post"
-slug: "my-first-post"
-added: "2024-12-01"
-description: "A brief description of my post"
-updated: "2024-12-05"
+layout: ../layouts/BlogPost.astro
+title: Hello, world!
+slug: hello-world
+description: >-
+  This is an example blog!
+tags:
+  - personal
+added: "May 01 2024"
 ---
-Nepal is really beautifl
+
+This is an example blog post!
