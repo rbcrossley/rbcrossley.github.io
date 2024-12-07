@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://packetnotfound.com/",
+	site: "https://rbcrossley.github.io/",
 	base: "/",
 	integrations: [sitemap()],
 	markdown: {
