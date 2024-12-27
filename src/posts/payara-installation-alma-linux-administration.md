@@ -156,4 +156,6 @@ done
  
 - iterate over input arguments bash
  - https://stackoverflow.com/a/255913
-![[../attachments/Pasted image 20241227114112.png]]
+
+
+![](../attachments/Pasted%20image%2020241227134941.png)

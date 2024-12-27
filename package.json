@@ -15,9 +15,6 @@
 		"astro": "^4.15.2",
 		"prettier": "^3.3.3",
 		"prettier-plugin-astro": "^0.14.1"
-	},
-	"dependencies": {
-		"@tinacms/cli": "^1.6.2",
-		"tinacms": "^2.2.0"
 	}
 }
+
