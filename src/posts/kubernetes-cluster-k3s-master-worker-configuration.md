@@ -1,8 +1,8 @@
 ---
 title: Configure three node (master-workers) kubernetes cluster using k3s
 slug: kubernetes-cluster-k3s-master-worker-configuration
-added: 2023-12-27
-description: 
+added: 2024-12-27
+description: Multi-node kubernetes cluster with rancher 
 layout: ../layouts/BlogPost.astro
 ---
 ## Infrastructure
