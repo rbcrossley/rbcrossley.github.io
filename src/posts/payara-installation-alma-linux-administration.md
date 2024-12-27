@@ -1,7 +1,7 @@
 ---
-title: "Payara Server Installation, Configuration and Administration in Alma Linux 9"
-slug: "payara-installation-in-alma-linux-and-payara-administration-configuration"
-added: "2024-12-20"
+title: Payara Server Installation, Configuration and Administration in Alma Linux 9
+slug: payara-installation-in-alma-linux-and-payara-administration-configuration
+added: 2024-12-20
 description: ""
 layout: ../layouts/BlogPost.astro
 ---
@@ -156,3 +156,4 @@ done
  
 - iterate over input arguments bash
  - https://stackoverflow.com/a/255913
+![[../attachments/Pasted image 20241227114112.png]]
