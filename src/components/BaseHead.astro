@@ -8,40 +8,53 @@ const { title, description, image = "/home-blog-card.png" } = Astro.props;
 ---
 
 <head>
-	<!-- Global Metadata -->
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width,initial-scale=1" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-	<meta name="generator" content={Astro.generator} />
+  <!-- Analytics -->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-T4ZDW1MX21"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-	<!-- Primary Meta Tags -->
-	<title>{title}</title>
-	<meta name="title" content={title} />
-	<meta name="description" content={description} />
+    gtag("config", "G-T4ZDW1MX21");
+  </script>
+  <!-- Global Metadata -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+  <meta name="generator" content={Astro.generator} />
 
-	<!-- Open Graph / Facebook -->
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content={Astro.url} />
-	<meta property="og:title" content={title} />
-	<meta property="og:description" content={description} />
-	<meta property="og:image" content={new URL(image, Astro.url)} />
+  <!-- Primary Meta Tags -->
+  <title>{title}</title>
+  <meta name="title" content={title} />
+  <meta name="description" content={description} />
 
-	<!-- Twitter -->
-	<meta property="twitter:card" content="summary_large_image" />
-	<meta property="twitter:url" content={Astro.url} />
-	<meta property="twitter:title" content={title} />
-	<meta property="twitter:description" content={description} />
-	<meta name="twitter:creator" content="@cassidoo" />
-	<meta name="twitter:image" content={new URL(image, Astro.url)} />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={Astro.url} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={new URL(image, Astro.url)} />
 
-	<!-- RSS Link -->
-	<link
-		rel="alternate"
-		href="/rss.xml"
-		type="application/rss+xml"
-		title={SITE_TITLE}
-	/>
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content={Astro.url} />
+  <meta property="twitter:title" content={title} />
+  <meta property="twitter:description" content={description} />
+  <meta name="twitter:creator" content="@cassidoo" />
+  <meta name="twitter:image" content={new URL(image, Astro.url)} />
 
-	<!-- Sitemap -->
-	<link rel="sitemap" href="/sitemap-index.xml" />
+  <!-- RSS Link -->
+  <link
+    rel="alternate"
+    href="/rss.xml"
+    type="application/rss+xml"
+    title={SITE_TITLE}
+  />
+
+  <!-- Sitemap -->
+  <link rel="sitemap" href="/sitemap-index.xml" />
 </head>
