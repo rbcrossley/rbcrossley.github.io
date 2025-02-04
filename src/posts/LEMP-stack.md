@@ -6,6 +6,10 @@ description: ""
 layout: ../layouts/BlogPost.astro
 ---
 
+If you're a video person:
+
+https://www.youtube.com/watch?v=9N3WzfHSUWc
+
 LEMP stack stands for:
 
 - Linux
