@@ -2,7 +2,7 @@
 title: "Install wordpress on Rocky Linux 9 using NGINX as a webserver"
 slug: "wordpress-LEMP-stack"
 added: "2025-02-04"
-description: ""
+description: "self hosted wordpress,how to self host a website"
 layout: ../layouts/BlogPost.astro
 ---
 

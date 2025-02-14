@@ -25,7 +25,7 @@ sed -i 's/enforcing/disabled/g' /etc/selinux/config /etc/selinux/config
 systemctl disable --now firewalld
 
 # add glassfish "fish" user with a password
-useradd fish 
+useradd fish
 passwd fish << EOF
 f!sh@glass
 f!sh@glass
@@ -33,11 +33,11 @@ EOF
 
 # Allow sudo for fish user and passwordless sudo authentication
 cat <<EOF >> /etc/sudoers
-fish ALL=(ALL) NOPASSWD: ALL 
+fish ALL=(ALL) NOPASSWD: ALL
 EOF
- 
+
 # switch user to fish user from root user.
-su - fish 
+su - fish
 # install java jdk
 curl -s "https://download.oracle.com/java/23/latest/jdk-23_linux-x64_bin.tar.gz"| tar xvzf - -C /tmp
 mv /tmp/jdk* ~/.java
@@ -58,7 +58,7 @@ source ~/.bash_profile
 unzip payara*.zip && mv payara?? ~/payara
 
 # Unit service file for glassfish
-sudo tee /etc/systemd/system/payara.service > /dev/null << EOF 
+sudo tee /etc/systemd/system/payara.service > /dev/null << EOF
 [Unit]
 Description = GlassFish Server v4.1
 After = syslog.target network.target
@@ -92,7 +92,7 @@ admin
 root@Nepal
 EOF
 # restart payara, might require root
-sudo systemctl restart payara 
+sudo systemctl restart payara
 
 ./home/fish/payara/bin/asadmin create-domain --portbase 5000 a <<EOF
 
@@ -105,7 +105,6 @@ EOF
 
 ./home/fish/payara/bin/asadmin start-domain a
 
-
 **Deleting a domain**
 
 ./home/fish/payara/bin/asadmin delete-domain -port 5048 a
@@ -113,46 +112,20 @@ EOF
 **Undeploying and Deploying an application**
 
 ./asadmin --port 4848 undeploy application_name
-(application_name is located at /home/fish/payara/glassfish/domains/a/applications/__internal)
+(application_name is located at /home/fish/payara/glassfish/domains/a/applications/\_\_internal)
 
-./asadmin --port 4848 deploy /tmp/application_name*.ear
+./asadmin --port 4848 deploy /tmp/application_name\*.ear
 
 **Force deploy an application**
-./asadmin --port 4848 deploy --force=true /tmp/application_name*.ear
-
+./asadmin --port 4848 deploy --force=true /tmp/application_name\*.ear
 
 Shell script to restart one or more payara server domains.
 
 ```
 # Restart domains shell script
-## bash restart-payara-domain.sh domain1 a
+## bash restart-payara-domain.sh domain1 domain2
 for var in "$@"
 do
     ./home/fish/payara/bin/asadmin restart-domain "$var"
 done
 ```
-
-### References:
-- Heredocs
- - https://linuxize.com/post/bash-heredoc/
- - https://docs.vultr.com/how-to-use-bash-heredoc
- - https://stackoverflow.com/a/2954835
-
-- One time installations
- - https://stackoverflow.com/questions/13086109/check-if-bash-variable-equals-0
- - https://stackoverflow.com/questions/15108229/how-to-count-number-of-words-from-string-using-shell
- - https://stackoverflow.com/questions/669452/are-double-square-brackets-preferable-over-single-square-brackets-in-b
-
--  curl 
- - https://explainshell.com/explain?cmd=curl+-s+
- - https://unix.stackexchange.com/a/429818
- - https://stackoverflow.com/a/79101773
- 
-- selinux
- - https://github.com/mdichirico/public-shell-scripts/blob/master/disable-selinux-on-cent-os-7.sh 
-
-- sudo cat doesn't work
- - https://stackoverflow.com/a/4414785
- 
-- iterate over input arguments bash
- - https://stackoverflow.com/a/255913

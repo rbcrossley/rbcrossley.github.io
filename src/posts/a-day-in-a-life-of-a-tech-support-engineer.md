@@ -1,6 +1,6 @@
 ---
-title: A Day in the Life of a Tech Support Engineer
-slug: a-day-in-a-life-of-a-tech-support-engineer
+title: A Day in the Life of a Product Support Engineer
+slug: a-day-in-a-life-of-a-product-support-engineer
 added: 2025-01-25
 description: ""
 layout: ../layouts/BlogPost.astro
