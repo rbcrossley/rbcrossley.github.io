@@ -1,7 +1,7 @@
 ---
 title: "Learning the why of devops as a support engineer"
 slug: "learning-why-of-devops"
-added: "2025-02-04"
+added: "2025-02-25"
 description: "learn the fundamentals of computer science behind devops and software engineering"
 layout: ../layouts/BlogPost.astro
 ---
