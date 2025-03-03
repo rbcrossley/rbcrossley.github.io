@@ -22,6 +22,13 @@ All these subjects are technical subjects. You're expected to have some tangible
 Learning happens through heuristic hit and trial. It doesn't happen by reading solutions. Definitely, knowing the answers to questions and the steps required to solve them will most definitely get you graduated in a degree mill university like in Nepal but that won't help you build your foundations. Getting graduated and learning are two different things in Institute of Engineer's Computer Engineering Degree.
 ### Pomodoro
 Get a Pomodoro time app that tracks your time spent on various areas like I did. I use [milki](https://www.milki.app/).
+
+### Rotate between subjects
+Keep rotating between multiple subjects, topics or anything but don't keep studying the same topic for hours.
+
+### Move on
+Once stuck for more than "x" duration, move on from that topic. For example: If you're stuck in a topic after giving 2 hrs of dedicated focus, skip from it.
+
 ### Find a quiet and inspirational environment
 For me, it was a library or a dedicated study room cabin. I went to [bodhi](https://www.facebook.com/p/Bodhi-the-study-room-working-space-and-hostel-100063615489051/). When I am surrounded by studious people, there's no option to a human's competitive nature besides studying. 
 ### No such thing as learning quickly
