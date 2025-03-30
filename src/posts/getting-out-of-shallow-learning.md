@@ -1,8 +1,8 @@
 ---
-title: "Learning How to Learn"
-slug: "learning-how-to-learn"
+title: "Getting out of shallow learning rot"
+slug: "shallow-learning-rot"
 added: "2025-03-30"
-description: "learning how to learn technical subjects and programming"
+description: "learning to learn in deeper way"
 layout: ../layouts/BlogPost.astro
 ---
 
