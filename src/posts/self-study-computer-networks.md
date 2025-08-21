@@ -39,3 +39,8 @@ I studied computer networks from Kurose, Ross Computer Networking: A top-down ap
 Books that I have on my shelf, haven't read end to end but recommend
 
 Internetworking with TCP/IP Book by Douglas Comer
+
+
+The URLs presented below are links to the books that I recommend. There is no extra cost to you while purchasing that link. Plus it helps to support my content creation.
+
+https://amzn.to/472RR7f
