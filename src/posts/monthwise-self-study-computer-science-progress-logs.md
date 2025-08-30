@@ -63,7 +63,7 @@ I had fun for some time with JavaFX solving exercises from the textbook. Soon,ho
  I am reading a lot of different textbooks simultaneously. But I follow only one from end to end. For COA, it is John P. Hayes. For computer graphics it is "Computer Graphics: Principles and Practice" by Foley et al. I do not think it( is possible to cover this(Computer Graphics) book end to end, though. I also have Samit Bhattacharya's Computer graphics but it is a below average book. Not worth the purchase.
  
 
-My second month is still ongoing as of writing this article.  
+
 
 **I collected some study advice to remind myself.**
 
@@ -80,3 +80,65 @@ My second month is still ongoing as of writing this article.
 - I made a rule for myself to at the library until 7PM. Even when I used to feel like "let me go home and rest", I stayed. This was really tough some days, but I pushed through. This helped mestay consistent in studying. Studying is not going to be fun every day, even if you like it. You need to push through it some days.
 
 
+
+Update: Bhadra 14,2082 Saturday (August 30,2025)
+
+My second month has ended. I am late to the progress report.My relatives have accused me of studying too much. I guess they are trying to point fingers at me for not being able to deliver results. Thus I have decided to be more outcome focused. I have put myself up on fiverr(you might laugh at this but I got  rejected by Toptal due to having too few years of experience)  for a start. I am also rethinking of how could I utilize my dedication in studies and learning new things into something that creates a tangible outcome. I would appreciate if you could write me about this.
+
+I made couple of videos and posted on youtube. They were churned out from the content of my blog. 
+
+I had set up goals till Bhadra 27,2082 as follows:
+
+- Finish COA
+
+- Finish Computer Graphics
+
+- Finish Discrete Mathematics
+
+- Finish Data Structures And Algorithms
+
+I realize how practically impossible was this. Computer graphics alone had preriquisites from pre-calculus, linear algebra and geometry. I had studied them in and on the way to my computer engineering degree(in Engineering Mathematics courses). However, there was a problem with the approach we were evaluated. The way we were taught was to be procedurally fluent without conceptual understanding. Most of us(graduates from Tribhuvan University,Nepal) can solve problems like calculators by plugging in formulas, but we lack practical understanding. Knowing when to apply a concept is more important in real life than knowing how to apply it, because real-world problem-solving starts with the former.
+
+I obviously struggled learning computer graphics principles and it led to a new plan in my mind. I want to do a higher education in computer science. I have been for long interested in HPC, cryptography, computational geometry. I feel the train for higher studies has passed for me, specially a PhD(with a Master's included). You know Nepalese society somehow wants you to believe that life needs to be set in Nepal (in this economy) by certain age.
+
+I am working on my interpersonal skills as well. It is doable. I was reading documents from [this](https://www.cci.health.wa.gov.au/) website about assertiveness. I realized I am an extremely unassertive person. I felt the need to provide help for anyone. It was not directed by any morality rather through automatic unassertive thoughts.
+
+There are some assertive rights of every individual. You can read about them online.
+
+PS: The title of this post came along with the guidance of chatgpt. I wanted to be extremely honest and objective on this journey. 
+
+I also made couple of videos. Soon I realized how important learning graphic design and animation/presentation skills was. Since it was not a high priority for the time being, I decided to focus only on the blog.
+
+Back to my computer science self study schedule! Learning 2D and 3D Transformations for computer graphics was complicated. 
+
+Since I had finished two chapters from COA, I scanned the notes of the first chapter. My progress on JavaFX learning had started to halt. So, I decided to take a break from JavaFX for some time. I decided to start with Generics after few weeks. 
+
+I had multiple days in this week where I did absolutely nothing. It was a vicious cycle of procastination(this is not the exact word I was looking for, but I hope you get what I mean). Hence I decided to meditate and workout regularly. Next day, I would start curve representation in computer graphics. Oh boy, this was even more scary than transformations chapter. I still persisted and spent few days on this subject. 
+
+I started studying control design in COA. I was stuck in non-restoring division. Although I could trace the algorithm and understood its underlying principles, I could not fully internalize it.
+
+I decided to take some mathematics courses on udemy from [hania](https://www.udemy.com/user/hania-uscka-wehlou/). Thus I loaded dollar card with 200 dollars(so much for my promise to never spend a dime on udemy courses again-specially after spending thousands there).
+
+> A dollar card in Nepal is a type of international prepaid or debit card, issued by Nepali banks, that allows users to make payments in U.S. dollars for online purchases, international e-commerce, digital subscriptions, and online services.
+
+Learning subjects without preriquisites is the worst thing that can happen to anyone. And I think the reason why students often perform badly in Tribhuvan University, Institute of Engineering is because you are allowed to continue next year irrespective of how many subjects you flunked in previous year. This creates a ripple effect:students do not understand anything in their current classes because of fundamentals gaps from earlier semesters. Basically a vicious cycle of flunking classes, not learning anything. 
+
+As today is saturday, I went to library without my laptop to digitally detox. 
+ 
+ 
+I decided few things today:
+
+- I would not continue computer graphics further. I have reached  deadlock-like state in studying this subject. Computer graphics is not a core computer science foundation that one needs for truly understanding the world of softwares. It is also not the most important subject for exams that I am preparing for.
+
+- Finishing generics on java would be my top priority, as it holds all the cards. My next plan is learning data structures, algorithms, operating systems, database management systems and distributed systems. 
+
+- I will continue studying COA. Although, John P Hayes' textbook is hard I am going to persist with fortitude.
+
+
+
+
+
+ # Third Month
+ 
+ My third month starts from Bhadra 15,2082 i.e. Sunday. I will report my progress second week of Ashoj.
+ 
