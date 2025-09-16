@@ -142,3 +142,15 @@ I decided few things today:
  
  My third month starts from Bhadra 15,2082 i.e. Sunday. I will report my progress second week of Ashoj.
  
+ # Resources
+ 
+ Below, I will provide the links to purchase the resources that I found helpful. Note that these are affiliate links. Meaning, you get the product at no extra cost and I get a small amount of commission for each product sold. This helps to partly compensate my time working on this blog.
+ 
+ 
+[Kurose Ross Computer Networks](https://amzn.to/3I5nrHd)
+ 
+[Hayes Computer Architecture and Organization](https://amzn.to/4n3bX6e)
+ 
+[Software Engineering by Sommerville](https://amzn.to/46EM32Y)
+
+[Java by Daniel Liang](https://amzn.to/48f8uwY)
