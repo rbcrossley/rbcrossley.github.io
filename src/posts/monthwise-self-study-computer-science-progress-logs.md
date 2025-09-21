@@ -140,8 +140,45 @@ I decided few things today:
 
  # Third Month
  
- My third month starts from Bhadra 15,2082 i.e. Sunday. I will report my progress second week of Ashoj.
+ My third month starts from Bhadra 15,2082 i.e. Sunday. I will report my progress second week of Ashoj. It is Ashoj 5. 
+ During Bhadra 23 and 24, Nepal was shaken by the death of young protestors on the first day and vandalism on the second day. I do not want to sound self-centered, but entire week was unproductive for studies. That week was spent entirely doomscrolling. Even though all was not well on Bhadra 28,Saturday, I decided to get back to serious studies. I arrived to the study room. 
  
+By now, I have studied upto control unit design(COA) and completed recursion chapter(data structures)
+ 
+I was introspecting about the time I am putting onto studies. It came to my notice that I did not have any artifacts to show for it. That is when I decided to turn the situation around. I have taken an U-turn because:
+
+- I will not study JavaFX GUI programming.
+
+- I will not work on simulating data structures and algorithms.
+
+- I will not work on exercises for data structures, algorithms, operating systems, database management systems and distributed systems, which was earlier my plan.
+
+- I will only study only as much required for the exam I am preparing for.
+
+Here are my next few goals.
+
+1) Study data structures and algorithms.
+
+2) Study operating systems.
+
+3) Study database management systems.
+
+4) Study distributed systems.
+
+5) Study compiler design.
+
+But I will not learn them with implementation. Only understanding the concepts. Then I will stop my computer science RELEARNING journey. At this stage of my career, learning skills that are not marketable(although foundational) is a wise decision(Yes I said wise!). It is not what I want but it is what it is.
+
+
+I have also canceled my earlier plan to learn mathematics from Udemy, simply because those skills have zero market value in Nepal. I cannot afford to lose more time. My career orientation is in the DevOps/DBA field. I will be looking on two core technologies:
+
+1) Kubernetes
+
+2) a SQL flavor to learn administration on
+
+Feel free to share your recommendations by e-mail.
+
+
  # Resources
  
  Below, I will provide the links to purchase the resources that I found helpful. Note that these are affiliate links. Meaning, you get the product at no extra cost and I get a small amount of commission for each product sold. This helps to partly compensate my time working on this blog.
