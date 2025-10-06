@@ -2,7 +2,7 @@
 title: "How to transition from Support to DevOps"
 slug: "how-to-transition-from-technical-support-to-devops-engineering"
 added: "2025-10-03"
-description: "best books to learn programming foundations"
+description: "how to transition from technical support to devops"
 layout: ../layouts/BlogPost.astro
 ---
 I am a technical support engineer who is working to transition to a DevOps Engineer. And I wanted to document my journey.
