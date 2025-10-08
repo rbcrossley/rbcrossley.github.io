@@ -2,11 +2,28 @@
 const today = new Date();
 ---
 
-<footer></footer>
+<footer>
+    <p>
+    © {today.getFullYear()} rbcrossley —
+    <a href="/post/privacy-policy">Privacy Policy</a>
+  </p>
+
+</footer>
 <style>
   footer {
     padding: 25px;
     text-align: center;
     font-size: 0.8rem;
   }
+    footer a {
+    color: inherit;
+    text-decoration: underline;
+    margin-left: 6px;
+  }
+
+  footer a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
 </style>
