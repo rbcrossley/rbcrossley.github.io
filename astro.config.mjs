@@ -3,7 +3,7 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://rbcrossley.github.io/",
+	site: "https://rbcrossley.github.io",
 	base: "/",
 	integrations: [sitemap({
       entryLimit: 50000,
