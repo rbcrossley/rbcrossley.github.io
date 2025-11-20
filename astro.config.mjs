@@ -5,15 +5,7 @@ import sitemap from "@astrojs/sitemap";
 export default defineConfig({
 	site: "https://rbcrossley.github.io",
 	base: "/",
-	integrations: [sitemap({
-      entryLimit: 50000,
-      xmlns: {
-        news: false,
-        xhtml: false,
-        image: false,
-        video: false
-      }
-    })],
+	integrations: [sitemap()],
 	markdown: {
 		shikiConfig: {
 			theme: "material-theme-darker",
