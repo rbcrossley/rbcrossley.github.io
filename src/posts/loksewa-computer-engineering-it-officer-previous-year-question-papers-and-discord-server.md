@@ -11,7 +11,6 @@ Link to file:
 https://drive.google.com/file/d/1SJXYfpEnz32A2tDUOG7-JY9kja2Q3ICQ/view?usp=sharing
 
 
-Link to discord server:
+Link to telegram group:
 
-https://discord.gg/VVZdwbJA
-
+https://t.me/+T8NBlBFkQ8kwODFl
