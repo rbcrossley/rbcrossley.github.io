@@ -41,9 +41,9 @@ I have worked in private technology sector jobs. I have been preparing for gover
 
 # Vacancy
 
-Missing vacancy notices is very common in Nepal due to lack of centralized examination division. There are couple of ways to be notified about latest vacancies. 
+Missing vacancy notices is very common in Nepal due to lack of centralized examination division. There are a couple of ways to be notified about latest vacancies. 
 
-First seek the loksewa's yearly calendar. It contains expected vacancy, exam, interview dates.
+First seek the Loksewa's yearly calendar. It contains expected vacancy, exam, interview dates.
 
 https://psc.gov.np/category/yearly_calendar.html
 
@@ -109,9 +109,9 @@ Officer level positions' title that are open in these companies:
 
 In some non-tech companies you might also find a 5th level position generally called as "Head IT Assistant" instead of Officer level positions.
 
-The qualifications required varies. But in general a Computer Engineering Bachelors' degree suffices for most of the officer level positions. Some banks might ask for masters degree in IT or Engineering for officer level positions. For most non Engineer (i.e. Officer/DBA etc), all IT streams can apply including BCA, BIT and Bsc.CSIT(Of course lol).
+The qualifications required varies. But in general a Computer Engineering Bachelors' degree suffices for most of the officer level positions. Some banks might ask for master’s degree in IT or Engineering for officer level positions. For most non Engineer (i.e. Officer/DBA etc.), all IT streams can apply including BCA, BIT and Bsc.CSIT(Of course lol).
 
-You can then visit these sites. They contain the vacancies, exam centres, exam dates etc notices of various organizations. 
+You can then visit these sites. They contain the vacancies, exam centers, exam dates etc. notices of various organizations. 
 
 ```
 https://psc.gov.np/category/recommended/all
@@ -134,12 +134,12 @@ https://t.me/+T8NBlBFkQ8kwODFl
 
 # Syllabus
 
-Syllabus for computer engineer and IT officer loksewa positions at various corporations and nijamati are available in their respective websites. The syllabus are subject to change. But do not worry. It will not vary that much.
+Syllabus for computer engineer and IT officer Loksewa positions at various corporations and nijamati are available in their respective websites. The syllabus is subject to change. But do not worry. It will not vary that much.
 
 I have shared all the syllabus in the telegram group as well.
 
 
-Thus I highly recommend that you check syllabus updates time to time. I will share the overall syllabus subject structure here:
+Thus, I highly recommend that you check syllabus updates time to time. I will share the overall syllabus subject structure here:
 
 ## Common subjects:
 
@@ -171,9 +171,9 @@ These appear fewer in between but are of higher priority.
 
 # previous year questions
 
-The highly recommended way of tackling preparation for any competitive exam is by solving its previous year question papers. Unfortunately, as of yet questions of Computer Engineering, IT officer are not available completely in public domain. I have heard that PSC, kamalpokhari office where the question papers are located is planning to publish such question papers in psc website itself. But since it is government work, it is not sure when they will complete it.
+The highly recommended way of tackling preparation for any competitive exam is by solving its previous year question papers. Unfortunately, as yet questions of Computer Engineering, IT officer are not available completely in public domain. I have heard that PSC, Kamalpokhari office where the question papers are located is planning to publish such question papers in PSC website itself. But since it is government work, it is not sure when they will complete it.
 
-I have captured most of the previous year question papers from the office itself. And they are available in the google drive link provided here:
+I have captured most of the previous year question papers from the office itself. And they are available in the Google Drive link provided here:
 
 Link to file:
 
@@ -184,7 +184,7 @@ https://drive.google.com/file/d/1SJXYfpEnz32A2tDUOG7-JY9kja2Q3ICQ/view?usp=shari
 
 As you can see from the previous year questions, the questions being asked in Loksewa Computer Engineering, IT officer exams are not tough at all. But here is the catch which I hope you have recognized already.
 
-There are too many subjects with too many contents in the loksewa computer engineering, IT officer curriculum. The seats are limited. In most non-tech companies, the seats are limited to only one. So you are competing with many people for scarce resources.
+There are too many subjects with too many contents in the Loksewa computer engineering, IT officer curriculum. The seats are limited. In most non-tech companies, the seats are limited to only one. So you are competing with many people for scarce resources.
 
 To add, engineering concepts stack one upon another. So you have to study everything that follows a concept to certain level of understanding before trying to cram the important stuffs.
 
@@ -194,7 +194,7 @@ The questions do not seem to follow a standard pattern. And they are very few so
 
 # Preparation providing institutes
 
-There a couple of institutes providing classes for loksewa computer engineer and IT officer. But their quality is said to be questionable by many people. I do not recommend joining any institutes for preparation. If you are extremely stubborn about joining one, make sure to get a huge discount.
+There are a couple of institutes providing classes for Loksewa computer engineer and IT officer. But their quality is said to be questionable by many people. I do not recommend joining any institutes for preparation. If you are extremely stubborn about joining one, make sure to get a huge discount.
 
 # Notes
 
@@ -202,7 +202,7 @@ I will be sharing my handwritten notes once they are ready to publish(for a smal
 
 # Best books
 
-The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity book shops.
+The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity bookshops.
 
 # Salary
 
@@ -210,12 +210,12 @@ The salary varies in corporations. It is provided below:
 
 [link to salaries](https://imgur.com/a/salary-of-entry-level-officer-government-corporations-ZmJVXUU)
 
-You can set your eye on the corporation you want to work for based on the benefits provided at each corporations. It is all about what you want out of the government job.
+You can set your eye on the corporation you want to work for based on the benefits provided at each corporation. It is all about what you want out of the government job.
 
 
-# job+loksewa
+# job+Loksewa
 
-Many students start preparing for loksewa along with a low paying job. It takes around 6 months to 1 year of full time studies to complete the entire syllabus given rudimentary only knowledge. Most IT companies provide two days leaves. If you think you can manage that, go ahead. I feel that it is not manageable for many reasons. But I also started preparing along with a job. So you can start like that as well.
+Many students start preparing for Loksewa along with a low paying job. It takes around 6 months to 1 year of full-time studies to complete the entire syllabus given rudimentary only knowledge. Most IT companies provide two days leaves. If you think you can manage that, go ahead. I feel that it is not manageable for many reasons. But I also started preparing along with a job. So you can start like that as well.
 
 # psychological tips
 
