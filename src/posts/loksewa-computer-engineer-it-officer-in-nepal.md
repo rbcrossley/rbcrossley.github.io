@@ -126,11 +126,10 @@ https://psc.gov.np/category/result/all
 
 You could visit the career pages of specific organizations whose vacancy opening date is tentatively around. It would be extremely cumbersome and risky(because you could miss some updates).
 
-I have created a telegram group where I have semi-automated sharing such updates.
+I have created a premium telegram group where I have semi-automated sharing such updates.
 
-Link to telegram group:
+For getting the access to telegram group, send me a mail at the address present [here](https://rbcrossley.github.io/contact/).
 
-https://t.me/+T8NBlBFkQ8kwODFl
 
 # Syllabus
 
