@@ -172,12 +172,9 @@ These appear fewer in between but are of higher priority.
 
 The highly recommended way of tackling preparation for any competitive exam is by solving its previous year question papers. Unfortunately, as yet questions of Computer Engineering, IT officer are not available completely in public domain. I have heard that PSC, Kamalpokhari office where the question papers are located is planning to publish such question papers in PSC website itself. But since it is government work, it is not sure when they will complete it.
 
-I have captured most of the previous year question papers from the office itself. And they are available in the Google Drive link provided here:
+I have captured most of the previous year question papers from the office itself. 
 
-Link to file:
-
-https://drive.google.com/file/d/1SJXYfpEnz32A2tDUOG7-JY9kja2Q3ICQ/view?usp=sharing
-
+Link to file will be in the premium telegram group.
 
 # How to study
 
