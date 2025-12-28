@@ -1,2 +1,1 @@
-Email: aryal.bijan1@gmail.com
-
+A blog about technology and Loksewa Computer Engineering.
