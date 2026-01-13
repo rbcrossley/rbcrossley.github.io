@@ -1,10 +1,12 @@
 ---
-title: "Important Old Questions Collection of Software Engineering for Loksewa Computer Engineer and IT Officer"
+title: "Important Old Questions Collection of all technical subjects Computer Engineer IT Officer"
 slug: "important-old-questions-loksewa-computer-engineering-software-engineering"
-added: "2026-01-03"
-description: "Important Old Questions Collection of Software Engineering for Loksewa Computer Engineer and IT Officer"
+added: "2026-01-14"
+description: "Important Old Questions Collection of ALL TECHNICAL SUBJECTS for Loksewa Computer Engineer and IT Officer"
 layout: ../layouts/BlogPost.astro
 ---
+
+# Software Engineering
 
 What is SCM? Discuss key objectives and activities involved in SCM? Highlight the benefits and challenges of implementing SCM in large scale software projects. List some common tools used for SCM in software industry.
 
@@ -96,6 +98,66 @@ Software development methodology for ERP.
 What are software quality measures? Why SQA is important? Explain. What are the building blocks of UML? Explain with suitable examples and notations.
 
 Explain how AJAX works? What are the applications of XML?
+
+
+Explain spiral software development model. When do you prefer this model? Analyze.
+
+Distinguish betweeen waterfall model and prototyping model. Discuss functional and non-functional requirement.
+
+What is software reengineering? Explain its process.
+
+Explain the roles of system analyst.
+
+What is integration testing? Differentiate between top down and bottom up integration testing.
+
+A university wants to automate its admission system. You are appointed as the systems analyst to study the existing manual system.
+
+In this context, answer the followings:
+a) Describe how you would apply each phase of the System Development Life Cycle (SDLC) to this problem.
+b) Identify the functional and non-functional requirements of the system.
+c) Suggest the most suitable SDLC model and justify your choice.
+
+
+
+# Data Structures And Algorithms
+
+You are given an unbalanced binary search tree. Reconstruct it into a balanced binary search tree to optimize search time. Describe an algorithm to flatten the BST to a sorted array, then build a balanced BST. Implement the algorithm and analyze its time and space complexity.
+
+Solve the 0-1 Knapsack problem using dynamic programming for a set of values and weights. Explain the memorization table used.
+
+What is minimum spanning tree? Explain with an example. Explain in detail about Kruskal's algorithm for finding MST from a graph along with its algorithm and an example.
+
+Explain the types of linear data structures with example. 
+
+Explain why a liner data structure is important and necessary.
+
+Compare and contrast between breadth first search and depth first search in graph data structure with suitable example.
+
+What is Abstract Data Type? With appropriate examples, distinguish between stacks and queues.
+
+Illustrate how binary search works.
+
+Define growth of functions. How do you measure it? Explain with appropriate examples.
+
+Given a list of unsorted integers, implement and analyze a divide-and-conquer based sorting algorithm(like merge sort). Provide its time complexity and recursion trace.
+
+What is the fundamental difference between tree and graph? How do you traverse over a binary tree? Explain with a suitable example.
+
+Define dynamic programming. Explain the types of priority queues with example.
+
+How do you create a linked list for data structur? Elaborate with program code how stack data type can be created and used with linked list.
+
+Write algorithms for implementation of stacks and queues using singly linked list.
+
+Define tree. Discuss the use of binary tre, balancing tree, AVL tree, and splay tree with diagram under data structure and algorithm.
+
+Write a program to implement insertion sort.
+
+Describe any two types of sorting algorithms. Differentiate between B-tree and Red Black tree.
+
+Write the program for factorial using recursion.
+
+Differentiate between hash based indexing and tree based indexing.
 
 I am working on solutions of all these questions. I will publish once I am done. Follow my [youtube](https://www.youtube.com/@LoksewaComputerEngineeringPrep) channel to stay updated.
 
