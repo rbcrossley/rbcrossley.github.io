@@ -1,5 +1,5 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://rbcrossley.github.io/sitemap.xml
+Sitemap: https://bijanaryal.com.np/sitemap.xml
 
