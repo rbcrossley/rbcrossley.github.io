@@ -117,6 +117,7 @@ a) Describe how you would apply each phase of the System Development Life Cycle 
 b) Identify the functional and non-functional requirements of the system.
 c) Suggest the most suitable SDLC model and justify your choice.
 
+Consider you are hired as team member to develop SRS document for developing MIS of any government organization. Develop sample SRS document analyzing all requirements. 10 marks
 
 
 # Data Structures And Algorithms
@@ -160,4 +161,49 @@ Write the program for factorial using recursion.
 Differentiate between hash based indexing and tree based indexing.
 
 I am working on solutions of all these questions. I will publish once I am done. Follow my [youtube](https://www.youtube.com/@LoksewaComputerEngineeringPrep) channel to stay updated.
+
+# Database Managment System
+
+Why do we need crash recovery in DBMS? Explain.
+
+What do you understand by Deadlocks in Distributed Database System? How can it be prevented? 
+
+Discuss the demerits of RDBMS. 10 marks
+
+
+A college library management system has different types of user, such as, students, staff, teachers. Each user-type has different book transaction privileges. User can only view the list of available books that is, users cannot access to the any type of data manipulation. The process of book transaction, the number of days and the fine-rate is all managed by the library administrator only.
+
+i) For the system described above draw the ERD, context diagram and level-1 DFD. 
+
+ii) Design the normalized database for the library management system mentioned above.
+
+iii) Analyze the cost benefit in the design of the system. Also determine the total data volume required for the system.
+
+What do you mean by normalization of database? Normalize any relational database using 3NF and write differences between BCNF and 3NF. 10 marks
+
+Write short notes on : DDL and DML in database concept.
+
+Suppose you are developing a system to automate the Exam Management System for public service commission, PSC has decide to publish "manage applicant form" "take examination" , and "publish result" for different services (like computer engineer, administrative officers, doctors)
+The system has to facilitate all processes which includes registration and enrollment of applicants, examination procedure, result processing and result publication. 
+i) Perform a requirement analysis with necessary assumption wherever necessary. 6 marks
+ii) What is the possible ER-diagram for this system. 10 marks
+iii) What could be the limitation of the system and other non-technical requirement for successful implementation? 4 marks
+
+What are the different popular schemas that are being used in building data warehouse? Explain any three type with appropriate sample to clarify the differences among these schemas. 10 marks
+
+What is a weak entity set? How is a weak entity set associated with strong entity sest in ER diagram? Explain with a suitable example. Differentiate between DDL, DML, and DCL. 10 marks
+
+What is functional dependency? Explain its importance in relational database design.
+
+What is ER diagram? Mention its uses.
+
+What do you mean by schedule in the context of concurrent execution of transactions in RDBMS? What is serializable schedule? Discuss the various type of serialization with the suitable example. 3+2+5=10
+
+What are weak entity set? How is a weak entity set ssociated with strong entity set in ER diagram? Expain with suitable example. Differentiate between DDL, DML and DCL. 2+4+4=10
+
+Explain the integrity constraints with an example.
+
+Describe the 2PL concurrency control protocol.
+
+Explain the use of Entity Relationship Diagram(ERD) with suitable examples. 10
 
