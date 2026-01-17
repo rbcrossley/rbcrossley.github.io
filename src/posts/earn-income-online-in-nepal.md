@@ -21,7 +21,7 @@ Join [fiverr](https://www.fiverr.com/pe/NNmzaDV).
 
 ## Content creation 
 
-Content creation opens up window of opportunities. Content can be created and monetized in any platforms. But I will discuss about youtube and website. 
+Content creation opens up window of opportunities. Content can be created and monetized in any platforms. But I will discuss about youtube and website.
 
 The easiest way to own a website is via mercantile, cloudflare and github pages. 
 
@@ -32,20 +32,32 @@ Here is how the entire thing works:
 - Assume the LDNS resolver has not cached the domain to ip mapping.
 - The request goes to recursive dns server.
 - Recursive dns server queries the root nameserver for the ip of bijanaryal.com.np domain.
-- Root nameserver responds with ip of np domain's nameserver.
-- Recursive dns server queries the np domain's namserver for the ip of bijanaryal.com.np domain.
-- np domain's nameserver responds with the ip of com.np domain's nameserver.
-- Recursive dns server queries the com.np domain's nameserver for the ip of bijanaryal.com.np domain.
+- Root nameserver responds with ip of .com.np domain's nameserver.
+- Recursive dns server queries the .com.np domain's namserver for the ip of bijanaryal.com.np domain.
 - .com.np domain's nameserver responds with the ip of bijanaryal.com.np's nameserver. Which in my case is xyz.ns.cloudflare.com.
 - Now recursive dns server queries the xyz.ns.cloudflare.com for the ip address of bijanaryal.com.np.
-- Thus in cloudflare we need to address this issue. We do it by adding DNS records. "A" records to be precise. We 
+- Thus in cloudflare we need to address this issue. We do it by adding DNS records. "A" and "CNAME" records to be precise. We put those dns records in our cloudflare account i.e. the our dns server. All it does is to basically redirect request to github pages.
+
+For more details on how to do this, read this blog: https://sudeepacharya.com.np/blog/2020/05/05/free-com-np-domain-free-hosting/
+
+Free domain and github pages hosting works for most blog sites. But you might be someone who do not like to publish with your real name embedded on your domain.  In that case, I recommend that you register a domain from [stablecluster](https://manage.stablecluster.com/aff.php?aff=22).
+
+Stablecluster is a Nepali startup. They accept Nepali bank payment as of writing this article. This is good news specially if you do not have a dollar card. You can also purchase web hosting from them. They have a [wordpress hosting plan](https://stablecluster.com/wordpress-hosting#choose-your-plan).
+
+Another medium for content creation is using videos. You can publish videos on YouTube.
+
+In both YouTube and personal website, there are various ways to earn income:
+
+- Google Adsense, Journey by MediaVine
+
+- Affiliate marketing
+
+- Selling digital products
+
+- Selling guest posts
 
 
-
-
-
-
-
+Selling digital products requires deep expertise unless you are spamming AI fluff.
 
 
 
