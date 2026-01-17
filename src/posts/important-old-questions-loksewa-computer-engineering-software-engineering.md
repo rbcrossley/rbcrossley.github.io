@@ -279,3 +279,41 @@ i) Write a SQL query to display Employee name and Company name
 ii) Write a SQL query to display Employee name, Employee city, Company name and Salary of all the employeees whose salary>11000
 iii) Write a query to display all the employees working in "ABC" company.
 
+# Operating system
+
+Define mutual exclusion and explain its role in a concurrent system. 5
+
+What is process scheduling in an operating system? Compare the scheduling algorithms:
+- first-come first-serve
+- shortest job next
+- round-robin
+- priority scheduling 2+8
+
+Define deadlock and ways to prevent deadlock. 5
+
+Explain the concept of starvation in relation to priority scheduling algorithm. With a suitable example, state the approach to overcome the problem of starvation. 5
+
+Explain in detail the various page replacement algorithms with examples. 10
+
+What is operating system? Describe its functions and classifications. 2+4+4
+
+Explain the differences among short-term, medium-term and long-term scheduling with examples. 10
+
+Describe race condition with an example. Define semaphore and explain the major operations in semaphore. Can semaphores be used in distributed system? Explain why or why not. 3+4+3
+
+Discuss the operating system functions and services in detail. 
+
+What are common operating system security threats.
+
+Authentication and Authorization in operating system? Explain access control list and role based access control(RBAC) along with their uses in managing secure user access.
+
+FCFS,SJF numerical with gantt chart and Turn Around Time calculation 
+
+What is memory management in operating system? Explain the paging technique of memory management. 
+
+What is virtual memory technique? Explain the process of conversion of logical address to physical address in paging scheme with a suitabl eexample. 3+7
+
+Explain various deadlock avoidance methods with examples.
+
+Define process and threads. Explain the uses of process and threads in operating system with proper diagram. 2+8
+
