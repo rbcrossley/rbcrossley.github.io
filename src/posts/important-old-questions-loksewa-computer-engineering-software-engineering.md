@@ -207,3 +207,75 @@ Describe the 2PL concurrency control protocol.
 
 Explain the use of Entity Relationship Diagram(ERD) with suitable examples. 10
 
+What is data independence in DBMS? Differentiate between logical data independence and physical data independence? 1+4=5
+
+Construct an E-R diagram to record the marks that students get in different exams of different course offerings. 5
+
+Explain the role of a database administrator. 5
+
+Explain distributed and object oriented database system. What are the necessary conditions for decomposing a relational database into two tables? Why is normalization needed? Elaborate. 10
+
+Answer the following.
+
+a) Define normalization with its objectives.
+
+b) Normalize the following data model upto 3NF showing all possible schema in each normal form:
+
+OrderNum, OrderDate, OrderTotal, CustNum, CustName, CustAdd, ((ProdNum, ProdName, QtyOrder, ProdPrice, prodTotal)) [fields within bracket represent repeating fields]
+
+c) After the data model is normalized upto 3NF, from the outcome schema, write the queries in relational algebra and SQL to find out the name of customer who has ordered the "Carpet".
+
+Explain ACID property of transaction in DBMS. How do they ensure reliable and consistent transaction processing in a dataase? 
+
+Answer the following:
+
+a) What are the steps involved in query processing? Explain the significance of materialized views.
+
+b) Briefly describe two phase locking protocol for concurrency control.
+
+What do you mean by schedule in the context of concurrent execution of transactions in RDBMS? What is the serializable schedule? Discuss the various types of serializability with a suitable example. 3+2+5=10
+
+Explain about DDL, DML, DCL with examples in DBMS. 10
+
+What is database normalization? Explain 1NF, 2NF, 3NF and BCNF with suitable examples highlighting the problems each of them eliminates. 2+8=10
+
+What is the purpose of normalization in database management system? What is a data model? Explain with its types. 10
+
+What are the recovery techniques used to recover from database crash? Explain.
+
+Why is there a need for normalization in databases? Explain 1NF, 2NF, 3NF, and BCNF normalization in DBMS. Why is concurrency control needed? Explain lost update, inconsistent retrievals and uncommitted dependency anomalies. 1+4+1+4=10
+
+What is data independence? Explain the difference between physical and logical data independence. 1+4=5
+
+What is a weak entity set? How is a weak entity set associated with strong entity set in ER diagram? Explain with a suitable example. Differentiate between DDL, DML and DCL. 2+4+4=10
+
+Differentiate between 3NF and BCNF with a proper example. 5
+
+What is functional dependency? Explain normalization with 1NF, 2NF and 3NF using suitable examples. 3+7=10
+
+How are multi level indexex constructed using B trees and B+ trees in indexing of DBMS? Explain. 10
+
+What do you understand by transaction management and concurrency control in database? Explain different types of crash recovery techniques used in database. 5+5=10
+
+Discuss the differences between the candidate keys and the primary key of relation. What is meant by a foreign key? How do foreign keys of relations relate to candidate keys? Illustrate with examples. 4+2+4=10
+
+What is normalization? Why is it needed? How can you say that the table is in second and third normal form? Explain with an example. 2+2+6=10
+
+Answer the following: 5+5=10
+
+a) Explain the integrity constraints with an example.
+
+b) Describe the 2PL concurrency control protocol. 
+
+What are the steps involved in query processing? Explain the significance of materialized views. Describe briefly two phase locking protocol for concurrency control. 2+3+5=10
+
+Explain the challenges and practices of database security. 5
+
+Explain cost based query optimization with example. 6
+
+Based on the following tables:
+Employee(Em_no, Name,Em_city) Company(Em_no,Company_name,Salary)
+i) Write a SQL query to display Employee name and Company name
+ii) Write a SQL query to display Employee name, Employee city, Company name and Salary of all the employeees whose salary>11000
+iii) Write a query to display all the employees working in "ABC" company.
+
