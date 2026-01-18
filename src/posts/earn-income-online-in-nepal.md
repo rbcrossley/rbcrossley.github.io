@@ -1,6 +1,6 @@
 ---
 title: "Earn income from the Internet in Nepal"
-slug: "earn-income-online-in-nepal.md"
+slug: "earn-income-online-in-nepal"
 added: "2026-01-17"
 description: "Best ways to earn money online in Nepal"
 layout: ../layouts/BlogPost.astro
