@@ -1,7 +1,7 @@
 ---
 title: "Important Old Questions Collection of all technical subjects Computer Engineer IT Officer"
 slug: "important-old-questions-loksewa-computer-engineering-software-engineering"
-added: "2026-01-14"
+added: "2026-01-23"
 description: "Important Old Questions Collection of ALL TECHNICAL SUBJECTS for Loksewa Computer Engineer and IT Officer"
 layout: ../layouts/BlogPost.astro
 ---
@@ -316,4 +316,90 @@ What is virtual memory technique? Explain the process of conversion of logical a
 Explain various deadlock avoidance methods with examples.
 
 Define process and threads. Explain the uses of process and threads in operating system with proper diagram. 2+8
+
+# Digital logic
+
+Differentiate between combinational and sequential circuits in digital logic with suitable examples. Also explain the operation of NAND gate using a truth table.
+
+Define synchronous counter. Explain its working principle by drawing its functional diagram. 2+8=10
+
+Illustrate the difference between D and T flip-flop with its characteristic equations. 
+
+(V.V.IMP) Differetiate between synchronous counter and asynchronous counter. 
+
+(V.IMP) Explain ripple couter with its truth table and timing diagram. 7
+
+Design a 3-bit asynchronous up counter using T-flip flop. Explain JK flip flop with its characteristics equation, characteristics table and logic diagram. 8
+
+Explain 4 to 2 priority encoder along with its truth table, logical expression and logic circuit.
+
+What are the various types of state encoding techniques? Explain. 5
+
+Implement Half adder using only NAND gates. 5
+
+Explain the operation of parallel in serial out shift register with clear circuit and timing diagram. 5
+
+Implement XOR gate using NAND gates only. Implement the full adder using two half adders. (V.IMP) Draw the circuit diagram and explain the operation of edge triggered RS flip-flop. 3+3+4=10
+
+What is asynchronous machine? Write down.
+
+Design a mod-5 synchronous counter using JK flip flop. 10
+
+Define pair, quad, and octet in k-map and explain their effect on minimization of logic expression. 3+2=5
+
+With a neat circuit diagram and truth table, describe how a basic SR flip-flop works. 
+
+Define number system. Discuss various types of number system and their conversion with suitable example. 2+4+4=10
+
+Compare and contrast the architecture and applications of different types of programmable logic devices in digital circuit design. 5
+
+
+
+# Computer Organization and Architecture
+
+What is instruction format? 2
+
+(V.IMP) Explain the differences between cache memory and main memory. Also describe the mapping techniques(with advantages and disadvantages) used in cache memory(direct, associative and set associative). 4+6=10
+
+What is cache memory? How does it improve system performance?
+
+Explain overlapped register window of RISC CPU with a required diagram.
+
+(V.IMP) Explain the advantages and disadvantages of RISC and CISC architecture in terms of instruction execution, performance and complexity. Describe the concept of pipelining in CPU architecture. Explain how pipelining improves instruction throughput. 4+3+3=10
+
+What are the steps involved in an instruction cycle? Explain 4
+
+Highlight the importance of cache in a CPU. 3
+
+(V.IMP) Differentiate between I/O programming and memory mapped I/O. 5
+
+(V.IMP) What is pipelining in computer system and architecture? Explain the merits and demerits of pipelining. 10
+
+How can parallel processing be achieved in pipelining? 4
+
+Describe the various types of computers based on size and computing power. Compare the speed and capacity of various types of memory. 10
+
+What is the difference between parallellism and pipelining in CPU? Explain.
+
+Compare the Von Neumann and Harvard Architecture of computers. 
+
+Explain the types of parallel processing. Also, describe how L1 and L2 cpu cache work together to increase CPU performance. 5+5=10
+
+Explain the importance of pipelining in high speed applications. Illustrate the behavior of pipelining using space-time diagram. A non-pipelined system takes 50ns to process a task. The same task can be processed in a six segment pipeline with a clock of 10ns. Find the speed up ratio of the pipeline for 100 tasks. 2+3+5=10
+
+"Pipelining is a technique to speedup processing of a processor." Justify this statement with a suitable examaple. Explain about cluster configurations. 6+4=10
+
+Explain the working of microprogrammed control unit with a suitable diagram. 3+2=5
+
+What does interrupt in computer architecture mean? Explain the wroking mechanism of DMA. 2+5=7
+
+Distinguish between parallel and distribute computing. 4
+
+Describe the instruction set design considerations for multitasking machines. Explain the role of privileged instructions in multitasking systems. Explain how the instruction set architecture can be optimized to maximize pipeline efficiency and minimized hazards. 4+3+3=10
+
+(V.IMP) Discuss the meaning and purpose of addressing modes in computer architecture. Explain various types of addressing modes with examples. 4+6=10
+
+Role of DMA in data transfer and how it improves performance over traditional I/O. 
+
+Pipeline hazards with its effects.
 
