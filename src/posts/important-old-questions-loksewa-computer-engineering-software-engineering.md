@@ -327,7 +327,7 @@ Illustrate the difference between D and T flip-flop with its characteristic equa
 
 (V.V.IMP) Differetiate between synchronous counter and asynchronous counter. 
 
-(V.IMP) Explain ripple couter with its truth table and timing diagram. 7
+(V.IMP) Explain ripple counter with its truth table and timing diagram. 7
 
 Design a 3-bit asynchronous up counter using T-flip flop. Explain JK flip flop with its characteristics equation, characteristics table and logic diagram. 8
 

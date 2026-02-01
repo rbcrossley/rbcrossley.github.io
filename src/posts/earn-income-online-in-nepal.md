@@ -45,6 +45,9 @@ In both YouTube and personal website, there are various ways to earn income:
 
 Selling guest posts is an interesting way to generate revenue. It gets dirty at times due to people flooding sites with spammy guest posts. So do it with caution. It is guaranteed and easiest way to generate income but your blog might get penalized by Google. To sell guest posts, join [collaborator.pro](https://collaborator.pro/signup?ref=SS7XVA). You will need some google indexed posts in order to get approved by the platform.
 
+<!-- Collaborator banner (inserted mid-post) -->
+[![Collaborator](https://collaborator.pro/images/referral/promo/en/7.png)](https://collaborator.pro?ref=SS7XVA)
+
 ## Stock photography/video
 
 In this method, you earn by royalty. i.e. You capture pictures. Put it up for review in stock photo websites, once approved, you earn royalty for life. Some pay you per download, whereas some pay per purchase. Some of the popular sites for selling stock photos are shutterstock, 500px etc.
@@ -70,4 +73,4 @@ You might be wondering how to receive payments in Nepal while working online. In
 
 Caution:
 
-Lots of scams ongoing in "make money online" videos in YouTube nepal. There is no easy money. You earn money by spending your time, using your skills etc. Anyone claiming that you can earn by watching ad videos or playing games is trying to fool you. 
+Lots of scams ongoing in "make money online" videos in YouTube nepal. There is no easy money. You earn money by spending your time, using your skills etc. Anyone claiming that you can earn by watching ad videos or playing games is trying to fool you.
