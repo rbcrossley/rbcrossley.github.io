@@ -130,6 +130,8 @@ What is minimum spanning tree? Explain with an example. Explain in detail about 
 
 Explain the types of linear data structures with example. 
 
+Why is linked list also known as dynamic list? Explain the importance of hashing. Discuss linear probing and double hashing. 2+2+6=10
+
 Explain why a liner data structure is important and necessary.
 
 Compare and contrast between breadth first search and depth first search in graph data structure with suitable example.
@@ -393,7 +395,7 @@ Explain the working of microprogrammed control unit with a suitable diagram. 3+2
 
 What does interrupt in computer architecture mean? Explain the wroking mechanism of DMA. 2+5=7
 
-Distinguish between parallel and distribute computing. 4
+Distinguish between parallel and distributed computing. 4
 
 Describe the instruction set design considerations for multitasking machines. Explain the role of privileged instructions in multitasking systems. Explain how the instruction set architecture can be optimized to maximize pipeline efficiency and minimized hazards. 4+3+3=10
 
@@ -402,4 +404,109 @@ Describe the instruction set design considerations for multitasking machines. Ex
 Role of DMA in data transfer and how it improves performance over traditional I/O. 
 
 Pipeline hazards with its effects.
+
+# C,C++,Java,Programming
+
+Discuss the development of computer programming languages including their types and the role of assemblers, compilers and interpreters.
+
+What is recursion? Why do we need recursion? Write a code in C++ to calculate the factorial of a number using recursive function. 2+3+5
+
+Answer the followings: 4+(2+2+2)=10
+
+a) Explain the differences between structural and object-oriented programming using examples from C and C++.
+
+b) A C program uses a struct to manage car data(model, year, max speed) with separate input/display functions. Redesign it in C++ using OOP:
+
+i) Create a Car class with private members for model, year and speed, a constructor and a display() method.
+
+ii) Derive a SportsCar class adding a private top_speed member and also override the display() method.
+
+iii) Add evaluatePerformance() in SportsCar to print "High Performance Vehicle" if top_speed>=200km/h, else "Standard Performance Vehicle".
+
+
+Look at the following code snippet in C and choose the correct answer:
+
+int x=9;
+if(x%2==0){
+    printf("The post-increment is: %d\n",x++);
+}
+if(x%3==0){
+    printf("\nThe pre-decrement is:%d",--x);
+}
+A) The post-increment is:10
+
+B) The pre-decrement is:8
+
+C) The post-increment is:9
+
+D) The pre-decrement is:9
+
+
+Explain the concept of virtual machines in programming languages. How do they contribute to code executing efficiency? Describe. 5
+
+
+Explain how loop optimizations are different from local optimizations.
+
+How does the object oriented programming differ from structured programming? With example, explain the multiple inheritance and function overloading in OOP. Also, list the operators which cannot be overloaded. 3+5+2=10
+
+Answer the following:
+
+a) Write a C program to add two 3x3 matrices and explain briefly. 5
+
+b) Why is inheritance required in OOP? Explain different types of inheritances with suitable diagrams. 1+4
+
+
+What is code generation? What are the benefits and limitations of code generation? How can the limitations be addressed to make code generation a practically valuable tool? 2+4+4=10
+
+
+(V.IMP) How does ambiguity arise in Multipath inheritance? How can you remove this type of ambiguity? Illustrate it with suitable example. 4+6=10
+
+(V.IMP) Write down the impotance of inheritance in CPP. Explain constructor and destructor call sequence in single and multiple inheritance in CPP. How can we resolve ambiguity in multiple inheritance in CPP? 2+4+4=10
+
+(V.IMP) Explain the features of object oriented programming language that makes it better than the structured programming language. Differentiate between multitasking and multiprocessing. 6+4=10
+
+
+Describe the significance of inheritance and polymorphism in OOP. 6
+
+
+
+(V.IMP) Differentiate between object oriented programming and structural programming. 10
+
+
+Explain the concept of inheritance with an example. What is the difference between multiple and multilevel inheritance. 3+2
+
+Explain the characteristics of various generations of computers. When and which generation of computer was first brought into Nepal and for what purpose? 8+2=10
+
+Define the control structures in programming language. Elaborate various control structures with example. 2+8=10
+
+Explain the importance of operator overloading. State the rules for overloading operators. What are the differences between a C++ structure and C++ class in terms of encapsulation and inheritance? Explain abstract class with an example. 2+4+2+2=10
+
+Explain the different levels of programming language. What are the advantages and disadvantages of moving from low level to high level language? 5
+
+Explain constructor and desctructror call sequence in single and multiple inheritance in C++. 4
+
+What is structure? How is it different from array? Explain.
+
+
+# Computer Network
+
+Explain the congestion control and congestion avoidance in detail and also explain briefly the Diffie-Hellman key exchange with an example. 10+10=20
+
+OSI vs TCP/IP model. 6
+
+Discuss about classless inter domain routing(CIDR) along with example. 5
+
+Make a comparative study between OSI and TCP/IP model. Suggest which one is better. 5
+
+Discuss about message authentication and hash functions. 5
+
+Explain the concept of Kerberos authentication and describe the key components involved in the Kerberos protocol. 5
+
+Why are OSI layers required? Draw the block diagram and explain it briefly. 1+4
+
+(V.IMP) Differentiate between IPV4 and IPV6. Briefly expalin IPV6 system with diagram. 2+3
+
+What is IP addressing/ How can IP address be classified?1+4
+
+
 
