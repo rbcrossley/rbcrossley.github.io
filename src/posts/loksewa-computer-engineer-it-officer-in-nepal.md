@@ -198,7 +198,14 @@ I will be sharing my handwritten notes once they are ready to publish(for a smal
 
 # Best books
 
-The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity bookshops.
+The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get these books:
+
+
+[Encyclopedia Computer Engineer/IT Officer](https://s.daraz.com.np/s.ZZzE6?cc)
+
+
+[Gateway To Computer Engineer/IT Officer by Safal](https://s.daraz.com.np/s.ZZzzh?cc)
+
 
 # Salary
 
