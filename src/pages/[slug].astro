@@ -1,0 +1,144 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import CourseSidebar from '../components/CourseSidebar.astro';
+import DiscoverMore from '../components/DiscoverMore.astro';
+import { link } from '../lib/link';
+
+export async function getStaticPaths() {
+  const courses = await getCollection('courses');
+  const topics = await getCollection('topics');
+  const paths = [];
+  const seen = new Set();
+
+  // Individual topic pages first (a topic can act as the course landing too)
+  for (const t of topics) {
+    if (seen.has(t.slug)) continue;
+    seen.add(t.slug);
+    paths.push({
+      params: { slug: t.slug },
+      props: { type: 'topic', topic: t },
+    });
+  }
+
+  // Course landing pages for courses that don't already have a matching topic
+  for (const course of courses) {
+    if (seen.has(course.data.slug)) continue;
+    seen.add(course.data.slug);
+    paths.push({
+      params: { slug: course.data.slug },
+      props: { type: 'course', course },
+    });
+  }
+
+  return paths;
+}
+
+const { type } = Astro.props;
+
+let course;
+let topic;
+let Content;
+let currentSlug;
+let pageTitle;
+let pageDesc;
+
+if (type === 'topic') {
+  topic = Astro.props.topic;
+  const rendered = await topic.render();
+  Content = rendered.Content;
+  currentSlug = topic.slug;
+  pageTitle = topic.data.title;
+  pageDesc = topic.data.description || '';
+  const allCourses = await getCollection('courses');
+  course = allCourses.find((c) => c.data.slug === topic.data.course);
+  if (!course) throw new Error(`Course not found for topic ${topic.slug} (course slug: ${topic.data.course})`);
+} else {
+  course = Astro.props.course;
+  // Try to render the course landing as a topic too (matching slug)
+  const allTopics = await getCollection('topics');
+  const landing = allTopics.find((t) => t.slug === course.data.slug);
+  if (landing) {
+    const rendered = await landing.render();
+    Content = rendered.Content;
+    topic = landing;
+    pageTitle = landing.data.title;
+    pageDesc = landing.data.description || course.data.description;
+  } else {
+    pageTitle = course.data.title;
+    pageDesc = course.data.description;
+  }
+  currentSlug = course.data.slug;
+}
+
+// Find prev / next within sections
+const flat = course.data.sections.flatMap((s) => s.topics);
+const idx = flat.findIndex((t) => t.slug === currentSlug);
+const prev = idx > 0 ? flat[idx - 1] : null;
+const next = idx >= 0 && idx < flat.length - 1 ? flat[idx + 1] : null;
+
+// Discover more from topic data or fallback (next 3 topics)
+let discover = topic?.data?.discoverMore;
+if (!discover || discover.length === 0) {
+  discover = flat
+    .filter((t) => t.slug !== currentSlug)
+    .slice(0, 5)
+    .map((t) => ({ title: t.title, href: `/${t.slug}` }));
+}
+---
+<Base title={`${pageTitle} » Berojgar Engineer`} description={pageDesc}>
+  <div class="course-layout container">
+    <aside class="side-left">
+      <CourseSidebar course={course.data} currentSlug={currentSlug} />
+    </aside>
+    <article class="main-article">
+      <h1 class="article-title">{pageTitle}</h1>
+      <div class="article-content">
+        {Content ? <Content /> : (
+          <p class="placeholder">{course.data.description}</p>
+        )}
+      </div>
+      <div class="prev-next">
+        {prev ? <a class="pn prev" href={link(`/${prev.slug}`)}>← Previous: {prev.title}</a> : <span></span>}
+        {next ? <a class="pn next" href={link(`/${next.slug}`)}>Next: {next.title} →</a> : <span></span>}
+      </div>
+    </article>
+    <aside class="side-right">
+      <DiscoverMore items={discover} />
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .course-layout { display: grid; grid-template-columns: 280px 1fr 280px; gap: 28px; padding: 28px 28px 60px; align-items: start; }
+  .side-left, .side-right { position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto; }
+  .main-article { background: #fff; padding: 8px 4px 30px; min-width: 0; }
+  .article-title { font-size: 32px; font-weight: 800; color: var(--c-text); margin-bottom: 22px; padding-bottom: 14px; border-bottom: 2px solid var(--c-primary-light); }
+  .article-content :global(h2) { font-size: 24px; font-weight: 700; margin: 28px 0 14px; color: var(--c-text); }
+  .article-content :global(h3) { font-size: 19px; font-weight: 700; margin: 22px 0 10px; color: var(--c-text); }
+  .article-content :global(p) { margin: 0 0 16px; line-height: 1.8; color: #333; font-size: 16px; }
+  .article-content :global(ul), .article-content :global(ol) { margin: 0 0 18px 22px; line-height: 1.85; }
+  .article-content :global(li) { margin-bottom: 8px; }
+  .article-content :global(strong) { color: var(--c-text); }
+  .article-content :global(blockquote) { background: var(--c-primary-light); border-left: 4px solid var(--c-primary); padding: 14px 18px; margin: 18px 0; border-radius: 4px; }
+  .article-content :global(a) { color: var(--c-primary); text-decoration: none; }
+  .article-content :global(a):hover { text-decoration: underline; }
+  .article-content :global(table) { border-collapse: collapse; width: 100%; margin: 18px 0; }
+  .article-content :global(th), .article-content :global(td) { border: 1px solid var(--c-border); padding: 10px 14px; text-align: left; }
+  .article-content :global(th) { background: var(--c-primary-light); }
+  .article-content :global(img) { max-width: 100%; height: auto; margin: 18px 0; border-radius: 8px; }
+  .article-content :global(code) { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+  .placeholder { color: var(--c-muted); font-style: italic; }
+  .prev-next { display: flex; justify-content: space-between; gap: 16px; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--c-border); flex-wrap: wrap; }
+  .pn { display: inline-flex; padding: 10px 16px; background: var(--c-primary-light); color: var(--c-primary-dark); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background 0.2s ease, color 0.2s ease; }
+  .pn:hover { background: var(--c-primary); color: #fff; }
+  @media (max-width: 1100px) {
+    .course-layout { grid-template-columns: 260px 1fr; }
+    .side-right { display: none; }
+  }
+  @media (max-width: 768px) {
+    .course-layout { grid-template-columns: 1fr; padding: 18px; }
+    .side-left { position: static; max-height: none; }
+    .article-title { font-size: 26px; }
+  }
+</style>

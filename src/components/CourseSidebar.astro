@@ -1,0 +1,56 @@
+---
+import { link } from '../lib/link';
+export interface Props {
+  course: {
+    title: string;
+    slug: string;
+    sections: {
+      name: string;
+      topics: { slug: string; title: string }[];
+    }[];
+  };
+  currentSlug: string;
+}
+const { course, currentSlug } = Astro.props;
+---
+<nav class="course-sidebar" aria-label="Course navigation">
+  {course.sections.map((section, idx) => {
+    const hasActive = section.topics.some((t) => t.slug === currentSlug);
+    return (
+      <details class="section" open={idx === 0 || hasActive}>
+        <summary class={`section-header ${hasActive ? 'has-active' : ''}`}>
+          <span>{section.name}</span>
+          <span class="chev"></span>
+        </summary>
+        <ul class="topics">
+          {section.topics.map((t) => (
+            <li>
+              <a href={link(`/${t.slug}`)} class={t.slug === currentSlug ? 'active' : ''}>
+                {t.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </details>
+    );
+  })}
+</nav>
+
+<style>
+  .course-sidebar { display: flex; flex-direction: column; gap: 4px; padding-bottom: 24px; }
+  .section { border-radius: 6px; overflow: hidden; }
+  .section-header { background: var(--c-sidebar-section); padding: 14px 18px; font-weight: 700; font-size: 16px; color: var(--c-text); cursor: pointer; display: flex; align-items: center; justify-content: space-between; list-style: none; user-select: none; transition: background 0.2s ease; }
+  .section-header::-webkit-details-marker { display: none; }
+  .section-header:hover { background: var(--c-primary-light); }
+  .section-header.has-active { background: var(--c-primary-light); color: var(--c-primary-dark); }
+  .chev { font-size: 22px; font-weight: 700; color: var(--c-primary); line-height: 1; transition: transform 0.2s ease; }
+  .section:not([open]) .chev::before { content: '+'; }
+  .section[open] .chev::before { content: '\2212'; }
+  .chev { font-size: 0; }
+  .chev::before { font-size: 22px; font-weight: 700; }
+  .topics { list-style: none; padding: 4px 0 8px; margin: 0; }
+  .topics li { margin: 0; }
+  .topics a { display: block; padding: 10px 18px; color: var(--c-text); font-size: 14px; text-decoration: none; transition: background 0.2s ease, color 0.2s ease; border-left: 3px solid transparent; }
+  .topics a:hover { background: var(--c-primary-light); color: var(--c-primary-dark); }
+  .topics a.active { background: var(--c-sidebar-active); color: #fff; font-weight: 600; border-left-color: var(--c-primary-dark); }
+</style>

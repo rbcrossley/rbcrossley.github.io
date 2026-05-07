@@ -1,0 +1,73 @@
+---
+import Base from '../layouts/Base.astro';
+import theme from '../../theme.config.js';
+import { link } from '../lib/link';
+const siteName = theme.site.name;
+const domain = theme.site.domain;
+const email = theme.site.contactEmail;
+const lastUpdated = 'May 7, 2026';
+---
+<Base title={`Terms & Conditions » ${siteName}`} description={`Terms and conditions for using ${siteName}.`}>
+  <section class="page">
+    <div class="container narrow">
+      <h1 class="page-title">Terms &amp; Conditions</h1>
+      <p class="meta">Last updated: <strong>{lastUpdated}</strong></p>
+
+      <p>Welcome to <strong>{siteName}</strong>!</p>
+      <p>These terms and conditions outline the rules and regulations for the use of {siteName}’s website, located at <strong>https://{domain}</strong>.</p>
+      <p>By accessing this website we assume you accept these terms and conditions. Do not continue to use {siteName} if you do not agree to take all of the terms and conditions stated on this page.</p>
+
+      <h2>1. Cookies</h2>
+      <p>We employ the use of cookies. By accessing {siteName}, you agreed to use cookies in agreement with our <a href={link('/privacy-policy')}>Privacy Policy</a>.</p>
+      <p>Most interactive websites use cookies to let us retrieve user details for each visit. Cookies are used by our website to enable functionality and ease of use for those people visiting.</p>
+
+      <h2>2. License</h2>
+      <p>Unless otherwise stated, {siteName} and/or its licensors own the intellectual property rights for all material on {siteName}. All intellectual property rights are reserved. You may access this from {siteName} for your own personal use subjected to restrictions set in these terms and conditions.</p>
+      <p>You must not:</p>
+      <ul>
+        <li>Republish material from {siteName}</li>
+        <li>Sell, rent or sub-license material from {siteName}</li>
+        <li>Reproduce, duplicate or copy material from {siteName}</li>
+        <li>Redistribute content from {siteName}</li>
+      </ul>
+
+      <h2>3. User Content</h2>
+      <p>Parts of this website offer an opportunity for users to post and exchange opinions and information (e.g. comments, suggestions, contributor submissions). {siteName} does not filter, edit, publish or review submissions prior to their presence on the website. Submissions reflect the views and opinions of the person who posts them.</p>
+      <p>{siteName} reserves the right to monitor all submissions and to remove any submissions which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.</p>
+
+      <h2>4. Hyperlinking to Our Content</h2>
+      <p>The following organizations may link to our website without prior written approval: government agencies; search engines; news organizations; online directory distributors; and system-wide accredited businesses.</p>
+      <p>These organizations may link to our home page, to publications or to other website information so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval; and (c) fits within the context of the linking party’s site.</p>
+
+      <h2>5. iFrames</h2>
+      <p>Without prior approval and written permission, you may not create frames around our webpages that alter in any way the visual presentation or appearance of our website.</p>
+
+      <h2>6. Content Liability</h2>
+      <p>We shall not be held responsible for any content that appears on third-party websites that link to {siteName}. No link(s) should appear on any website that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights.</p>
+
+      <h2>7. Reservation of Rights</h2>
+      <p>We reserve the right to request that you remove all links or any particular link to our website. You approve to immediately remove all links to our website upon request. We also reserve the right to amend these terms and conditions and its linking policy at any time.</p>
+
+      <h2>8. Disclaimer</h2>
+      <p>To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our website and the use of this website. See our <a href={link('/disclaimer')}>Disclaimer</a> page for more information.</p>
+
+      <h2>9. Governing Law</h2>
+      <p>These Terms shall be governed and construed in accordance with the applicable laws of the territory in which the site owner resides, without regard to its conflict of law provisions.</p>
+
+      <h2>10. Contact</h2>
+      <p>For questions about these Terms, please email <a href={`mailto:${email}`}>{email}</a> or visit our <a href={link('/contact')}>contact page</a>.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page { padding: 50px 0 60px; }
+  .narrow { max-width: 800px; }
+  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 8px; color: var(--c-text); }
+  .meta { color: var(--c-muted); font-size: 14px; margin-bottom: 30px; }
+  h2 { font-size: 22px; margin: 30px 0 12px; color: var(--c-primary-dark); }
+  p { line-height: 1.85; margin: 0 0 14px; }
+  ul { margin: 0 0 16px 22px; line-height: 1.85; }
+  li { margin-bottom: 6px; }
+  a { color: var(--c-primary); text-decoration: underline; }
+</style>

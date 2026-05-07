@@ -1,0 +1,26 @@
+{
+  "slug": "design-and-analysis-of-algorithms",
+  "title": "Design & Analysis of Algorithms",
+  "short": "Design & Analysis of Algorithms",
+  "icon": "/icons/algorithm.png",
+  "description": "Learn the design techniques and analysis tools for efficient algorithms.",
+  "sections": [
+    {
+      "name": "Introduction",
+      "topics": [
+        { "slug": "design-and-analysis-of-algorithms", "title": "Introduction to Algorithms" },
+        { "slug": "asymptotic-notation", "title": "Asymptotic Notation" },
+        { "slug": "time-complexity", "title": "Time Complexity" }
+      ]
+    },
+    {
+      "name": "Algorithm Design Techniques",
+      "topics": [
+        { "slug": "divide-and-conquer", "title": "Divide and Conquer" },
+        { "slug": "greedy-algorithm", "title": "Greedy Algorithms" },
+        { "slug": "dynamic-programming", "title": "Dynamic Programming" },
+        { "slug": "backtracking", "title": "Backtracking" }
+      ]
+    }
+  ]
+}

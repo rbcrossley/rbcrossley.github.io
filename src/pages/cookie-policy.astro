@@ -1,0 +1,56 @@
+---
+import Base from '../layouts/Base.astro';
+import theme from '../../theme.config.js';
+import { link } from '../lib/link';
+const siteName = theme.site.name;
+const domain = theme.site.domain;
+const email = theme.site.contactEmail;
+const lastUpdated = 'May 7, 2026';
+---
+<Base title={`Cookie Policy » ${siteName}`} description={`Learn about how ${siteName} uses cookies.`}>
+  <section class="page">
+    <div class="container narrow">
+      <h1 class="page-title">Cookie Policy</h1>
+      <p class="meta">Last updated: <strong>{lastUpdated}</strong></p>
+
+      <p>This Cookie Policy explains what cookies are and how we use them on <strong>https://{domain}</strong>. You should read this policy so you can understand what type of cookies we use, and how you can control your cookie preferences.</p>
+
+      <h2>1. What are cookies?</h2>
+      <p>Cookies are small text files that are stored on your computer or mobile device when you visit a website. They are widely used in order to make websites work, or work more efficiently, as well as to provide information to the owners of the site.</p>
+
+      <h2>2. How do we use cookies?</h2>
+      <p>{siteName} uses cookies for the following purposes:</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> required for the website to function (page navigation, theme preference).</li>
+        <li><strong>Analytics cookies:</strong> help us understand how visitors interact with the site so that we can improve it.</li>
+        <li><strong>Advertising cookies:</strong> used by third-party providers like Google AdSense to display ads relevant to you.</li>
+      </ul>
+
+      <h2>3. Third-party cookies</h2>
+      <p>In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the service and deliver advertisements on and through the service. Specifically:</p>
+      <ul>
+        <li><strong>Google AdSense</strong> uses cookies to serve ads based on your prior visits to our website or other websites. <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google’s use of advertising cookies</a> enables it and its partners to serve ads to users.</li>
+        <li><strong>Google Analytics</strong> (if enabled) sets cookies that help us measure traffic and usage activity for the website.</li>
+      </ul>
+
+      <h2>4. How can you control cookies?</h2>
+      <p>You can opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener">Google Ads Settings</a>. You may also opt out of a third-party vendor’s use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener">www.aboutads.info</a>.</p>
+      <p>Most modern browsers also let you control cookies through their settings. To find out more, visit <a href="https://www.aboutcookies.org" target="_blank" rel="noopener">aboutcookies.org</a> or the help section of your specific browser.</p>
+
+      <h2>5. More information</h2>
+      <p>For more information about how we handle your data, please refer to our <a href={link('/privacy-policy')}>Privacy Policy</a>. If you have any questions about our use of cookies, contact us at <a href={`mailto:${email}`}>{email}</a>.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page { padding: 50px 0 60px; }
+  .narrow { max-width: 800px; }
+  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 8px; color: var(--c-text); }
+  .meta { color: var(--c-muted); font-size: 14px; margin-bottom: 30px; }
+  h2 { font-size: 22px; margin: 30px 0 12px; color: var(--c-primary-dark); }
+  p { line-height: 1.85; margin: 0 0 14px; }
+  ul { margin: 0 0 16px 22px; line-height: 1.85; }
+  li { margin-bottom: 6px; }
+  a { color: var(--c-primary); text-decoration: underline; }
+</style>

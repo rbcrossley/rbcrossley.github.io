@@ -1,0 +1,38 @@
+{
+  "slug": "dbms",
+  "title": "DBMS",
+  "short": "Database Management System",
+  "icon": "/icons/database.png",
+  "description": "DBMS is software for creating and managing databases. It provides a systematic way to create, retrieve, update and manage data.",
+  "sections": [
+    {
+      "name": "Introduction",
+      "topics": [
+        { "slug": "dbms", "title": "Introduction to DBMS" },
+        { "slug": "dbms-architecture", "title": "DBMS Architecture" }
+      ]
+    },
+    {
+      "name": "Data Models",
+      "topics": [
+        { "slug": "er-model", "title": "ER Model" },
+        { "slug": "relational-model", "title": "Relational Model" }
+      ]
+    },
+    {
+      "name": "SQL",
+      "topics": [
+        { "slug": "sql-introduction", "title": "SQL Introduction" },
+        { "slug": "sql-queries", "title": "SQL Queries" },
+        { "slug": "sql-joins", "title": "SQL Joins" }
+      ]
+    },
+    {
+      "name": "Normalization",
+      "topics": [
+        { "slug": "normalization", "title": "Normalization" },
+        { "slug": "normal-forms", "title": "Normal Forms" }
+      ]
+    }
+  ]
+}

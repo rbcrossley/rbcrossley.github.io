@@ -1,0 +1,170 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import theme from '../../theme.config.js';
+import { link } from '../lib/link';
+
+const courses = await getCollection('courses');
+const blogPosts = (await getCollection('blog'))
+  .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date))
+  .slice(0, 3);
+---
+<Base title="Berojgar Engineer - Concept Clarity for CS Students">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner container">
+      <div class="hero-text">
+        <h1>Concept Clarity: Guiding Computer Science Students to Mastery</h1>
+        <p>
+          Berojgar Engineer is your virtual classroom, dedicated to empowering computer science students with comprehensive insights and practical knowledge. Explore our blog for expertly crafted resources designed to demystify complex concepts and propel your learning to new heights.
+        </p>
+        <div class="hero-cta">
+          <a href={link('/courses')} class="btn-primary">Explore Courses</a>
+          <a href={link('/blog')} class="btn-ghost">Read Blog</a>
+        </div>
+      </div>
+      <div class="hero-illu">
+        <svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <ellipse cx="260" cy="450" rx="230" ry="30" fill="#FFE4EA"/>
+          <rect x="110" y="80" width="60" height="60" rx="6" fill="#2E3141" stroke="#fff" stroke-width="3"/>
+          <text x="140" y="118" font-family="Poppins" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">CSS</text>
+          <rect x="110" y="160" width="60" height="60" rx="6" fill="#2E3141" stroke="#fff" stroke-width="3"/>
+          <text x="140" y="198" font-family="Poppins" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">HTML</text>
+          <rect x="110" y="240" width="60" height="60" rx="6" fill="#2E3141" stroke="#fff" stroke-width="3"/>
+          <text x="140" y="278" font-family="Poppins" font-size="20" font-weight="700" fill="#fff" text-anchor="middle">C++</text>
+          <path d="M210 110 L260 50 L310 110 L260 80 Z" fill="#E91E63"/>
+          <text x="260" y="95" font-family="Poppins" font-size="22" font-weight="700" fill="#fff" text-anchor="middle">&lt;/&gt;</text>
+          <rect x="190" y="160" width="260" height="170" rx="8" fill="#2E3141" stroke="#E91E63" stroke-width="3"/>
+          <rect x="205" y="180" width="230" height="4" fill="#E91E63"/>
+          <rect x="205" y="195" width="180" height="4" fill="#fff" opacity="0.6"/>
+          <rect x="205" y="210" width="150" height="4" fill="#fff" opacity="0.4"/>
+          <rect x="205" y="225" width="200" height="4" fill="#fff" opacity="0.5"/>
+          <rect x="205" y="240" width="170" height="4" fill="#fff" opacity="0.4"/>
+          <rect x="205" y="255" width="190" height="4" fill="#fff" opacity="0.5"/>
+          <rect x="205" y="275" width="100" height="4" fill="#E91E63"/>
+          <rect x="205" y="290" width="140" height="4" fill="#fff" opacity="0.4"/>
+          <rect x="205" y="305" width="160" height="4" fill="#fff" opacity="0.5"/>
+          <rect x="230" y="330" width="180" height="10" fill="#2E3141"/>
+          <ellipse cx="320" cy="345" rx="60" ry="6" fill="#1a1c26"/>
+          <circle cx="260" cy="380" r="22" fill="#FFC1D0"/>
+          <rect x="235" y="395" width="60" height="55" rx="6" fill="#E91E63"/>
+          <path d="M255 450 L235 480 L245 480 L255 460 Z" fill="#2E3141"/>
+          <path d="M275 450 L295 480 L285 480 L275 460 Z" fill="#2E3141"/>
+          <ellipse cx="420" cy="320" rx="40" ry="60" fill="#E91E63" opacity="0.85"/>
+          <ellipse cx="420" cy="260" rx="34" ry="50" fill="#FF4F8B" opacity="0.8"/>
+          <rect x="410" y="330" width="20" height="60" fill="#444"/>
+          <rect x="395" y="388" width="50" height="6" fill="#2E3141"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- COURSES -->
+  <section class="courses-section">
+    <div class="container">
+      <h2 class="section-title">Start Learning...!</h2>
+      <p class="section-sub">
+        Discover your passion in Computer Science! Click on the subject you wish to learn; we’ve covered a wide array of topics and continue to expand. You can also suggest topics or become a contributor!
+      </p>
+      <div class="section-cta">
+        <a href={link('/suggest-a-topic')} class="chip">Suggest a topic</a>
+        <a href={link('/become-a-contributer')} class="chip">Become a Contributer</a>
+      </div>
+      <div class="courses-grid">
+        {courses.map((course) => (
+          <a class="course-card" href={link(`/${course.data.slug}`)}>
+            <div class="course-icon">
+              <span>{(course.data.short.split(/\s+/).filter((w: string) => /^[A-Za-z]/.test(w)).slice(0,2).map((w: string) => w.charAt(0).toUpperCase()).join('')) || course.data.short.replace(/[^A-Za-z]/g,'').slice(0,2).toUpperCase()}</span>
+            </div>
+            <span class="course-name">{course.data.short}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog-section">
+    <div class="container">
+      <h2 class="section-title">Read latest from blog</h2>
+      <div class="blog-grid">
+        {blogPosts.map((post) => (
+          <a href={link(`/blog/${post.slug}`)} class="blog-card">
+            <div class="blog-image" style={`background-image: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));`}>
+              <span class="blog-tag">Blog</span>
+            </div>
+            <div class="blog-body">
+              <h3>{post.data.title}</h3>
+              <p>{post.data.description}</p>
+              <span class="read-more">Read More »</span>
+              <div class="meta">{post.data.author} · No Comments</div>
+            </div>
+          </a>
+        ))}
+      </div>
+      <div class="view-all-wrap"><a class="btn-outline" href={link('/blog')}>View Blog</a></div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero { background: var(--c-hero-bg); color: var(--c-hero-text); padding: 70px 0 80px; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: -120px; right: -120px; width: 360px; height: 360px; border-radius: 50%; background: radial-gradient(circle, rgba(233,30,99,0.18), transparent 70%); }
+  .hero-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 40px; align-items: center; position: relative; }
+  .hero h1 { font-size: 44px; line-height: 1.15; color: var(--c-hero-accent); font-weight: 800; margin-bottom: 22px; }
+  .hero p { font-size: 17px; line-height: 1.75; color: #d8dae3; max-width: 640px; }
+  .hero-cta { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary { display: inline-flex; align-items: center; padding: 12px 26px; background: var(--c-primary); color: #fff; border-radius: 999px; font-weight: 600; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; box-shadow: 0 4px 12px rgba(233, 30, 99, 0.3); }
+  .btn-primary:hover { background: var(--c-primary-dark); transform: translateY(-1px); }
+  .btn-ghost { display: inline-flex; align-items: center; padding: 12px 26px; border: 2px solid rgba(255,255,255,0.3); color: #fff; border-radius: 999px; font-weight: 600; text-decoration: none; transition: border-color 0.2s ease, background 0.2s ease; }
+  .btn-ghost:hover { border-color: var(--c-primary); background: rgba(233, 30, 99, 0.12); }
+  .hero-illu svg { width: 100%; height: auto; max-width: 520px; margin-left: auto; }
+
+  .courses-section { padding: 64px 0 48px; }
+  .section-title { text-align: center; font-size: 34px; font-weight: 800; color: var(--c-text); margin-bottom: 14px; }
+  .section-sub { text-align: center; max-width: 760px; margin: 0 auto 22px; color: var(--c-muted); font-size: 15px; line-height: 1.7; }
+  .section-cta { display: flex; gap: 12px; justify-content: center; margin-bottom: 36px; flex-wrap: wrap; }
+  .chip { display: inline-flex; align-items: center; padding: 10px 22px; background: var(--c-primary); color: #fff; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
+  .chip:hover { background: var(--c-primary-dark); transform: translateY(-1px); }
+
+  .courses-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
+  .course-card { display: flex; flex-direction: column; align-items: center; padding: 26px 16px; background: var(--c-card-bg); border: 1px solid var(--c-card-border); border-radius: 12px; text-decoration: none; color: var(--c-text); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; text-align: center; }
+  .course-card:hover { transform: translateY(-4px); border-color: var(--c-primary); box-shadow: 0 12px 30px rgba(233, 30, 99, 0.15); }
+  .course-icon { width: 90px; height: 90px; border-radius: 50%; background: var(--c-primary-light); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; transition: background 0.2s ease; }
+  .course-card:hover .course-icon { background: var(--c-primary); }
+  .course-icon span { font-weight: 800; font-size: 28px; color: var(--c-primary); transition: color 0.2s ease; }
+  .course-card:hover .course-icon span { color: #fff; }
+  .course-name { font-weight: 600; font-size: 15px; line-height: 1.35; }
+
+  .blog-section { padding: 48px 0 24px; background: #fafafa; }
+  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 36px; }
+  .blog-card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06); text-decoration: none; color: var(--c-text); transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; }
+  .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.10); }
+  .blog-image { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark)); position: relative; }
+  .blog-tag { position: absolute; bottom: 14px; left: 14px; background: rgba(0,0,0,0.55); color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
+  .blog-body { padding: 22px; }
+  .blog-body h3 { font-size: 18px; line-height: 1.35; margin-bottom: 10px; color: var(--c-text); }
+  .blog-body p { font-size: 14px; color: var(--c-muted); margin: 0 0 12px; }
+  .read-more { color: var(--c-primary); font-weight: 600; font-size: 14px; }
+  .meta { margin-top: 14px; font-size: 12px; color: var(--c-muted); }
+  .view-all-wrap { display: flex; justify-content: center; margin: 36px 0 16px; }
+  .btn-outline { display: inline-flex; padding: 10px 28px; border: 2px solid var(--c-primary); color: var(--c-primary); border-radius: 999px; font-weight: 600; text-decoration: none; transition: background 0.2s ease, color 0.2s ease; }
+  .btn-outline:hover { background: var(--c-primary); color: #fff; }
+
+  @media (max-width: 1024px) {
+    .hero h1 { font-size: 36px; }
+    .courses-grid { grid-template-columns: repeat(4, 1fr); }
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 768px) {
+    .hero-inner { grid-template-columns: 1fr; gap: 30px; }
+    .hero-illu { order: -1; max-width: 380px; margin: 0 auto; }
+    .hero h1 { font-size: 30px; }
+    .courses-grid { grid-template-columns: repeat(3, 1fr); }
+    .blog-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) {
+    .courses-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+    .section-title { font-size: 28px; }
+  }
+</style>

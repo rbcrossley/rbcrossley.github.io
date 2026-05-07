@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Contact us » Berojgar Engineer" description="Get in touch with the Berojgar Engineer team">
+  <section class="page">
+    <div class="container narrow">
+      <h1 class="page-title">Contact us</h1>
+      <p>Have a question, suggestion, or feedback? Drop us a message and we'll get back to you.</p>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('cf-success').style.display='block'; this.reset();">
+        <div class="row">
+          <div class="field">
+            <label>Your Name</label>
+            <input type="text" required placeholder="John Doe" />
+          </div>
+          <div class="field">
+            <label>Your Email</label>
+            <input type="email" required placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Subject</label>
+          <input type="text" required placeholder="How can we help?" />
+        </div>
+        <div class="field">
+          <label>Message</label>
+          <textarea rows="6" required placeholder="Write your message here..."></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+        <p id="cf-success" class="success">✓ Thanks! Your message has been received (demo).</p>
+      </form>
+    </div>
+  </section>
+</Base>
+<style>
+  .page { padding: 50px 0 60px; }
+  .narrow { max-width: 760px; }
+  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; color: var(--c-text); }
+  p { color: var(--c-muted); margin-bottom: 24px; }
+  .contact-form { display: flex; flex-direction: column; gap: 16px; background: #fff; border: 1px solid var(--c-border); padding: 26px; border-radius: 12px; }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  label { font-weight: 600; font-size: 14px; }
+  input, textarea { padding: 11px 14px; border: 1px solid var(--c-border); border-radius: 8px; font-family: inherit; font-size: 14px; transition: border-color 0.2s ease, box-shadow 0.2s ease; outline: none; }
+  input:focus, textarea:focus { border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.15); }
+  .btn-primary { align-self: flex-start; padding: 12px 28px; background: var(--c-primary); color: #fff; border: 0; border-radius: 999px; font-weight: 600; cursor: pointer; transition: background 0.2s ease; }
+  .btn-primary:hover { background: var(--c-primary-dark); }
+  .success { display: none; color: #16a34a; font-weight: 600; margin-top: 8px; }
+  @media (max-width: 640px) { .row { grid-template-columns: 1fr; } }
+</style>

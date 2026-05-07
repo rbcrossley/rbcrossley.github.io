@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Become a Contributor » Berojgar Engineer">
+  <section class="page">
+    <div class="container narrow">
+      <h1 class="page-title">Become a Contributor</h1>
+      <p>Help fellow students by contributing notes, articles or topic explanations to Berojgar Engineer.</p>
+      <h2>Why Contribute?</h2>
+      <ul>
+        <li>Strengthen your own understanding</li>
+        <li>Get recognition with author credits on every article</li>
+        <li>Build your portfolio</li>
+        <li>Help students worldwide</li>
+      </ul>
+      <h2>How to Apply</h2>
+      <p>Send us a brief about yourself and a sample article you'd like to contribute via the form below.</p>
+      <form class="contact-form" onsubmit="event.preventDefault(); document.getElementById('c-success').style.display='block'; this.reset();">
+        <div class="field"><label>Full Name</label><input type="text" required /></div>
+        <div class="field"><label>Email</label><input type="email" required /></div>
+        <div class="field"><label>Areas of Expertise</label><input type="text" placeholder="e.g., DBMS, Networking" required /></div>
+        <div class="field"><label>Sample Article / Link</label><textarea rows="5" required></textarea></div>
+        <button class="btn-primary" type="submit">Apply</button>
+        <p id="c-success" class="success">✓ Thanks! We'll be in touch soon.</p>
+      </form>
+    </div>
+  </section>
+</Base>
+<style>
+  .page { padding: 50px 0 60px; }
+  .narrow { max-width: 760px; }
+  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; }
+  h2 { font-size: 22px; margin: 26px 0 12px; color: var(--c-primary-dark); }
+  ul { margin: 0 0 16px 22px; line-height: 1.85; }
+  .contact-form { display: flex; flex-direction: column; gap: 16px; background: #fff; border: 1px solid var(--c-border); padding: 26px; border-radius: 12px; margin-top: 14px; }
+  .field { display: flex; flex-direction: column; gap: 6px; }
+  label { font-weight: 600; font-size: 14px; }
+  input, textarea { padding: 11px 14px; border: 1px solid var(--c-border); border-radius: 8px; font-family: inherit; font-size: 14px; outline: none; transition: border-color 0.2s ease, box-shadow 0.2s ease; }
+  input:focus, textarea:focus { border-color: var(--c-primary); box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.15); }
+  .btn-primary { align-self: flex-start; padding: 12px 28px; background: var(--c-primary); color: #fff; border: 0; border-radius: 999px; font-weight: 600; cursor: pointer; transition: background 0.2s ease; }
+  .btn-primary:hover { background: var(--c-primary-dark); }
+  .success { display: none; color: #16a34a; font-weight: 600; }
+</style>

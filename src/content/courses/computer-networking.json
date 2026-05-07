@@ -1,0 +1,96 @@
+{
+  "slug": "computer-networking",
+  "title": "Computer Networking",
+  "short": "Computer Networking",
+  "icon": "/icons/networking.png",
+  "description": "A computer network contains a group of computers that use common communication protocols to share resources.",
+  "sections": [
+    {
+      "name": "Intro To Networking",
+      "topics": [
+        { "slug": "computer-networking", "title": "Computer Networking Introduction" },
+        { "slug": "network-architecture", "title": "Network Architecture" },
+        { "slug": "types-of-computers-network", "title": "Types of Computer Networks" },
+        { "slug": "server-and-its-types", "title": "Server and Its Types" },
+        { "slug": "network-protocols", "title": "Network Protocols" },
+        { "slug": "types-of-data-transmission", "title": "Types of Data Transmission" },
+        { "slug": "data-and-signals", "title": "Data and Signals" },
+        { "slug": "network-devices-all-layers", "title": "Network Devices (All Layers)" }
+      ]
+    },
+    {
+      "name": "Networking Models",
+      "topics": [
+        { "slug": "networking-models", "title": "Networking Models" },
+        { "slug": "osi-model", "title": "OSI Model" },
+        { "slug": "tcp-ip-model", "title": "TCP/IP Model" }
+      ]
+    },
+    {
+      "name": "Physical Layer",
+      "topics": [
+        { "slug": "physical-layer", "title": "Physical Layer" },
+        { "slug": "transmission-media-in-computer-networks", "title": "Transmission Media In Computer Networks" },
+        { "slug": "guided-transmission-media", "title": "Guided Transmission Media" },
+        { "slug": "unguided-transmission-media", "title": "Unguided Transmission Media" },
+        { "slug": "data-transmission-modes", "title": "Data Transmission Modes" },
+        { "slug": "network-topologies", "title": "Computer Network Topologies" }
+      ]
+    },
+    {
+      "name": "Data Link Layer",
+      "topics": [
+        { "slug": "data-link-layer", "title": "Data Link Layer" },
+        { "slug": "framing-in-data-link-layer", "title": "Framing In Data Link Layer" },
+        { "slug": "flow-control-in-data-link-layer", "title": "Flow Control in Data Link Layer" },
+        { "slug": "error-detection-at-data-link-layer", "title": "Error Detection at Data Link Layer" },
+        { "slug": "hamming-code-for-error-correction", "title": "Hamming Code For Error Correction" },
+        { "slug": "medium-access-protocols", "title": "Medium Access Protocols" },
+        { "slug": "mac-addressing", "title": "MAC Addressing" }
+      ]
+    },
+    {
+      "name": "Network Layer",
+      "topics": [
+        { "slug": "network-layer", "title": "Network Layer" },
+        { "slug": "ip-addressing", "title": "IP Addressing" },
+        { "slug": "classful-ip-addressing", "title": "Classful IP Addressing" },
+        { "slug": "classless-ip-addressing", "title": "Classless IP Addressing" },
+        { "slug": "subnetting-and-its-types", "title": "Subnetting and Its Types" },
+        { "slug": "ipv4-datagram-format", "title": "IPv4 Datagram Format" },
+        { "slug": "ipv6-header-format", "title": "IPV6 Header Format" },
+        { "slug": "router-and-its-functionalities", "title": "Router And Its Functionalities" }
+      ]
+    },
+    {
+      "name": "Transport Layer",
+      "topics": [
+        { "slug": "transport-layer", "title": "Transport Layer" },
+        { "slug": "tcp-vs-udp", "title": "TCP VS UDP" },
+        { "slug": "end-to-end-delivery", "title": "End-to-End Delivery (Port-to-Port Delivery)" },
+        { "slug": "segmentation-and-reassembly", "title": "Segmentation and Reassembly" }
+      ]
+    },
+    {
+      "name": "Session Layer",
+      "topics": [
+        { "slug": "session-layer-in-networking", "title": "Session Layer in Networking" },
+        { "slug": "session-layer-protocols", "title": "Session Layer Protocols" }
+      ]
+    },
+    {
+      "name": "Presentation Layer",
+      "topics": [
+        { "slug": "presentation-layer-in-networking", "title": "Presentation Layer in Networking" },
+        { "slug": "presentation-layer-functions-with-protocols", "title": "Presentation Layer Functions with Protocols" }
+      ]
+    },
+    {
+      "name": "Application Layer",
+      "topics": [
+        { "slug": "application-layer-in-networking", "title": "Application Layer in Networking" },
+        { "slug": "application-layer-protocols", "title": "Application Layer Protocols" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+---
+import Base from '../layouts/Base.astro';
+import { link } from '../lib/link';
+---
+<Base title="About Us » Berojgar Engineer" description="Learn more about Berojgar Engineer and our mission.">
+  <section class="page">
+    <div class="container narrow">
+      <h1 class="page-title">About Us</h1>
+      <p>
+        <strong>Berojgar Engineer</strong> is a virtual classroom dedicated to empowering computer science students with comprehensive insights and practical knowledge. Our mission is to demystify complex computer science concepts and present them in a way that's easy to understand and remember.
+      </p>
+      <h2>Our Vision</h2>
+      <p>
+        To become the go-to resource for CS students worldwide, providing well-curated, free, and high-quality educational content.
+      </p>
+      <h2>What We Offer</h2>
+      <ul>
+        <li>Structured course content for all major CS subjects</li>
+        <li>Beginner-friendly explanations</li>
+        <li>Real-world examples and case studies</li>
+        <li>Regular blog posts on industry trends and tips</li>
+      </ul>
+      <h2>Join Our Community</h2>
+      <p>
+        Have a topic you'd like us to cover? Want to contribute your own knowledge to help fellow students? We'd love to hear from you on our <a href={link('/contact')}>contact page</a>.
+      </p>
+    </div>
+  </section>
+</Base>
+<style>
+  .page { padding: 50px 0 60px; }
+  .narrow { max-width: 800px; }
+  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 20px; color: var(--c-text); }
+  h2 { font-size: 22px; margin: 26px 0 12px; color: var(--c-primary-dark); }
+  p { line-height: 1.85; margin: 0 0 16px; }
+  ul { margin: 0 0 16px 22px; line-height: 1.85; }
+  a { color: var(--c-primary); text-decoration: underline; }
+</style>

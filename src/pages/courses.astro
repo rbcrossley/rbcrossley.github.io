@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { link } from '../lib/link';
+
+const courses = await getCollection('courses');
+---
+<Base title="Courses » Berojgar Engineer" description="All computer science courses">
+  <section class="page">
+    <div class="container">
+      <h1 class="page-title">All Courses</h1>
+      <p class="page-sub">Pick a subject below and start learning. Each course includes structured topics, easy explanations, and quick-reference notes.</p>
+      <div class="courses-grid">
+        {courses.map((course) => (
+          <a class="course-card" href={link(`/${course.data.slug}`)}>
+            <div class="course-icon">
+              <span>{course.data.short.split(' ').slice(0,2).map(w => w.charAt(0).toUpperCase()).join('')}</span>
+            </div>
+            <h3>{course.data.short}</h3>
+            <p>{course.data.description}</p>
+            <span class="link">Start Learning →</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page { padding: 50px 0 60px; }
+  .page-title { font-size: 36px; font-weight: 800; text-align: center; margin-bottom: 10px; }
+  .page-sub { text-align: center; color: var(--c-muted); max-width: 720px; margin: 0 auto 40px; }
+  .courses-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+  .course-card { background: #fff; border: 1px solid var(--c-card-border); border-radius: 12px; padding: 26px; text-decoration: none; color: var(--c-text); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; display: flex; flex-direction: column; gap: 12px; }
+  .course-card:hover { transform: translateY(-4px); border-color: var(--c-primary); box-shadow: 0 12px 30px rgba(233,30,99,0.12); }
+  .course-icon { width: 64px; height: 64px; border-radius: 50%; background: var(--c-primary-light); display: inline-flex; align-items: center; justify-content: center; font-weight: 800; color: var(--c-primary); font-size: 22px; }
+  .course-card h3 { font-size: 20px; }
+  .course-card p { color: var(--c-muted); font-size: 14px; line-height: 1.65; flex: 1; }
+  .link { color: var(--c-primary); font-weight: 600; font-size: 14px; }
+  @media (max-width: 1024px) { .courses-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .courses-grid { grid-template-columns: 1fr; } }
+</style>

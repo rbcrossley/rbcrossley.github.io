@@ -1,0 +1,64 @@
+---
+import { link } from '../lib/link';
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="col">
+      <div class="logo-mark">BE</div>
+      <p class="about">Berojgar Engineer is your virtual classroom, dedicated to empowering computer science students with comprehensive insights and practical knowledge.</p>
+    </div>
+    <div class="col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href={link('/')}>Home</a></li>
+        <li><a href={link('/courses')}>Courses</a></li>
+        <li><a href={link('/blog')}>Blog</a></li>
+        <li><a href={link('/about')}>About Us</a></li>
+        <li><a href={link('/contact')}>Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Popular Subjects</h4>
+      <ul>
+        <li><a href={link('/data-structure')}>Data Structure</a></li>
+        <li><a href={link('/computer-networking')}>Computer Networking</a></li>
+        <li><a href={link('/operating-system')}>Operating System</a></li>
+        <li><a href={link('/dbms')}>DBMS</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href={link('/privacy-policy')}>Privacy Policy</a></li>
+        <li><a href={link('/terms')}>Terms &amp; Conditions</a></li>
+        <li><a href={link('/disclaimer')}>Disclaimer</a></li>
+        <li><a href={link('/cookie-policy')}>Cookie Policy</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Contribute</h4>
+      <ul>
+        <li><a href={link('/suggest-a-topic')}>Suggest a topic</a></li>
+        <li><a href={link('/become-a-contributer')}>Become a Contributor</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© {new Date().getFullYear()} Berojgar Engineer. All rights reserved.</p>
+  </div>
+</footer>
+
+<style>
+  .site-footer { background: var(--c-footer-bg); color: var(--c-footer-text); margin-top: 60px; }
+  .footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 28px 32px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 36px; }
+  .col h4 { color: #fff; font-size: 16px; font-weight: 700; margin: 0 0 16px; }
+  .col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  .col a { color: var(--c-footer-text); text-decoration: none; font-size: 14px; transition: color 0.2s ease; }
+  .col a:hover { color: var(--c-primary); }
+  .logo-mark { width: 56px; height: 50px; border-radius: 6px; background: var(--c-logo); color: #fff; font-weight: 800; font-style: italic; font-size: 22px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; }
+  .about { color: #cfd2dc; font-size: 14px; line-height: 1.7; max-width: 380px; }
+  .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding: 16px 28px; text-align: center; font-size: 13px; color: #a8acb8; }
+  @media (max-width: 1024px) { .footer-inner { grid-template-columns: 1fr 1fr 1fr; gap: 28px; } }
+  @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr 1fr; padding: 40px 24px; } }
+  @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
+</style>

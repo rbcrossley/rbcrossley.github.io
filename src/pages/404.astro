@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import { link } from '../lib/link';
+---
+<Base title="Page Not Found » Berojgar Engineer">
+  <section class="page">
+    <div class="container narrow">
+      <h1>404</h1>
+      <h2>Page Not Found</h2>
+      <p>The page you're looking for doesn't exist or has been moved.</p>
+      <a class="btn-primary" href={link('/')}>← Back to Home</a>
+    </div>
+  </section>
+</Base>
+<style>
+  .page { padding: 100px 0 80px; text-align: center; }
+  .narrow { max-width: 600px; }
+  h1 { font-size: 96px; color: var(--c-primary); margin-bottom: 8px; line-height: 1; }
+  h2 { font-size: 28px; margin-bottom: 14px; }
+  p { color: var(--c-muted); margin-bottom: 26px; }
+  .btn-primary { display: inline-flex; padding: 12px 28px; background: var(--c-primary); color: #fff; border-radius: 999px; font-weight: 600; text-decoration: none; transition: background 0.2s ease; }
+  .btn-primary:hover { background: var(--c-primary-dark); }
+</style>

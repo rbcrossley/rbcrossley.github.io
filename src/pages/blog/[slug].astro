@@ -1,0 +1,44 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { link } from '../../lib/link';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+---
+<Base title={`${post.data.title} » Berojgar Engineer`} description={post.data.description}>
+  <article class="blog-article container">
+    <header class="head">
+      <a href={link('/blog')} class="back">← Back to Blog</a>
+      <h1>{post.data.title}</h1>
+      <div class="meta">
+        <span>{post.data.author}</span>
+        <span>·</span>
+        <time>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+      </div>
+    </header>
+    <div class="hero-banner"></div>
+    <div class="content">
+      <Content />
+    </div>
+  </article>
+</Base>
+
+<style>
+  .blog-article { max-width: 820px; padding: 40px 28px 60px; }
+  .head { margin-bottom: 24px; }
+  .back { color: var(--c-primary); font-weight: 600; text-decoration: none; font-size: 14px; }
+  .head h1 { font-size: 36px; margin: 14px 0 12px; line-height: 1.2; }
+  .meta { display: flex; gap: 8px; color: var(--c-muted); font-size: 14px; }
+  .hero-banner { aspect-ratio: 21/9; background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark)); border-radius: 14px; margin: 12px 0 30px; }
+  .content :global(h2) { font-size: 26px; margin: 28px 0 14px; }
+  .content :global(h3) { font-size: 20px; margin: 22px 0 10px; }
+  .content :global(p) { line-height: 1.85; margin: 0 0 16px; font-size: 16px; }
+  .content :global(ul), .content :global(ol) { margin: 0 0 18px 22px; line-height: 1.85; }
+  .content :global(li) { margin-bottom: 8px; }
+</style>
