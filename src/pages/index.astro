@@ -90,7 +90,13 @@ const blogPosts = (await getCollection('blog'))
       <div class="blog-grid">
         {blogPosts.map((post) => (
           <a href={link(`/blog/${post.slug}`)} class="blog-card">
-            <div class="blog-image" style={`background-image: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));`}>
+            <div
+  class="blog-image"
+  style={`background-image: ${post.data.image ? `url('${post.data.image}')` : `linear-gradient(135deg, var(--c-primary), var(--c-primary-dark))`};
+    background-size: cover;
+  background-position: center;
+`}
+>
               <span class="blog-tag">Blog</span>
             </div>
             <div class="blog-body">
