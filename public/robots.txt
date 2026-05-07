@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://rbcrossley.github.io/sitemap.xml
+Sitemap: https://rbcrossley.github.io/berojgar-engineer/sitemap.xml

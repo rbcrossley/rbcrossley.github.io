@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
+import sitemap from '@astrojs/sitemap';
 
 // =============================================================================
 // GitHub Pages configuration
@@ -14,7 +15,7 @@ import mdx from '@astrojs/mdx';
 //   set BASE  = '/'
 // =============================================================================
 
-const SITE = process.env.SITE || 'https://example.github.io';
+const SITE = process.env.SITE || 'https://rbcrossley.github.io';
 const BASE = process.env.BASE || '/';
 
 export default defineConfig({
