@@ -6,6 +6,18 @@ author: cst
 image: /images/blog/roadmap.png
 ---
 
+
+Government IT and Computer Engineering jobs in Nepal have become increasingly competitive due to job security, structured career progression, fixed working hours, and stable salary benefits.
+
+This guide covers:
+- Salary details
+- Qualification requirements
+- Syllabus overview
+- Study strategy
+- Vacancy tracking
+- Best preparation resources
+- Reality of government IT careers in Nepal
+
 ## Motivation
 Everything starts with a motivation. Why go for government services?
 
@@ -26,41 +38,46 @@ No job is good or bad. You need to weigh pros and cons of the type of jobs based
 
 The salary constitutes basic salary+various allowances+non-available stuffs like insurance etc. Salaries are in per month basis. The present list do not consider bonuses. Banks and other corporations in profit share bonuses upto 6 months to employees.
 
-Nepal Rastra Bank=133347 
+- Nepal Rastra Bank=133347 
 
-SEBON=90895
+- SEBON=90895
 
-Nepal Insurance Authority=92742
+- Nepal Insurance Authority=92742
 
-Nepal Electricity Authority=77075
+- Nepal Electricity Authority=77075
 
-Nepal Telecom Company Ltd=88300 (they also provide bonuses upto six months salary. It is not included in this calculation).
+- Nepal Telecom Company Ltd=88300 (they also provide bonuses upto six months salary. It is not included in this calculation).
 
-Vidhyut Utpadan Company Ltd=87513
+- Vidhyut Utpadan Company Ltd=87513
 
-ADBL=68469 
+- ADBL=68469 
 
-RBBL=81508
+- RBBL=81508
 
-Citizen investment trust=79732
+- Citizen investment trust=79732
 
-Hydroelectricity Development and Investment Company Ltd=74080
+- Hydroelectricity Development and Investment Company Ltd=74080
 
-Nepal bank ltd=73265
+- Nepal bank ltd=73265
 
-CDSC=68817
+- CDSC=68817
 
-gorkhapatra corporation=89151
+- gorkhapatra corporation=89151
 
-nepal nagarik uddyan pradikaran=83906
+- nepal nagarik uddyan pradikaran=83906
 
-sadak board nepal=89900
+- sadak board nepal=89900
 
-nepal paryatan board=89359
+- nepal paryatan board=89359
 
-employee provident fund=124890
+- employee provident fund=124890
 
-social security fund=72815
+- social security fund=72815
+
+
+The salaries and benefits for sixth level officer is provided below:
+
+[link to salaries](https://imgur.com/a/salary-of-entry-level-officer-government-corporations-ZmJVXUU)
 
 
 
@@ -74,7 +91,7 @@ Why not go for government jobs?
 
 - Job locked in: It is usually cumbersome to resign immediately from government jobs.
 
-- Lack of creative and innovative work. (To be honest, private companies are not doing any innovation either. So maybe this does not hold true currently. But let's be hopeful about the future.)
+- Lack of creative and innovative work. 
 
 - Lower salary relatively for higher positions compared to private companies(highly debatable though as it is not necessarily true for most folks).
 
@@ -134,10 +151,7 @@ PS you do not need engineering license or bachelors degree for 4th level compute
 
 Syllabus for computer engineer and IT officer Loksewa positions at various corporations and nijamati are available in their respective websites. The syllabus is subject to change. But do not worry. It will not vary that much.
 
-I have shared all the syllabus in the telegram group as well.
-
-
-Thus, I highly recommend that you check syllabus updates time to time. I will share the overall syllabus subject structure here:
+Thus, I highly recommend that you check syllabus updates time to time.
 
 ## Common subjects:
 
@@ -169,16 +183,21 @@ These appear fewer in between but are of higher priority.
 
 ## previous year questions
 
-The highly recommended way of tackling preparation for any competitive exam is by solving its previous year question papers. Unfortunately, as yet questions of Computer Engineering, IT officer are not available completely in public domain. I have heard that PSC, Kamalpokhari office where the question papers are located is planning to publish such question papers in PSC website itself. But since it is government work, it is not sure when they will complete it.
+The highly recommended way of tackling preparation for any competitive exam is by solving its previous year question papers. Unfortunately, as yet questions of Computer Engineering, IT officer are not available completely in public domain. I have heard that PSC, Kamalpokhari office where the question papers are located is planning to publish such question papers in PSC website itself. PSC has indicated plans to gradually publish more archived question papers online. The website was revamped few weeks ago as well.
 
-I have captured most of the previous year question papers from the office itself. 
+## Exam Pattern
 
-To get all the question papers that I have collected, donate any amount in https://buymemomo.com/sherpashell and send me a screenshot to my whatsapp +977-9860680795. I will provide you with the access.
+Most technical officer exams contain written exam and interview.
 
+Written exam is usually two papers. First paper is based on GK+IQ+Organizational Knowledge. Second paper is based on technical subjects.
+
+The exact structure varies by corporation.
 
 ## How to study
 
-As you can see from the previous year questions, the questions being asked in Loksewa Computer Engineering, IT officer exams are not tough at all. But here is the catch which I hope you have recognized already.
+As you can see from the previous year questions, the questions being asked in Loksewa Computer Engineering, IT officer exams are different from what we used to get on our Bachelors of Engineering degree. They are conceptual and broad. 
+
+. But here is the catch which I hope you have recognized already.
 
 There are too many subjects with too many contents in the Loksewa computer engineering, IT officer curriculum. The seats are limited. In most companies, the seats are limited to only one. So you are competing with many people for scarce resources.
 
@@ -192,15 +211,15 @@ There are very few available question papers so you cannot extrapolate accuratel
 
 There are three institutes providing classes for Loksewa computer engineer and IT officer. 
 
-&ndash; Line Academy
+- Line Academy
 
-&ndash; iGlobe Academy
+- iGlobe Academy
 
-&ndash; APEX Academy 
+- APEX Academy 
 
 ## Notes
 
-I will be sharing my handwritten notes once they are ready to publish(for a small fee). However, I urge you do not depend on a single non-standard resource like notes of someone else to learn. Follow the reference textbooks, university slides etc. Think of notes as just one more resource for researching about topics.
+I urge you do not depend on a single non-standard resource like notes of someone else to learn. Follow the reference textbooks, university slides etc. Think of notes as just one more resource for researching about topics.
 
 Good notes do help a lot however.
 
@@ -213,15 +232,6 @@ You can get this book for technical paper:
 https://s.daraz.com.np/s.Z2kve
 
 Or you can visit [daraz](https://s.daraz.com.np/s.Z2t4t) and get any books from there.
-
-
-## Salary
-
-The salary varies in corporations. It is provided below:
-
-[link to salaries](https://imgur.com/a/salary-of-entry-level-officer-government-corporations-ZmJVXUU)
-
-You can set your eye on the corporation you want to work for based on the benefits provided at each corporation. It is all about what you want out of the government job.
 
 
 ## job+Loksewa

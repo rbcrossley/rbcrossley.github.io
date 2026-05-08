@@ -40,6 +40,8 @@ const { Content } = await post.render();
   .content :global(h3) { font-size: 20px; margin: 22px 0 10px; }
   .content :global(p) { line-height: 1.85; margin: 0 0 16px; font-size: 16px; }
   .content :global(ul), .content :global(ol) { margin: 0 0 18px 22px; line-height: 1.85; }
+  .content :global(ol) { list-style-type: decimal; }
+  .content :global(ul) { list-style-type: disc; }
   .content :global(li) { margin-bottom: 8px; }
   .content :global(a) { color: var(--c-primary); text-decoration: underline; font-weight: 500; cursor: pointer; transition: opacity 0.2s ease; }
   .content :global(a:hover) { opacity: 0.8; }
