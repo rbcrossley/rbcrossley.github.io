@@ -38,46 +38,48 @@ No job is good or bad. You need to weigh pros and cons of the type of jobs based
 
 The salary constitutes basic salary+various allowances+non-available stuffs like insurance etc. Salaries are in per month basis. The present list do not consider bonuses. Banks and other corporations in profit share bonuses upto 6 months to employees.
 
-- Nepal Rastra Bank=133347 
+- Nepal Rastra Bank=1,33,347 
 
-- SEBON=90895
+- SEBON=90,895
 
-- Nepal Insurance Authority=92742
+- Nepal Insurance Authority=92,742
 
-- Nepal Electricity Authority=77075
+- Nepal Electricity Authority=77,075
 
-- Nepal Telecom Company Ltd=88300 (they also provide bonuses upto six months salary. It is not included in this calculation).
+- Nepal Telecom Company Ltd=88,300 (they also provide bonuses upto six months salary. It is not included in this calculation).
 
-- Vidhyut Utpadan Company Ltd=87513
+- Vidhyut Utpadan Company Ltd=87,513
 
-- ADBL=68469 
+- ADBL=68,469 
 
-- RBBL=81508
+- RBBL=81,508
 
-- Citizen investment trust=79732
+- Citizen investment trust=79,732
 
-- Hydroelectricity Development and Investment Company Ltd=74080
+- Hydroelectricity Development and Investment Company Ltd=74,080
 
-- Nepal bank ltd=73265
+- Nepal bank ltd=73,265
 
-- CDSC=68817
+- CDSC=68,817
 
-- gorkhapatra corporation=89151
+- gorkhapatra corporation=89,151
 
-- nepal nagarik uddyan pradikaran=83906
+- nepal nagarik uddyan pradikaran=83,906
 
-- sadak board nepal=89900
+- sadak board nepal=89,900
 
-- nepal paryatan board=89359
+- nepal paryatan board=89,359
 
-- employee provident fund=124890
+- employee provident fund=1,24,890
 
-- social security fund=72815
+- social security fund=72,815
 
 
 The salaries and benefits for sixth level officer is provided below:
 
 [link to salaries](https://imgur.com/a/salary-of-entry-level-officer-government-corporations-ZmJVXUU)
+
+
 
 
 
