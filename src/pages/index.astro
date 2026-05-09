@@ -59,29 +59,6 @@ const blogPosts = (await getCollection('blog'))
     </div>
   </section>
 
-  <!-- COURSES -->
-  <section class="courses-section">
-    <div class="container">
-      <h2 class="section-title">Start Learning...!</h2>
-      <p class="section-sub">
-        Discover your passion in Computer Science! Click on the subject you wish to learn; we’ve covered a wide array of topics and continue to expand. You can also suggest topics or become a contributor!
-      </p>
-      <div class="section-cta">
-        <a href={link('/suggest-a-topic')} class="chip">Suggest a topic</a>
-        <a href={link('/become-a-contributer')} class="chip">Become a Contributer</a>
-      </div>
-      <div class="courses-grid">
-        {courses.map((course) => (
-          <a class="course-card" href={link(`/${course.data.slug}`)}>
-            <div class="course-icon">
-              <span>{(course.data.short.split(/\s+/).filter((w: string) => /^[A-Za-z]/.test(w)).slice(0,2).map((w: string) => w.charAt(0).toUpperCase()).join('')) || course.data.short.replace(/[^A-Za-z]/g,'').slice(0,2).toUpperCase()}</span>
-            </div>
-            <span class="course-name">{course.data.short}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
 
   <!-- BLOG -->
   <section class="blog-section">
