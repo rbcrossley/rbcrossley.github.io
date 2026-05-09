@@ -62,17 +62,17 @@ The salary constitutes basic salary+various allowances+non-available stuffs like
 
 - CDSC=68,817
 
-- gorkhapatra corporation=89,151
+- Gorkhapatra Corporation=89,151
 
-- nepal nagarik uddyan pradikaran=83,906
+- Nepal Nagarik Uddyan Pradikaran=83,906
 
-- sadak board nepal=89,900
+- Sadak Board Nepal=89,900
 
-- nepal paryatan board=89,359
+- Nepal Paryatan Board=89,359
 
-- employee provident fund=1,24,890
+- Employee Provident Fund=1,24,890
 
-- social security fund=72,815
+- Social Security Fund=72,815
 
 
 The salaries and benefits for sixth level officer is provided below:
@@ -80,14 +80,11 @@ The salaries and benefits for sixth level officer is provided below:
 [link to salaries](https://imgur.com/a/salary-of-entry-level-officer-government-corporations-ZmJVXUU)
 
 
-
-
-
 ## De-motivation
 
 Why not go for government jobs?
 
-- Deployed Location shifts continuously. Harder to meet with family. This might not be true for IT specific roles in some corporations.
+- Deployed Location shifts constantly. Harder to meet with family. This might not be true for IT specific roles in some corporations. Generally, IT/Computer departments only run from the head office.
 
 - Lack of exponential career and financial growth.
 
@@ -103,13 +100,10 @@ I have worked in private technology sector jobs. I have been preparing for gover
 
 ## Vacancy
 
-Missing vacancy notices is very common in Nepal due to lack of centralized examination division. There are a couple of ways to be notified about latest vacancies. 
-
+Missing vacancy notices is very common in Nepal.
 
 
 First seek the Loksewa's yearly calendar. The yearly calendar for current loksewa cycle (2083/84) will be published in Ashad end. It contains expected vacancy, exam, interview dates.
-
-
 
 [yearly calendar](https://psc.gov.np/category/yearly_calendar)
 
@@ -117,13 +111,12 @@ To check vacancies opened at public corporations
 
 [corporation vacancies](https://psc.gov.np/category/sangathit-vacancies)
 
-
 To check vacancies at sangh/nijamati
 
 [nijamati vacancies](https://psc.gov.np/category/notice-advertisement)
 
 
-## Job titles and roles
+## Job titles
 Officer level positions' title that are open in these companies:
 
 - Information Technology officer
@@ -140,13 +133,15 @@ Officer level positions' title that are open in these companies:
 
 - System Administrator
 
-In some non-tech companies you might also find a 5th level position generally called as "Head IT Assistant" instead of Officer level positions.
+In some companies like Nepal Oil Corporation, you might also find a 5th level position generally called as "Head IT Assistant" instead of Officer level positions.
 
 ## Qualifications required
 
-The qualifications required varies. But in general a Computer Engineering Bachelors' degree suffices for most of the officer level positions. Some banks might ask for master’s degree in IT or Engineering for officer level positions. For most non Engineer (i.e. Officer/DBA etc.), all IT streams can apply including BCA, BIT and Bsc.CSIT.
+The qualifications required varies. But in general a Computer Engineering Bachelors' degree suffices for most of the officer level positions. Banks except Nepal Rastra Bank ask for master’s degree in IT or Engineering for officer level positions. For most non Engineer (i.e. Officer/DBA etc.), all IT streams can apply including BCA, BIT and Bsc.CSIT.
 
 PS you do not need engineering license or bachelors degree for 4th level computer operator related roles. Government is planning to cut down Computer Operator roles. They probably want to train every government employees to be able to do basic IT tasks.
+
+Computer Operator positions are equally lucrative in specific corporations like Nepal Rastra Bank, other government banks and financial institutions.
 
 
 ## Syllabus
@@ -199,13 +194,11 @@ The exact structure varies by corporation.
 
 As you can see from the previous year questions, the questions being asked in Loksewa Computer Engineering, IT officer exams are different from what we used to get on our Bachelors of Engineering degree. They are conceptual and broad. 
 
-. But here is the catch which I hope you have recognized already.
+But here is the catch which I hope you have recognized already.
 
 There are too many subjects with too many contents in the Loksewa computer engineering, IT officer curriculum. The seats are limited. In most companies, the seats are limited to only one. So you are competing with many people for scarce resources.
 
 To add, engineering concepts stack one upon another. So you have to study everything that follows a concept to certain level of understanding before trying to cram the important stuffs.
-
-This is not true if your memorization skills are over the top.
 
 There are very few available question papers so you cannot extrapolate accurately. 
 
@@ -214,24 +207,20 @@ There are very few available question papers so you cannot extrapolate accuratel
 There are three institutes providing classes for Loksewa computer engineer and IT officer. 
 
 - Line Academy
-
 - iGlobe Academy
-
 - APEX Academy 
 
 ## Notes
 
 I urge you do not depend on a single non-standard resource like notes of someone else to learn. Follow the reference textbooks, university slides etc. Think of notes as just one more resource for researching about topics.
 
-Good notes do help a lot however.
+Good notes do help a lot however by saving time and headache.
 
 ## Best books
 
 The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity bookshops.
 
-You can get this book for technical paper:
-
-https://s.daraz.com.np/s.Z2kve
+You can get [this book](https://s.daraz.com.np/s.Z2kve) for technical paper:
 
 Or you can visit [daraz](https://s.daraz.com.np/s.Z2t4t) and get any books from there.
 
