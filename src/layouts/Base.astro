@@ -52,8 +52,14 @@ const c = theme.colors;
     }}>
       :root { color-scheme: light; }
       * { box-sizing: border-box; }
-      html, body { margin: 0; padding: 0; }
+      html { height: 100%; }
       body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
         font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         background: var(--c-bg);
         color: var(--c-text);
@@ -61,6 +67,7 @@ const c = theme.colors;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
       }
+      main { flex: 1; }
       a { color: inherit; }
       img { max-width: 100%; display: block; }
       h1, h2, h3, h4, h5 { font-family: 'Poppins', sans-serif; font-weight: 700; line-height: 1.25; margin: 0; }
