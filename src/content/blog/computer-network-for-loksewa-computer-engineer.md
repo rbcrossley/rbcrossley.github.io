@@ -66,7 +66,7 @@ Open means data transport can take place.
 |In FDMA, all users are active over all the time.|In TDMA, all users are active over all the frequencies.|In CDMA, all users are active over all the time and all the frequencies.|
 |Example of FDMA include AM and FM radio, broadcast TV|Examples of TDMA include Ethernet|Example of CDMA include data over the internet|
 
-![FDMA TDMA CDMA](/public/images/blog/fdma_tdma_cdma_multiplexing.svg)
+![FDMA TDMA CDMA](/images/blog/fdma_tdma_cdma_multiplexing.svg)
 
 ## Address Resolution Protocol
 Address Resolution Protocol is a protocol used to find the MAC address of a device from its IP address. 
@@ -101,7 +101,7 @@ Reverse ARP is obsolete protocol. Its function is same as DHCP(Dynamic Host Cont
 
 Proxy ARP happens in a situation where one device sends the ARP response on behalf of other device. It happens when there is communication between two different subnets.
 
-![proxy arp](/public/images/blog/proxy-arp.png)
+![proxy arp](/images/blog/proxy-arp.png)
 
 As shown in the figure, the gateway will provide the ARP response on behalf of host B.
 
