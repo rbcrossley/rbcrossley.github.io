@@ -1,0 +1,1621 @@
+﻿node.exe : 2026-05-14T09:52:31.261Z astro:cli --verbose flag enabled! 
+Enabling: DEBUG="astro:*,vite:*"
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (2026-05-14T09:5...astro:*,vite:*" 
+   :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+2026-05-14T09:52:31.261Z astro:cli Tip: Set the DEBUG env variable directly 
+for more control. Example: "DEBUG=astro:*,vite:* astro build".
+2026-05-14T09:52:32.781Z astro:telemetry [notify] last notified on 
+1773999256477
+2026-05-14T09:52:35.244Z astro:telemetry {
+  context: {
+    isGit: true,
+    anonymousProjectId: 
+'bb0a50549383fda6e1696eb2e633bcccb55d29b0ab129e27664c9e83660d0ea3',
+    packageManager: 'npm',
+    packageManagerVersion: '10.9.3',
+    anonymousId: 
+'4098cefc8935c991e3784a55cc51f22246139b34b2952d791ed1137c7a50da02',
+    anonymousSessionId: 
+'026f63276bddf34a4c38ab8a7a03569650a197c4213b62080ff12b39e2391c92'
+  },
+  meta: {
+    nodeVersion: '22.20.0',
+    viteVersion: '5.4.21',
+    astroVersion: '4.16.19',
+    systemPlatform: 'win32',
+    systemRelease: '10.0.19045',
+    systemArchitecture: 'x64',
+    cpuCount: 4,
+    cpuModel: 'Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz',
+    cpuSpeed: 2712,
+    memoryInMb: 8090,
+    isDocker: false,
+    isTTY: undefined,
+    isWSL: false,
+    isCI: false,
+    ciName: null
+  }
+}
+2026-05-14T09:52:35.244Z astro:telemetry [
+  {
+    "eventName": "ASTRO_CLI_SESSION_STARTED",
+    "payload": {
+      "cliCommand": "build",
+      "config": {
+        "site": true,
+        "base": true,
+        "trailingSlash": "ignore",
+        "output": "static",
+        "integrations": [
+          "@astrojs/tailwind",
+          "@astrojs/mdx"
+        ],
+        "build": {
+          "assets": true
+        },
+        "server": true,
+        "image": {},
+        "markdown": {},
+        "vite": {
+          "server": true
+        },
+        "experimental": {},
+        "legacy": {}
+      }
+    }
+  }
+]
+2026-05-14T09:52:35.313Z astro:build Initial setup...
+2026-05-14T09:52:35.566Z vite:config using resolved config: {
+  configFile: undefined,
+  cacheDir: 'C:/Users/User/Desktop/berojgar-engineer/node_modules/.vite',
+  clearScreen: false,
+  customLogger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  appType: 'custom',
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    entries: [
+      'C:/Users/User/Desktop/berojgar-engineer/src/**/*.{jsx,tsx,vue,svelte,htm
+l,astro}'
+    ],
+    exclude: [ 'astro', 'node-fetch' ],
+    noDiscovery: true,
+    include: [
+      'astro > cssesc',
+      'astro > aria-query',
+      'astro > axobject-query'
+    ],
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  plugins: [
+    'vite:optimized-deps',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'astro:build',
+    'astro:markdown',
+    'astro:head-metadata',
+    'astro-content-virtual-mod-plugin',
+    'astro:content-asset-propagation',
+    'astro:assets:esm',
+    'astro:vite-plugin-file-url',
+    'astro:i18n',
+    'astro:actions',
+    'astro:container',
+    '@mdx-js/rollup',
+    'vite:modulepreload-polyfill',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    'astro:build:normal',
+    'astro:scripts',
+    'astro:html',
+    'astro:postprocess',
+    'astro:integration-container',
+    'astro:content-imports',
+    '@astro/plugin-middleware',
+    'astro:assets',
+    'astro:prefetch',
+    'astro:transitions',
+    'astro:dev-toolbar',
+    '@astro/plugin-actions',
+    '@astrojs/mdx-postprocess',
+    'vite:wasm-fallback',
+    'astro:vite-plugin-env',
+    'vite:define',
+    'vite:css-post',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    'astro:tsconfig-alias',
+    'astro:scripts:page-ssr',
+    'astro:scanner',
+    '@astrojs/vite-plugin-astro-ssr-manifest',
+    'vite:client-inject',
+    'vite:css-analysis',
+    'vite:import-analysis'
+  ],
+  publicDir: 'C:/Users/User/Desktop/berojgar-engineer/public',
+  root: 'C:/Users/User/Desktop/berojgar-engineer',
+  envPrefix: 'PUBLIC_',
+  define: {
+    'import.meta.env.SITE': '"https://rbcrossley.github.io"',
+    'import.meta.env.BASE_URL': '"/"',
+    'import.meta.env.ASSETS_PREFIX': 'undefined',
+    __ASTRO_INTERNAL_I18N_CONFIG__: '{"base":"/","format":"directory","site":"h
+ttps://rbcrossley.github.io","trailingSlash":"ignore","isBuild":false}'
+  },
+  server: {
+    preTransformRequests: true,
+    hmr: false,
+    watch: { ignored: [Array] },
+    allowedHosts: true,
+    middlewareMode: true,
+    ws: false,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'astro' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'astro' ],
+    preserveSymlinks: false,
+    alias: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  },
+  ssr: {
+    target: 'node',
+    noExternal: [
+      'astro',
+      'astro/components',
+      '@nanostores/preact',
+      '@fontsource/*',
+      '@astrojs/mdx',
+      '@astrojs/sitemap',
+      '@astrojs/tailwind',
+      'astro-icon'
+    ],
+    external: [],
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  build: {
+    target: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    cssTarget: [ 'es2020', 'edge88', 'firefox78', 'chrome87', 'safari14' ],
+    outDir: 'dist',
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: {},
+    minify: 'esbuild',
+    terserOptions: {},
+    write: true,
+    emptyOutDir: null,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssr: false,
+    ssrManifest: false,
+    ssrEmitAssets: false,
+    reportCompressedSize: true,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] },
+    modulePreload: { polyfill: true },
+    cssMinify: true
+  },
+  css: { postcss: { plugins: [Array] }, lightningcss: undefined },
+  logLevel: 'silent',
+  configFileDependencies: [],
+  inlineConfig: {
+    configFile: false,
+    cacheDir: 
+'C:\\Users\\User\\Desktop\\berojgar-engineer\\node_modules\\.vite\\',
+    clearScreen: false,
+    customLogger: {
+      hasWarned: false,
+      info: [Function: info],
+      warn: [Function: warn],
+      warnOnce: [Function: warnOnce],
+      error: [Function: error],
+      clearScreen: [Function: clearScreen],
+      hasErrorLogged: [Function: hasErrorLogged]
+    },
+    appType: 'custom',
+    optimizeDeps: { entries: [Array], exclude: [Array], noDiscovery: true },
+    plugins: [
+      [Object],  false,    [Array],
+      [Object],  false,    [Object],
+      undefined, [Object], [Object],
+      [Object],  [Object], [Object],
+      [Object],  [Object], [Object],
+      [Object],  [Array],  [Object],
+      [Object],  [Object], [Array],
+      [Object],  [Object], [Object],
+      [Object],  [Object], [Object],
+      [Object],  false,    [Object],
+      [Object],  [Object]
+    ],
+    publicDir: 'C:\\Users\\User\\Desktop\\berojgar-engineer\\public\\',
+    root: 'C:\\Users\\User\\Desktop\\berojgar-engineer\\',
+    envPrefix: 'PUBLIC_',
+    define: {
+      'import.meta.env.SITE': '"https://rbcrossley.github.io"',
+      'import.meta.env.BASE_URL': '"/"',
+      'import.meta.env.ASSETS_PREFIX': 'undefined'
+    },
+    server: {
+      hmr: false,
+      watch: [Object],
+      allowedHosts: true,
+      middlewareMode: true,
+      ws: false
+    },
+    resolve: { alias: [Array], conditions: [Array], dedupe: [Array] },
+    ssr: { noExternal: [Array], external: [] },
+    build: { assetsDir: 'assets' },
+    css: { postcss: [Object] },
+    logLevel: 'silent'
+  },
+  base: '/',
+  decodedBase: '/',
+  rawBase: '/',
+  command: 'serve',
+  mode: 'development',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  esbuild: { jsxDev: false },
+  preview: {
+    port: undefined,
+    strictPort: undefined,
+    host: undefined,
+    allowedHosts: true,
+    https: undefined,
+    open: undefined,
+    proxy: undefined,
+    cors: undefined,
+    headers: undefined
+  },
+  envDir: 'C:/Users/User/Desktop/berojgar-engineer',
+  env: { BASE_URL: '/', MODE: 'development', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_C:/Users/User/Desktop/berojgar-engineer' => {
+      dir: 'C:/Users/User/Desktop/berojgar-engineer',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function (anonymous)],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  webSocketToken: 'r0cFCWeiZH6P',
+  additionalAllowedHosts: [],
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+2026-05-14T09:52:35.645Z vite:deps Hash is consistent. Skipping. Use --force 
+to override.
+2026-05-14T09:52:35.693Z vite:resolve [33m27.71ms[39m 
+[36mC:\Users\User\Desktop\berojgar-engineer\src\content\config.ts[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/src/content/config.ts[22m
+2026-05-14T09:52:35.707Z vite:load [33m10.81ms[39m [fs] 
+[2mC:\Users\User\Desktop\berojgar-engineer\src\content\config.ts[22m
+2026-05-14T09:52:35.795Z vite:resolve [32m0.04ms[39m [36mastro:content[39m 
+-> [2m astro:content[22m
+2026-05-14T09:52:35.799Z vite:resolve [32m1.53ms[39m 
+[36m astro:content[39m -> [2mnull[22m
+2026-05-14T09:52:35.799Z vite:import-analysis [33m12.23ms[39m [2m[1 imports 
+rewritten] [2msrc/content/config.ts[22m[2m[22m
+2026-05-14T09:52:35.800Z vite:transform [31m91.75ms[39m 
+[2mC:\Users\User\Desktop\berojgar-engineer\src\content\config.ts[22m
+2026-05-14T09:52:35.857Z vite:load [31m55.68ms[39m [plugin] 
+[2m astro:content[22m
+2026-05-14T09:52:35.900Z vite:resolve [32m5.97ms[39m 
+[36mastro/content/runtime[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/
+node_modules/astro/dist/content/runtime.js[22m
+2026-05-14T09:52:35.900Z vite:resolve [32m6.09ms[39m [36mastro/zod[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/zod.mjs[22m
+2026-05-14T09:52:35.900Z vite:resolve [32m6.16ms[39m [36m/src/content/blog/c
+omputer-network-for-loksewa-computer-engineer.md?astroContentCollectionEntry=tr
+ue[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/compute
+r-network-for-loksewa-computer-engineer.md?astroContentCollectionEntry=true[22
+m
+2026-05-14T09:52:35.901Z vite:resolve [32m6.22ms[39m [36m/src/content/blog/l
+oksewa-computer-engineer-and-it-officer-in-nepal.md?astroContentCollectionEntry
+=true[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/loks
+ewa-computer-engineer-and-it-officer-in-nepal.md?astroContentCollectionEntry=tr
+ue[22m
+2026-05-14T09:52:35.901Z vite:resolve [32m6.28ms[39m [36m/src/content/blog/t
+op-companies-to-work-for-in-nepal-as-an-IT-graduate.md?astroContentCollectionEn
+try=true[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/t
+op-companies-to-work-for-in-nepal-as-an-IT-graduate.md?astroContentCollectionEn
+try=true[22m
+2026-05-14T09:52:35.906Z vite:resolve [33m10.57ms[39m [36m/src/content/blog/
+computer-network-for-loksewa-computer-engineer.md?astroPropagatedAssets[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/computer-networ
+k-for-loksewa-computer-engineer.md?astroPropagatedAssets[22m
+2026-05-14T09:52:35.906Z vite:resolve [33m10.66ms[39m [36m/src/content/blog/
+loksewa-computer-engineer-and-it-officer-in-nepal.md?astroPropagatedAssets[39m
+ -> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/loksewa-comput
+er-engineer-and-it-officer-in-nepal.md?astroPropagatedAssets[22m
+2026-05-14T09:52:35.906Z vite:resolve [33m10.77ms[39m [36m/src/content/blog/
+top-companies-to-work-for-in-nepal-as-an-IT-graduate.md?astroPropagatedAssets[
+39m -> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/top-compani
+es-to-work-for-in-nepal-as-an-IT-graduate.md?astroPropagatedAssets[22m
+2026-05-14T09:52:35.906Z vite:resolve [33m12.05ms[39m [36m/src/content/blog/
+computer-network-for-loksewa-computer-engineer.md?astroRenderContent=true[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/computer-networ
+k-for-loksewa-computer-engineer.md?astroPropagatedAssets[22m
+2026-05-14T09:52:35.906Z vite:resolve [33m12.11ms[39m [36m/src/content/blog/
+loksewa-computer-engineer-and-it-officer-in-nepal.md?astroRenderContent=true[3
+9m -> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/loksewa-comp
+uter-engineer-and-it-officer-in-nepal.md?astroPropagatedAssets[22m
+2026-05-14T09:52:35.907Z vite:resolve [33m12.22ms[39m [36m/src/content/blog/
+top-companies-to-work-for-in-nepal-as-an-IT-graduate.md?astroRenderContent=true
+[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/src/content/blog/top-compa
+nies-to-work-for-in-nepal-as-an-IT-graduate.md?astroPropagatedAssets[22m
+2026-05-14T09:52:35.910Z vite:resolve [32m2.87ms[39m 
+[36m/node_modules/astro/dist/content/runtime.js[39m -> [2mC:/Users/User/Desk
+top/berojgar-engineer/node_modules/astro/dist/content/runtime.js[22m
+2026-05-14T09:52:35.910Z vite:resolve [32m2.96ms[39m 
+[36m/node_modules/astro/zod.mjs[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/zod.mjs[22m
+2026-05-14T09:52:35.915Z vite:import-analysis [33m22.25ms[39m [2m[8 imports 
+rewritten] [2m astro:content[22m[2m[22m
+2026-05-14T09:52:35.915Z vite:transform [31m57.58ms[39m 
+[2m astro:content[22m
+2026-05-14T09:52:35.925Z vite:load [32m8.65ms[39m [fs] 
+[2m/node_modules/astro/dist/content/runtime.js[22m
+2026-05-14T09:52:35.972Z vite:resolve [32m0.57ms[39m 
+[36mastro:asset-imports[39m -> [2m astro:asset-imports[22m
+2026-05-14T09:52:35.972Z vite:resolve [32m0.75ms[39m 
+[36mastro:content-module-imports[39m -> 
+[2m astro:content-module-imports[22m
+2026-05-14T09:52:35.976Z vite:resolve [32m5.02ms[39m 
+[36m../assets/utils/resolveImports.js[39m -> [2mC:/Users/User/Desktop/berojg
+ar-engineer/node_modules/astro/dist/assets/utils/resolveImports.js[22m
+2026-05-14T09:52:35.976Z vite:resolve [32m5.16ms[39m 
+[36m../core/errors/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-enginee
+r/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:35.976Z vite:resolve [32m5.23ms[39m 
+[36m../core/path.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_m
+odules/astro/dist/core/path.js[22m
+2026-05-14T09:52:35.976Z vite:resolve [32m5.28ms[39m 
+[36m../runtime/server/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-engi
+neer/node_modules/astro/dist/runtime/server/index.js[22m
+2026-05-14T09:52:35.976Z vite:resolve [32m5.32ms[39m [36m./consts.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/content/
+consts.js[22m
+2026-05-14T09:52:35.977Z vite:resolve [32m5.37ms[39m 
+[36m./data-store.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_m
+odules/astro/dist/content/data-store.js[22m
+2026-05-14T09:52:35.978Z vite:resolve [32m6.33ms[39m [36mastro:assets[39m 
+-> [2m astro:assets[22m
+2026-05-14T09:52:35.980Z vite:resolve [32m2.71ms[39m 
+[36m/node_modules/astro/dist/assets/utils/resolveImports.js[39m -> [2mC:/Use
+rs/User/Desktop/berojgar-engineer/node_modules/astro/dist/assets/utils/resolveI
+mports.js[22m
+2026-05-14T09:52:35.980Z vite:resolve [32m2.79ms[39m 
+[36m/node_modules/astro/dist/core/errors/index.js[39m -> [2mC:/Users/User/De
+sktop/berojgar-engineer/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:35.980Z vite:resolve [32m2.82ms[39m 
+[36m/node_modules/astro/dist/core/path.js[39m -> [2mC:/Users/User/Desktop/be
+rojgar-engineer/node_modules/astro/dist/core/path.js[22m
+2026-05-14T09:52:35.981Z vite:resolve [32m2.88ms[39m 
+[36m/node_modules/astro/dist/runtime/server/index.js[39m -> [2mC:/Users/User
+/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/index.js[22m
+2026-05-14T09:52:35.981Z vite:resolve [32m2.92ms[39m 
+[36m/node_modules/astro/dist/content/consts.js[39m -> [2mC:/Users/User/Deskt
+op/berojgar-engineer/node_modules/astro/dist/content/consts.js[22m
+2026-05-14T09:52:35.981Z vite:resolve [32m2.96ms[39m 
+[36m/node_modules/astro/dist/content/data-store.js[39m -> [2mC:/Users/User/D
+esktop/berojgar-engineer/node_modules/astro/dist/content/data-store.js[22m
+2026-05-14T09:52:35.988Z vite:resolve [32m9.17ms[39m 
+[36m astro:asset-imports[39m -> [2mnull[22m
+2026-05-14T09:52:35.988Z vite:resolve [32m9.42ms[39m [36m astro:assets[39m 
+-> [2mnull[22m
+2026-05-14T09:52:35.988Z vite:resolve [32m9.56ms[39m 
+[36m astro:content-module-imports[39m -> [2mnull[22m
+2026-05-14T09:52:35.990Z vite:import-analysis [33m43.37ms[39m [2m[9 imports 
+rewritten] [2mnode_modules/astro/dist/content/runtime.js[22m[2m[22m
+2026-05-14T09:52:35.990Z vite:transform [31m64.82ms[39m 
+[2m/node_modules/astro/dist/content/runtime.js[22m
+2026-05-14T09:52:35.990Z vite:load [31m74.01ms[39m [fs] 
+[2m/node_modules/astro/zod.mjs[22m
+2026-05-14T09:52:35.991Z vite:import-analysis [32m0.18ms[39m [2m[0 imports 
+rewritten] [2mnode_modules/astro/zod.mjs[22m[2m[22m
+2026-05-14T09:52:35.991Z vite:transform [32m0.93ms[39m 
+[2m/node_modules/astro/zod.mjs[22m
+2026-05-14T09:52:36.082Z vite:load [31m93.35ms[39m [fs] 
+[2m/node_modules/astro/dist/assets/utils/resolveImports.js[22m
+2026-05-14T09:52:36.088Z vite:resolve [32m2.04ms[39m 
+[36m../../content/consts.js[39m -> [2mC:/Users/User/Desktop/berojgar-enginee
+r/node_modules/astro/dist/content/consts.js[22m
+2026-05-14T09:52:36.088Z vite:resolve [32m2.13ms[39m 
+[36m../../core/path.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/nod
+e_modules/astro/dist/core/path.js[22m
+2026-05-14T09:52:36.088Z vite:resolve [32m2.16ms[39m 
+[36m../../runtime/server/shorthash.js[39m -> [2mC:/Users/User/Desktop/berojg
+ar-engineer/node_modules/astro/dist/runtime/server/shorthash.js[22m
+2026-05-14T09:52:36.088Z vite:resolve [32m2.24ms[39m [36m../consts.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/assets/c
+onsts.js[22m
+2026-05-14T09:52:36.091Z vite:resolve [32m1.47ms[39m 
+[36m/node_modules/astro/dist/runtime/server/shorthash.js[39m -> [2mC:/Users/
+User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/shorthash
+.js[22m
+2026-05-14T09:52:36.091Z vite:resolve [32m1.56ms[39m 
+[36m/node_modules/astro/dist/assets/consts.js[39m -> [2mC:/Users/User/Deskto
+p/berojgar-engineer/node_modules/astro/dist/assets/consts.js[22m
+2026-05-14T09:52:36.092Z vite:import-analysis [32m9.44ms[39m [2m[4 imports 
+rewritten] 
+[2mnode_modules/astro/dist/assets/utils/resolveImports.js[22m[2m[22m
+2026-05-14T09:52:36.092Z vite:transform [32m9.99ms[39m 
+[2m/node_modules/astro/dist/assets/utils/resolveImports.js[22m
+2026-05-14T09:52:36.093Z vite:load [31m104.77ms[39m [fs] 
+[2m/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.095Z vite:resolve [32m1.57ms[39m 
+[36m./errors-data.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_
+modules/astro/dist/core/errors/errors-data.js[22m
+2026-05-14T09:52:36.095Z vite:resolve [32m1.65ms[39m [36m./errors.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/core/err
+ors/errors.js[22m
+2026-05-14T09:52:36.095Z vite:resolve [32m1.69ms[39m [36m./printer.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/core/err
+ors/printer.js[22m
+2026-05-14T09:52:36.096Z vite:resolve [32m1.75ms[39m [36m./utils.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/core/errors
+/utils.js[22m
+2026-05-14T09:52:36.096Z vite:resolve [32m1.80ms[39m 
+[36m./zod-error-map.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/nod
+e_modules/astro/dist/core/errors/zod-error-map.js[22m
+2026-05-14T09:52:36.101Z vite:resolve [32m4.49ms[39m 
+[36m/node_modules/astro/dist/core/errors/errors-data.js[39m -> [2mC:/Users/U
+ser/Desktop/berojgar-engineer/node_modules/astro/dist/core/errors/errors-data.j
+s[22m
+2026-05-14T09:52:36.102Z vite:resolve [32m4.73ms[39m 
+[36m/node_modules/astro/dist/core/errors/errors.js[39m -> [2mC:/Users/User/D
+esktop/berojgar-engineer/node_modules/astro/dist/core/errors/errors.js[22m
+2026-05-14T09:52:36.103Z vite:resolve [32m6.49ms[39m 
+[36m/node_modules/astro/dist/core/errors/printer.js[39m -> [2mC:/Users/User/
+Desktop/berojgar-engineer/node_modules/astro/dist/core/errors/printer.js[22m
+2026-05-14T09:52:36.103Z vite:resolve [32m6.62ms[39m 
+[36m/node_modules/astro/dist/core/errors/utils.js[39m -> [2mC:/Users/User/De
+sktop/berojgar-engineer/node_modules/astro/dist/core/errors/utils.js[22m
+2026-05-14T09:52:36.103Z vite:resolve [32m6.76ms[39m 
+[36m/node_modules/astro/dist/core/errors/zod-error-map.js[39m -> [2mC:/Users
+/User/Desktop/berojgar-engineer/node_modules/astro/dist/core/errors/zod-error-m
+ap.js[22m
+2026-05-14T09:52:36.104Z vite:import-analysis [33m10.42ms[39m [2m[5 imports 
+rewritten] [2mnode_modules/astro/dist/core/errors/index.js[22m[2m[22m
+2026-05-14T09:52:36.104Z vite:transform [33m11.20ms[39m 
+[2m/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.107Z vite:load [31m118.88ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/index.js[22m
+2026-05-14T09:52:36.111Z vite:resolve [32m2.69ms[39m 
+[36m./astro-component.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/n
+ode_modules/astro/dist/runtime/server/astro-component.js[22m
+2026-05-14T09:52:36.111Z vite:resolve [32m2.78ms[39m 
+[36m./astro-global.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node
+_modules/astro/dist/runtime/server/astro-global.js[22m
+2026-05-14T09:52:36.111Z vite:resolve [32m2.83ms[39m [36m./endpoint.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/endpoint.js[22m
+2026-05-14T09:52:36.111Z vite:resolve [32m2.89ms[39m [36m./escape.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/escape.js[22m
+2026-05-14T09:52:36.111Z vite:resolve [32m2.92ms[39m [36m./jsx.js[39m -> [
+2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serve
+r/jsx.js[22m
+2026-05-14T09:52:36.111Z vite:resolve [32m2.95ms[39m 
+[36m./render/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node
+_modules/astro/dist/runtime/server/render/index.js[22m
+2026-05-14T09:52:36.111Z vite:resolve [32m2.97ms[39m 
+[36m./transition.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_m
+odules/astro/dist/runtime/server/transition.js[22m
+2026-05-14T09:52:36.116Z vite:resolve [32m4.55ms[39m 
+[36m/node_modules/astro/dist/runtime/server/astro-component.js[39m -> [2mC:/
+Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/ast
+ro-component.js[22m
+2026-05-14T09:52:36.116Z vite:resolve [32m4.64ms[39m 
+[36m/node_modules/astro/dist/runtime/server/astro-global.js[39m -> [2mC:/Use
+rs/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/astro-
+global.js[22m
+2026-05-14T09:52:36.116Z vite:resolve [32m4.67ms[39m 
+[36m/node_modules/astro/dist/runtime/server/endpoint.js[39m -> [2mC:/Users/U
+ser/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/endpoint.j
+s[22m
+2026-05-14T09:52:36.116Z vite:resolve [32m4.72ms[39m 
+[36m/node_modules/astro/dist/runtime/server/escape.js[39m -> [2mC:/Users/Use
+r/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/escape.js[2
+2m
+2026-05-14T09:52:36.116Z vite:resolve [32m4.77ms[39m 
+[36m/node_modules/astro/dist/runtime/server/jsx.js[39m -> [2mC:/Users/User/D
+esktop/berojgar-engineer/node_modules/astro/dist/runtime/server/jsx.js[22m
+2026-05-14T09:52:36.116Z vite:resolve [32m4.82ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/index.js[39m -> [2mC:/Use
+rs/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render
+/index.js[22m
+2026-05-14T09:52:36.116Z vite:resolve [32m4.86ms[39m 
+[36m/node_modules/astro/dist/runtime/server/transition.js[39m -> [2mC:/Users
+/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/transiti
+on.js[22m
+2026-05-14T09:52:36.117Z vite:import-analysis [32m9.38ms[39m [2m[7 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/index.js[22m[2m[22m
+2026-05-14T09:52:36.117Z vite:transform [32m9.83ms[39m 
+[2m/node_modules/astro/dist/runtime/server/index.js[22m
+2026-05-14T09:52:36.124Z vite:load [31m135.59ms[39m [fs] 
+[2m/node_modules/astro/dist/core/path.js[22m
+2026-05-14T09:52:36.124Z vite:import-analysis [32m0.14ms[39m [2m[0 imports 
+rewritten] [2mnode_modules/astro/dist/core/path.js[22m[2m[22m
+2026-05-14T09:52:36.125Z vite:transform [32m0.56ms[39m 
+[2m/node_modules/astro/dist/core/path.js[22m
+2026-05-14T09:52:36.125Z vite:load [31m136.35ms[39m [fs] 
+[2m/node_modules/astro/dist/content/consts.js[22m
+2026-05-14T09:52:36.126Z vite:import-analysis [32m0.05ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/content/consts.js[22m[2m[22m
+2026-05-14T09:52:36.126Z vite:transform [32m1.26ms[39m 
+[2m/node_modules/astro/dist/content/consts.js[22m
+2026-05-14T09:52:36.126Z vite:load [31m137.49ms[39m [fs] 
+[2m/node_modules/astro/dist/content/data-store.js[22m
+2026-05-14T09:52:36.130Z vite:resolve [32m0.02ms[39m 
+[36mastro:data-layer-content[39m -> [2m astro:data-layer-content[22m
+2026-05-14T09:52:36.131Z vite:resolve [32m0.11ms[39m 
+[36m astro:data-layer-content[39m -> [2mnull[22m
+2026-05-14T09:52:36.131Z vite:import-analysis [32m4.42ms[39m [2m[1 imports 
+rewritten] [2mnode_modules/astro/dist/content/data-store.js[22m[2m[22m
+2026-05-14T09:52:36.131Z vite:transform [32m4.80ms[39m 
+[2m/node_modules/astro/dist/content/data-store.js[22m
+2026-05-14T09:52:36.146Z vite:load [31m52.90ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/shorthash.js[22m
+2026-05-14T09:52:36.147Z vite:import-analysis [32m0.22ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/runtime/server/shorthash.js[22m[2m[22m
+2026-05-14T09:52:36.147Z vite:transform [32m0.69ms[39m 
+[2m/node_modules/astro/dist/runtime/server/shorthash.js[22m
+2026-05-14T09:52:36.147Z vite:load [31m53.86ms[39m [fs] 
+[2m/node_modules/astro/dist/assets/consts.js[22m
+2026-05-14T09:52:36.147Z vite:import-analysis [32m0.05ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/assets/consts.js[22m[2m[22m
+2026-05-14T09:52:36.147Z vite:transform [32m0.56ms[39m 
+[2m/node_modules/astro/dist/assets/consts.js[22m
+2026-05-14T09:52:36.148Z vite:load [33m40.78ms[39m [fs] 
+[2m/node_modules/astro/dist/core/errors/errors-data.js[22m
+2026-05-14T09:52:36.158Z vite:import-analysis [32m0.65ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/core/errors/errors-data.js[22m[2m[22m
+2026-05-14T09:52:36.158Z vite:transform [33m10.44ms[39m 
+[2m/node_modules/astro/dist/core/errors/errors-data.js[22m
+2026-05-14T09:52:36.161Z vite:load [31m53.61ms[39m [fs] 
+[2m/node_modules/astro/dist/core/errors/errors.js[22m
+2026-05-14T09:52:36.163Z vite:import-analysis [32m1.49ms[39m [2m[1 imports 
+rewritten] [2mnode_modules/astro/dist/core/errors/errors.js[22m[2m[22m
+2026-05-14T09:52:36.163Z vite:transform [32m2.04ms[39m 
+[2m/node_modules/astro/dist/core/errors/errors.js[22m
+2026-05-14T09:52:36.163Z vite:load [31m56.46ms[39m [fs] 
+[2m/node_modules/astro/dist/core/errors/printer.js[22m
+2026-05-14T09:52:36.165Z vite:import-analysis [32m1.06ms[39m [2m[1 imports 
+rewritten] [2mnode_modules/astro/dist/core/errors/printer.js[22m[2m[22m
+2026-05-14T09:52:36.165Z vite:transform [32m1.84ms[39m 
+[2m/node_modules/astro/dist/core/errors/printer.js[22m
+2026-05-14T09:52:36.166Z vite:load [31m58.86ms[39m [fs] 
+[2m/node_modules/astro/dist/core/errors/utils.js[22m
+2026-05-14T09:52:36.167Z vite:import-analysis [32m0.11ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/core/errors/utils.js[22m[2m[22m
+2026-05-14T09:52:36.167Z vite:transform [32m0.75ms[39m 
+[2m/node_modules/astro/dist/core/errors/utils.js[22m
+2026-05-14T09:52:36.167Z vite:load [31m60.28ms[39m [fs] 
+[2m/node_modules/astro/dist/core/errors/zod-error-map.js[22m
+2026-05-14T09:52:36.171Z vite:import-analysis [32m0.13ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/core/errors/zod-error-map.js[22m[2m[22m
+2026-05-14T09:52:36.171Z vite:transform [32m3.88ms[39m 
+[2m/node_modules/astro/dist/core/errors/zod-error-map.js[22m
+2026-05-14T09:52:36.172Z vite:load [33m48.96ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/astro-global.js[22m
+2026-05-14T09:52:36.174Z vite:resolve [32m0.86ms[39m 
+[36m../../core/constants.js[39m -> [2mC:/Users/User/Desktop/berojgar-enginee
+r/node_modules/astro/dist/core/constants.js[22m
+2026-05-14T09:52:36.174Z vite:resolve [32m0.96ms[39m 
+[36m../../core/errors/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-engi
+neer/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.174Z vite:cache [memory] 
+[2m/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.175Z vite:resolve [32m0.90ms[39m 
+[36m/node_modules/astro/dist/core/constants.js[39m -> [2mC:/Users/User/Deskt
+op/berojgar-engineer/node_modules/astro/dist/core/constants.js[22m
+2026-05-14T09:52:36.176Z vite:import-analysis [32m3.04ms[39m [2m[2 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/astro-global.js[22m[2m[22m
+2026-05-14T09:52:36.176Z vite:transform [32m3.54ms[39m 
+[2m/node_modules/astro/dist/runtime/server/astro-global.js[22m
+2026-05-14T09:52:36.177Z vite:load [31m53.82ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/astro-component.js[22m
+2026-05-14T09:52:36.178Z vite:cache [memory] 
+[2m/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.179Z vite:import-analysis [32m1.50ms[39m [2m[1 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/astro-component.js[22m[2m[22m
+2026-05-14T09:52:36.179Z vite:transform [32m2.44ms[39m 
+[2m/node_modules/astro/dist/runtime/server/astro-component.js[22m
+2026-05-14T09:52:36.180Z vite:load [31m57.05ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/endpoint.js[22m
+2026-05-14T09:52:36.188Z vite:resolve [32m4.37ms[39m 
+[36m../../core/errors/errors-data.js[39m -> [2mC:/Users/User/Desktop/berojga
+r-engineer/node_modules/astro/dist/core/errors/errors-data.js[22m
+2026-05-14T09:52:36.189Z vite:resolve [32m4.51ms[39m 
+[36m../../core/errors/errors.js[39m -> [2mC:/Users/User/Desktop/berojgar-eng
+ineer/node_modules/astro/dist/core/errors/errors.js[22m
+2026-05-14T09:52:36.189Z vite:import-analysis [32m8.19ms[39m [2m[3 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/endpoint.js[22m[2m[22m
+2026-05-14T09:52:36.189Z vite:transform [32m8.99ms[39m 
+[2m/node_modules/astro/dist/runtime/server/endpoint.js[22m
+2026-05-14T09:52:36.190Z vite:load [31m66.52ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.194Z vite:resolve [32m0.84ms[39m [36m./util.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/util.js[22m
+2026-05-14T09:52:36.196Z vite:resolve [32m1.09ms[39m 
+[36m/node_modules/astro/dist/runtime/server/util.js[39m -> [2mC:/Users/User/
+Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/util.js[22m
+2026-05-14T09:52:36.196Z vite:import-analysis [32m6.08ms[39m [2m[1 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/escape.js[22m[2m[22m
+2026-05-14T09:52:36.196Z vite:transform [32m6.54ms[39m 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.198Z vite:load [31m74.36ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/jsx.js[22m
+2026-05-14T09:52:36.206Z vite:resolve [32m1.35ms[39m 
+[36m../../jsx-runtime/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-engi
+neer/node_modules/astro/dist/jsx-runtime/index.js[22m
+2026-05-14T09:52:36.206Z vite:resolve [32m1.45ms[39m [36m./index.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/ser
+ver/index.js[22m
+2026-05-14T09:52:36.206Z vite:resolve [32m1.51ms[39m 
+[36m./render/component.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/
+node_modules/astro/dist/runtime/server/render/component.js[22m
+2026-05-14T09:52:36.207Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/index.js[22m
+2026-05-14T09:52:36.210Z vite:resolve [32m2.20ms[39m 
+[36m/node_modules/astro/dist/jsx-runtime/index.js[39m -> [2mC:/Users/User/De
+sktop/berojgar-engineer/node_modules/astro/dist/jsx-runtime/index.js[22m
+2026-05-14T09:52:36.210Z vite:resolve [32m2.29ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/component.js[39m -> [2mC:
+/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/re
+nder/component.js[22m
+2026-05-14T09:52:36.210Z vite:import-analysis [32m6.20ms[39m [2m[3 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/jsx.js[22m[2m[22m
+2026-05-14T09:52:36.211Z vite:transform [33m12.92ms[39m 
+[2m/node_modules/astro/dist/runtime/server/jsx.js[22m
+2026-05-14T09:52:36.212Z vite:load [31m88.81ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/index.js[22m
+2026-05-14T09:52:36.216Z vite:resolve [32m3.41ms[39m 
+[36m./astro/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_
+modules/astro/dist/runtime/server/render/astro/index.js[22m
+2026-05-14T09:52:36.216Z vite:resolve [32m3.49ms[39m [36m./common.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/render/common.js[22m
+2026-05-14T09:52:36.216Z vite:resolve [32m3.54ms[39m 
+[36m./component.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_mo
+dules/astro/dist/runtime/server/render/component.js[22m
+2026-05-14T09:52:36.216Z vite:resolve [32m3.59ms[39m [36m./script.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/render/script.js[22m
+2026-05-14T09:52:36.216Z vite:resolve [32m3.63ms[39m [36m./dom.js[39m -> [
+2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serve
+r/render/dom.js[22m
+2026-05-14T09:52:36.216Z vite:resolve [32m3.68ms[39m [36m./head.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/head.js[22m
+2026-05-14T09:52:36.216Z vite:resolve [32m3.72ms[39m [36m./page.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/page.js[22m
+2026-05-14T09:52:36.217Z vite:resolve [32m3.77ms[39m [36m./slot.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/slot.js[22m
+2026-05-14T09:52:36.217Z vite:resolve [32m3.82ms[39m [36m./tags.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/tags.js[22m
+2026-05-14T09:52:36.217Z vite:resolve [32m3.86ms[39m [36m./util.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/util.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.56ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/astro/index.js[39m -> [2m
+C:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/
+render/astro/index.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.62ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/common.js[39m -> [2mC:/Us
+ers/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/rende
+r/common.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.15ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/script.js[39m -> [2mC:/Us
+ers/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/rende
+r/script.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.18ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/dom.js[39m -> [2mC:/Users
+/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/d
+om.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.20ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/head.js[39m -> [2mC:/User
+s/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/
+head.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.23ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/page.js[39m -> [2mC:/User
+s/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/
+page.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.26ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/slot.js[39m -> [2mC:/User
+s/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/
+slot.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.30ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/tags.js[39m -> [2mC:/User
+s/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/
+tags.js[22m
+2026-05-14T09:52:36.229Z vite:resolve [33m10.34ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/util.js[39m -> [2mC:/User
+s/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/
+util.js[22m
+2026-05-14T09:52:36.230Z vite:import-analysis [33m17.66ms[39m [2m[10 
+imports rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/index.js[22m[2m[22m
+2026-05-14T09:52:36.230Z vite:transform [33m18.32ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/index.js[22m
+2026-05-14T09:52:36.235Z vite:load [31m111.33ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/transition.js[22m
+2026-05-14T09:52:36.242Z vite:resolve [32m0.70ms[39m 
+[36m../../transitions/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-engi
+neer/node_modules/astro/dist/transitions/index.js[22m
+2026-05-14T09:52:36.243Z vite:resolve [32m0.69ms[39m 
+[36m/node_modules/astro/dist/transitions/index.js[39m -> [2mC:/Users/User/De
+sktop/berojgar-engineer/node_modules/astro/dist/transitions/index.js[22m
+2026-05-14T09:52:36.243Z vite:import-analysis [32m7.23ms[39m [2m[2 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/transition.js[22m[2m[22m
+2026-05-14T09:52:36.243Z vite:transform [32m8.53ms[39m 
+[2m/node_modules/astro/dist/runtime/server/transition.js[22m
+2026-05-14T09:52:36.295Z vite:load [31m118.24ms[39m [fs] 
+[2m/node_modules/astro/dist/core/constants.js[22m
+2026-05-14T09:52:36.296Z vite:import-analysis [32m0.04ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/core/constants.js[22m[2m[22m
+2026-05-14T09:52:36.296Z vite:transform [32m0.62ms[39m 
+[2m/node_modules/astro/dist/core/constants.js[22m
+2026-05-14T09:52:36.296Z vite:load [31m98.64ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/util.js[22m
+2026-05-14T09:52:36.297Z vite:import-analysis [32m0.06ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/runtime/server/util.js[22m[2m[22m
+2026-05-14T09:52:36.297Z vite:transform [32m0.67ms[39m 
+[2m/node_modules/astro/dist/runtime/server/util.js[22m
+2026-05-14T09:52:36.297Z vite:load [31m85.01ms[39m [fs] 
+[2m/node_modules/astro/dist/jsx-runtime/index.js[22m
+2026-05-14T09:52:36.298Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/index.js[22m
+2026-05-14T09:52:36.298Z vite:import-analysis [32m0.87ms[39m [2m[1 imports 
+rewritten] [2mnode_modules/astro/dist/jsx-runtime/index.js[22m[2m[22m
+2026-05-14T09:52:36.298Z vite:transform [32m1.25ms[39m 
+[2m/node_modules/astro/dist/jsx-runtime/index.js[22m
+2026-05-14T09:52:36.298Z vite:load [31m86.47ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/component.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.17ms[39m 
+[36m./instruction.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_
+modules/astro/dist/runtime/server/render/instruction.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.25ms[39m 
+[36m../../../core/errors/index.js[39m -> [2mC:/Users/User/Desktop/berojgar-e
+ngineer/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.28ms[39m [36m../escape.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/escape.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.30ms[39m 
+[36m../hydration.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_m
+odules/astro/dist/runtime/server/hydration.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.32ms[39m 
+[36m../serialize.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_m
+odules/astro/dist/runtime/server/serialize.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.37ms[39m 
+[36m../shorthash.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_m
+odules/astro/dist/runtime/server/shorthash.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.49ms[39m [36m../util.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/ser
+ver/util.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.55ms[39m 
+[36m./astro/factory.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/nod
+e_modules/astro/dist/runtime/server/render/astro/factory.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.59ms[39m 
+[36m./astro/instance.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/no
+de_modules/astro/dist/runtime/server/render/astro/instance.js[22m
+2026-05-14T09:52:36.309Z vite:resolve [32m5.66ms[39m 
+[36m./server-islands.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/no
+de_modules/astro/dist/runtime/server/render/server-islands.js[22m
+2026-05-14T09:52:36.310Z vite:cache [memory] 
+[2m/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.311Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.311Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/shorthash.js[22m
+2026-05-14T09:52:36.316Z vite:resolve [32m4.84ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/instruction.js[39m -> [2m
+C:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/
+render/instruction.js[22m
+2026-05-14T09:52:36.316Z vite:resolve [32m4.91ms[39m 
+[36m/node_modules/astro/dist/runtime/server/hydration.js[39m -> [2mC:/Users/
+User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/hydration
+.js[22m
+2026-05-14T09:52:36.316Z vite:resolve [32m4.95ms[39m 
+[36m/node_modules/astro/dist/runtime/server/serialize.js[39m -> [2mC:/Users/
+User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/serialize
+.js[22m
+2026-05-14T09:52:36.316Z vite:resolve [32m4.97ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/astro/factory.js[39m -> [
+2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serve
+r/render/astro/factory.js[22m
+2026-05-14T09:52:36.316Z vite:resolve [32m5.00ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/astro/instance.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/astro/instance.js[22m
+2026-05-14T09:52:36.316Z vite:resolve [32m5.02ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/server-islands.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/server-islands.js[22m
+2026-05-14T09:52:36.316Z vite:import-analysis [33m17.57ms[39m [2m[16 
+imports rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/component.js[22m[2m[22m
+2026-05-14T09:52:36.316Z vite:transform [33m17.97ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/component.js[22m
+2026-05-14T09:52:36.322Z vite:load [31m88.17ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/astro/index.js[22m
+2026-05-14T09:52:36.324Z vite:resolve [32m1.62ms[39m [36m./factory.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/render/astro/factory.js[22m
+2026-05-14T09:52:36.325Z vite:resolve [32m1.74ms[39m 
+[36m./head-and-content.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/
+node_modules/astro/dist/runtime/server/render/astro/head-and-content.js[22m
+2026-05-14T09:52:36.325Z vite:resolve [32m1.81ms[39m [36m./instance.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/render/astro/instance.js[22m
+2026-05-14T09:52:36.325Z vite:resolve [32m1.86ms[39m 
+[36m./render-template.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/n
+ode_modules/astro/dist/runtime/server/render/astro/render-template.js[22m
+2026-05-14T09:52:36.325Z vite:resolve [32m1.91ms[39m [36m./render.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/render/astro/render.js[22m
+2026-05-14T09:52:36.327Z vite:resolve [32m2.02ms[39m [36m/node_modules/astro
+/dist/runtime/server/render/astro/head-and-content.js[39m -> [2mC:/Users/User
+/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/astro/
+head-and-content.js[22m
+2026-05-14T09:52:36.327Z vite:resolve [32m2.11ms[39m [36m/node_modules/astro
+/dist/runtime/server/render/astro/render-template.js[39m -> [2mC:/Users/User/
+Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/astro/r
+ender-template.js[22m
+2026-05-14T09:52:36.327Z vite:resolve [32m2.14ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/astro/render.js[39m -> [2
+mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server
+/render/astro/render.js[22m
+2026-05-14T09:52:36.328Z vite:import-analysis [32m5.30ms[39m [2m[5 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/astro/index.js[22m[2m[22m
+2026-05-14T09:52:36.328Z vite:transform [32m5.70ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/astro/index.js[22m
+2026-05-14T09:52:36.330Z vite:load [31m95.70ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/common.js[22m
+2026-05-14T09:52:36.332Z vite:resolve [32m1.87ms[39m [36m../scripts.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/scripts.js[22m
+2026-05-14T09:52:36.333Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.334Z vite:resolve [32m0.79ms[39m 
+[36m/node_modules/astro/dist/runtime/server/scripts.js[39m -> [2mC:/Users/Us
+er/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/scripts.js
+[22m
+2026-05-14T09:52:36.334Z vite:import-analysis [32m3.78ms[39m [2m[5 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/common.js[22m[2m[22m
+2026-05-14T09:52:36.334Z vite:transform [32m4.29ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/common.js[22m
+2026-05-14T09:52:36.337Z vite:load [31m103.46ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/script.js[22m
+2026-05-14T09:52:36.339Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.339Z vite:import-analysis [32m1.12ms[39m [2m[1 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/script.js[22m[2m[22m
+2026-05-14T09:52:36.339Z vite:transform [32m1.95ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/script.js[22m
+2026-05-14T09:52:36.340Z vite:load [31m106.01ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/dom.js[22m
+2026-05-14T09:52:36.342Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.342Z vite:import-analysis [32m1.36ms[39m [2m[3 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/dom.js[22m[2m[22m
+2026-05-14T09:52:36.342Z vite:transform [32m1.65ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/dom.js[22m
+2026-05-14T09:52:36.342Z vite:load [31m107.93ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/head.js[22m
+2026-05-14T09:52:36.343Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.344Z vite:import-analysis [32m1.39ms[39m [2m[3 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/head.js[22m[2m[22m
+2026-05-14T09:52:36.344Z vite:transform [32m1.69ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/head.js[22m
+2026-05-14T09:52:36.344Z vite:load [31m109.89ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/page.js[22m
+2026-05-14T09:52:36.346Z vite:resolve [32m1.70ms[39m 
+[36m./astro/render.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node
+_modules/astro/dist/runtime/server/render/astro/render.js[22m
+2026-05-14T09:52:36.347Z vite:import-analysis [32m2.49ms[39m [2m[5 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/page.js[22m[2m[22m
+2026-05-14T09:52:36.347Z vite:transform [32m2.88ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/page.js[22m
+2026-05-14T09:52:36.347Z vite:load [31m112.98ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/slot.js[22m
+2026-05-14T09:52:36.349Z vite:resolve [32m1.25ms[39m 
+[36m./astro/render-template.js[39m -> [2mC:/Users/User/Desktop/berojgar-engi
+neer/node_modules/astro/dist/runtime/server/render/astro/render-template.js[22
+m
+2026-05-14T09:52:36.349Z vite:resolve [32m1.33ms[39m [36m./any.js[39m -> [
+2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serve
+r/render/any.js[22m
+2026-05-14T09:52:36.349Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.350Z vite:resolve [32m0.83ms[39m 
+[36m/node_modules/astro/dist/runtime/server/render/any.js[39m -> [2mC:/Users
+/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/server/render/a
+ny.js[22m
+2026-05-14T09:52:36.351Z vite:import-analysis [32m3.24ms[39m [2m[4 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/slot.js[22m[2m[22m
+2026-05-14T09:52:36.351Z vite:transform [32m3.79ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/slot.js[22m
+2026-05-14T09:52:36.354Z vite:load [31m120.23ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/tags.js[22m
+2026-05-14T09:52:36.358Z vite:import-analysis [32m0.66ms[39m [2m[1 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/tags.js[22m[2m[22m
+2026-05-14T09:52:36.358Z vite:transform [32m3.31ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/tags.js[22m
+2026-05-14T09:52:36.358Z vite:load [31m124.14ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/util.js[22m
+2026-05-14T09:52:36.359Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.360Z vite:import-analysis [32m1.11ms[39m [2m[1 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/util.js[22m[2m[22m
+2026-05-14T09:52:36.360Z vite:transform [32m1.50ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/util.js[22m
+2026-05-14T09:52:36.360Z vite:load [31m115.77ms[39m [fs] 
+[2m/node_modules/astro/dist/transitions/index.js[22m
+2026-05-14T09:52:36.361Z vite:resolve [32m0.57ms[39m 
+[36m../runtime/server/transition.js[39m -> [2mC:/Users/User/Desktop/berojgar
+-engineer/node_modules/astro/dist/runtime/server/transition.js[22m
+2026-05-14T09:52:36.361Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/transition.js[22m
+2026-05-14T09:52:36.361Z vite:import-analysis [32m1.15ms[39m [2m[1 imports 
+rewritten] [2mnode_modules/astro/dist/transitions/index.js[22m[2m[22m
+2026-05-14T09:52:36.361Z vite:transform [32m1.49ms[39m 
+[2m/node_modules/astro/dist/transitions/index.js[22m
+2026-05-14T09:52:36.391Z vite:load [31m69.07ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/hydration.js[22m
+2026-05-14T09:52:36.393Z vite:resolve [32m1.45ms[39m 
+[36m./serialize.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_mo
+dules/astro/dist/runtime/server/serialize.js[22m
+2026-05-14T09:52:36.393Z vite:cache [memory] 
+[2m/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.393Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.394Z vite:import-analysis [32m2.35ms[39m [2m[3 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/hydration.js[22m[2m[22m
+2026-05-14T09:52:36.394Z vite:transform [32m2.79ms[39m 
+[2m/node_modules/astro/dist/runtime/server/hydration.js[22m
+2026-05-14T09:52:36.394Z vite:load [31m73.08ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/instruction.js[22m
+2026-05-14T09:52:36.395Z vite:import-analysis [32m0.05ms[39m [2m[no 
+imports] 
+[2mnode_modules/astro/dist/runtime/server/render/instruction.js[22m[2m[22m
+2026-05-14T09:52:36.395Z vite:transform [32m0.75ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/instruction.js[22m
+2026-05-14T09:52:36.396Z vite:load [31m74.25ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/serialize.js[22m
+2026-05-14T09:52:36.396Z vite:import-analysis [32m0.05ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/runtime/server/serialize.js[22m[2m[22m
+2026-05-14T09:52:36.396Z vite:transform [32m0.36ms[39m 
+[2m/node_modules/astro/dist/runtime/server/serialize.js[22m
+2026-05-14T09:52:36.396Z vite:load [31m74.92ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/astro/factory.js[22m
+2026-05-14T09:52:36.397Z vite:import-analysis [32m0.03ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/runtime/server/render/astro/factory.js[22
+m[2m[22m
+2026-05-14T09:52:36.397Z vite:transform [32m0.42ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/astro/factory.js[22m
+2026-05-14T09:52:36.397Z vite:load [31m75.86ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/astro/instance.js[22m
+2026-05-14T09:52:36.400Z vite:resolve [32m1.88ms[39m [36m../../util.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/util.js[22m
+2026-05-14T09:52:36.400Z vite:resolve [32m1.97ms[39m [36m../any.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/render/any.js[22m
+2026-05-14T09:52:36.401Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/util.js[22m
+2026-05-14T09:52:36.405Z vite:import-analysis [32m6.79ms[39m [2m[4 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/render/astro/instance.js
+[22m[2m[22m
+2026-05-14T09:52:36.406Z vite:transform [32m8.27ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/astro/instance.js[22m
+2026-05-14T09:52:36.407Z vite:load [31m85.10ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/server-islands.js[22m
+2026-05-14T09:52:36.409Z vite:resolve [32m1.54ms[39m 
+[36m../../../core/encryption.js[39m -> [2mC:/Users/User/Desktop/berojgar-eng
+ineer/node_modules/astro/dist/core/encryption.js[22m
+2026-05-14T09:52:36.409Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/slot.js[22m
+2026-05-14T09:52:36.410Z vite:resolve [32m0.75ms[39m 
+[36m/node_modules/astro/dist/core/encryption.js[39m -> [2mC:/Users/User/Desk
+top/berojgar-engineer/node_modules/astro/dist/core/encryption.js[22m
+2026-05-14T09:52:36.410Z vite:import-analysis [32m3.25ms[39m [2m[3 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/render/server-islands.js
+[22m[2m[22m
+2026-05-14T09:52:36.410Z vite:transform [32m3.64ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/server-islands.js[22m
+2026-05-14T09:52:36.411Z vite:load [31m81.65ms[39m [fs] [2m/node_modules/ast
+ro/dist/runtime/server/render/astro/head-and-content.js[22m
+2026-05-14T09:52:36.412Z vite:import-analysis [32m0.07ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/runtime/server/render/astro/head-and-conte
+nt.js[22m[2m[22m
+2026-05-14T09:52:36.412Z vite:transform [32m0.56ms[39m [2m/node_modules/astr
+o/dist/runtime/server/render/astro/head-and-content.js[22m
+2026-05-14T09:52:36.412Z vite:load [31m82.60ms[39m [fs] [2m/node_modules/ast
+ro/dist/runtime/server/render/astro/render-template.js[22m
+2026-05-14T09:52:36.414Z vite:resolve [32m1.29ms[39m 
+[36m../../escape.js[39m -> [2mC:/Users/User/Desktop/berojgar-engineer/node_m
+odules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.414Z vite:resolve [32m1.37ms[39m [36m../util.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/ser
+ver/render/util.js[22m
+2026-05-14T09:52:36.414Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.414Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/util.js[22m
+2026-05-14T09:52:36.414Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/util.js[22m
+2026-05-14T09:52:36.414Z vite:import-analysis [32m2.03ms[39m [2m[4 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/render/astro/render-templ
+ate.js[22m[2m[22m
+2026-05-14T09:52:36.415Z vite:transform [32m2.38ms[39m [2m/node_modules/astr
+o/dist/runtime/server/render/astro/render-template.js[22m
+2026-05-14T09:52:36.415Z vite:load [31m85.21ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/astro/render.js[22m
+2026-05-14T09:52:36.417Z vite:resolve [32m1.75ms[39m 
+[36m../../../../core/errors/index.js[39m -> [2mC:/Users/User/Desktop/berojga
+r-engineer/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.417Z vite:resolve [32m1.83ms[39m [36m../common.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/render/common.js[22m
+2026-05-14T09:52:36.421Z vite:cache [memory] 
+[2m/node_modules/astro/dist/core/errors/index.js[22m
+2026-05-14T09:52:36.421Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/common.js[22m
+2026-05-14T09:52:36.421Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/util.js[22m
+2026-05-14T09:52:36.421Z vite:import-analysis [32m6.00ms[39m [2m[5 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/astro/render.js[22m[2m[22m
+2026-05-14T09:52:36.421Z vite:transform [32m6.62ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/astro/render.js[22m
+2026-05-14T09:52:36.422Z vite:load [31m84.45ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/scripts.js[22m
+2026-05-14T09:52:36.424Z vite:resolve [32m1.09ms[39m 
+[36m./astro-island.prebuilt-dev.js[39m -> [2mC:/Users/User/Desktop/berojgar-
+engineer/node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js[2
+2m
+2026-05-14T09:52:36.424Z vite:resolve [32m1.20ms[39m 
+[36m./astro-island.prebuilt.js[39m -> [2mC:/Users/User/Desktop/berojgar-engi
+neer/node_modules/astro/dist/runtime/server/astro-island.prebuilt.js[22m
+2026-05-14T09:52:36.427Z vite:resolve [32m2.34ms[39m 
+[36m/node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js[39m 
+-> [2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/
+server/astro-island.prebuilt-dev.js[22m
+2026-05-14T09:52:36.427Z vite:resolve [32m2.42ms[39m 
+[36m/node_modules/astro/dist/runtime/server/astro-island.prebuilt.js[39m -> 
+[2mC:/Users/User/Desktop/berojgar-engineer/node_modules/astro/dist/runtime/serv
+er/astro-island.prebuilt.js[22m
+2026-05-14T09:52:36.427Z vite:import-analysis [32m4.65ms[39m [2m[2 imports 
+rewritten] [2mnode_modules/astro/dist/runtime/server/scripts.js[22m[2m[22m
+2026-05-14T09:52:36.427Z vite:transform [32m5.69ms[39m 
+[2m/node_modules/astro/dist/runtime/server/scripts.js[22m
+2026-05-14T09:52:36.430Z vite:load [31m76.88ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/render/any.js[22m
+2026-05-14T09:52:36.434Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/escape.js[22m
+2026-05-14T09:52:36.434Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/util.js[22m
+2026-05-14T09:52:36.436Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/astro/index.js[22m
+2026-05-14T09:52:36.436Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/common.js[22m
+2026-05-14T09:52:36.436Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/slot.js[22m
+2026-05-14T09:52:36.436Z vite:cache [memory] 
+[2m/node_modules/astro/dist/runtime/server/render/util.js[22m
+2026-05-14T09:52:36.437Z vite:import-analysis [32m6.43ms[39m [2m[6 imports 
+rewritten] 
+[2mnode_modules/astro/dist/runtime/server/render/any.js[22m[2m[22m
+2026-05-14T09:52:36.437Z vite:transform [32m6.97ms[39m 
+[2m/node_modules/astro/dist/runtime/server/render/any.js[22m
+2026-05-14T09:52:36.457Z vite:load [33m46.46ms[39m [fs] 
+[2m/node_modules/astro/dist/core/encryption.js[22m
+2026-05-14T09:52:36.460Z vite:import-analysis [32m2.44ms[39m [2m[0 imports 
+rewritten] [2mnode_modules/astro/dist/core/encryption.js[22m[2m[22m
+2026-05-14T09:52:36.460Z vite:transform [32m2.83ms[39m 
+[2m/node_modules/astro/dist/core/encryption.js[22m
+2026-05-14T09:52:36.460Z vite:load [33m31.85ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js[22m
+2026-05-14T09:52:36.461Z vite:import-analysis [32m0.07ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.j
+s[22m[2m[22m
+2026-05-14T09:52:36.461Z vite:transform [32m0.51ms[39m 
+[2m/node_modules/astro/dist/runtime/server/astro-island.prebuilt-dev.js[22m
+2026-05-14T09:52:36.461Z vite:load [33m32.86ms[39m [fs] 
+[2m/node_modules/astro/dist/runtime/server/astro-island.prebuilt.js[22m
+2026-05-14T09:52:36.462Z vite:import-analysis [32m0.05ms[39m [2m[no 
+imports] [2mnode_modules/astro/dist/runtime/server/astro-island.prebuilt.js[2
+2m[2m[22m
+2026-05-14T09:52:36.462Z vite:transform [32m0.64ms[39m 
+[2m/node_modules/astro/dist/runtime/server/astro-island.prebuilt.js[22m
+2026-05-14T09:52:36.497Z astro:content blog collection added
+2026-05-14T09:52:36.497Z astro:content courses collection added
+2026-05-14T09:52:36.497Z astro:content topics collection added
+15:37:36 [types] Generated 1.01s
+15:37:36 [build] output: "static"
+15:37:36 [build] directory: C:\Users\User\Desktop\berojgar-engineer\dist\
+15:37:36 [build] Collecting build info...
+2026-05-14T09:52:36.524Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/404.astro ΓåÆ 
+/404/index.html
+2026-05-14T09:52:36.524Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/about.astro ΓåÆ 
+/about/index.html
+2026-05-14T09:52:36.525Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/blog/index.astro 
+ΓåÆ /blog/index.html
+2026-05-14T09:52:36.525Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/contact.astro ΓåÆ 
+/contact/index.html
+2026-05-14T09:52:36.525Z astro:build Γö£ΓöÇΓöÇ Γ£ö 
+src/pages/cookie-policy.astro ΓåÆ /cookie-policy/index.html
+2026-05-14T09:52:36.525Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/courses.astro ΓåÆ 
+/courses/index.html
+2026-05-14T09:52:36.525Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/disclaimer.astro 
+ΓåÆ /disclaimer/index.html
+2026-05-14T09:52:36.525Z astro:build Γö£ΓöÇΓöÇ Γ£ö 
+src/pages/privacy-policy.astro ΓåÆ /privacy-policy/index.html
+2026-05-14T09:52:36.526Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/terms.astro ΓåÆ 
+/terms/index.html
+2026-05-14T09:52:36.526Z astro:build Γö£ΓöÇΓöÇ Γ£ö src/pages/index.astro ΓåÆ 
+/index.html
+2026-05-14T09:52:36.526Z astro:build All pages loaded   1778752351.1s
+15:37:36 [build] Γ£ô Completed in 1.21s.
+15:37:36 [build] Building static entrypoints...
+2026-05-14T09:52:36.558Z vite:config using resolved config: {
+  configFile: undefined,
+  cacheDir: 'C:/Users/User/Desktop/berojgar-engineer/node_modules/.vite',
+  clearScreen: false,
+  customLogger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  appType: 'custom',
+  optimizeDeps: {
+    holdUntilCrawlEnd: true,
+    entries: [
+      'C:/Users/User/Desktop/berojgar-engineer/src/**/*.{jsx,tsx,vue,svelte,htm
+l,astro}'
+    ],
+    exclude: [ 'astro', 'node-fetch' ],
+    include: [
+      'astro > cssesc',
+      'astro > aria-query',
+      'astro > axobject-query'
+    ],
+    esbuildOptions: { preserveSymlinks: false }
+  },
+  plugins: [
+    'vite:build-metadata',
+    'vite:watch-package-data',
+    'vite:pre-alias',
+    'alias',
+    'astro:build',
+    'astro:markdown',
+    'astro-content-virtual-mod-plugin',
+    'astro:content-asset-propagation',
+    'astro:assets:esm',
+    'astro:vite-plugin-file-url',
+    'astro:i18n',
+    'astro:actions',
+    'astro:container',
+    '@mdx-js/rollup',
+    'vite:resolve',
+    'vite:html-inline-proxy',
+    'vite:css',
+    'vite:esbuild',
+    'vite:json',
+    'vite:wasm-helper',
+    'vite:worker',
+    'vite:asset',
+    '@astro/rollup-plugin-astro-analyzer',
+    '@astro/plugin-build-internals',
+    '@astro/plugin-renderers',
+    '@astro/plugin-middleware-build',
+    '@astro/plugin-build-pages',
+    'astro:rollup-plugin-build-css',
+    'astro:rollup-plugin-css-scope-to',
+    'astro:head-metadata-build',
+    'astro:chunks',
+    'astro:build:normal',
+    'astro:scripts',
+    'astro:html',
+    'astro:postprocess',
+    'astro:integration-container',
+    'astro:content-imports',
+    '@astro/plugin-middleware',
+    'astro:assets',
+    'astro:prefetch',
+    'astro:transitions',
+    'astro:dev-toolbar',
+    '@astro/plugin-actions',
+    '@astrojs/mdx-postprocess',
+    'vite:wasm-fallback',
+    'astro:vite-plugin-env',
+    'vite:define',
+    'vite:css-post',
+    'vite:build-html',
+    'vite:worker-import-meta-url',
+    'vite:asset-import-meta-url',
+    'vite:force-systemjs-wrap-complete',
+    'commonjs',
+    'vite:data-uri',
+    'vite:dynamic-import-vars',
+    'vite:import-glob',
+    '@astro/plugin-build-manifest',
+    'astro:rollup-plugin-single-css',
+    'astro:rollup-plugin-inline-stylesheets',
+    '@astrojs/vite-plugin-astro-adapter',
+    '@astrojs/vite-plugin-astro-adapter',
+    'astro:tsconfig-alias',
+    'astro:scripts:page-ssr',
+    'astro:scanner',
+    '@astrojs/vite-plugin-astro-ssr-manifest',
+    'vite:build-import-analysis',
+    'vite:esbuild-transpile',
+    'vite:reporter',
+    'vite:load-fallback'
+  ],
+  publicDir: 'C:/Users/User/Desktop/berojgar-engineer/public',
+  root: 'C:/Users/User/Desktop/berojgar-engineer',
+  envPrefix: 'PUBLIC_',
+  define: {
+    'import.meta.env.SITE': '"https://rbcrossley.github.io"',
+    'import.meta.env.BASE_URL': '"/"',
+    'import.meta.env.ASSETS_PREFIX': 'undefined',
+    __ASTRO_INTERNAL_I18N_CONFIG__: '{"base":"/","format":"directory","site":"h
+ttps://rbcrossley.github.io","trailingSlash":"ignore","isBuild":true}'
+  },
+  server: {
+    preTransformRequests: true,
+    hmr: false,
+    watch: { ignored: [Array] },
+    allowedHosts: true,
+    middlewareMode: true,
+    sourcemapIgnoreList: [Function: isInNodeModules$1],
+    fs: {
+      strict: true,
+      allow: [Array],
+      deny: [Array],
+      cachedChecks: undefined
+    }
+  },
+  resolve: {
+    mainFields: [ 'browser', 'module', 'jsnext:main', 'jsnext' ],
+    conditions: [ 'astro' ],
+    extensions: [
+      '.mjs',  '.js',
+      '.mts',  '.ts',
+      '.jsx',  '.tsx',
+      '.json'
+    ],
+    dedupe: [ 'astro' ],
+    preserveSymlinks: false,
+    alias: [
+      [Object], [Object],
+      [Object], [Object],
+      [Object], [Object],
+      [Object]
+    ]
+  },
+  ssr: {
+    target: 'node',
+    noExternal: [
+      'astro',
+      'astro/components',
+      '@nanostores/preact',
+      '@fontsource/*',
+      '@astrojs/mdx',
+      '@astrojs/sitemap',
+      '@astrojs/tailwind',
+      'astro-icon',
+      'astro'
+    ],
+    external: [ 'sharp' ],
+    optimizeDeps: { noDiscovery: true, esbuildOptions: [Object] }
+  },
+  build: {
+    target: 'esnext',
+    cssTarget: 'esnext',
+    outDir: 'C:\\Users\\User\\Desktop\\berojgar-engineer\\dist\\',
+    assetsDir: 'assets',
+    assetsInlineLimit: 4096,
+    cssCodeSplit: true,
+    sourcemap: false,
+    rollupOptions: {
+      preserveEntrySignatures: 'exports-only',
+      input: [],
+      output: [Object]
+    },
+    minify: false,
+    terserOptions: {},
+    write: true,
+    emptyOutDir: false,
+    copyPublicDir: true,
+    manifest: false,
+    lib: false,
+    ssr: true,
+    ssrManifest: false,
+    ssrEmitAssets: true,
+    reportCompressedSize: false,
+    chunkSizeWarningLimit: 500,
+    watch: null,
+    cssMinify: true,
+    modulePreload: { polyfill: false },
+    commonjsOptions: { include: [Array], extensions: [Array] },
+    dynamicImportVarsOptions: { warnOnError: true, exclude: [Array] }
+  },
+  css: { postcss: { plugins: [Array] }, lightningcss: undefined },
+  mode: 'production',
+  logLevel: 'error',
+  base: '/',
+  configFileDependencies: [],
+  inlineConfig: {
+    configFile: false,
+    cacheDir: 
+'C:\\Users\\User\\Desktop\\berojgar-engineer\\node_modules\\.vite\\',
+    clearScreen: false,
+    customLogger: {
+      hasWarned: false,
+      info: [Function: info],
+      warn: [Function: warn],
+      warnOnce: [Function: warnOnce],
+      error: [Function: error],
+      clearScreen: [Function: clearScreen],
+      hasErrorLogged: [Function: hasErrorLogged]
+    },
+    appType: 'custom',
+    optimizeDeps: { entries: [Array], exclude: [Array] },
+    plugins: [
+      [Object], [Object],  [Object], [Object],
+      [Object], [Object],  [Array],  [Object],
+      [Array],  [Array],   [Object], [Object],
+      false,    [Array],   [Object], false,
+      [Object], undefined, [Object], [Object],
+      [Object], [Object],  [Object], [Object],
+      [Object], [Object],  [Object], [Array],
+      [Object], [Object],  [Object], [Array],
+      [Object], [Object],  [Object], [Object],
+      [Object], [Object],  [Object], false,
+      [Object], [Object],  [Object]
+    ],
+    publicDir: 'C:\\Users\\User\\Desktop\\berojgar-engineer\\public\\',
+    root: 'C:\\Users\\User\\Desktop\\berojgar-engineer\\',
+    envPrefix: 'PUBLIC_',
+    define: {
+      'import.meta.env.SITE': '"https://rbcrossley.github.io"',
+      'import.meta.env.BASE_URL': '"/"',
+      'import.meta.env.ASSETS_PREFIX': 'undefined'
+    },
+    server: {
+      hmr: false,
+      watch: [Object],
+      allowedHosts: true,
+      middlewareMode: true
+    },
+    resolve: { alias: [Array], conditions: [Array], dedupe: [Array] },
+    ssr: { noExternal: [Array], external: [] },
+    build: {
+      target: 'esnext',
+      cssMinify: true,
+      assetsDir: 'assets',
+      emptyOutDir: false,
+      manifest: false,
+      outDir: 'C:\\Users\\User\\Desktop\\berojgar-engineer\\dist\\',
+      copyPublicDir: true,
+      rollupOptions: [Object],
+      ssr: true,
+      ssrEmitAssets: true,
+      minify: false,
+      modulePreload: [Object],
+      reportCompressedSize: false
+    },
+    css: { postcss: [Object] },
+    mode: 'production',
+    logLevel: 'error',
+    base: '/'
+  },
+  decodedBase: '/',
+  rawBase: '/',
+  command: 'build',
+  isWorker: false,
+  mainConfig: null,
+  bundleChain: [],
+  isProduction: true,
+  esbuild: { jsxDev: false },
+  preview: {
+    port: undefined,
+    strictPort: undefined,
+    host: undefined,
+    allowedHosts: true,
+    https: undefined,
+    open: undefined,
+    proxy: undefined,
+    cors: undefined,
+    headers: undefined
+  },
+  envDir: 'C:/Users/User/Desktop/berojgar-engineer',
+  env: { BASE_URL: '/', MODE: 'production', DEV: false, PROD: true },
+  assetsInclude: [Function: assetsInclude],
+  logger: {
+    hasWarned: false,
+    info: [Function: info],
+    warn: [Function: warn],
+    warnOnce: [Function: warnOnce],
+    error: [Function: error],
+    clearScreen: [Function: clearScreen],
+    hasErrorLogged: [Function: hasErrorLogged]
+  },
+  packageCache: Map(1) {
+    'fnpd_C:/Users/User/Desktop/berojgar-engineer' => {
+      dir: 'C:/Users/User/Desktop/berojgar-engineer',
+      data: [Object],
+      hasSideEffects: [Function: hasSideEffects],
+      webResolvedImports: {},
+      nodeResolvedImports: {},
+      setResolvedCache: [Function: setResolvedCache],
+      getResolvedCache: [Function: getResolvedCache]
+    },
+    set: [Function (anonymous)]
+  },
+  createResolver: [Function (anonymous)],
+  worker: { format: 'iife', plugins: '() => plugins', rollupOptions: {} },
+  experimental: { importGlobRestoreExtension: false, hmrPartialAccept: false },
+  webSocketToken: 'rr7n-OrnQC2p',
+  additionalAllowedHosts: [],
+  getSortedPlugins: [Function: getSortedPlugins],
+  getSortedPluginHooks: [Function: getSortedPluginHooks]
+}
+2026-05-14T09:52:39.422Z vite:esbuild esbuild error with options used:  {
+  sourcemap: 'external',
+  sourcefile: 
+'C:/Users/User/Desktop/berojgar-engineer/src/components/Footer.astro',
+  loader: 'ts',
+  target: 'esnext',
+  tsconfigRaw: {
+    compilerOptions: {
+      jsx: 'preserve',
+      target: 'ESNext',
+      verbatimModuleSyntax: false,
+      importsNotUsedAsValues: 'remove'
+    }
+  }
+}
+15:37:39 [ERROR] [vite] [31mx[39m Build failed in 2.80s
+2026-05-14T09:52:39.439Z astro:telemetry {
+  context: {
+    isGit: true,
+    anonymousProjectId: 
+'bb0a50549383fda6e1696eb2e633bcccb55d29b0ab129e27664c9e83660d0ea3',
+    packageManager: 'npm',
+    packageManagerVersion: '10.9.3',
+    anonymousId: 
+'4098cefc8935c991e3784a55cc51f22246139b34b2952d791ed1137c7a50da02',
+    anonymousSessionId: 
+'026f63276bddf34a4c38ab8a7a03569650a197c4213b62080ff12b39e2391c92'
+  },
+  meta: {
+    nodeVersion: '22.20.0',
+    viteVersion: '5.4.21',
+    astroVersion: '4.16.19',
+    systemPlatform: 'win32',
+    systemRelease: '10.0.19045',
+    systemArchitecture: 'x64',
+    cpuCount: 4,
+    cpuModel: 'Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz',
+    cpuSpeed: 2712,
+    memoryInMb: 8090,
+    isDocker: false,
+    isTTY: undefined,
+    isWSL: false,
+    isCI: false,
+    ciName: null
+  }
+}
+2026-05-14T09:52:39.439Z astro:telemetry [
+  {
+    "eventName": "ASTRO_CLI_ERROR",
+    "payload": {
+      "plugin": "astro:build",
+      "cliCommand": "build",
+      "isFatal": true,
+      "anonymousMessageHint": "Expected"
+    }
+  }
+]
+Expected "}" but found ":"
+  Location:
+    C:/Users/User/Desktop/berojgar-engineer/src/components/Footer.astro:26:27
+  Stack trace:
+    at failureErrorWithLog (C:\Users\User\Desktop\berojgar-engineer\node_module
+s\esbuild\lib\main.js:1472:15)
+    at responseCallbacks.<computed> (C:\Users\User\Desktop\berojgar-engineer\no
+de_modules\esbuild\lib\main.js:622:9)
+    at Socket.readFromStdout (C:\Users\User\Desktop\berojgar-engineer\node_modu
+les\esbuild\lib\main.js:600:7)
+    at addChunk (node:internal/streams/readable:561:12)
+    at Readable.push (node:internal/streams/readable:392:5)
