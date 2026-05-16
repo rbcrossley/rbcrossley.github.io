@@ -30,6 +30,14 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+<url>
+    <loc>https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry</loc>
+    <lastmod>2024-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://berojgarengineer.com/contact</loc>
     <lastmod>2024-05-07</lastmod>
