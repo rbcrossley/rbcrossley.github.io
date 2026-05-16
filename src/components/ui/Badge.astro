@@ -1,0 +1,40 @@
+---
+export interface Props {
+  variant?: 'default' | 'secondary' | 'outline';
+  class?: string;
+}
+
+const { variant = 'default', class: className = '' } = Astro.props;
+---
+<span class={`ui-badge ${className}`} data-variant={variant}>
+  <slot />
+</span>
+
+<style>
+  .ui-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  .ui-badge[data-variant='default'] {
+    background: rgba(15, 61, 120, 0.12);
+    color: var(--c-primary-dark);
+  }
+
+  .ui-badge[data-variant='secondary'] {
+    background: var(--c-primary-light);
+    color: var(--c-primary-dark);
+  }
+
+  .ui-badge[data-variant='outline'] {
+    border: 1px solid var(--c-card-border);
+    color: var(--c-muted);
+    background: rgba(255, 255, 255, 0.72);
+  }
+</style>

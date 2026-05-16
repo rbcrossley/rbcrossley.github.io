@@ -2,30 +2,39 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { link } from '../../lib/link';
+import Button from '../../components/ui/Button.astro';
+import Card from '../../components/ui/Card.astro';
+import Badge from '../../components/ui/Badge.astro';
 
 const posts = (await getCollection('blog')).sort(
   (a, b) => +new Date(b.data.date) - +new Date(a.data.date)
 );
 ---
 <Base title="Blog » Berojgar Engineer" description="Latest articles on computer science topics">
-  <section class="page">
+  <section class="page section-shell">
     <div class="container">
-      <h1 class="page-title">Latest from the Blog</h1>
-      <p class="page-sub">Articles, tutorials and tips for computer science students.</p>
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">Blog</span>
+          <h1 class="page-title">Latest from the blog</h1>
+          <p class="page-sub">Articles, tutorials and tips for computer science students.</p>
+        </div>
+        <Button href={link('/contact')} variant="outline">Suggest a topic</Button>
+      </div>
 
       <div class="blog-grid">
         {posts.map((post) => (
-          <a href={link(`/blog/${post.slug}`)} class="blog-card">
+          <Card href={link(`/blog/${post.slug}`)} padding="none" class="blog-card">
             <div class="blog-image">
-              <span class="blog-tag">Blog</span>
+              <Badge class="blog-tag">Blog</Badge>
             </div>
             <div class="blog-body">
               <h3>{post.data.title}</h3>
               <p>{post.data.description}</p>
               <time>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-              <span class="read-more">Read More »</span>
+              <span class="read-more">Read more</span>
             </div>
-          </a>
+          </Card>
         ))}
       </div>
     </div>
@@ -33,19 +42,80 @@ const posts = (await getCollection('blog')).sort(
 </Base>
 
 <style>
-  .page { padding: 50px 0; }
-  .page-title { font-size: 36px; font-weight: 800; text-align: center; margin-bottom: 8px; color: var(--c-text); }
-  .page-sub { text-align: center; color: var(--c-muted); margin-bottom: 40px; }
-  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-  .blog-card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06); text-decoration: none; color: var(--c-text); transition: transform 0.2s ease, box-shadow 0.2s ease; }
-  .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.10); }
-  .blog-image { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark)); position: relative; }
-  .blog-tag { position: absolute; bottom: 14px; left: 14px; background: rgba(0,0,0,0.55); color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
-  .blog-body { padding: 22px; }
-  .blog-body h3 { font-size: 18px; line-height: 1.35; margin-bottom: 10px; }
-  .blog-body p { font-size: 14px; color: var(--c-muted); margin: 0 0 12px; }
-  .blog-body time { font-size: 12px; color: var(--c-muted); }
-  .read-more { display: block; color: var(--c-primary); font-weight: 600; font-size: 14px; margin-top: 12px; }
-  @media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
+  .page-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-top: 0.35rem;
+    color: var(--c-text);
+  }
+
+  .page-sub {
+    color: var(--c-muted);
+    margin: 0.7rem 0 0;
+    max-width: 58ch;
+    line-height: 1.7;
+  }
+
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .blog-card {
+    overflow: hidden;
+  }
+
+  .blog-image {
+    aspect-ratio: 16/9;
+    background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));
+    position: relative;
+  }
+
+  .blog-tag {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .blog-body {
+    padding: 1.15rem 1.2rem 1.25rem;
+  }
+
+  .blog-body h3 {
+    font-size: 1.08rem;
+    line-height: 1.45;
+    margin-bottom: 0.5rem;
+  }
+
+  .blog-body p {
+    font-size: 0.94rem;
+    color: var(--c-muted);
+    margin: 0 0 0.85rem;
+    line-height: 1.65;
+  }
+
+  .blog-body time {
+    font-size: 0.82rem;
+    color: var(--c-muted);
+  }
+
+  .read-more {
+    display: block;
+    color: var(--c-primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-top: 0.9rem;
+  }
+
+  @media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 720px) { .page-head { flex-direction: column; align-items: start; } }
   @media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } }
 </style>

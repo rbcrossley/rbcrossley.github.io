@@ -1,23 +1,33 @@
 ---
 import Base from '../layouts/Base.astro';
 import { link } from '../lib/link';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
 ---
 <Base title="Page Not Found » Berojgar Engineer">
-  <section class="page">
+  <section class="page section-shell">
     <div class="container narrow">
-      <h1>404</h1>
-      <h2>Page Not Found</h2>
-      <p>The page you're looking for doesn't exist or has been moved.</p>
-      <a class="btn-primary" href={link('/')}>← Back to Home</a>
+      <Card class="not-found">
+        <Badge variant="secondary">Oops</Badge>
+        <h1>404</h1>
+        <h2>Page not found</h2>
+        <p>The page you're looking for doesn't exist or has been moved.</p>
+        <Button href={link('/')}>← Back to home</Button>
+      </Card>
     </div>
   </section>
 </Base>
 <style>
-  .page { padding: 100px 0 80px; text-align: center; }
-  .narrow { max-width: 600px; }
-  h1 { font-size: 96px; color: var(--c-primary); margin-bottom: 8px; line-height: 1; }
-  h2 { font-size: 28px; margin-bottom: 14px; }
-  p { color: var(--c-muted); margin-bottom: 26px; }
-  .btn-primary { display: inline-flex; padding: 12px 28px; background: var(--c-primary); color: #fff; border-radius: 999px; font-weight: 600; text-decoration: none; transition: background 0.2s ease; }
-  .btn-primary:hover { background: var(--c-primary-dark); }
+  .page { text-align: center; }
+  .narrow { max-width: 620px; }
+  .not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.85rem;
+  }
+  h1 { font-size: clamp(4rem, 10vw, 6rem); color: var(--c-primary); line-height: 1; margin: 0.2rem 0; }
+  h2 { font-size: 1.5rem; margin: 0; }
+  p { color: var(--c-muted); margin: 0.15rem 0 1.1rem; line-height: 1.75; }
 </style>

@@ -1,38 +1,110 @@
 ---
 import Base from '../layouts/Base.astro';
 import { link } from '../lib/link';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import Badge from '../components/ui/Badge.astro';
 ---
 <Base title="About Us » Berojgar Engineer" description="Learn more about Berojgar Engineer and our mission.">
-  <section class="page">
+  <section class="page section-shell">
     <div class="container narrow">
-      <h1 class="page-title">About Us</h1>
-      <p>
-        <strong>Berojgar Engineer</strong> is a virtual classroom dedicated to empowering computer science students with comprehensive insights and practical knowledge. Our mission is to demystify complex computer science concepts and present them in a way that's easy to understand and remember.
-      </p>
-      <h2>Our Vision</h2>
-      <p>
-        To become the go-to resource for CS students worldwide, providing well-curated, free, and high-quality educational content.
-      </p>
-      <h2>What We Offer</h2>
-      <ul>
-        <li>Structured course content for all major CS subjects</li>
-        <li>Beginner-friendly explanations</li>
-        <li>Real-world examples and case studies</li>
-        <li>Regular blog posts on industry trends and tips</li>
-      </ul>
-      <h2>Join Our Community</h2>
-      <p>
-        Have a topic you'd like us to cover? Want to contribute your own knowledge to help fellow students? We'd love to hear from you on our <a href={link('/contact')}>contact page</a>.
-      </p>
+      <div class="page-head">
+        <div>
+          <span class="eyebrow">About</span>
+          <h1 class="page-title">About us</h1>
+          <p class="page-sub">Berojgar Engineer is a virtual classroom built to make computer science concepts easier to understand, revisit, and apply.</p>
+        </div>
+        <Button href={link('/contact')} variant="outline">Contact us</Button>
+      </div>
+
+      <div class="about-grid">
+        <Card class="about-card intro-card">
+          <Badge variant="secondary">Mission</Badge>
+          <p><strong>Berojgar Engineer</strong> helps CS students learn with confidence through practical explanations, well-structured notes, and articles that stay focused on what matters most.</p>
+        </Card>
+
+        <Card class="about-card">
+          <h2>Our vision</h2>
+          <p>To become the go-to resource for CS students worldwide, with free, high-quality educational content that feels clear and dependable.</p>
+        </Card>
+
+        <Card class="about-card">
+          <h2>What we offer</h2>
+          <ul>
+            <li>Structured course content for major CS subjects</li>
+            <li>Beginner-friendly explanations</li>
+            <li>Real-world examples and case studies</li>
+            <li>Regular blog posts on industry trends and tips</li>
+          </ul>
+        </Card>
+
+        <Card class="about-card callout-card">
+          <h2>Join the community</h2>
+          <p>Have a topic you'd like us to cover or want to contribute your knowledge? We’d love to hear from you.</p>
+          <Button href={link('/contact')}>Start a conversation</Button>
+        </Card>
+      </div>
     </div>
   </section>
 </Base>
 <style>
-  .page { padding: 50px 0 60px; }
-  .narrow { max-width: 800px; }
-  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 20px; color: var(--c-text); }
-  h2 { font-size: 22px; margin: 26px 0 12px; color: var(--c-primary-dark); }
-  p { line-height: 1.85; margin: 0 0 16px; }
-  ul { margin: 0 0 16px 22px; line-height: 1.85; }
-  a { color: var(--c-primary); text-decoration: underline; }
+  .narrow { max-width: 840px; }
+
+  .page-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 1rem;
+    margin-bottom: 28px;
+  }
+
+  .page-title {
+    font-size: clamp(2rem, 3vw, 3rem);
+    margin-top: 0.35rem;
+  }
+
+  .page-sub {
+    color: var(--c-muted);
+    max-width: 66ch;
+    margin: 0.7rem 0 0;
+    line-height: 1.75;
+  }
+
+  .about-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .intro-card {
+    grid-column: 1 / -1;
+  }
+
+  .about-card h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .about-card p,
+  .about-card li {
+    color: var(--c-muted);
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  .about-card ul {
+    margin: 0;
+    padding-left: 1.1rem;
+  }
+
+  .callout-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  @media (max-width: 720px) {
+    .page-head { flex-direction: column; align-items: start; }
+    .about-grid { grid-template-columns: 1fr; }
+  }
 </style>

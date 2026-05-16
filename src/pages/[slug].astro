@@ -4,6 +4,9 @@ import Base from '../layouts/Base.astro';
 import CourseSidebar from '../components/CourseSidebar.astro';
 import DiscoverMore from '../components/DiscoverMore.astro';
 import { link } from '../lib/link';
+import Button from '../components/ui/Button.astro';
+import Card from '../components/ui/Card.astro';
+import Badge from '../components/ui/Badge.astro';
 
 export async function getStaticPaths() {
   const courses = await getCollection('courses');
@@ -87,58 +90,67 @@ if (!discover || discover.length === 0) {
 }
 ---
 <Base title={`${pageTitle} » Berojgar Engineer`} description={pageDesc}>
-  <div class="course-layout container">
+  <div class="course-layout container section-shell">
     <aside class="side-left">
-      <CourseSidebar course={course.data} currentSlug={currentSlug} />
+      <Card class="panel sidebar-panel">
+        <CourseSidebar course={course.data} currentSlug={currentSlug} />
+      </Card>
     </aside>
     <article class="main-article">
-      <h1 class="article-title">{pageTitle}</h1>
-      <div class="article-content">
-        {Content ? <Content /> : (
-          <p class="placeholder">{course.data.description}</p>
-        )}
-      </div>
-      <div class="prev-next">
-        {prev ? <a class="pn prev" href={link(`/${prev.slug}`)}>← Previous: {prev.title}</a> : <span></span>}
-        {next ? <a class="pn next" href={link(`/${next.slug}`)}>Next: {next.title} →</a> : <span></span>}
-      </div>
+      <Card class="panel article-panel">
+        <div class="article-top">
+          <Badge variant="secondary">{type === 'topic' ? 'Topic' : 'Course'}</Badge>
+          <h1 class="article-title">{pageTitle}</h1>
+        </div>
+        <div class="article-content">
+          {Content ? <Content /> : (
+            <p class="placeholder">{course.data.description}</p>
+          )}
+        </div>
+        <div class="prev-next">
+          {prev ? <Button href={link(`/${prev.slug}`)} variant="outline" size="sm">← Previous</Button> : <span></span>}
+          {next ? <Button href={link(`/${next.slug}`)} variant="default" size="sm">Next →</Button> : <span></span>}
+        </div>
+      </Card>
     </article>
     <aside class="side-right">
-      <DiscoverMore items={discover} />
+      <Card class="panel discover-panel">
+        <DiscoverMore items={discover} />
+      </Card>
     </aside>
   </div>
 </Base>
 
 <style>
-  .course-layout { display: grid; grid-template-columns: 280px 1fr 280px; gap: 28px; padding: 28px 28px 60px; align-items: start; }
+  .course-layout { display: grid; grid-template-columns: 280px minmax(0, 1fr) 280px; gap: 20px; align-items: start; }
   .side-left, .side-right { position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow-y: auto; }
-  .main-article { background: #fff; padding: 8px 4px 30px; min-width: 0; }
-  .article-title { font-size: 32px; font-weight: 800; color: var(--c-text); margin-bottom: 22px; padding-bottom: 14px; border-bottom: 2px solid var(--c-primary-light); }
+  .sidebar-panel, .discover-panel { background: rgba(255, 255, 255, 0.92); }
+  .main-article { min-width: 0; }
+  .article-top { margin-bottom: 20px; }
+  .article-title { font-size: clamp(2rem, 3vw, 2.8rem); color: var(--c-text); margin-top: 0.65rem; }
   .article-content :global(h1) { font-size: 32px; font-weight: 700; margin: 30px 0 16px; color: var(--c-text); }
   .article-content :global(h2) { font-size: 24px; font-weight: 700; margin: 28px 0 14px; color: var(--c-text); }
   .article-content :global(h3) { font-size: 19px; font-weight: 700; margin: 22px 0 10px; color: var(--c-text); }
-  .article-content :global(p) { margin: 0 0 16px; line-height: 1.8; color: #333; font-size: 16px; }
+  .article-content :global(p) { margin: 0 0 16px; line-height: 1.85; color: var(--c-text); font-size: 16px; }
   .article-content :global(ul), .article-content :global(ol) { margin: 0 0 18px 22px; line-height: 1.85; }
   .article-content :global(li) { margin-bottom: 8px; }
   .article-content :global(strong) { color: var(--c-text); }
-  .article-content :global(blockquote) { background: var(--c-primary-light); border-left: 4px solid var(--c-primary); padding: 14px 18px; margin: 18px 0; border-radius: 4px; }
+  .article-content :global(blockquote) { background: var(--c-primary-light); border-left: 4px solid var(--c-primary); padding: 14px 18px; margin: 18px 0; border-radius: 10px; }
   .article-content :global(a) { color: var(--c-primary); text-decoration: none; }
   .article-content :global(a):hover { text-decoration: underline; }
   .article-content :global(table) { border-collapse: collapse; width: 100%; margin: 18px 0; }
   .article-content :global(th), .article-content :global(td) { border: 1px solid var(--c-border); padding: 10px 14px; text-align: left; }
   .article-content :global(th) { background: var(--c-primary-light); }
-  .article-content :global(img) { max-width: 100%; height: auto; margin: 18px 0; border-radius: 8px; }
-  .article-content :global(code) { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+  .article-content :global(img) { max-width: 100%; height: auto; margin: 18px 0; border-radius: 12px; }
+  .article-content :global(code) { background: #f3f6fb; padding: 2px 6px; border-radius: 6px; font-size: 14px; }
   .placeholder { color: var(--c-muted); font-style: italic; }
-  .prev-next { display: flex; justify-content: space-between; gap: 16px; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--c-border); flex-wrap: wrap; }
-  .pn { display: inline-flex; padding: 10px 16px; background: var(--c-primary-light); color: var(--c-primary-dark); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background 0.2s ease, color 0.2s ease; }
-  .pn:hover { background: var(--c-primary); color: #fff; }
+  .prev-next { display: flex; justify-content: space-between; gap: 16px; margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--c-border); flex-wrap: wrap; }
   @media (max-width: 1100px) {
     .course-layout { grid-template-columns: 260px 1fr; }
     .side-right { display: none; }
   }
   @media (max-width: 768px) {
-    .course-layout { grid-template-columns: 1fr; padding: 18px; }
+    .course-layout { grid-template-columns: 1fr; }
     .side-left { position: static; max-height: none; }
     .article-title { font-size: 26px; }
   }

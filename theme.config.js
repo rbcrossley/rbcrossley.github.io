@@ -7,39 +7,39 @@
 export default {
   colors: {
     // Primary accent color (used for headings, active links, buttons)
-    primary: '#E91E63',         // hot pink / magenta
-    primaryDark: '#C2185B',     // darker shade for hover
-    primaryLight: '#FDE8EC',    // very light pink for header background / sidebar headers
+    primary: '#0F3D78',         // deep academic blue
+    primaryDark: '#0A2B52',     // darker shade for hover
+    primaryLight: '#E8F0FA',    // soft blue tint for surfaces
 
-    // Logo / strong red
-    logo: '#A02020',
+    // Logo / strong blue
+    logo: '#0B2447',
 
     // Hero section
-    heroBg: '#2E3141',          // dark navy background of hero
-    heroText: '#FFFFFF',
-    heroAccent: '#E91E63',      // heading color in hero
+    heroBg: '#08111F',          // dark navy background of hero
+    heroText: '#F8FBFF',
+    heroAccent: '#DCE8FF',      // heading color in hero
 
     // Body / general
-    bg: '#FFFFFF',
-    text: '#2A2A2A',
-    muted: '#6B7280',
+    bg: '#F5F8FC',
+    text: '#0F172A',
+    muted: '#52607A',
 
     // Cards
     cardBg: '#FFFFFF',
-    cardBorder: '#F3D7DB',
-    cardHover: '#FDE8EC',
+    cardBorder: '#D8E1EE',
+    cardHover: '#EEF4FB',
 
     // Sidebar
-    sidebarSection: '#FBD9DC',  // category header bg
-    sidebarActive: '#E91E63',   // active item bg
-    sidebarText: '#2A2A2A',
+    sidebarSection: '#EAF1FA',  // category header bg
+    sidebarActive: '#0F3D78',   // active item bg
+    sidebarText: '#0F172A',
 
     // Footer
-    footerBg: '#2E3141',
-    footerText: '#E5E7EB',
+    footerBg: '#08111F',
+    footerText: '#DCE7F7',
 
     // Borders / dividers
-    border: '#F1D5D9',
+    border: '#D9E3F0',
   },
   site: {
     name: 'Berojgar Engineer',

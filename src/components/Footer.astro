@@ -1,11 +1,13 @@
 ---
 import { link } from '../lib/link';
+import Button from './ui/Button.astro';
 ---
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="col">
       <div class="logo-mark">BE</div>
       <p class="about">Berojgar Engineer is your virtual classroom, dedicated to empowering computer science students with comprehensive insights and practical knowledge.</p>
+      <Button href={link('/contact')} variant="secondary" size="sm" class="footer-cta">Get in touch</Button>
     </div>
     <div class="col">
       <h4>Quick Links</h4>
@@ -40,17 +42,94 @@ import { link } from '../lib/link';
 </footer>
 
 <style>
-  .site-footer { width: 100%; background: var(--c-footer-bg); color: var(--c-footer-text); margin-top: auto; }
-  .footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 28px 32px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 36px; width: 100%; }
-  .col h4 { color: #fff; font-size: 16px; font-weight: 700; margin: 0 0 16px; }
-  .col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-  .col a { color: var(--c-footer-text); text-decoration: none; font-size: 14px; transition: color 0.2s ease; }
-  .col a:hover { color: var(--c-primary); }
-  .logo-mark { width: 56px; height: 50px; border-radius: 6px; background: var(--c-logo); color: #fff; font-weight: 800; font-style: italic; font-size: 22px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-  .about { color: #cfd2dc; font-size: 14px; line-height: 1.7; max-width: 380px; }
-  .footer-bottom { width: 100%; background: rgba(0, 0, 0, 0.2); padding: 16px 28px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); }
-  .footer-bottom p { margin: 0; font-size: 13px; color: #a8acb8; }
-  @media (max-width: 1024px) { .footer-inner { grid-template-columns: 1fr 1fr 1fr; gap: 28px; } }
-  @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr 1fr; padding: 40px 24px; } }
+  .site-footer {
+    width: 100%;
+    background: linear-gradient(180deg, #08111f 0%, #050c16 100%);
+    color: var(--c-footer-text);
+    margin-top: auto;
+    border-top: 1px solid rgba(220, 231, 247, 0.08);
+  }
+
+  .footer-inner {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 56px 24px 32px;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr 1fr;
+    gap: 28px;
+    width: 100%;
+  }
+
+  .col h4 {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 16px;
+  }
+
+  .col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .col a {
+    color: var(--c-footer-text);
+    text-decoration: none;
+    font-size: 0.92rem;
+    transition: color 0.2s ease;
+  }
+
+  .col a:hover {
+    color: #fff;
+  }
+
+  .logo-mark {
+    width: 56px;
+    height: 50px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));
+    color: #fff;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    box-shadow: 0 18px 30px rgba(15, 61, 120, 0.22);
+  }
+
+  .about {
+    color: rgba(220, 231, 247, 0.82);
+    font-size: 0.94rem;
+    line-height: 1.7;
+    max-width: 380px;
+    margin-bottom: 18px;
+  }
+
+  .footer-cta {
+    margin-top: 4px;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 16px 24px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .footer-bottom p {
+    margin: 0;
+    font-size: 0.84rem;
+    color: rgba(220, 231, 247, 0.65);
+  }
+
+  @media (max-width: 1024px) { .footer-inner { grid-template-columns: 1fr 1fr 1fr; } }
+  @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr 1fr; padding: 40px 18px; } }
   @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
 </style>
