@@ -3,6 +3,7 @@ title: 2 Years in Nepal Tech Support, What I'd Tell My Fresher Self
 description: Complete roadmap for 2026
 date: 2026-05-16
 author: cst
+image: /images/blog/fresher-it.png
 ---
 
 Even in current seemingly dim scenarios, I heavily bet on Information Technology careers in Nepal. Nepali IT will grow if Nepalese economy has to grow because we do not have other options. The government putting IT as "strategic industry" just validates my point further. I will provide guidance on few areas that I believe freshers want to know but do not have a reliable way of knowing.
