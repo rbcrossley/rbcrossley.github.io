@@ -5,6 +5,35 @@ date: 2026-05-15
 author: cst
 ---
 
+## Where to Find IT Jobs in Nepal
+
+Finding your first IT job in Nepal can feel overwhelming with so many companies out there. This list is compiled from real research and recommendations from people already working in the industry. Use it as your starting point.
+
+<br>
+
+## How to Use This List
+
+Don't just blindly apply to all 56 companies. Here's a smarter approach:
+
+1. **Shortlist 10-15 companies** that align with your tech stack and career goals
+2. **Research each company** — check their LinkedIn, Glassdoor, and recent news
+3. **Tailor your resume** for each application (generic resumes get ignored)
+4. **Follow up** after 5-7 days if you don't hear back
+5. **Network with current employees** on LinkedIn before applying
+
+<br>
+
+## Pro Tips Before Applying
+
+- Update your LinkedIn profile before applying anywhere — recruiters will check it
+- Have a portfolio or GitHub link ready, even for non-development roles
+- Prepare for technical interviews separately for each company (their stacks vary)
+- Many companies have "hidden" vacancies not posted publicly — email them anyway
+
+<br>
+
+## Main IT Hiring Companies in Nepal
+
 1. [Infinite Nepal](https://sjobs.brassring.com/TGNewUI/Search/Home/Home?partnerid=26656&siteid=5008#home)
 
 2. [Deerhold](https://www.deerhold.com/careers)
@@ -117,8 +146,32 @@ author: cst
 
 56. [swift tech](https://swifttech.com.np/career/)
 
+<br>
+
+## Beyond Traditional IT Companies
+
 Besides these companies, you can also seek for places where IT will be a small part like in:
 
-- hospitals
-- schools and colleges
-- manufacturing firms
+- **Hospitals** — Need IT staff for hospital management systems, EMR, and network maintenance
+- **Schools and colleges** — Require LMS administrators, IT coordinators, and technical support
+- **Manufacturing firms** — Looking for ERP specialists, inventory system managers, and automation support
+
+These non-IT companies often have less competition and can be great starting points for freshers.
+
+<br>
+
+## Quick Reference: Company Types at a Glance
+
+| Type | Examples |
+|------|----------|
+| **Fintech & Banking** | F1Soft, Khalti, IME Digital, banks |
+| **Agency/Outsourcing** | Leapfrog, EB Pearls, Javra, Softbenz |
+| **Product Companies** | Deerhold, LogPoint, SecurityPal, NAAMII |
+| **Local Startups** | Hamro Patro, Naamche, Cloco Nepal |
+| **Multinational** | Verisk, CloudFactory, Fusemachines |
+
+<br>
+
+## Last Advice
+
+Bookmark this page. Update your resume. Start with your top 5 companies from this list. Apply strategically, not desperately. Good luck!
