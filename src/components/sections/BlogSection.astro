@@ -1,0 +1,108 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Card from '../ui/Card.astro';
+import Badge from '../ui/Badge.astro';
+
+interface Props {
+  posts?: CollectionEntry<'blog'>[];
+  limit?: number;
+}
+
+const { posts: customPosts, limit = 3 } = Astro.props;
+
+let posts: CollectionEntry<'blog'>[] = customPosts || [];
+
+if (!customPosts) {
+  const allPosts = (await getCollection('blog')).sort(
+    (a: CollectionEntry<'blog'>, b: CollectionEntry<'blog'>) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+  );
+  posts = allPosts.slice(0, limit);
+}
+---
+
+<section class="py-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto px-6 lg:px-8">
+    <!-- Section Header -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-4">
+        Latest from the Blog
+      </h2>
+      <p class="text-lg text-slate-600 max-w-2xl mx-auto">
+        Explore in-depth articles on computer science fundamentals, career growth, 
+        and industry insights tailored for aspiring engineers.
+      </p>
+    </div>
+
+    <!-- Blog Grid -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {posts.map((post) => (
+        <a 
+          href={`/blog/${post.slug}`}
+          class="group h-full transition-transform duration-300 hover:scale-105"
+        >
+          <Card class="h-full flex flex-col overflow-hidden hover:shadow-2xl transition-all duration-300">
+            <!-- Post Image -->
+            {post.data.image && (
+              <div class="relative h-48 overflow-hidden bg-gradient-to-br from-slate-200 to-slate-300">
+                <img
+                  src={post.data.image}
+                  alt={post.data.title}
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+              </div>
+            )}
+            
+            <!-- Post Content -->
+            <div class="flex-1 p-6 flex flex-col">
+              <!-- Category Badge -->
+              <div class="mb-3">
+                <Badge variant="secondary" class="text-xs">
+                  {post.data.category || 'Article'}
+                </Badge>
+              </div>
+              
+              <!-- Title -->
+              <h3 class="text-xl font-bold text-slate-900 mb-3 group-hover:text-[#1A5F9E] transition-colors line-clamp-2">
+                {post.data.title}
+              </h3>
+              
+              <!-- Description -->
+              {post.data.description && (
+                <p class="text-slate-600 text-sm mb-4 line-clamp-2">
+                  {post.data.description}
+                </p>
+              )}
+              
+              <!-- Metadata -->
+              <div class="flex items-center justify-between pt-4 border-t border-slate-200 mt-auto text-xs text-slate-500">
+                <span class="font-medium">
+                  {post.data.author || 'Berojgar Engineer'}
+                </span>
+                <span>
+                  {new Date(post.data.date).toLocaleDateString('en-US', {
+                    year: 'numeric',
+                    month: 'short',
+                    day: 'numeric'
+                  })}
+                </span>
+              </div>
+            </div>
+          </Card>
+        </a>
+      ))}
+    </div>
+
+    <!-- View All CTA -->
+    <div class="text-center mt-16">
+      <a
+        href="/blog"
+        class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-gradient-to-r from-[#0F3D78] to-[#1A5F9E] rounded-xl hover:from-[#0A2B52] hover:to-[#0F3D78] transition-all duration-200 transform hover:scale-105 shadow-lg hover:shadow-xl"
+      >
+        Explore All Articles
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>
