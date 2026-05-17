@@ -8,29 +8,85 @@ import Badge from '../components/ui/Badge.astro';
 
 const courses = await getCollection('courses');
 ---
+
 <Base title="Courses » Berojgar Engineer" description="All computer science courses">
-  <section class="page section-shell py-12 sm:py-14">
-    <div class="container mx-auto px-6">
-      <div class="mb-7 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
+  <section class="py-12 sm:py-14 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+      <!-- Header -->
+      <div class="mb-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
         <div>
-          <span class="eyebrow">Courses</span>
-          <h1 class="mt-1.5 text-[clamp(2rem,3vw,3rem)] font-bold tracking-tight text-[var(--c-text)]">All courses</h1>
-          <p class="mt-3 max-w-[70ch] leading-[1.7] text-[var(--c-muted)]">Pick a subject below and start learning. Each course includes structured topics, easy explanations, and quick-reference notes.</p>
+          <span class="text-sm font-semibold text-[#1A5F9E] uppercase tracking-wider">Courses</span>
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 mt-1">
+            All courses
+          </h1>
+          <p class="text-slate-600 mt-3 max-w-[70ch] leading-relaxed">
+            Pick a subject below and start learning. Each course includes structured topics, easy explanations, and quick-reference notes.
+          </p>
         </div>
         <Button href={link('/blog')} variant="outline">Browse blog articles</Button>
       </div>
-      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {courses.map((course) => (
-          <Card href={link(`/${course.data.slug}`)} class="flex flex-col gap-3.5 text-[var(--c-text)] no-underline">
-            <div class="inline-flex h-15 w-15 items-center justify-center rounded-[1.15rem] bg-[var(--c-primary-light)] text-[1.05rem] font-extrabold text-[var(--c-primary-dark)]">
-              <span>{course.data.short.split(' ').slice(0,2).map(w => w.charAt(0).toUpperCase()).join('')}</span>
-            </div>
-            <h3 class="text-[1.1rem] font-semibold">{course.data.short}</h3>
-            <p class="flex-1 text-[0.94rem] leading-[1.7] text-[var(--c-muted)]">{course.data.description}</p>
-            <span class="text-sm font-bold text-[var(--c-primary)]">Start Learning →</span>
-          </Card>
-        ))}
-      </div>
+
+      <!-- Courses Grid or Empty State -->
+      {courses.length > 0 ? (
+        <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {courses.map((course) => {
+            // Generate initials from course short name
+            const initials = course.data.short
+              .split(' ')
+              .slice(0, 2)
+              .map(word => word.charAt(0).toUpperCase())
+              .join('');
+            
+            return (
+              <Card href={link(`/${course.data.slug}`)} class="flex flex-col gap-4 text-slate-900 no-underline hover:shadow-lg transition-shadow">
+                {/* Icon Circle */}
+                <div class="inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-blue-100 text-lg font-extrabold text-[#1A5F9E]">
+                  <span>{initials || 'CS'}</span>
+                </div>
+                
+                {/* Course Title */}
+                <h3 class="text-lg font-semibold text-slate-900">
+                  {course.data.short}
+                </h3>
+                
+                {/* Description */}
+                <p class="flex-1 text-sm leading-relaxed text-slate-600">
+                  {course.data.description}
+                </p>
+                
+                {/* CTA Link */}
+                <span class="text-sm font-bold text-[#1A5F9E] hover:underline inline-flex items-center gap-1">
+                  Start Learning
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                  </svg>
+                </span>
+              </Card>
+            );
+          })}
+        </div>
+      ) : (
+        <!-- Empty State -->
+        <div class="text-center py-16 px-4">
+          <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-slate-100 mb-6">
+            <svg class="w-12 h-12 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">No courses available yet</h3>
+          <p class="text-slate-600 max-w-md mx-auto mb-8">
+            We're currently working on adding new courses. Check back soon for structured learning content.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <Button href={link('/blog')} variant="outline">
+              Browse blog articles
+            </Button>
+            <Button href={link('/contact')}>
+              Suggest a course
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   </section>
 </Base>

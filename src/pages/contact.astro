@@ -5,39 +5,63 @@ import Input from '../components/ui/Input.astro';
 import Textarea from '../components/ui/Textarea.astro';
 import Card from '../components/ui/Card.astro';
 ---
+
 <Base title="Contact us » Berojgar Engineer" description="Get in touch with the Berojgar Engineer team">
-  <section class="page section-shell py-12 sm:py-14">
-    <div class="container mx-auto max-w-[760px] px-6">
-      <div class="mb-6">
-        <div>
-          <span class="eyebrow">Contact</span>
-          <h1 class="mt-1.5 text-[clamp(2rem,3vw,3rem)] font-bold tracking-tight text-[var(--c-text)]">Contact us</h1>
-          <p class="mt-3 leading-[1.75] text-[var(--c-muted)]">Have a question, suggestion, or feedback? Drop us a message and we’ll get back to you.</p>
-        </div>
+  <section class="py-12 sm:py-14 bg-white">
+    <div class="max-w-3xl mx-auto px-6">
+      <!-- Header -->
+      <div class="mb-8">
+        <span class="text-sm font-semibold text-[#1A5F9E] uppercase tracking-wider">Contact</span>
+        <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 mt-1">
+          Contact us
+        </h1>
+        <p class="text-slate-600 mt-3 leading-relaxed">
+          Have a question, suggestion, or feedback? Drop us a message and we'll get back to you.
+        </p>
       </div>
 
-      <Card class="p-0">
-        <form class="flex flex-col gap-4 p-5 sm:p-6" onsubmit="event.preventDefault(); document.getElementById('cf-success').style.display='block'; this.reset();">
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div class="flex flex-col gap-2.5">
-              <label for="name" class="text-sm font-semibold text-[var(--c-text)]">Your name</label>
+      <!-- Contact Form Card -->
+      <Card class="overflow-hidden">
+        <form class="flex flex-col gap-5 p-6 sm:p-7" onsubmit="event.preventDefault(); document.getElementById('cf-success').style.display='block'; this.reset();">
+          <!-- Name and Email Grid -->
+          <div class="grid gap-5 sm:grid-cols-2">
+            <div class="flex flex-col gap-2">
+              <label for="name" class="text-sm font-semibold text-slate-700">
+                Your name <span class="text-red-500">*</span>
+              </label>
               <Input id="name" type="text" required placeholder="John Doe" />
             </div>
-            <div class="flex flex-col gap-2.5">
-              <label for="email" class="text-sm font-semibold text-[var(--c-text)]">Your email</label>
+            <div class="flex flex-col gap-2">
+              <label for="email" class="text-sm font-semibold text-slate-700">
+                Your email <span class="text-red-500">*</span>
+              </label>
               <Input id="email" type="email" required placeholder="you@example.com" />
             </div>
           </div>
-          <div class="flex flex-col gap-2.5">
-            <label for="subject" class="text-sm font-semibold text-[var(--c-text)]">Subject</label>
+
+          <!-- Subject -->
+          <div class="flex flex-col gap-2">
+            <label for="subject" class="text-sm font-semibold text-slate-700">
+              Subject <span class="text-red-500">*</span>
+            </label>
             <Input id="subject" type="text" required placeholder="How can we help?" />
           </div>
-          <div class="flex flex-col gap-2.5">
-            <label for="message" class="text-sm font-semibold text-[var(--c-text)]">Message</label>
+
+          <!-- Message -->
+          <div class="flex flex-col gap-2">
+            <label for="message" class="text-sm font-semibold text-slate-700">
+              Message <span class="text-red-500">*</span>
+            </label>
             <Textarea id="message" rows={6} required placeholder="Write your message here..." />
           </div>
+
+          <!-- Submit Button -->
           <Button type="submit">Send message</Button>
-          <p id="cf-success" class="hidden font-semibold text-emerald-600">Thanks! Your message has been received (demo).</p>
+
+          <!-- Success Message -->
+          <p id="cf-success" class="hidden text-center font-semibold text-emerald-600 bg-emerald-50 rounded-lg px-4 py-3">
+            ✓ Thanks! Your message has been received (demo).
+          </p>
         </form>
       </Card>
     </div>

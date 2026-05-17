@@ -39,64 +39,87 @@ const getFallbackImage = (category?: string) => {
         <Button href={link('/contact')} variant="outline">Suggest a topic</Button>
       </div>
 
-      <!-- Blog Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-        {posts.map((post) => {
-          const hasImage = post.data.image;
-          const imageUrl = hasImage || getFallbackImage(post.data.category);
-          
-          return (
-            <Card href={link(`/blog/${post.slug}`)} padding="none" class="overflow-hidden hover:shadow-xl transition-shadow duration-300">
-              <!-- Blog Image Area with Fallback -->
-              <div class="aspect-video bg-gradient-to-br from-slate-200 to-slate-300 relative overflow-hidden">
-                <img
-                  src={imageUrl}
-                  alt={post.data.title}
-                  loading="lazy"
-                  class="w-full h-full object-cover"
-                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop'"
-                />
-                
-                {/* Fallback Icon Overlay (only shown when no image provided) */}
-                {!hasImage && (
-                  <div class="absolute inset-0 flex items-center justify-center bg-slate-800/50">
-                    <svg class="w-12 h-12 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-                    </svg>
+      <!-- Blog Grid or Empty State -->
+      {posts.length > 0 ? (
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {posts.map((post) => {
+            const hasImage = post.data.image;
+            const imageUrl = hasImage || getFallbackImage(post.data.category);
+            
+            return (
+              <Card href={link(`/blog/${post.slug}`)} padding="none" class="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                {/* Blog Image Area with Fallback */}
+                <div class="aspect-video bg-gradient-to-br from-slate-200 to-slate-300 relative overflow-hidden">
+                  <img
+                    src={imageUrl}
+                    alt={post.data.title}
+                    loading="lazy"
+                    class="w-full h-full object-cover"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop'"
+                  />
+                  
+                  {/* Fallback Icon Overlay (only shown when no image provided) */}
+                  {!hasImage && (
+                    <div class="absolute inset-0 flex items-center justify-center bg-slate-800/50">
+                      <svg class="w-12 h-12 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                      </svg>
+                    </div>
+                  )}
+                  
+                  {/* Category Badge on Image */}
+                  <div class="absolute top-3 left-3">
+                    <Badge variant="secondary" class="text-xs bg-white/90 backdrop-blur-sm text-slate-700">
+                      {post.data.category || 'Blog'}
+                    </Badge>
                   </div>
-                )}
-                
-                {/* Category Badge on Image */}
-                <div class="absolute top-3 left-3">
-                  <Badge variant="secondary" class="text-xs bg-white/90 backdrop-blur-sm text-slate-700">
-                    {post.data.category || 'Blog'}
-                  </Badge>
                 </div>
-              </div>
-              
-              <!-- Blog Content -->
-              <div class="p-5">
-                <h3 class="text-lg font-bold text-slate-900 leading-tight mb-2 line-clamp-2">
-                  {post.data.title}
-                </h3>
-                <p class="text-sm text-slate-600 mb-3 leading-relaxed line-clamp-2">
-                  {post.data.description}
-                </p>
-                <time class="text-xs text-slate-500">
-                  {new Date(post.data.date).toLocaleDateString('en-US', { 
-                    year: 'numeric', 
-                    month: 'long', 
-                    day: 'numeric' 
-                  })}
-                </time>
-                <span class="inline-block text-[#1A5F9E] font-bold text-sm mt-3 hover:underline">
-                  Read more →
-                </span>
-              </div>
-            </Card>
-          );
-        })}
-      </div>
+                
+                {/* Blog Content */}
+                <div class="p-5">
+                  <h3 class="text-lg font-bold text-slate-900 leading-tight mb-2 line-clamp-2">
+                    {post.data.title}
+                  </h3>
+                  <p class="text-sm text-slate-600 mb-3 leading-relaxed line-clamp-2">
+                    {post.data.description}
+                  </p>
+                  <time class="text-xs text-slate-500">
+                    {new Date(post.data.date).toLocaleDateString('en-US', { 
+                      year: 'numeric', 
+                      month: 'long', 
+                      day: 'numeric' 
+                    })}
+                  </time>
+                  <span class="inline-block text-[#1A5F9E] font-bold text-sm mt-3 hover:underline">
+                    Read more →
+                  </span>
+                </div>
+              </Card>
+            );
+          })}
+        </div>
+      ) : (
+        <!-- Empty State -->
+        <div class="text-center py-16 px-4">
+          <div class="inline-flex items-center justify-center w-24 h-24 rounded-full bg-slate-100 mb-6">
+            <svg class="w-12 h-12 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-bold text-slate-900 mb-2">No articles yet</h3>
+          <p class="text-slate-600 max-w-md mx-auto mb-8">
+            We're working on creating valuable content for you. Check back soon for tutorials, tips, and insights.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <Button href={link('/courses')} variant="outline">
+              Browse courses
+            </Button>
+            <Button href={link('/contact')}>
+              Suggest a topic
+            </Button>
+          </div>
+        </div>
+      )}
     </div>
   </section>
 </Base>
