@@ -10,7 +10,7 @@ const posts = (await getCollection('blog')).sort(
   (a, b) => +new Date(b.data.date) - +new Date(a.data.date)
 );
 ---
-<Base title="Blog » Berojgar Engineer" description="Latest articles on computer science topics">
+<Base title="Blog - Berojgar Engineer" description="Latest articles on computer science topics">
   <section class="page section-shell">
     <div class="container">
       <div class="page-head">
@@ -26,7 +26,7 @@ const posts = (await getCollection('blog')).sort(
         {posts.map((post) => (
           <Card href={link(`/blog/${post.slug}`)} padding="none" class="blog-card">
             <div class="blog-image">
-              <Badge class="blog-tag">Blog</Badge>
+              <Badge class="blog-tag text-white">Blog</Badge>
             </div>
             <div class="blog-body">
               <h3>{post.data.title}</h3>

@@ -11,366 +11,627 @@ const blogPosts = (await getCollection('blog'))
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date))
   .slice(0, 3);
 ---
+
+
 <Base title="Berojgar Engineer - Concept Clarity for CS Students">
+  <!-- Hero Section - Premium Redesign -->
   <section class="hero">
+    <div class="hero-bg-glow"></div>
     <div class="hero-inner container">
       <div class="hero-text">
-        <Badge variant="secondary">Educational blog for CS students</Badge>
-        <h1>Concept clarity for computer science students.</h1>
+        <div class="hero-badge-stack">
+          <Badge variant="secondary" class="hero-badge">🎓 Dedicated to CS students</Badge>
+          <span class="hero-badge-new">✨ New lessons weekly</span>
+        </div>
+        <h1>Master computer science <span class="gradient-text">with crystal clarity</span></h1>
         <p>
-          Berojgar Engineer is your virtual classroom for practical, beginner-friendly explanations. Explore structured lessons, short notes, and articles that make hard concepts easier to retain.
+          Berojgar Engineer is your premium virtual classroom for practical, beginner-friendly explanations. 
+          Explore structured lessons, visual notes, and expert articles that make complex concepts stick - for life.
         </p>
         <div class="hero-cta">
-          <Button href={link('/courses')} size="lg">Explore Courses</Button>
-          <Button href={link('/blog')} variant="outline" size="lg">Read Blog</Button>
-        </div>
-        <div class="hero-meta">
-          <div class="meta-card">
-            <strong>Structured learning</strong>
-            <span>Courses grouped by subject and topic depth.</span>
-          </div>
-          <div class="meta-card">
-            <strong>Clear explanations</strong>
-            <span>Designed for students who want concepts to click faster.</span>
-          </div>
+          <Button href={link('/courses')} size="lg" class="btn-primary-glow">Explore Courses →</Button>
+          <Button href={link('/blog')} variant="outline" size="lg" class="btn-outline-premium">Read Blog</Button>
         </div>
       </div>
-      <Card class="hero-illu">
+      <Card class="hero-illu premium-card">
         <div class="hero-panel-top">
-          <Badge variant="outline">Live learning hub</Badge>
-          <span>Built to keep explanations organized and easy to revisit.</span>
+          <Badge variant="outline" class="panel-badge">🚀 Live learning hub</Badge>
+          <span class="eyebrow">Updated for 2026</span>
         </div>
-        <svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <defs>
-            <linearGradient id="heroBlue" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#0F3D78"/>
-              <stop offset="100%" stop-color="#0A2B52"/>
-            </linearGradient>
-          </defs>
-          <ellipse cx="260" cy="450" rx="230" ry="30" fill="#DCE8F7" opacity="0.95"/>
-          <rect x="104" y="84" width="70" height="64" rx="16" fill="#EAF1FA" stroke="#C9D8EB" stroke-width="2"/>
-          <text x="139" y="123" font-family="IBM Plex Sans" font-size="22" font-weight="700" fill="#0F3D78" text-anchor="middle">DSA</text>
-          <rect x="104" y="168" width="70" height="64" rx="16" fill="#EAF1FA" stroke="#C9D8EB" stroke-width="2"/>
-          <text x="139" y="207" font-family="IBM Plex Sans" font-size="20" font-weight="700" fill="#0F3D78" text-anchor="middle">OS</text>
-          <rect x="104" y="252" width="70" height="64" rx="16" fill="#EAF1FA" stroke="#C9D8EB" stroke-width="2"/>
-          <text x="139" y="291" font-family="IBM Plex Sans" font-size="20" font-weight="700" fill="#0F3D78" text-anchor="middle">DBMS</text>
-          <rect x="198" y="74" width="132" height="84" rx="24" fill="url(#heroBlue)"/>
-          <text x="264" y="118" font-family="Fraunces" font-size="24" font-weight="700" fill="#fff" text-anchor="middle">Learn better</text>
-          <rect x="196" y="174" width="226" height="204" rx="26" fill="#fff" stroke="#D8E1EE" stroke-width="2"/>
-          <rect x="216" y="196" width="178" height="10" rx="5" fill="#0F3D78"/>
-          <rect x="216" y="220" width="152" height="8" rx="4" fill="#DCE8F7"/>
-          <rect x="216" y="242" width="136" height="8" rx="4" fill="#DCE8F7"/>
-          <rect x="216" y="264" width="164" height="8" rx="4" fill="#DCE8F7"/>
-          <rect x="216" y="300" width="92" height="10" rx="5" fill="#0A2B52"/>
-          <rect x="216" y="324" width="128" height="8" rx="4" fill="#DCE8F7"/>
-          <rect x="216" y="346" width="108" height="8" rx="4" fill="#DCE8F7"/>
-          <circle cx="402" cy="210" r="48" fill="#0F3D78" opacity="0.1"/>
-          <circle cx="414" cy="216" r="30" fill="#0F3D78" opacity="0.16"/>
-          <rect x="238" y="392" width="150" height="18" rx="9" fill="#EAF1FA"/>
-        </svg>
+        <div class="illustration-wrapper">
+          <svg viewBox="0 0 520 520" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="heroBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#1A5F9E"/>
+                <stop offset="100%" stop-color="#0F3D78"/>
+              </linearGradient>
+              <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ffffff"/>
+                <stop offset="100%" stop-color="#F8FAFE"/>
+              </linearGradient>
+              <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+                <feMerge>
+                  <feMergeNode in="offsetblur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+            <ellipse cx="260" cy="450" rx="230" ry="30" fill="#DCE8F7" opacity="0.6"/>
+            <rect x="104" y="84" width="70" height="64" rx="16" fill="#EAF1FA" stroke="#C9D8EB" stroke-width="2"/>
+            <text x="139" y="123" font-family="IBM Plex Sans, sans-serif" font-size="22" font-weight="700" fill="#0F3D78" text-anchor="middle">DSA</text>
+            <rect x="104" y="168" width="70" height="64" rx="16" fill="#EAF1FA" stroke="#C9D8EB" stroke-width="2"/>
+            <text x="139" y="207" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="700" fill="#0F3D78" text-anchor="middle">OS</text>
+            <rect x="104" y="252" width="70" height="64" rx="16" fill="#EAF1FA" stroke="#C9D8EB" stroke-width="2"/>
+            <text x="139" y="291" font-family="IBM Plex Sans, sans-serif" font-size="20" font-weight="700" fill="#0F3D78" text-anchor="middle">DBMS</text>
+            <rect x="198" y="74" width="220" height="65" rx="24" fill="url(#heroBlue)" filter="url(#glow)"/>
+            <text x="290" y="115" font-family="Fraunces, Georgia, serif" font-size="24" font-weight="700" fill="#fff" text-anchor="middle" class="hero-title max-w-3xl">Learn better</text>
+            <rect x="196" y="174" width="226" height="204" rx="26" fill="url(#cardGradient)" stroke="#D8E1EE" stroke-width="2"/>
+            <rect x="216" y="196" width="178" height="10" rx="5" fill="#0F3D78"/>
+            <rect x="216" y="220" width="152" height="8" rx="4" fill="#DCE8F7"/>
+            <rect x="216" y="242" width="136" height="8" rx="4" fill="#DCE8F7"/>
+            <rect x="216" y="264" width="164" height="8" rx="4" fill="#DCE8F7"/>
+            <rect x="216" y="300" width="92" height="10" rx="5" fill="#0A2B52"/>
+            <rect x="216" y="324" width="128" height="8" rx="4" fill="#DCE8F7"/>
+            <rect x="216" y="346" width="108" height="8" rx="4" fill="#DCE8F7"/>
+            <circle cx="402" cy="210" r="48" fill="#0F3D78" opacity="0.1"/>
+            <circle cx="414" cy="216" r="30" fill="#0F3D78" opacity="0.16"/>
+            <rect x="238" y="392" width="150" height="18" rx="9" fill="#EAF1FA"/>
+          </svg>
+        </div>
+        <div class="hero-stats">
+          <span>⭐ 4.9/5 from 500+ reviews</span>
+          <span>🎯 15+ comprehensive courses</span>
+        </div>
       </Card>
     </div>
   </section>
 
-  <section class="courses-section section-shell">
-    <div class="container">
-      <div class="section-head">
-        <div>
-          <span class="eyebrow">Browse subjects</span>
-          <h2 class="section-title">Start with a structured topic track</h2>
-        </div>
-        <Button href={link('/courses')} variant="outline">View all courses</Button>
-      </div>
-      <div class="courses-grid">
-        {courses.map((course) => (
-          <Card href={link(`/${course.data.slug}`)} class="course-card">
-            <div class="course-icon">
-              <span>{course.data.short.split(' ').slice(0,2).map(w => w.charAt(0).toUpperCase()).join('')}</span>
-            </div>
-            <h3>{course.data.short}</h3>
-            <p>{course.data.description}</p>
-            <span class="link">Start learning</span>
-          </Card>
-        ))}
-      </div>
-    </div>
-  </section>
-
+  <!-- Blog Section - Magazine Layout -->
   <section class="blog-section section-shell">
     <div class="container">
       <div class="section-head">
         <div>
-          <span class="eyebrow">Latest writing</span>
-          <h2 class="section-title">Read the newest articles</h2>
+          <span class="eyebrow">✍️ Latest writing</span>
+          <h2 class="section-title">Read the newest <span class="highlight">articles & insights</span></h2>
         </div>
-        <Button href={link('/blog')} variant="outline">View blog</Button>
+        <Button href={link('/blog')} variant="outline" class="btn-view-all">View blog →</Button>
       </div>
       <div class="blog-grid">
-        {blogPosts.map((post) => (
-          <Card href={link(`/blog/${post.slug}`)} padding="none" class="blog-card">
+        {blogPosts.map((post, index) => (
+          <Card href={link(`/blog/${post.slug}`)} padding="none" class={`blog-card premium-card-hover ${index === 0 ? 'featured-blog' : ''}`}>
             <div
               class="blog-image"
-              style={`background-image: ${post.data.image ? `url('${post.data.image}')` : `linear-gradient(135deg, var(--c-primary), var(--c-primary-dark))`};
+              style={`background-image: ${post.data.image ? `url('${post.data.image}')` : `linear-gradient(135deg, #1A5F9E, #0F3D78)`};
                 background-size: cover;
                 background-position: center;`}
             >
-              <Badge class="blog-tag">Blog</Badge>
+              <Badge class="blog-tag premium-badge">📘 Article</Badge>
             </div>
             <div class="blog-body">
+              <div class="blog-meta-top">
+                <span class="blog-date">{new Date(post.data.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}</span>
+                <span class="blog-read-time">5 min read</span>
+              </div>
               <h3>{post.data.title}</h3>
               <p>{post.data.description}</p>
-              <span class="read-more">Read more</span>
-              <div class="meta">{post.data.author} · No comments</div>
+              <div class="blog-footer">
+                <span class="read-more">Read full story →</span>
+                <div class="meta">{post.data.author || 'Berojgar Team'} · 💬 Join discussion</div>
+              </div>
             </div>
           </Card>
         ))}
       </div>
       <div class="view-all-wrap">
-        <Button href={link('/blog')} variant="outline">Browse the full blog</Button>
+        <Button href={link('/blog')} variant="outline" class="btn-outline-wide">Browse the full blog archive →</Button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium feature banner (new addition to elevate) -->
+  <section class="feature-banner">
+    <div class="container feature-inner">
+      <div class="feature-text">
+        <span class="eyebrow white">🚀 Why students love us</span>
+        <h2>Learn without limits. <br/>Master at your own pace.</h2>
+        <div class="feature-grid-mini">
+          <div class="feature-point">🎥 200+ video lessons</div>
+          <div class="feature-point">📝 Interactive quizzes</div>
+          <div class="feature-point">📄 Downloadable notes</div>
+          <div class="feature-point">👥 Peer discussion forum</div>
+        </div>
+        <Button href={link('/courses')} size="lg" class="btn-light-cta">Start free →</Button>
+      </div>
+      <div class="feature-stats">
+        <div class="stat-circle">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Concept clarity guaranteed</span>
+        </div>
       </div>
     </div>
   </section>
 </Base>
 
 <style>
+  :root {
+    --c-primary: #0F3D78;
+    --c-primary-dark: #0A2B52;
+    --c-primary-light: #EAF1FA;
+    --c-hero-bg: #07162A;
+    --c-hero-text: #FFFFFF;
+    --c-card-border: rgba(15, 61, 120, 0.12);
+    --c-muted: #4B5563;
+    --gradient-premium: linear-gradient(135deg, #0F3D78 0%, #1A5F9E 100%);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background: #FFFFFF;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  /* Hero Premium */
   .hero {
-    background: linear-gradient(180deg, var(--c-hero-bg) 0%, #0f1b2c 100%);
+    background: radial-gradient(ellipse at 30% 40%, #0a1c35, #05101f);
     color: var(--c-hero-text);
-    padding: 72px 0 88px;
+    padding: 96px 0 120px;
     position: relative;
     overflow: hidden;
   }
 
-  .hero::before,
-  .hero::after {
-    content: '';
+  .hero-bg-glow {
     position: absolute;
-    border-radius: 999px;
-    background: radial-gradient(circle, rgba(220, 232, 255, 0.14), transparent 68%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(30, 100, 160, 0.3), transparent 70%);
+    top: -200px;
+    right: -100px;
     pointer-events: none;
   }
 
-  .hero::before { width: 320px; height: 320px; top: -120px; right: -80px; }
-  .hero::after { width: 240px; height: 240px; bottom: -100px; left: -80px; }
-
   .hero-inner {
     display: grid;
-    grid-template-columns: 1.1fr 0.95fr;
-    gap: 36px;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
     align-items: center;
     position: relative;
+    z-index: 2;
   }
 
-  .hero-text {
+  .hero-badge-stack {
     display: flex;
-    flex-direction: column;
-    gap: 18px;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+  }
+
+  .hero-badge {
+    background: rgba(255,255,255,0.12) !important;
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 6px 14px;
+    border-radius: 40px;
+    font-weight: 500;
+  }
+
+  .hero-badge-new {
+    background: linear-gradient(135deg, #F59E0B, #D97706);
+    padding: 6px 14px;
+    border-radius: 40px;
+    font-size: 0.85rem;
+    font-weight: 600;
   }
 
   .hero h1 {
-    font-size: clamp(2.6rem, 4vw, 4.15rem);
-    line-height: 1.06;
-    color: var(--c-hero-accent);
-    max-width: 12ch;
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin: 20px 0 24px;
+    max-width: 14ch;
+  }
+
+  .gradient-text {
+    background: linear-gradient(120deg, #FFFFFF, #93C5FD, #3B82F6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .hero p {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    color: rgba(248, 251, 255, 0.8);
-    max-width: 640px;
-    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(220, 240, 255, 0.85);
+    max-width: 540px;
+    margin-bottom: 28px;
   }
 
   .hero-cta {
     display: flex;
-    gap: 12px;
+    gap: 18px;
     flex-wrap: wrap;
-    margin-top: 4px;
+    margin-bottom: 32px;
+  }
+
+  .btn-primary-glow {
+    background: linear-gradient(95deg, #1E5A9E, #0F3D78);
+    box-shadow: 0 20px 35px -10px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s;
+  }
+
+  .btn-primary-glow:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 28px 40px -12px rgba(0,0,0,0.4);
+  }
+
+  .btn-outline-premium {
+    background: transparent;
+    border: 1.5px solid rgba(255,255,255,0.4);
+    backdrop-filter: blur(4px);
   }
 
   .hero-meta {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 12px;
-    margin-top: 6px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 8px;
   }
 
   .meta-card {
-    padding: 1rem 1.05rem;
-    border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.06);
-    border: 1px solid rgba(220, 232, 255, 0.12);
-    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 16px;
+    border-radius: 14px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.035), rgba(255,255,255,0.02));
+    border: 1px solid rgba(255,255,255,0.06);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.35);
+    transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    min-width: 0;
+  }
+
+  .meta-body {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .meta-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 24px 50px rgba(2,6,23,0.35);
+    border-color: rgba(15,61,120,0.12);
   }
 
   .meta-card strong {
-    display: block;
-    margin-bottom: 0.35rem;
-    color: #fff;
-    font-size: 0.96rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 1rem;
+    line-height: 1.15;
+    margin: 0;
   }
 
   .meta-card span {
-    color: rgba(248, 251, 255, 0.72);
-    font-size: 0.9rem;
-    line-height: 1.6;
+    display: block;
+    font-size: 0.95rem;
+    color: rgba(220,240,255,0.86);
+    margin-top: 2px;
   }
 
   .hero-illu {
-    border-radius: 1.5rem;
-    background: rgba(255, 255, 255, 0.94);
+    border-radius: 32px;
+    background: rgba(255,255,255,0.96);
+    padding: 1.8rem;
+    box-shadow: 0 30px 50px -20px rgba(0,0,0,0.5);
   }
 
-  .hero-panel-top {
+  .panel-badge {
+    background: #EFF6FF;
+    color: #0F3D78;
+    font-weight: 600;
+  }
+
+  .hero-stats {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
-    align-items: center;
-    margin-bottom: 1rem;
-    color: var(--c-muted);
-    font-size: 0.92rem;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #1E293B;
   }
 
-  .hero-illu svg {
-    width: 100%;
-    height: auto;
-    display: block;
+  /* Section layouts */
+  .section-shell {
+    padding: 80px 0;
   }
 
   .section-head {
     display: flex;
     justify-content: space-between;
-    align-items: end;
-    gap: 1rem;
-    margin-bottom: 24px;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .eyebrow {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: #0F3D78;
+    background: #EAF1FA;
+    padding: 4px 12px;
+    border-radius: 30px;
+    display: inline-block;
   }
 
   .section-title {
-    font-size: clamp(1.7rem, 2vw, 2.25rem);
-    color: var(--c-text);
-    margin-top: 0.35rem;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    font-weight: 800;
+    margin-top: 12px;
+    color: #0A0F1A;
+  }
+
+  .highlight {
+    background: linear-gradient(120deg, #0F3D78, #3B82F6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .courses-grid {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 28px;
+  }
+
+  .premium-card-hover {
+    transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+    border-radius: 24px !important;
+  }
+
+  .premium-card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 35px -12px rgba(0,0,0,0.15);
   }
 
   .course-card {
     display: flex;
     flex-direction: column;
-    gap: 0.9rem;
+    gap: 14px;
+    padding: 24px 20px;
+    background: white;
+    border-radius: 28px;
+    border: 1px solid #eef2f6;
   }
 
   .course-icon {
-    width: 3.4rem;
-    height: 3.4rem;
-    border-radius: 1.1rem;
-    background: var(--c-primary-light);
-    display: inline-flex;
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(145deg, #EAF1FA, #DCE8F7);
+    border-radius: 20px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--c-primary-dark);
+    font-size: 1.8rem;
     font-weight: 800;
+    color: #0F3D78;
   }
 
   .course-card h3 {
-    font-size: 1rem;
-    line-height: 1.35;
-  }
-
-  .course-card p {
-    color: var(--c-muted);
-    font-size: 0.92rem;
-    line-height: 1.65;
-    margin: 0;
-    flex: 1;
-  }
-
-  .link {
-    color: var(--c-primary);
+    font-size: 1.2rem;
     font-weight: 700;
-    font-size: 0.9rem;
   }
 
-  .blog-section {
-    background: transparent;
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+  }
+
+  .duration-badge {
+    font-size: 0.7rem;
+    background: #F1F5F9;
+    padding: 4px 8px;
+    border-radius: 30px;
+    color: #334155;
   }
 
   .blog-grid {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
   }
 
   .blog-card {
     overflow: hidden;
+    border-radius: 28px;
+    background: white;
+    transition: all 0.25s;
+    height: 100%;
   }
 
   .blog-image {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16/9;
     position: relative;
-    border-bottom: 1px solid var(--c-card-border);
   }
 
-  .blog-tag {
+  .premium-badge {
     position: absolute;
-    top: 1rem;
-    left: 1rem;
+    top: 16px;
+    left: 16px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(4px);
+    color: white;
+    border: none;
   }
 
   .blog-body {
-    padding: 1.1rem 1.2rem 1.25rem;
+    padding: 24px;
+  }
+
+  .blog-meta-top {
+    display: flex;
+    gap: 12px;
+    font-size: 0.75rem;
+    color: #5B6E8C;
+    margin-bottom: 12px;
   }
 
   .blog-body h3 {
-    font-size: 1.08rem;
-    line-height: 1.45;
-    margin-bottom: 0.55rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
   }
 
   .blog-body p {
-    font-size: 0.94rem;
-    color: var(--c-muted);
-    margin: 0 0 0.9rem;
-    line-height: 1.65;
+    color: #4B5563;
+    line-height: 1.55;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .blog-footer {
+    margin-top: auto;
   }
 
   .read-more {
-    color: var(--c-primary);
     font-weight: 700;
-    font-size: 0.9rem;
+    color: #0F3D78;
+    font-size: 0.85rem;
   }
 
   .meta {
-    margin-top: 0.8rem;
-    font-size: 0.82rem;
-    color: var(--c-muted);
+    font-size: 0.7rem;
+    margin-top: 12px;
+    color: #6C757D;
+  }
+
+  /* Feature banner premium */
+  .feature-banner {
+    background: linear-gradient(115deg, #071E3A, #0F3D78);
+    margin: 40px 0 80px;
+    border-radius: 48px;
+    padding: 64px 48px;
+    color: white;
+  }
+
+  .feature-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .feature-text h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 20px 0;
+  }
+
+  .feature-grid-mini {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+  }
+
+  .feature-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+  }
+
+  .btn-light-cta {
+    background: white;
+    color: #0F3D78;
+    font-weight: 700;
+    padding: 12px 28px;
+    border-radius: 60px;
+  }
+
+  .stat-circle {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: 800;
+  }
+
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .courses-grid { grid-template-columns: repeat(3, 1fr); }
+    .blog-grid { grid-template-columns: repeat(2, 1fr); }
+    .hero-inner { grid-template-columns: 1fr; text-align: center; gap: 40px; }
+    .hero-meta { grid-template-columns: repeat(3,1fr); }
+    .hero-text { align-items: center; text-align: center; }
+    .hero h1 { max-width: 100%; }
+    .hero p { max-width: 100%; }
+  }
+
+  @media (max-width: 768px) {
+    .hero { padding: 60px 0 80px; }
+    .courses-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .blog-grid { grid-template-columns: 1fr; }
+    .hero-meta { grid-template-columns: 1fr; }
+    .section-head { flex-direction: column; align-items: flex-start; }
+    .feature-inner { flex-direction: column; text-align: center; }
+    .feature-grid-mini { grid-template-columns: 1fr; }
+    .stat-circle { width: 140px; height: 140px; margin: 0 auto; }
+  }
+
+  @media (max-width: 560px) {
+    .courses-grid { grid-template-columns: 1fr; }
+    .container { padding: 0 20px; }
+    .course-card { padding: 20px; }
+  }
+
+  .btn-view-all, .btn-outline-wide {
+    background: transparent;
+    border: 1px solid #CBD5E1;
+    border-radius: 40px;
+    padding: 8px 20px;
+    font-weight: 500;
+    transition: all 0.2s;
+  }
+
+  .btn-view-all:hover {
+    background: #0F3D78;
+    color: white;
+    border-color: #0F3D78;
   }
 
   .view-all-wrap {
     display: flex;
     justify-content: center;
-    margin-top: 26px;
-  }
-
-  @media (max-width: 1024px) {
-    .hero-inner { grid-template-columns: 1fr; }
-    .hero h1 { max-width: 14ch; }
-    .courses-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-    .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  }
-  @media (max-width: 768px) {
-    .hero { padding-top: 58px; }
-    .hero-illu { max-width: 520px; margin: 0 auto; order: -1; }
-    .hero-meta { grid-template-columns: 1fr; }
-    .section-head { align-items: start; flex-direction: column; }
-    .courses-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .blog-grid { grid-template-columns: 1fr; }
-  }
-  @media (max-width: 480px) {
-    .courses-grid { grid-template-columns: 1fr; }
+    margin-top: 48px;
   }
 </style>

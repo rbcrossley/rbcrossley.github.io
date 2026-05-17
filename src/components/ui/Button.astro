@@ -8,6 +8,7 @@ export interface Props {
   target?: string;
   rel?: string;
   class?: string;
+  id?: string;
 }
 
 const {
@@ -19,11 +20,14 @@ const {
   target,
   rel,
   class: className = '',
+  id = undefined,
 } = Astro.props;
+const ariaExpanded = Astro.props['aria-expanded'];
 
 const Tag = href ? 'a' : 'button';
 ---
 <Tag
+  id={id}
   href={href}
   type={href ? undefined : type}
   target={target}
@@ -31,6 +35,7 @@ const Tag = href ? 'a' : 'button';
   disabled={href ? undefined : disabled}
   data-variant={variant}
   data-size={size}
+  aria-expanded={ariaExpanded}
   class={`ui-button ${className}`}
 >
   <slot />
