@@ -8,44 +8,34 @@ const email = theme.site.contactEmail;
 const lastUpdated = 'May 7, 2026';
 ---
 <Base title={`Disclaimer » ${siteName}`} description={`Disclaimer for ${siteName} website content and accuracy.`}>
-  <section class="page">
-    <div class="container narrow">
-      <h1 class="page-title">Disclaimer</h1>
-      <p class="meta">Last updated: <strong>{lastUpdated}</strong></p>
+  <section class="page py-12 sm:py-14">
+    <div class="container mx-auto max-w-[800px] px-6">
+      <h1 class="mb-2 text-4xl font-extrabold text-[var(--c-text)]">Disclaimer</h1>
+      <p class="mb-7 text-sm text-[var(--c-muted)]">Last updated: <strong>{lastUpdated}</strong></p>
 
       <p>If you require any more information or have any questions about our site’s disclaimer, please feel free to contact us by email at <a href={`mailto:${email}`}>{email}</a>.</p>
 
-      <h2>Disclaimers for {siteName}</h2>
+      <h2 class="mt-8 mb-3 text-[22px] font-semibold text-[var(--c-primary-dark)]">Disclaimers for {siteName}</h2>
       <p>All the information on this website – <strong>https://{domain}</strong> – is published in good faith and for general information purpose only. {siteName} does not make any warranties about the completeness, reliability and accuracy of this information. Any action you take upon the information you find on this website ({siteName}), is strictly at your own risk. {siteName} will not be liable for any losses and/or damages in connection with the use of our website.</p>
 
-      <h2>External Links Disclaimer</h2>
+      <h2 class="mt-8 mb-3 text-[22px] font-semibold text-[var(--c-primary-dark)]">External Links Disclaimer</h2>
       <p>From our website, you can visit other websites by following hyperlinks to such external sites. While we strive to provide only quality links to useful and ethical websites, we have no control over the content and nature of these sites. These links to other websites do not imply a recommendation for all the content found on these sites. Site owners and content may change without notice and may occur before we have the opportunity to remove a link which may have gone ‘bad’.</p>
 
-      <h2>Educational Content Disclaimer</h2>
+      <h2 class="mt-8 mb-3 text-[22px] font-semibold text-[var(--c-primary-dark)]">Educational Content Disclaimer</h2>
       <p>The course notes, articles, and tutorials on {siteName} are intended for <strong>educational purposes only</strong>. They are written based on commonly accepted academic material and the authors’ understanding. While we do our best to keep all content accurate and up to date, computer science is a rapidly evolving field and there is always a possibility of typos, omissions or out-of-date information.</p>
       <p>Always cross-reference with your textbook, course instructor, and/or official documentation when using this content for exams, certifications, or production projects.</p>
 
-      <h2>Advertisements Disclaimer</h2>
+      <h2 class="mt-8 mb-3 text-[22px] font-semibold text-[var(--c-primary-dark)]">Advertisements Disclaimer</h2>
       <p>This website may display advertisements served by third-party networks such as Google AdSense. The presence of advertising on the site does not constitute an endorsement of any advertised product or service. Visitors should perform their own due diligence before relying on or purchasing any third-party offerings.</p>
 
-      <h2>Affiliate Disclaimer</h2>
+      <h2 class="mt-8 mb-3 text-[22px] font-semibold text-[var(--c-primary-dark)]">Affiliate Disclaimer</h2>
       <p>Some of the links on this website may be “affiliate links.” This means that if you click on the link and purchase an item, we may receive an affiliate commission at no extra cost to you. We only recommend products or services that we genuinely believe will be useful to our readers. The decision is yours, and whether or not you decide to purchase something is completely up to you.</p>
 
-      <h2>Consent</h2>
+      <h2 class="mt-8 mb-3 text-[22px] font-semibold text-[var(--c-primary-dark)]">Consent</h2>
       <p>By using our website, you hereby consent to our disclaimer and agree to its terms. If you do not agree, please do not continue to use the site. See our <a href={link('/privacy-policy')}>Privacy Policy</a> and <a href={link('/terms')}>Terms &amp; Conditions</a> for more information.</p>
 
-      <h2>Update</h2>
+      <h2 class="mt-8 mb-3 text-[22px] font-semibold text-[var(--c-primary-dark)]">Update</h2>
       <p>Should we update, amend or make any changes to this document, those changes will be prominently posted here.</p>
     </div>
   </section>
 </Base>
-
-<style>
-  .page { padding: 50px 0 60px; }
-  .narrow { max-width: 800px; }
-  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 8px; color: var(--c-text); }
-  .meta { color: var(--c-muted); font-size: 14px; margin-bottom: 30px; }
-  h2 { font-size: 22px; margin: 30px 0 12px; color: var(--c-primary-dark); }
-  p { line-height: 1.85; margin: 0 0 14px; }
-  a { color: var(--c-primary); text-decoration: underline; }
-</style>

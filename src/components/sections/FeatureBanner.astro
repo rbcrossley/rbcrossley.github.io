@@ -1,0 +1,63 @@
+---
+import { link } from '../../lib/link';
+
+interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+const {
+  title = "Everything you need to scale your learning",
+  subtitle = "Join 5,000+ learners mastering computer science with structured lessons and clear explanations.",
+} = Astro.props as Props;
+---
+
+<section class="relative overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50 py-24 lg:py-14">
+  
+  <!-- Grid background -->
+  <div class="absolute inset-0 opacity-100 bg-[linear-gradient(to_right,#0F3D7820_1px,transparent_1px),linear-gradient(to_bottom,#0F3D7820_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+  
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-8">
+    
+    <!-- Header Section -->
+    <div class="text-center">
+      <!-- Trust Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0F3D78]/5 text-[#0F3D78] text-sm font-medium mb-6">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#1A5F9E] opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-[#1A5F9E]"></span>
+        </span>
+        Trusted by 5,000+ learners
+      </div>
+      
+      <!-- Title -->
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mb-6">
+        {title}
+      </h1>
+      
+      <!-- Subtitle -->
+      <p class="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+        {subtitle}
+      </p>
+      
+      <!-- CTA Buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center mt-10">
+        <a
+          href={link('/courses')}
+          class="group inline-flex items-center justify-center gap-2 px-8 py-3.5 text-base font-semibold text-white bg-[#1A5F9E] rounded-lg hover:bg-[#0F3D78] transition-all duration-200 shadow-md hover:shadow-lg"
+        >
+          Start Learning
+          <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+          </svg>
+        </a>
+        <a
+          href={link('/blog')}
+          class="inline-flex items-center justify-center gap-2 px-8 py-3.5 text-base font-semibold text-slate-700 bg-white border border-slate-300 rounded-lg hover:border-[#1A5F9E] hover:text-[#1A5F9E] transition-all duration-200"
+        >
+          Read our blog
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,58 @@
+---
+export interface Props {
+  id?: string;
+  name?: string;
+  type?: string;
+  placeholder?: string;
+  value?: string;
+  required?: boolean;
+  autocomplete?: string;
+  class?: string;
+}
+
+const {
+  id,
+  name,
+  type = 'text',
+  placeholder,
+  value,
+  required,
+  autocomplete,
+  class: className = '',
+} = Astro.props;
+---
+<input
+  id={id}
+  name={name}
+  type={type}
+  placeholder={placeholder}
+  value={value}
+  required={required}
+  autocomplete={autocomplete}
+  class={`ui-input ${className}`}
+/>
+
+<style>
+  .ui-input {
+    width: 100%;
+    min-height: 2.85rem;
+    border-radius: 1rem;
+    border: 1px solid var(--c-card-border);
+    background: #fff;
+    padding: 0.92rem 1rem;
+    font: inherit;
+    color: var(--c-text);
+    line-height: 1.45;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+  }
+
+  .ui-input::placeholder {
+    color: color-mix(in srgb, var(--c-muted) 76%, white);
+  }
+
+  .ui-input:focus {
+    outline: none;
+    border-color: var(--c-primary);
+    box-shadow: 0 0 0 4px rgba(15, 61, 120, 0.12);
+  }
+</style>

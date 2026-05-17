@@ -1,56 +1,45 @@
 ---
 import { link } from '../lib/link';
 ---
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="col">
-      <div class="logo-mark">BE</div>
-      <p class="about">Berojgar Engineer is your virtual classroom, dedicated to empowering computer science students with comprehensive insights and practical knowledge.</p>
+<footer class="mt-auto w-full border-t border-white/10 bg-gradient-to-b from-[#08111f] to-[#050c16] text-[var(--c-footer-text)]">
+  <div class="mx-auto grid w-full max-w-[1240px] gap-7 px-6 py-14 md:grid-cols-3 lg:grid-cols-5 lg:px-6">
+    <div class="lg:col-span-1">
+      <div class="mb-3 inline-flex h-12 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-[var(--c-primary)] to-[var(--c-primary-dark)] text-sm font-extrabold tracking-[0.08em] text-white shadow-[0_18px_30px_rgba(15,61,120,0.22)]">BE</div>
+      <p class="mb-4 max-w-sm text-sm leading-7 text-[rgba(220,231,247,0.82)]">Berojgar Engineer is your virtual classroom, dedicated to empowering computer science students with comprehensive insights and practical knowledge.</p>
+      <a href={link('/contact')} class="inline-flex items-center justify-center rounded-full border border-slate-600/70 bg-[var(--c-primary-light)] px-3.5 py-2 text-sm font-semibold text-[var(--c-primary-dark)] transition-colors hover:bg-[#dce8f8]">Get in touch</a>
     </div>
-    <div class="col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href={link('/')}>Home</a></li>
-        <li><a href={link('/courses')}>Courses</a></li>
-        <li><a href={link('/blog')}>Blog</a></li>
-        <li><a href={link('/about')}>About Us</a></li>
-        <li><a href={link('/contact')}>Contact us</a></li>
+
+    <div>
+      <h4 class="mb-4 text-base font-bold text-white">Quick Links</h4>
+      <ul class="flex flex-col gap-2.5">
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/')}>Home</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/courses')}>Courses</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/blog')}>Blog</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/about')}>About Us</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/contact')}>Contact us</a></li>
       </ul>
     </div>
-    <div class="col">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href={link('/privacy-policy')}>Privacy Policy</a></li>
-        <li><a href={link('/terms')}>Terms &amp; Conditions</a></li>
-        <li><a href={link('/disclaimer')}>Disclaimer</a></li>
-        <li><a href={link('/cookie-policy')}>Cookie Policy</a></li>
+
+    <div>
+      <h4 class="mb-4 text-base font-bold text-white">Legal</h4>
+      <ul class="flex flex-col gap-2.5">
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/privacy-policy')}>Privacy Policy</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/terms')}>Terms &amp; Conditions</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/disclaimer')}>Disclaimer</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/cookie-policy')}>Cookie Policy</a></li>
       </ul>
     </div>
-    <div class="col">
-      <h4>Contribute</h4>
-      <ul>
-        <li><a href={link('/suggest-a-topic')}>Suggest a topic</a></li>
-        <li><a href={link('/become-a-contributer')}>Become a Contributor</a></li>
+
+    <div>
+      <h4 class="mb-4 text-base font-bold text-white">Contribute</h4>
+      <ul class="flex flex-col gap-2.5">
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/suggest-a-topic')}>Suggest a topic</a></li>
+        <li><a class="text-sm text-[var(--c-footer-text)] transition-colors hover:text-white" href={link('/become-a-contributer')}>Become a Contributor</a></li>
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">
+
+  <div class="border-t border-white/10 bg-white/5 px-6 py-4 text-center text-xs text-[rgba(220,231,247,0.65)]">
     <p>© {new Date().getFullYear()} Berojgar Engineer. All rights reserved.</p>
   </div>
 </footer>
-
-<style>
-  .site-footer { width: 100%; background: var(--c-footer-bg); color: var(--c-footer-text); margin-top: auto; }
-  .footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 28px 32px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 36px; width: 100%; }
-  .col h4 { color: #fff; font-size: 16px; font-weight: 700; margin: 0 0 16px; }
-  .col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-  .col a { color: var(--c-footer-text); text-decoration: none; font-size: 14px; transition: color 0.2s ease; }
-  .col a:hover { color: var(--c-primary); }
-  .logo-mark { width: 56px; height: 50px; border-radius: 6px; background: var(--c-logo); color: #fff; font-weight: 800; font-style: italic; font-size: 22px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-  .about { color: #cfd2dc; font-size: 14px; line-height: 1.7; max-width: 380px; }
-  .footer-bottom { width: 100%; background: rgba(0, 0, 0, 0.2); padding: 16px 28px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); }
-  .footer-bottom p { margin: 0; font-size: 13px; color: #a8acb8; }
-  @media (max-width: 1024px) { .footer-inner { grid-template-columns: 1fr 1fr 1fr; gap: 28px; } }
-  @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr 1fr; padding: 40px 24px; } }
-  @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
-</style>

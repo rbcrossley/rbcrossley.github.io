@@ -1,38 +1,74 @@
 ---
 import Base from '../layouts/Base.astro';
 import { link } from '../lib/link';
+import Card from '../components/ui/Card.astro';
+import Button from '../components/ui/Button.astro';
+import Badge from '../components/ui/Badge.astro';
 ---
+
 <Base title="About Us » Berojgar Engineer" description="Learn more about Berojgar Engineer and our mission.">
-  <section class="page">
-    <div class="container narrow">
-      <h1 class="page-title">About Us</h1>
-      <p>
-        <strong>Berojgar Engineer</strong> is a virtual classroom dedicated to empowering computer science students with comprehensive insights and practical knowledge. Our mission is to demystify complex computer science concepts and present them in a way that's easy to understand and remember.
-      </p>
-      <h2>Our Vision</h2>
-      <p>
-        To become the go-to resource for CS students worldwide, providing well-curated, free, and high-quality educational content.
-      </p>
-      <h2>What We Offer</h2>
-      <ul>
-        <li>Structured course content for all major CS subjects</li>
-        <li>Beginner-friendly explanations</li>
-        <li>Real-world examples and case studies</li>
-        <li>Regular blog posts on industry trends and tips</li>
-      </ul>
-      <h2>Join Our Community</h2>
-      <p>
-        Have a topic you'd like us to cover? Want to contribute your own knowledge to help fellow students? We'd love to hear from you on our <a href={link('/contact')}>contact page</a>.
-      </p>
+  <section class="py-12 sm:py-14 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <!-- Header -->
+      <div class="mb-8 flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
+        <div>
+          <span class="text-sm font-semibold text-[#1A5F9E] uppercase tracking-wider">About</span>
+          <h1 class="text-4xl sm:text-5xl font-bold tracking-tight text-slate-900 mt-1">
+            About us
+          </h1>
+          <p class="text-slate-600 mt-3 max-w-[66ch] leading-relaxed">
+            Berojgar Engineer is a virtual classroom built to make computer science concepts easier to understand, revisit, and apply.
+          </p>
+        </div>
+        <Button href={link('/contact')} variant="outline">Contact us</Button>
+      </div>
+
+      <!-- Content Grid -->
+      <div class="grid gap-5 md:grid-cols-2">
+        <!-- Mission Card (Full Width) -->
+        <Card class="md:col-span-2">
+          <Badge variant="secondary">Mission</Badge>
+          <p class="mt-3 leading-relaxed text-slate-600">
+            <strong class="text-slate-900">Berojgar Engineer</strong> helps CS students learn with confidence through practical explanations, well-structured notes, and articles that stay focused on what matters most.
+          </p>
+        </Card>
+
+        <!-- Vision Card -->
+        <Card>
+          <h2 class="text-lg font-semibold text-slate-900 mb-3">
+            Our vision
+          </h2>
+          <p class="leading-relaxed text-slate-600">
+            To become the go-to resource for CS students worldwide, with free, high-quality educational content that feels clear and dependable.
+          </p>
+        </Card>
+
+        <!-- What We Offer Card -->
+        <Card>
+          <h2 class="text-lg font-semibold text-slate-900 mb-3">
+            What we offer
+          </h2>
+          <ul class="list-disc list-inside space-y-2 leading-relaxed text-slate-600">
+            <li>Structured course content for major CS subjects</li>
+            <li>Beginner-friendly explanations</li>
+            <li>Real-world examples and case studies</li>
+            <li>Regular blog posts on industry trends and tips</li>
+          </ul>
+        </Card>
+
+        <!-- Join Community Card -->
+        <Card class="md:col-span-2 flex flex-col gap-4">
+          <h2 class="text-lg font-semibold text-slate-900">
+            Join the community
+          </h2>
+          <p class="leading-relaxed text-slate-600">
+            Have a topic you'd like us to cover or want to contribute your knowledge? We'd love to hear from you.
+          </p>
+          <div>
+            <Button href={link('/contact')}>Start a conversation</Button>
+          </div>
+        </Card>
+      </div>
     </div>
   </section>
 </Base>
-<style>
-  .page { padding: 50px 0 60px; }
-  .narrow { max-width: 800px; }
-  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 20px; color: var(--c-text); }
-  h2 { font-size: 22px; margin: 26px 0 12px; color: var(--c-primary-dark); }
-  p { line-height: 1.85; margin: 0 0 16px; }
-  ul { margin: 0 0 16px 22px; line-height: 1.85; }
-  a { color: var(--c-primary); text-decoration: underline; }
-</style>
