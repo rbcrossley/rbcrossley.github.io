@@ -9,113 +9,94 @@ import Badge from '../../components/ui/Badge.astro';
 const posts = (await getCollection('blog')).sort(
   (a, b) => +new Date(b.data.date) - +new Date(a.data.date)
 );
+
+// Helper function to get fallback image based on category
+const getFallbackImage = (category?: string) => {
+  const fallbacks: Record<string, string> = {
+    'Tutorial': 'https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=400&fit=crop',
+    'Career': 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&h=400&fit=crop',
+    'Industry': 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop',
+    'Review': 'https://images.unsplash.com/photo-1532619187608-e5375cab36aa?w=800&h=400&fit=crop'
+  };
+  return fallbacks[category || ''] || 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop';
+};
 ---
+
 <Base title="Blog - Berojgar Engineer" description="Latest articles on computer science topics">
-  <section class="page section-shell">
-    <div class="container">
-      <div class="page-head">
+  <section class="py-16 px-4 bg-white">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <!-- Page Header -->
+      <div class="flex justify-between items-end gap-4 mb-7 flex-col sm:flex-row">
         <div>
-          <span class="eyebrow">Blog</span>
-          <h1 class="page-title">Latest from the blog</h1>
-          <p class="page-sub">Articles, tutorials and tips for computer science students.</p>
+          <span class="text-sm font-semibold text-[#1A5F9E] uppercase tracking-wider">Blog</span>
+          <h1 class="text-4xl sm:text-5xl font-bold text-slate-900 mt-1">
+            Latest from the blog
+          </h1>
+          <p class="text-slate-600 mt-3 max-w-[58ch] leading-relaxed">
+            Articles, tutorials and tips for computer science students.
+          </p>
         </div>
         <Button href={link('/contact')} variant="outline">Suggest a topic</Button>
       </div>
 
-      <div class="blog-grid">
-        {posts.map((post) => (
-          <Card href={link(`/blog/${post.slug}`)} padding="none" class="blog-card">
-            <div class="blog-image">
-              <Badge class="blog-tag text-white">Blog</Badge>
-            </div>
-            <div class="blog-body">
-              <h3>{post.data.title}</h3>
-              <p>{post.data.description}</p>
-              <time>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-              <span class="read-more">Read more</span>
-            </div>
-          </Card>
-        ))}
+      <!-- Blog Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {posts.map((post) => {
+          const hasImage = post.data.image;
+          const imageUrl = hasImage || getFallbackImage(post.data.category);
+          
+          return (
+            <Card href={link(`/blog/${post.slug}`)} padding="none" class="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <!-- Blog Image Area with Fallback -->
+              <div class="aspect-video bg-gradient-to-br from-slate-200 to-slate-300 relative overflow-hidden">
+                <img
+                  src={imageUrl}
+                  alt={post.data.title}
+                  loading="lazy"
+                  class="w-full h-full object-cover"
+                  onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=400&fit=crop'"
+                />
+                
+                {/* Fallback Icon Overlay (only shown when no image provided) */}
+                {!hasImage && (
+                  <div class="absolute inset-0 flex items-center justify-center bg-slate-800/50">
+                    <svg class="w-12 h-12 text-white/70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                )}
+                
+                {/* Category Badge on Image */}
+                <div class="absolute top-3 left-3">
+                  <Badge variant="secondary" class="text-xs bg-white/90 backdrop-blur-sm text-slate-700">
+                    {post.data.category || 'Blog'}
+                  </Badge>
+                </div>
+              </div>
+              
+              <!-- Blog Content -->
+              <div class="p-5">
+                <h3 class="text-lg font-bold text-slate-900 leading-tight mb-2 line-clamp-2">
+                  {post.data.title}
+                </h3>
+                <p class="text-sm text-slate-600 mb-3 leading-relaxed line-clamp-2">
+                  {post.data.description}
+                </p>
+                <time class="text-xs text-slate-500">
+                  {new Date(post.data.date).toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                  })}
+                </time>
+                <span class="inline-block text-[#1A5F9E] font-bold text-sm mt-3 hover:underline">
+                  Read more →
+                </span>
+              </div>
+            </Card>
+          );
+        })}
       </div>
     </div>
   </section>
 </Base>
-
-<style>
-  .page-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 1rem;
-    margin-bottom: 28px;
-  }
-
-  .page-title {
-    font-size: clamp(2rem, 3vw, 3rem);
-    margin-top: 0.35rem;
-    color: var(--c-text);
-  }
-
-  .page-sub {
-    color: var(--c-muted);
-    margin: 0.7rem 0 0;
-    max-width: 58ch;
-    line-height: 1.7;
-  }
-
-  .blog-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-  }
-
-  .blog-card {
-    overflow: hidden;
-  }
-
-  .blog-image {
-    aspect-ratio: 16/9;
-    background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark));
-    position: relative;
-  }
-
-  .blog-tag {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-  }
-
-  .blog-body {
-    padding: 1.15rem 1.2rem 1.25rem;
-  }
-
-  .blog-body h3 {
-    font-size: 1.08rem;
-    line-height: 1.45;
-    margin-bottom: 0.5rem;
-  }
-
-  .blog-body p {
-    font-size: 0.94rem;
-    color: var(--c-muted);
-    margin: 0 0 0.85rem;
-    line-height: 1.65;
-  }
-
-  .blog-body time {
-    font-size: 0.82rem;
-    color: var(--c-muted);
-  }
-
-  .read-more {
-    display: block;
-    color: var(--c-primary);
-    font-weight: 700;
-    font-size: 0.9rem;
-    margin-top: 0.9rem;
-  }
-
-  @media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 720px) { .page-head { flex-direction: column; align-items: start; } }
-  @media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } }
-</style>
