@@ -9,99 +9,28 @@ import Badge from '../components/ui/Badge.astro';
 const courses = await getCollection('courses');
 ---
 <Base title="Courses » Berojgar Engineer" description="All computer science courses">
-  <section class="page section-shell">
-    <div class="container">
-      <div class="page-head">
+  <section class="page section-shell py-12 sm:py-14">
+    <div class="container mx-auto px-6">
+      <div class="mb-7 flex flex-col items-start justify-between gap-4 md:flex-row md:items-end">
         <div>
           <span class="eyebrow">Courses</span>
-          <h1 class="page-title">All courses</h1>
-          <p class="page-sub">Pick a subject below and start learning. Each course includes structured topics, easy explanations, and quick-reference notes.</p>
+          <h1 class="mt-1.5 text-[clamp(2rem,3vw,3rem)] font-bold tracking-tight text-[var(--c-text)]">All courses</h1>
+          <p class="mt-3 max-w-[70ch] leading-[1.7] text-[var(--c-muted)]">Pick a subject below and start learning. Each course includes structured topics, easy explanations, and quick-reference notes.</p>
         </div>
         <Button href={link('/blog')} variant="outline">Browse blog articles</Button>
       </div>
-      <div class="courses-grid">
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {courses.map((course) => (
-          <Card href={link(`/${course.data.slug}`)} class="course-card">
-            <div class="course-icon">
+          <Card href={link(`/${course.data.slug}`)} class="flex flex-col gap-3.5 text-[var(--c-text)] no-underline">
+            <div class="inline-flex h-15 w-15 items-center justify-center rounded-[1.15rem] bg-[var(--c-primary-light)] text-[1.05rem] font-extrabold text-[var(--c-primary-dark)]">
               <span>{course.data.short.split(' ').slice(0,2).map(w => w.charAt(0).toUpperCase()).join('')}</span>
             </div>
-            <h3>{course.data.short}</h3>
-            <p>{course.data.description}</p>
-            <span class="link">Start Learning →</span>
+            <h3 class="text-[1.1rem] font-semibold">{course.data.short}</h3>
+            <p class="flex-1 text-[0.94rem] leading-[1.7] text-[var(--c-muted)]">{course.data.description}</p>
+            <span class="text-sm font-bold text-[var(--c-primary)]">Start Learning →</span>
           </Card>
         ))}
       </div>
     </div>
   </section>
 </Base>
-
-<style>
-  .page-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 1rem;
-    margin-bottom: 28px;
-  }
-
-  .page-title {
-    font-size: clamp(2rem, 3vw, 3rem);
-    margin-top: 0.35rem;
-  }
-
-  .page-sub {
-    color: var(--c-muted);
-    max-width: 70ch;
-    margin: 0.7rem 0 0;
-    line-height: 1.7;
-  }
-
-  .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-  }
-
-  .course-card {
-    text-decoration: none;
-    color: var(--c-text);
-    display: flex;
-    flex-direction: column;
-    gap: 0.9rem;
-  }
-
-  .course-icon {
-    width: 3.8rem;
-    height: 3.8rem;
-    border-radius: 1.15rem;
-    background: var(--c-primary-light);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 800;
-    color: var(--c-primary-dark);
-    font-size: 1.05rem;
-  }
-
-  .course-card h3 {
-    font-size: 1.1rem;
-  }
-
-  .course-card p {
-    color: var(--c-muted);
-    font-size: 0.94rem;
-    line-height: 1.7;
-    flex: 1;
-    margin: 0;
-  }
-
-  .link {
-    color: var(--c-primary);
-    font-weight: 700;
-    font-size: 0.92rem;
-  }
-
-  @media (max-width: 1024px) { .courses-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  @media (max-width: 720px) { .page-head { flex-direction: column; align-items: start; } }
-  @media (max-width: 640px) { .courses-grid { grid-template-columns: 1fr; } }
-</style>

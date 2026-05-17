@@ -6,31 +6,31 @@ import Button from '../components/ui/Button.astro';
 import Badge from '../components/ui/Badge.astro';
 ---
 <Base title="About Us » Berojgar Engineer" description="Learn more about Berojgar Engineer and our mission.">
-  <section class="page section-shell">
-    <div class="container narrow">
-      <div class="page-head">
+  <section class="page section-shell py-12 sm:py-14">
+    <div class="container mx-auto max-w-[840px] px-6">
+      <div class="mb-7 flex flex-col items-start gap-4 md:flex-row md:items-end md:justify-between">
         <div>
           <span class="eyebrow">About</span>
-          <h1 class="page-title">About us</h1>
-          <p class="page-sub">Berojgar Engineer is a virtual classroom built to make computer science concepts easier to understand, revisit, and apply.</p>
+          <h1 class="mt-1.5 text-[clamp(2rem,3vw,3rem)] font-bold tracking-tight text-[var(--c-text)]">About us</h1>
+          <p class="mt-3 max-w-[66ch] leading-[1.75] text-[var(--c-muted)]">Berojgar Engineer is a virtual classroom built to make computer science concepts easier to understand, revisit, and apply.</p>
         </div>
         <Button href={link('/contact')} variant="outline">Contact us</Button>
       </div>
 
-      <div class="about-grid">
-        <Card class="about-card intro-card">
+      <div class="grid gap-4 md:grid-cols-2">
+        <Card class="col-span-full">
           <Badge variant="secondary">Mission</Badge>
-          <p><strong>Berojgar Engineer</strong> helps CS students learn with confidence through practical explanations, well-structured notes, and articles that stay focused on what matters most.</p>
+          <p class="mt-3 leading-[1.75] text-[var(--c-muted)]"><strong>Berojgar Engineer</strong> helps CS students learn with confidence through practical explanations, well-structured notes, and articles that stay focused on what matters most.</p>
         </Card>
 
-        <Card class="about-card">
-          <h2>Our vision</h2>
-          <p>To become the go-to resource for CS students worldwide, with free, high-quality educational content that feels clear and dependable.</p>
+        <Card>
+          <h2 class="mb-3 text-[1.15rem] font-semibold text-[var(--c-text)]">Our vision</h2>
+          <p class="leading-[1.75] text-[var(--c-muted)]">To become the go-to resource for CS students worldwide, with free, high-quality educational content that feels clear and dependable.</p>
         </Card>
 
-        <Card class="about-card">
-          <h2>What we offer</h2>
-          <ul>
+        <Card>
+          <h2 class="mb-3 text-[1.15rem] font-semibold text-[var(--c-text)]">What we offer</h2>
+          <ul class="ml-4 list-disc space-y-2 leading-[1.75] text-[var(--c-muted)]">
             <li>Structured course content for major CS subjects</li>
             <li>Beginner-friendly explanations</li>
             <li>Real-world examples and case studies</li>
@@ -38,73 +38,12 @@ import Badge from '../components/ui/Badge.astro';
           </ul>
         </Card>
 
-        <Card class="about-card callout-card">
-          <h2>Join the community</h2>
-          <p>Have a topic you'd like us to cover or want to contribute your knowledge? We’d love to hear from you.</p>
+        <Card class="flex flex-col gap-3">
+          <h2 class="text-[1.15rem] font-semibold text-[var(--c-text)]">Join the community</h2>
+          <p class="leading-[1.75] text-[var(--c-muted)]">Have a topic you'd like us to cover or want to contribute your knowledge? We’d love to hear from you.</p>
           <Button href={link('/contact')}>Start a conversation</Button>
         </Card>
       </div>
     </div>
   </section>
 </Base>
-<style>
-  .narrow { max-width: 840px; }
-
-  .page-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 1rem;
-    margin-bottom: 28px;
-  }
-
-  .page-title {
-    font-size: clamp(2rem, 3vw, 3rem);
-    margin-top: 0.35rem;
-  }
-
-  .page-sub {
-    color: var(--c-muted);
-    max-width: 66ch;
-    margin: 0.7rem 0 0;
-    line-height: 1.75;
-  }
-
-  .about-grid {
-    display: grid;
-    gap: 18px;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .intro-card {
-    grid-column: 1 / -1;
-  }
-
-  .about-card h2 {
-    font-size: 1.15rem;
-    margin-bottom: 0.75rem;
-  }
-
-  .about-card p,
-  .about-card li {
-    color: var(--c-muted);
-    line-height: 1.75;
-    margin: 0;
-  }
-
-  .about-card ul {
-    margin: 0;
-    padding-left: 1.1rem;
-  }
-
-  .callout-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.85rem;
-  }
-
-  @media (max-width: 720px) {
-    .page-head { flex-direction: column; align-items: start; }
-    .about-grid { grid-template-columns: 1fr; }
-  }
-</style>
