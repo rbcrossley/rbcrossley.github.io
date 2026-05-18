@@ -3,7 +3,7 @@ title: 45 days of DevOps
 description: Honest experience from the ground up
 date: 2026-05-16
 author: cst
-image: /images/blog/fresher-it.png
+image: /images/blog/45-days-of-devops.png
 ---
 
 I will be starting 45 days of DevOps from today. The days will not be counted continuously from today. It will be counted continuously after 3 weeks when I join Sanjiv R Karn's DevOps course.
