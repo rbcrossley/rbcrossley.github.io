@@ -22,7 +22,7 @@ As a rule of thumb, here is the salary breakdown:
 - Add 0-10 thousands increments each year you stay in the same company. Offshored to Nepal companies which pay higher base salaries will provide lower increment. In house Nepali companies who provide lower base salaries will provide higher increments as you go on.
 - You "could" double your salary by switching jobs.
 
-Companies on profit provide annual bonuses.
+Companies on profit provide annual bonuses. Dashain bonus is mandatory.
 
 I do not want to bring glassdoor data and put here. It will not be accurate. There are some websites like [salaryinbox](https://salaryinbox.com/) in Nepal. But I do not trust them on their collected data.
 

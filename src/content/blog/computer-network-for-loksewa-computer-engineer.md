@@ -198,7 +198,7 @@ Converged network is thus a collection of wired mediums+wireless mediums+IoT tec
 | RIP   |OSPF |
 | ------ | ----- |
 | RIP is a distance vector routing protocol. |OSPF is a link state routing protocol. |
-|RIP is primitve.| OSPF is intelligent.|
+|RIP is primitive.| OSPF is intelligent.|
 |RIP uses only hop count as a routing metric.|OSPF uses security, distance, delay and many other parameters as a routing metric.|
 |RIP uses Bellman Ford algorithm.| OPSF uses Dijkstra's shortest path algorithm.|
 
