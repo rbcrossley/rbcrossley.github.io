@@ -3,7 +3,7 @@ title: Most important interview questions asked in IT jobs in Kathmandu Valley
 description: The end to end guide to IT interviews in Nepal
 date: 2026-05-29
 author: cst
-image: /images/blog/45-days-of-devops.png
+image: /images/blog/interview.png
 ---
 
 I have interviewed in many places. Based on my experience I have provided some popular interview questions asked in IT jobs in Kathmandu Valley. Most of these were for fresher IT engineer role like Support Engineer, System Engineer, System Admin, Network Admin etc. 
