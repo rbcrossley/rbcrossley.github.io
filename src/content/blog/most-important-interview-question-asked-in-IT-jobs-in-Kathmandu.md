@@ -28,7 +28,7 @@ I will just provide the topics that are usually asked in technical portion. Rest
 - MAC address vs IP address
 - ARP (Address Resolution Protocol) working
 - NAT (Network Address Translation) types (SNAT, DNAT and when to use what)
-- DHCP working process (DORA — Discover, Offer, Request, Acknowledge)
+- DHCP working process (DORA ; Discover, Offer, Request, Acknowledge)
 - DHCP lease, scope, and reservation
 - DNS working process (recursive vs iterative resolution) (Self hosted DNS troubleshooting questions are important)
 - DNS record types (A, AAAA, CNAME, MX, PTR, NS, SOA, TXT)
@@ -71,7 +71,7 @@ I will just provide the topics that are usually asked in technical portion. Rest
   - Remote Access VPN
   - Client-to-Site VPN
   - MPLS VPN
-- IPSec VPN — working mechanism (tunnel vs transport mode)
+- IPSec VPN ; working mechanism (tunnel vs transport mode)
 - SSL VPN vs IPSec VPN difference
 - IKE (Internet Key Exchange) phases
 - VPN tunneling protocols (L2TP, PPTP, OpenVPN, WireGuard)
@@ -95,8 +95,8 @@ I will just provide the topics that are usually asked in technical portion. Rest
 - Domain controller role
 - AD DS (Active Directory Domain Services)
 - LDAP basics
-- Group Policy Object (GPO) — purpose and application
-- FSMO roles (5 roles — names and functions)
+- Group Policy Object (GPO) ; purpose and application
+- FSMO roles (5 roles ; names and functions)
 - User account management in AD
 - OU (Organizational Unit) concept
 - AD replication concept
@@ -104,16 +104,16 @@ I will just provide the topics that are usually asked in technical portion. Rest
 - DNS integration with Active Directory
 - NTDS.dit database
 - Authoritative vs non-authoritative AD restore
-- Windows Server roles — DNS, DHCP, File Server, Print Server, IIS
+- Windows Server roles ; DNS, DHCP, File Server, Print Server, IIS
 - Server Core vs Desktop Experience
 - Server Manager basics
-- Event Viewer — log types (Application, Security, System)
+- Event Viewer ; log types (Application, Security, System)
 - Windows boot process
-- BSOD (Blue Screen of Death) — common causes
+- BSOD (Blue Screen of Death) ; common causes
 - Remote Desktop Protocol (RDP)
 - SMB (Server Message Block) protocol
 - Network drive mapping
-- RAID levels (0, 1, 5, 6, 10) — differences and use cases
+- RAID levels (0, 1, 5, 6, 10) ; differences and use cases
 - Hardware RAID vs Software RAID
 - UPS and its importance for servers
 
@@ -123,7 +123,7 @@ I will just provide the topics that are usually asked in technical portion. Rest
 - User management (useradd, passwd, sudo, /etc/passwd, /etc/shadow)
 - Process management (ps, kill, jobs, bg, fg, systemctl, service)
 - Package management (apt, yum/dnf, rpm)
-- Crontab — scheduling jobs
+- Crontab ; scheduling jobs
 - SSH configuration and key-based authentication
 - Log files location (/var/log/syslog, /var/log/auth.log, /var/log/messages)
 - Firewall in Linux (iptables, ufw, firewalld)
@@ -144,7 +144,7 @@ I will just provide the topics that are usually asked in technical portion. Rest
 - Server hardware components (CPU, RAM types, NIC, HBA, RAID controller)
 - BIOS vs UEFI
 - POST (Power-On Self-Test) process
-- Storage types — HDD, SSD, NVMe, SAN, NAS
+- Storage types ; HDD, SSD, NVMe, SAN, NAS
 - Fiber Channel vs iSCSI
 - RAID concept and levels (0, 1, 5, 6, 10)
 - Hot spare in RAID
@@ -172,7 +172,7 @@ I will just provide the topics that are usually asked in technical portion. Rest
 - CI/CD pipeline concept (Continuous Integration, Continuous Delivery, Continuous Deployment)
 - Git fundamentals (clone, commit, push, pull, branch, merge, rebase, pull request)
 - Git branching strategies (GitFlow, trunk-based)
-- Jenkins basics — pipeline, stages, agents
+- Jenkins basics ; pipeline, stages, agents
 - GitHub Actions concept
 - Docker fundamentals
   - Container vs VM
@@ -188,9 +188,9 @@ I will just provide the topics that are usually asked in technical portion. Rest
 - Infrastructure as Code (IaC) concept
 - Ansible basics (playbook, inventory, task, role)
 - Terraform basics (provider, resource, state, plan, apply)
-- Cloud basics — AWS, Azure, GCP (IaaS, PaaS, SaaS difference)
+- Cloud basics ; AWS, Azure, GCP (IaaS, PaaS, SaaS difference)
 - AWS core services (EC2, S3, VPC, IAM, Route53, RDS, CloudWatch)
-- Monitoring concepts (Prometheus, Grafana, ELK stack — basics)
+- Monitoring concepts (Prometheus, Grafana, ELK stack ; basics)
 - Bash scripting basics (variables, loops, conditionals, functions)
 - Python scripting basics for automation
 - Microservices vs monolithic architecture
