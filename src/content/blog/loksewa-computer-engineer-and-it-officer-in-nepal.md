@@ -75,6 +75,7 @@ The salary constitutes basic salary+various allowances+non-available stuffs like
 - Social Security Fund=72,815
 
 
+
 The salaries and benefits for sixth level officer is provided below:
 
 [link to salaries](https://imgur.com/a/salary-of-entry-level-officer-government-corporations-ZmJVXUU)
@@ -150,6 +151,8 @@ Syllabus for computer engineer and IT officer Loksewa positions at various corpo
 
 Thus, I highly recommend that you check syllabus updates time to time.
 
+> Note: Each corporations will take their exam differently. There is no single exam as of now. Hence the syllabus varies per corporation.
+
 ## Common subjects:
 
 - Computer Architecture / Computer Organization
@@ -202,6 +205,9 @@ To add, engineering concepts stack one upon another. So you have to study everyt
 
 There are very few available question papers so you cannot extrapolate accurately. 
 
+> How long should I prepare Loksewa Computer Engineer/IT Officer to crack it?
+> The timeline can vary per individual basis. If you have solid foundations from Bachelors', it might not even take 2 months to fully prepare all subjects. If your foundations are not very strong, it will take you lot of time. But 6 months to 1 year of full time study is enough to be prepared to crack for most people.
+
 ## Preparation providing institutes
 
 There are three institutes providing classes for Loksewa computer engineer and IT officer. 
@@ -209,6 +215,8 @@ There are three institutes providing classes for Loksewa computer engineer and I
 - Line Academy
 - iGlobe Academy
 - APEX Academy 
+
+> I felt huge difference in my studies after I joined institute. But I had given enough time for self study before joining institute. My expectations were simple from institute. I just wanted structure of topics, what to write, how long to write and institute provided that.
 
 ## Notes
 
