@@ -40,10 +40,7 @@ As of 2026/05/31 2:42 PM, none of my platforms are monetized.
 
 My target is to make $1000 in 1 year combinedly from all of these platforms.
 
-![test](public/images/blog/earning-sources.png)
-
-
-<img src="/images/blog/earning-source.png" alt="Earning_sources-as-Nepali-content-creator" />
+![Earning sources for a blog of Nepali audience](public/images/blog/earning-sources.png)
 
 # Current Analytics?
 
