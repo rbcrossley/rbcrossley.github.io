@@ -3,7 +3,7 @@ title: How to monetize a blog written for Nepalese audience
 description: Purpleads, Google Adsense, and other monetization options for a Nepal focused blog
 date: 2026-05-31
 author: cst
-image: /images/blog/pyq.png
+image: /images/blog/thumbnail-earning-sources.png
 ---
 
 Either you are a recent engineering graduate or a government job aspirant, things like side income means a lot.
@@ -44,7 +44,9 @@ My target is to make $1000 in 1 year combinedly from all of these platforms.
 
 # Current Analytics?
 
-I get non-existent organic traffic. To be really honest. I got lot of traffic from posting in reddit. 
+I get non-existent organic traffic. To be really honest. 
+
+I got lot of traffic from posting in reddit. 
 
 But that is about it. The organic search traffic is probably myself clicking the link after searching for keyword in google. 
 
