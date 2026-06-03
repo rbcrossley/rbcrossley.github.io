@@ -228,7 +228,7 @@ Good notes do help a lot however by saving time and headache.
 
 The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity bookshops.
 
-You can get [this book](https://s.daraz.com.np/s.Z2kve) for technical paper:
+You can get [this book](https://s.daraz.com.np/s.Z4Xio?cc) for technical paper:
 
 Or you can visit [daraz](https://s.daraz.com.np/s.Z2t4t) and get any books from there.
 
