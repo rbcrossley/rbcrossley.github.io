@@ -25,13 +25,6 @@ import { link } from '../lib/link';
         <li><a href={link('/cookie-policy')}>Cookie Policy</a></li>
       </ul>
     </div>
-    <div class="col">
-      <h4>Contribute</h4>
-      <ul>
-        <li><a href={link('/suggest-a-topic')}>Suggest a topic</a></li>
-        <li><a href={link('/become-a-contributer')}>Become a Contributor</a></li>
-      </ul>
-    </div>
   </div>
   <div class="footer-bottom">
     <p>© {new Date().getFullYear()} Berojgar Engineer. All rights reserved.</p>
@@ -40,7 +33,7 @@ import { link } from '../lib/link';
 
 <style>
   .site-footer { width: 100%; background: var(--c-footer-bg); color: var(--c-footer-text); margin-top: auto; }
-  .footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 28px 32px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr 1fr; gap: 36px; width: 100%; }
+  .footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 28px 32px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 36px; width: 100%; }
   .col h4 { color: #fff; font-size: 16px; font-weight: 700; margin: 0 0 16px; }
   .col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
   .col a { color: var(--c-footer-text); text-decoration: none; font-size: 14px; transition: color 0.2s ease; }
