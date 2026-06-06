@@ -236,3 +236,7 @@ Or you can visit [daraz](https://s.daraz.com.np/s.Z2t4t) and get any books from 
 ## job+Loksewa
 
 Many students start preparing for Loksewa along with a low paying job. It takes around 6 months to 1 year of full-time studies to complete the entire syllabus given rudimentary only knowledge. Most IT companies provide two days leaves. If you think you can manage that, go ahead. I feel that it is not manageable for many reasons. But I also started preparing along with a job. So you can start like that as well.
+
+If you have read this and are looking for actionable roadmap on cracking Loksewa Computer Engineer or IT officer in the next six months, I think you will like to read the blog below:
+
+https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
