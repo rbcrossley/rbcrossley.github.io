@@ -14,4 +14,12 @@ But you do not have to.
 
 I have collected the previous year question papers from NEA, NTC, NRB, Nepal Army, Nepal Police, SSF, CIT, CAAN, Nijamati and many more. The question papers were collected by physically visiting the Loksewa Office at Kamalpokhari as well as enrolling in various institutes.
 
-COMING SOON
+Pay Rs.499 to the QR below:
+
+<img src="/public/images/blog/qr.jpeg" width="300" />
+
+and fill this google form below:
+
+https://docs.google.com/forms/d/e/1FAIpQLSeTeSID_hFrNR1FtiCuFmh7h7m33OAd1nnJG9Y5GqVFtNTOdw/viewform?usp=sharing&ouid=114599004406069542884
+
+You will receive the old questions within the next 24 hours of filling the form.
