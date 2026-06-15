@@ -16,7 +16,7 @@ I have collected the previous year question papers from NEA, NTC, NRB, Nepal Arm
 
 Pay Rs.499 to the QR below:
 
-<img src="./public/images/blog/qr.jpeg" width="300" />
+<img src="/images/blog/qr.jpeg" width="300" />
 
 and fill this google form below:
 
