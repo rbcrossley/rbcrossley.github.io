@@ -1,6 +1,6 @@
 ---
 title: 45 days of DevOps
-description: Honest experience from the ground up
+description: Follow a support engineer’s honest 45-day DevOps learning journey and practical skill roadmap.
 date: 2026-05-16
 author: cst
 image: /images/blog/45-days-of-devops.png

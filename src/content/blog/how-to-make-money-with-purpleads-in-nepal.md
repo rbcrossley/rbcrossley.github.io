@@ -1,6 +1,6 @@
 ---
 title: How to monetize a blog written for Nepalese audience
-description: Purpleads, Google Adsense, and other monetization options for a Nepal focused blog
+description: How to earn from a Nepal-focused blog using Purpleads, Google AdSense, and practical monetization strategies.
 date: 2026-05-31
 author: cst
 image: /images/blog/thumbnail-earning-sources.png

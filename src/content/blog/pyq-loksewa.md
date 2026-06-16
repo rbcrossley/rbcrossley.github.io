@@ -1,6 +1,6 @@
 ---
 title: All previous year question papers of Loksewa Computer Engineering and IT officer
-description: The one and only place where you will find it
+description: Previous-year Loksewa Computer Engineer and IT Officer papers, exam patterns, and preparation tips.
 date: 2026-05-30
 author: cst
 image: /images/blog/pyq.png

@@ -1,6 +1,6 @@
 ---
 title: List of companies actively hiring for IT roles in Nepal
-description: Complete roadmap for 2026
+description: A curated list of IT companies actively hiring in Nepal with application links and hiring insight.
 date: 2026-05-15
 author: cst
 ---

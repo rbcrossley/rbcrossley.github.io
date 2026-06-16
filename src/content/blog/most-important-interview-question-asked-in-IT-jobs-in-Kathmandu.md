@@ -1,6 +1,6 @@
 ---
 title: Most important interview questions asked in IT jobs in Kathmandu Valley
-description: The end to end guide to IT interviews in Nepal
+description: Key fresher interview questions and strategies for Nepal IT jobs in Kathmandu Valley.
 date: 2026-05-29
 author: cst
 image: /images/blog/interview.png

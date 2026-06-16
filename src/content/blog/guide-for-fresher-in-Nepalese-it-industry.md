@@ -1,6 +1,6 @@
 ---
 title: 2 Years in Nepal Tech Support, What I'd Tell My Fresher Self
-description: Complete roadmap for 2026
+description: First-hand roadmap for Nepali freshers in IT support, salary, remote work, and exam prep.
 date: 2026-05-16
 author: cst
 image: /images/blog/fresher-it.png

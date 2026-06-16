@@ -4,7 +4,6 @@ import Base from '../layouts/Base.astro';
 import theme from '../../theme.config.js';
 import { link } from '../lib/link';
 
-const courses = await getCollection('courses');
 const blogPosts = (await getCollection('blog'))
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date))
   .slice(0, 3);
@@ -19,8 +18,7 @@ const blogPosts = (await getCollection('blog'))
           Berojgar Engineer is your virtual classroom, dedicated to empowering computer science students with comprehensive insights and practical knowledge. Explore our blog for expertly crafted resources designed to demystify complex concepts and propel your learning to new heights.
         </p>
         <div class="hero-cta">
-          <a href={link('/courses')} class="btn-primary">Explore Courses</a>
-          <a href={link('/blog')} class="btn-ghost">Read Blog</a>
+          <a href={link('/blog')} class="btn-primary">Read Blog</a>
         </div>
       </div>
       <div class="hero-illu">
@@ -102,22 +100,6 @@ const blogPosts = (await getCollection('blog'))
   .btn-ghost { display: inline-flex; align-items: center; padding: 12px 26px; border: 2px solid rgba(255,255,255,0.3); color: #fff; border-radius: 999px; font-weight: 600; text-decoration: none; transition: border-color 0.2s ease, background 0.2s ease; }
   .btn-ghost:hover { border-color: var(--c-primary); background: rgba(233, 30, 99, 0.12); }
   .hero-illu svg { width: 100%; height: auto; max-width: 520px; margin-left: auto; }
-
-  .courses-section { padding: 64px 0 48px; }
-  .section-title { text-align: center; font-size: 34px; font-weight: 800; color: var(--c-text); margin-bottom: 14px; }
-  .section-sub { text-align: center; max-width: 760px; margin: 0 auto 22px; color: var(--c-muted); font-size: 15px; line-height: 1.7; }
-  .section-cta { display: flex; gap: 12px; justify-content: center; margin-bottom: 36px; flex-wrap: wrap; }
-  .chip { display: inline-flex; align-items: center; padding: 10px 22px; background: var(--c-primary); color: #fff; border-radius: 999px; font-size: 14px; font-weight: 600; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; }
-  .chip:hover { background: var(--c-primary-dark); transform: translateY(-1px); }
-
-  .courses-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 24px; }
-  .course-card { display: flex; flex-direction: column; align-items: center; padding: 26px 16px; background: var(--c-card-bg); border: 1px solid var(--c-card-border); border-radius: 12px; text-decoration: none; color: var(--c-text); transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease; text-align: center; }
-  .course-card:hover { transform: translateY(-4px); border-color: var(--c-primary); box-shadow: 0 12px 30px rgba(233, 30, 99, 0.15); }
-  .course-icon { width: 90px; height: 90px; border-radius: 50%; background: var(--c-primary-light); display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px; transition: background 0.2s ease; }
-  .course-card:hover .course-icon { background: var(--c-primary); }
-  .course-icon span { font-weight: 800; font-size: 28px; color: var(--c-primary); transition: color 0.2s ease; }
-  .course-card:hover .course-icon span { color: #fff; }
-  .course-name { font-weight: 600; font-size: 15px; line-height: 1.35; }
 
   .blog-section { padding: 48px 0 24px; background: #fafafa; }
   .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; margin-top: 36px; }

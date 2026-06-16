@@ -1,6 +1,6 @@
 ---
 title: Computer Network Notes for Loksewa Computer Engineer
-description: Complete guide to computer networks with most important questions
+description: A concise computer networks guide for Loksewa Computer Engineer exam prep with key questions.
 date: 2026-05-07
 author: cst
 image: /images/blog/network.png

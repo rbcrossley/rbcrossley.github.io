@@ -1,6 +1,6 @@
 ---
 title: Loksewa Computer Engineer and IT Officer in Nepal
-description: Complete Roadmap 2026
+description: A complete guide to Loksewa Computer Engineer and IT Officer careers in Nepal with syllabus and strategy.
 date: 2026-05-07
 author: cst
 image: /images/blog/roadmap.png
