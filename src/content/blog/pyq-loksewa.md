@@ -22,4 +22,4 @@ and fill this google form below:
 
 https://docs.google.com/forms/d/e/1FAIpQLSeTeSID_hFrNR1FtiCuFmh7h7m33OAd1nnJG9Y5GqVFtNTOdw/viewform?usp=sharing&ouid=114599004406069542884
 
-You will receive the old questions within the next 24 hours of filling the form.
+You will receive the old questions within 24 hours of filling the form.
