@@ -5,6 +5,12 @@ date: 2026-05-15
 author: cst
 ---
 
+
+If you are a fresher Information Technology or Computer Engineering graduate, the following blog can be useful:
+
+https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
+
+
 1. [Infinite Nepal](https://sjobs.brassring.com/TGNewUI/Search/Home/Home?partnerid=26656&siteid=5008#home)
 
 2. [Deerhold](https://www.deerhold.com/careers)
@@ -122,3 +128,5 @@ Besides these companies, you can also seek for places where IT will be a small p
 - hospitals
 - schools and colleges
 - manufacturing firms
+
+
