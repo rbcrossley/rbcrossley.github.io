@@ -18,6 +18,11 @@ Pay Rs.499 to the QR below:
 
 <img src="/images/blog/qr.jpeg" width="300" />
 
+OR
+
+<img src="/images/blog/qr-nmb.JPG" width="300" />
+
+
 and fill this google form below:
 
 https://docs.google.com/forms/d/e/1FAIpQLSeTeSID_hFrNR1FtiCuFmh7h7m33OAd1nnJG9Y5GqVFtNTOdw/viewform?usp=sharing&ouid=114599004406069542884
