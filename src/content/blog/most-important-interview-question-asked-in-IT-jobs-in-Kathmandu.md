@@ -6,6 +6,11 @@ author: cst
 image: /images/blog/interview.png
 ---
 
+> Note: If you are a fresher Information Technology or Computer Engineering graduate, the following blog can be useful:
+
+https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
+
+
 I have interviewed in many places. Based on my experience I have provided some popular interview questions asked in IT jobs in Kathmandu Valley. Most of these were for fresher IT engineer role like Support Engineer, System Engineer, System Admin, Network Admin etc. 
 
 The questions can be categorized into two parts:
