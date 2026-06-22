@@ -210,6 +210,6 @@ https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
 <img src="/images/blog/qr-nmb.JPG" width="300" />
 
 
-> If you are already studying Computer Engineering and struggling with studies, and want to schedule a session with me, fill out the form below once afftafterer paying Rs.500 to the QR code above.
+> If you are already studying Computer Engineering and struggling with studies, and want to schedule a session with me, fill out the form below once after paying Rs.500 to the QR code above.
 > https://forms.gle/2tsEhkyHGA1ZbguA8
 
