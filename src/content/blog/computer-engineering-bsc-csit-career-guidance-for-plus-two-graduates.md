@@ -3,7 +3,7 @@ title: Computer Engineering and BSc.CSIT career guidance for Plus Two Graduates 
 description: All your doubts about Computer Engineering as well as BSc.CSIT covered in one article
 date: 2026-06-22
 author: cst
-image: /images/blog/45-days-of-devops.png
+image: /images/blog/ct.png
 ---
 
 Hello, bhai baini haru! I am an ordinary and recent computer engineering graduate from a private college of Tribhuvan University. I completed the plus two with 86% in the aggregate. I got a 3-digit rank in the IOE entrance examination. I graduated in computer engineering in 2022 with 71% in aggregate. I worked as an IT support engineer for more than two years. I am now preparing for government jobs in computer engineering and IT-related fields.
