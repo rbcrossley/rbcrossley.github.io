@@ -45,7 +45,7 @@ export default {
     name: 'Berojgar Engineer',
     tagline: 'Concept Clarity for Computer Science Students',
     logoText: 'BE',
-    domain: 'rbcrossley.github.io',
+    domain: 'berojgarengineer.com',
     contactEmail: 'contact@berojgarengineer.com',
     ownerName: 'Berojgar Engineer',
   },

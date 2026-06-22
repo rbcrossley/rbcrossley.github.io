@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import theme from '../../theme.config.js';
+import { link } from '../lib/link';
+const siteName = theme.site.name;
+const email = 'admin@berojgarengineer.com';
+const lastUpdated = 'June 16, 2026';
+---
+<Base title={`Affiliate Disclosure » ${siteName}`} description={`Learn how ${siteName} handles affiliate links and recommendations.`}>
+  <section class="page">
+    <div class="container narrow">
+      <h1 class="page-title">Affiliate Disclosure</h1>
+      <p class="meta">Last updated: <strong>{lastUpdated}</strong></p>
+
+      <p>{siteName} participates in affiliate marketing programs. This means we may earn a commission when you click on or make purchases through links on our site at no additional cost to you.</p>
+
+      <h2>What this means</h2>
+      <p>Some of the links on this website are affiliate links. If you choose to buy a product or service through those links, we may receive a small commission at no extra cost to you. These commissions help support the ongoing operation of {siteName} and allow us to continue publishing useful content.</p>
+
+      <h2>Our commitment to honesty</h2>
+      <p>We only recommend products and services that we believe are helpful and relevant to our readers. We are not paid to promote any product or service unless we genuinely think it can provide value.</p>
+
+      <h2>No additional cost to you</h2>
+      <p>Using an affiliate link will never increase the price you pay. The commission is paid by the seller and does not change your purchase amount.</p>
+
+      <h2>Questions?</h2>
+      <p>If you have any questions about this affiliate disclosure, please <a href={link('/contact')}>contact us</a> or email <a href={`mailto:${email}`}>{email}</a>.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page { padding: 50px 0 60px; }
+  .narrow { max-width: 800px; }
+  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 8px; color: var(--c-text); }
+  .meta { color: var(--c-muted); font-size: 14px; margin-bottom: 30px; }
+  h2 { font-size: 22px; margin: 30px 0 12px; color: var(--c-primary-dark); }
+  p { line-height: 1.85; margin: 0 0 14px; }
+  a { color: var(--c-primary); text-decoration: underline; }
+</style>

@@ -1,6 +1,6 @@
 ---
 title: Loksewa Computer Engineer and IT Officer in Nepal
-description: Complete Roadmap 2026
+description: A complete guide to Loksewa Computer Engineer and IT Officer careers in Nepal with syllabus and strategy.
 date: 2026-05-07
 author: cst
 image: /images/blog/roadmap.png
@@ -60,6 +60,7 @@ The salary constitutes basic salary + various allowances + non-available stuffs 
 - Social Security Fund = 72,815
 
 <br>
+
 
 The salaries and benefits for sixth level officer is provided below:
 
@@ -206,6 +207,9 @@ There are very few available question papers so you cannot extrapolate accuratel
 
 <br>
 
+> How long should I prepare Loksewa Computer Engineer/IT Officer to crack it?
+> The timeline can vary per individual basis. If you have solid foundations from Bachelors', it might not even take 2 months to fully prepare all subjects. If your foundations are not very strong, it will take you lot of time. But 6 months to 1 year of full time study is enough to be prepared to crack for most people.
+
 ## Preparation providing institutes
 
 There are three institutes providing classes for Loksewa computer engineer and IT officer.
@@ -215,6 +219,8 @@ There are three institutes providing classes for Loksewa computer engineer and I
 - APEX Academy
 
 <br>
+
+> I felt huge difference in my studies after I joined institute. But I had given enough time for self study before joining institute. My expectations were simple from institute. I just wanted structure of topics, what to write, how long to write and institute provided that.
 
 ## Notes
 
@@ -228,7 +234,7 @@ Good notes do help a lot however by saving time and headache.
 
 The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. If you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity bookshops.
 
-You can get [this book](https://s.daraz.com.np/s.Z2kve) for technical paper:
+You can get [this book](https://s.daraz.com.np/s.Z4Xio?cc) for technical paper:
 
 Or you can visit [daraz](https://s.daraz.com.np/s.Z2t4t) and get any books from there.
 
@@ -237,3 +243,23 @@ Or you can visit [daraz](https://s.daraz.com.np/s.Z2t4t) and get any books from 
 ## Job + Loksewa
 
 Many students start preparing for Loksewa along with a low paying job. It takes around 6 months to 1 year of full-time studies to complete the entire syllabus given rudimentary only knowledge. Most IT companies provide two days leaves. If you think you can manage that, go ahead. I feel that it is not manageable for many reasons. But I also started preparing along with a job. So you can start like that as well.
+Many students start preparing for Loksewa along with a low paying job. It takes around 6 months to 1 year of full-time studies to complete the entire syllabus given rudimentary only knowledge. Most IT companies provide two days leaves. If you think you can manage that, go ahead. I feel that it is not manageable for many reasons. But I also started preparing along with a job. So you can start like that as well.
+
+If you have read this and are looking for actionable roadmap on cracking Loksewa Computer Engineer or IT officer in the next six months, I think you will like to read the blog below:
+
+https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
+
+Note: I have given complete guidance on preparing for loksewa computer engineer and IT Officer in Nepal. I have also given proper roadmap to crack Loksewa computer engineer and IT Officer exams in Nepal. I am an aspirant like you. Maybe I have more information due to my experience preparing for exams, filling forms, giving exams, and so on. I repeat that I have given complete guidance in these two blogs. Still if you want tailored guidance, or want to just have a call with me regarding Loksewa computer engineer and IT officer, or want to ask some additional questions, pay Rs.500 to either of the QR present in the blog below.
+
+Laxmi Sunrise Bank QR:
+
+https://berojgarengineer.com/images/blog/qr.jpeg
+OR
+NMB Bank QR:
+https://berojgarengineer.com/images/blog/qr-nmb.JPG
+
+And fill the form below:
+
+https://forms.gle/zV6ijRVU5mh6DGnv5
+
+I will inform you within the next 24 hours and schedule a call when our time is suitable. Keep the questions prepared so that the session can be succinct.

@@ -68,6 +68,9 @@ const imageUrl = hasImage || getFallbackImage(post.data.category);
           </svg>
         </div>
       )}
+    <div class="hero-banner" style={post.data.image ? `background-image: url('${post.data.image}'); background-size: contain; background-position: center; background-repeat: no-repeat;` : ''}></div>
+    <div class="content">
+      <Content />
     </div>
 
     <!-- Content -->

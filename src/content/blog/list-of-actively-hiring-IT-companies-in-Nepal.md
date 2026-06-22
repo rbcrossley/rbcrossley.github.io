@@ -1,6 +1,6 @@
 ---
 title: List of companies actively hiring for IT roles in Nepal
-description: Complete roadmap for 2026
+description: A curated list of IT companies actively hiring in Nepal with application links and hiring insight.
 date: 2026-05-15
 author: cst
 ---
@@ -33,6 +33,11 @@ Don't just blindly apply to all 56 companies. Here's a smarter approach:
 <br>
 
 ## Main IT Hiring Companies in Nepal
+
+If you are a fresher Information Technology or Computer Engineering graduate, the following blog can be useful:
+
+https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
+
 
 1. [Infinite Nepal](https://sjobs.brassring.com/TGNewUI/Search/Home/Home?partnerid=26656&siteid=5008#home)
 
@@ -175,3 +180,8 @@ These non-IT companies often have less competition and can be great starting poi
 ## Last Advice
 
 Bookmark this page. Update your resume. Start with your top 5 companies from this list. Apply strategically, not desperately. Good luck!
+- hospitals
+- schools and colleges
+- manufacturing firms
+
+

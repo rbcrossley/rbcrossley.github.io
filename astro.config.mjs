@@ -15,7 +15,7 @@ import sitemap from '@astrojs/sitemap';
 //   set BASE  = '/'
 // =============================================================================
 
-const SITE = process.env.SITE || 'https://rbcrossley.github.io';
+const SITE = process.env.SITE || 'https://berojgarengineer.com';
 const BASE = process.env.BASE || '/';
 
 export default defineConfig({

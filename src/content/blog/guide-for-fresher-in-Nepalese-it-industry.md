@@ -1,12 +1,12 @@
 ---
 title: 2 Years in Nepal Tech Support, What I'd Tell My Fresher Self
-description: Complete roadmap for 2026
+description: First-hand roadmap for Nepali freshers in IT support, salary, remote work, and exam prep.
 date: 2026-05-16
 author: cst
 image: /images/blog/fresher-it.png
 ---
 
-Even in current seemingly dim scenarios, I heavily bet on Information Technology careers in Nepal. Nepali IT will grow if Nepalese economy has to grow because we do not have other options. The government putting IT as "strategic industry" just validates my point further. I will provide guidance on few areas that I believe freshers want to know but do not have a reliable way of knowing.
+Even in current seemingly dim scenarios, I heavily bet on Information Technology careers in Nepal. Nepali IT will grow if the Nepalese economy has to grow because we do not have other options. The government putting IT as a "strategic industry" just validates my point further. I will provide guidance on a few areas that I believe freshers want to know but do not have a reliable way of knowing.
 
 <br>
 
@@ -25,9 +25,9 @@ As a rule of thumb, here is the salary breakdown:
 - Add 0-10 thousands increments each year you stay in the same company. Offshored to Nepal companies which pay higher base salaries will provide lower increment. In house Nepali companies who provide lower base salaries will provide higher increments as you go on.
 - You "could" double your salary by switching jobs.
 
-Companies on profit provide annual bonuses.
 
-I do not want to bring glassdoor data and put here. It will not be accurate. There are some websites like [salaryinbox](https://salaryinbox.com/) in Nepal. But I do not trust them on their collected data.
+Companies on profit provide annual bonuses. Dashain bonus is mandatory. Dashain bonus is one month salary in hand extra paid.
+
 
 <br>
 
@@ -77,7 +77,7 @@ That is the reason why the salaries of development team will be usually much hig
 
 SRE, PM can be thought of as hybrid roles i.e. somewhere between support and development. Because that role revolves around both categories. They can demand higher salaries unlike generic support work.
 
-I have to explain myself for this rigid classification of support vs development. Downtime kills revenue, but uptime does not directly generate revenue. So it can be thought of in many ways. It is just my observation in the Nepalese IT landscape. It might change. Both, my opinion and the IT landscape in Nepal.
+I have to explain myself for this rigid classification of support vs development. Downtime kills revenue, but uptime does not directly generate revenue. So it can be thought of in many ways. It is just my observation in the Nepalese IT landscape. It might change. Both my opinion and the IT landscape in Nepal.
 
 <br>
 
@@ -91,7 +91,7 @@ However another form of learning which is "implicit learning" happens when worki
 
 ## Remote work
 
-Nepali companies usually do not offer flexible working conditions. Mainly because there is no incentive for them. This is true specially for juniors. Maybe they would allow some flexibility to retain their seniors.
+Nepali companies usually do not offer flexible working conditions. Mainly because there is no incentive for them. This is true especially for juniors. Maybe they would allow some flexibility to retain their seniors.
 
 To find remote job, I have heard of few good ways (I myself have not been able to get one).
 
@@ -108,16 +108,19 @@ Step 3: Go to their careers pages.
 Mail them with resume + cover letter.
 
 <br>
+Mail them with a resume + cover letter.
+
+This sounds promising personally for me, if you ask me my opinion.
 
 ### Way 2
 
-Try [himalayas.app](https://himalayas.app/). It is a remote jobs scraper website. It collects remote jobs from various websites and publishes in its site.
+Try [himalayas.app](https://himalayas.app/). It is a remote jobs scraper website. It collects remote jobs from various websites and publishes in its site. I have not found success yet applying to these companies listed in himalays app website.
 
 <br>
 
 ### Way 3
 
-Start posting content in places where recruiters live and breathe. For example: Linkedin. Consistently write posts on the field you want to work for. Appear as an enthusiast if you are a fresher or authority if you are experienced. This increases visibility. And in turn increases chances of getting a remote job.
+Start posting content in places where recruiters live and breathe. For example: LinkedIn. Consistently write posts in the field you want to work in. Appear as an enthusiast if you are a fresher or an authority if you are experienced. This increases visibility. And in turn increases chances of getting a remote job.
 
 You can always cold email people from Nepal who work for remote companies. But I doubt the hit rate of such brute force methods.
 
@@ -130,6 +133,16 @@ I worked as a fresher production support engineer in Nepali Tech Company.
 <br>
 
 **What did my day to day life look like?**
+I am doing 45 days of DevOps series just for that purpose. Follow the blog by bookmarking the site below:
+
+https://berojgarengineer.com/blog/45-days-of-devops/
+
+
+# My experience
+
+I worked as a fresher production support engineer in Nepali Tech Company.
+
+What did my day-to-day life look like?
 
 - 9 AM: Standup
 - 10 AM: Tickets are assigned. You sort them based on priority (example: production being down will be looked upon first).
@@ -141,10 +154,18 @@ I worked as a fresher production support engineer in Nepali Tech Company.
 <br>
 
 If there are issues that need to be escalated, escalate them timely to the relevant team. Keep track of escalated tickets of their progress.
+- Keep the clients informed in a timely manner. Even if the ticket is still being solved, keep the clients informed about it. 
+- 5PM: Report to the manager regarding today's tasks.
+- Update the clients regarding the remaining tickets.
 
-Most of the support work is analyzing logs. So having intermediate linux terminal skills helps a lot. You can do it even without fancy command line skills, but it will be time consuming and annoying for yourself.
 
-Restarting services was actually most frequently done thing in support. Many freshers think restarting means rebooting the computer. But what I mean by restarting services is restarting specific services like web server. For example to restart nginx server on Linux, you would use `systemctl restart nginx`.
+
+If there are issues that need to be escalated, escalate them in a timely manner to the relevant team. Keep track of escalated tickets and their progress.
+
+
+Most of the support work is analyzing logs. So having intermediate Linux terminal skills helps a lot. You can do it even without fancy command line skills, but it will be time-consuming and annoying for yourself.
+
+Restarting services was actually the most frequently done thing in support. Many freshers think restarting means rebooting the computer. But what I mean by restarting services is restarting specific services like the web server. For example, to restart the nginx server on Linux, you would use `systemctl restart nginx`. To restart a pod in kubernetes, you could apply kubectl ... (I forgot the command now, that is why I am doing 45 days of DevOps. Follow that blog for learning more about my journey.)
 
 <br>
 
@@ -158,17 +179,58 @@ Restarting services was actually most frequently done thing in support. Many fre
 - Computer Networking fundamentals
 - Web servers fundamentals
 - Stress and Anger management
+Skills required for the support work:
+
+- SQL (basic one-line querying)
+- Linux terminal(intermediate level required)
+- Kubernetes troubleshooting(basic GUI troubleshooting)
+- Communication skills(written and verbal)
+- Shell Scripting(basic understanding of shell scripts)
+- Computer Networking fundamentals
+- Web servers fundamentals
 - Patience
-- Correct Identification of Problem. Is it database issue, or network issue, or application issue?
+- Correct Identification of the problem. Is it a database issue, a network issue, or an application issue? Because you would need to escalate the issue up to the relevant team.
 
 <br>
 
 ## About AI
 
-There are various ways people look at AI taking jobs. Nobody can be sure about the future. In my honest opinion, products which do not need any creative appreciation by the user of that product will be the first to be eaten by AI. And software is one of them. People do not use software to appreciate the creation. They use to do the job faster.
+There are numerous ways people look at AI taking jobs. Nobody can be sure about the future. In my honest opinion, products that do not need any creative appreciation by the user of that product will be the first to be annihilated by AI. And software is one of them. People do not use software to appreciate the creation. They use it to do the job faster.
 
-Nepalese employees are usually cheaper than AI subscriptions from the west. But that also means that there will not be higher package for employees. Knowledge workers have became a commodity.
+Nepalese employees are usually cheaper than AI subscriptions. But that also means that there will not be higher packages for employees. Knowledge workers have become a commodity.
+
+Likewise, DevOps and system administration are looking bleak. AI will reduce the number of junior hires. Leading to the death of the industry because at one point there will be no juniors who will transition into seniors or mid-level engineers. 
+
+But we need to work hard in our field of interest, keeping all of those worries and speculations aside. Worries, which we can do nothing about. If you're sinking, the entire world is also sinking along with you. So no need to worry at all.
+
+Plus, most of us have computer science as the only degree and cannot really afford to go to university for another degree. So we do not have any options.
+
+For these reasons, among others, I have decided to prepare for government jobs in the fields of IT and computer engineering.
+
+I write about it in the following posts:
+
+https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
+
+https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
+
+
+
+Note: I have shared my complete job experience as a fresher computer engineering graduate in Nepal. I am a beginner like you. Maybe I have more information due to my little bit more years of experience in the IT industry of Nepal. I repeat that I have given complete guidance in this blog. Still if you want tailored guidance, or want to just have a call with me regarding fresher IT jobs in Nepal, or want to ask some additional questions, pay Rs.500 to either of the QR present in the blog below.
+
+Laxmi Sunrise Bank QR:
+
+https://berojgarengineer.com/images/blog/qr.jpeg
+
+OR
+
+NMB Bank QR:
+https://berojgarengineer.com/images/blog/qr-nmb.JPG
+
+And fill the form below:
 
 Likewise, DevOps, system administration is looking bleak. AI will reduce the number of junior hires. Leading to the death of the industry.
 
 But we need to work hard in our field of interest keeping all of that worries and speculations aside. Worries, which we can do nothing about. If you're sinking, entire world is also sinking along with you. So no need to worry at all.
+https://forms.gle/5o4XxUvpyBkAEdxr9
+
+I will inform you within the next 24 hours and schedule a call when our time is suitable. Keep the questions prepared so that the session can be succinct.
