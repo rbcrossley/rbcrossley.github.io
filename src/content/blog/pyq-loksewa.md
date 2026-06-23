@@ -14,7 +14,7 @@ But you do not have to.
 
 I have collected the previous year question papers from NEA, NTC, NRB, Nepal Army, Nepal Police, SSF, CIT, CAAN, Nijamati and many more. The question papers were collected by physically visiting the Loksewa Office at Kamalpokhari as well as enrolling in various institutes.
 
-Pay Rs.499 to the QR below:
+Pay Rs.999 to the QR below:
 
 <img src="/images/blog/qr-nmb.JPG" width="300" />
 
