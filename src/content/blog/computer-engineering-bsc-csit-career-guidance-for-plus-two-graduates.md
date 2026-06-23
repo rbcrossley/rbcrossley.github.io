@@ -204,12 +204,12 @@ About guidance for fresher IT graduate in Nepali job market:
 
 https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
 
-> Note: I have provided complete guidance on engineering in Nepal for Plus Two students. However, if you still have questions or want to have a call with me, fill out the form below once after paying Rs.500 to the QR code below.
+> Note: I have provided complete guidance on engineering in Nepal for Plus Two students. However, if you still have questions or want to have a call with me, fill out the form below once after paying Rs.2500 to the QR code below.
 > https://forms.gle/gWa3J54CV7iumMW26
 
 <img src="/images/blog/qr-nmb.JPG" width="300" />
 
 
-> If you are already studying Computer Engineering and struggling with studies, and want to schedule a session with me, fill out the form below once afftafterer paying Rs.500 to the QR code above.
+> If you are already studying Computer Engineering and struggling with studies, and want to schedule a session with me, fill out the form below once afftafterer paying Rs.2500 to the QR code above.
 > https://forms.gle/2tsEhkyHGA1ZbguA8
 

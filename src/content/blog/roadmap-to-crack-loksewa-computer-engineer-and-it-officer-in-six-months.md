@@ -166,3 +166,14 @@ Aim for 6 focused hours of studying each day or 10 hours of “thikthak” focus
 What to do in those 6 hours?
 
 From this book, pick the topics and learn them on your own. You could use YouTube, books, whatever to learn. It is totally on you.
+
+Read more from this blog:
+
+Full guidance on Loksewa Computer Engineer and IT Officer in Nepal
+
+https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
+
+All old questions of Computer Engineering and IT officer in Nepal
+
+https://berojgarengineer.com/blog/pyq-loksewa/
+
