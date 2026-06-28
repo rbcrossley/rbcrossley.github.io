@@ -34,7 +34,7 @@ const { Content } = await post.render();
   .head { margin-bottom: 24px; }
   .back { color: var(--c-primary); font-weight: 600; text-decoration: none; font-size: 14px; }
   .head h1 { font-size: 36px; margin: 14px 0 12px; line-height: 1.2; }
-  .meta { display: flex; gap: 8px; color: var(--c-muted); font-size: 14px; }
+  .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--c-muted); font-size: 14px; }
   .hero-banner { aspect-ratio: 21/9; background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark)); border-radius: 14px; margin: 12px 0 30px; }
   .content :global(h1) { font-size: 32px; font-weight: 700; margin: 30px 0 16px; color: var(--c-text); }
   .content :global(h2) { font-size: 26px; margin: 28px 0 14px; }
@@ -46,9 +46,18 @@ const { Content } = await post.render();
   .content :global(li) { margin-bottom: 8px; }
   .content :global(a) { color: var(--c-primary); text-decoration: underline; font-weight: 500; cursor: pointer; transition: opacity 0.2s ease; }
   .content :global(a:hover) { opacity: 0.8; }
-  .content :global(table) { width: 100%; border-collapse: collapse; margin: 16px 0 24px; }
-.content :global(th), .content :global(td) { border: 1px solid var(--c-border); padding: 12px; text-align: left; }
-.content :global(th) { background: var(--c-card-bg); font-weight: 600; }
-.content :global(tr:hover) { background: var(--c-card-hover); }
-.content :global(blockquote) { margin: 16px 0; padding: 12px 16px; border-left: 4px solid var(--c-primary); background: var(--c-card-bg); font-style: italic; color: var(--c-muted); }
+  .content :global(table) { width: 100%; border-collapse: collapse; margin: 16px 0 24px; display: block; overflow-x: auto; }
+  .content :global(table) th, .content :global(table) td { border: 1px solid var(--c-border); padding: 12px; text-align: left; min-width: 120px; }
+  .content :global(th) { background: var(--c-card-bg); font-weight: 600; }
+  .content :global(tr:hover) { background: var(--c-card-hover); }
+  .content :global(blockquote) { margin: 16px 0; padding: 12px 16px; border-left: 4px solid var(--c-primary); background: var(--c-card-bg); font-style: italic; color: var(--c-muted); }
+  .content :global(img), .content :global(iframe), .content :global(embed), .content :global(video) { max-width: 100%; height: auto; }
+  .content :global(pre), .content :global(code) { white-space: pre-wrap; word-break: break-word; }
+  .content :global(h1), .content :global(h2), .content :global(h3), .content :global(h4), .content :global(h5), .content :global(h6),
+  .content :global(p), .content :global(li), .content :global(blockquote), .content :global(th), .content :global(td) { overflow-wrap: break-word; word-break: break-word; }
+  @media (max-width: 768px) {
+    .blog-article { padding: 32px 18px 48px; }
+    .head h1 { font-size: 28px; }
+    .hero-banner { margin: 16px 0 24px; }
+  }
 </style>

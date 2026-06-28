@@ -162,16 +162,12 @@ https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and
 
 
 
-Note: I have shared my complete job experience as a fresher computer engineering graduate in Nepal. I am a beginner like you. Maybe I have more information due to my little bit more years of experience in the IT industry of Nepal. I repeat that I have given complete guidance in this blog. Still if you want tailored guidance, or want to just have a call with me regarding fresher IT jobs in Nepal, or want to ask some additional questions, pay Rs.2500 to either of the QR present in the blog below.
-
-Laxmi Sunrise Bank QR:
-
-https://berojgarengineer.com/images/blog/qr.jpeg
-
-OR
+Note: I have shared my complete job experience as a fresher computer engineering graduate in Nepal. I am a beginner like you. Maybe I have more information due to my little bit more years of experience in the IT industry of Nepal. I repeat that I have given complete guidance in this blog. Still if you want tailored guidance, or want to just have a call with me regarding fresher IT jobs in Nepal, or want to ask some additional questions, pay Rs.2500 to the QR present in the blog below.
 
 NMB Bank QR:
-https://berojgarengineer.com/images/blog/qr-nmb.JPG
+
+<img src="/images/blog/qr-nmb.png" width="300" />
+
 
 And fill the form below:
 

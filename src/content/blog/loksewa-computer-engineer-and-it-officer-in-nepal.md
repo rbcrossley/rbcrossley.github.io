@@ -241,14 +241,10 @@ If you have read this and are looking for actionable roadmap on cracking Loksewa
 
 https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
 
-Note: I have given complete guidance on preparing for loksewa computer engineer and IT Officer in Nepal. I have also given proper roadmap to crack Loksewa computer engineer and IT Officer exams in Nepal. I am an aspirant like you. Maybe I have more information due to my experience preparing for exams, filling forms, giving exams, and so on. I repeat that I have given complete guidance in these two blogs. Still if you want tailored guidance, or want to just have a call with me regarding Loksewa computer engineer and IT officer, or want to ask some additional questions, pay Rs.2500 to either of the QR present in the blog below.
+Note: I have given complete guidance on preparing for loksewa computer engineer and IT Officer in Nepal. I have also given proper roadmap to crack Loksewa computer engineer and IT Officer exams in Nepal. I am an aspirant like you. Maybe I have more information due to my experience preparing for exams, filling forms, giving exams, and so on. I repeat that I have given complete guidance in these two blogs. Still if you want tailored guidance, or want to just have a call with me regarding Loksewa computer engineer and IT officer, or want to ask some additional questions, pay Rs.2500 to the QR present in the blog below.
 
-Laxmi Sunrise Bank QR:
+<img src="/images/blog/qr-nmb.png" width="300" />
 
-https://berojgarengineer.com/images/blog/qr.jpeg
-OR
-NMB Bank QR:
-https://berojgarengineer.com/images/blog/qr-nmb.JPG
 
 And fill the form below:
 
