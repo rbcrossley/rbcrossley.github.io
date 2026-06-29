@@ -1,6 +1,6 @@
 ---
-title: DevOps vs. Backend Development—Best Starting Point for Nepali Graduates
-description: Career comparison for freshers choosing between QA and backend development roles
+title: DevOps Careers for fresh Nepali Information Technology Graduates
+description: Guidance for freshers thinking of starting a career as a DevOps Engineer in Nepal
 date: 2026-07-29
 author: admin
 image: /images/blog/qa-vs-backend.png
@@ -18,23 +18,21 @@ Even if you do, companies will reject your resume at first sight because they th
 
 Many students struggle with programming real world software. And it is normal. I, for instance can develop softwares but it takes me too much work to get little bit result. Thus I decided to invest my time in somewhere else, like devops.
 
-By the end, you'll know which role to target, and more importantly, why.
-
 # Flavors of DevOps
 DevOps jobs come with different names. Some of them are as follows:
 - Infrastructure Engineer
 - Site Reliability Engineer
 - Production Engineer
-
-
+- Cloud Engineer
+- System Engineer
 
 # DevOps and Programming
 
-When graduates say that they want to do DevOps or QA, their main pain point is that they are bad at coding. Devops requires coding. So there is some bad news for you. But there is also some good news. The coding required for DevOps vs backend software development is completely different. In DevOps, you are mostly writing shell scripts, or some yamls. You just tell the computer what you want. You do not have to build the logic. Plus, scripts are write once, use forever unlike real world software which needs to be maintained. Software is used by humans directly. Hence even if you are not comfortable with software development, you can 
-still be able to code in DevOps.
+When graduates say that they want to do DevOps, their main pain point is that they are bad at coding. Devops requires coding. So it is some bad news for you. But there is also some good news. The coding required for DevOps vs backend software development is completely different. In DevOps, you are mostly writing shell scripts, or some yamls. You just tell the computer what you want. You do not have to build the logic. Plus, scripts are write once, use forever unlike real world software which needs to be maintained. Software is used by humans directly. Hence even if you are not comfortable with software development, you can 
+still be able to code in DevOps. 
 
 
-Here is a specific DevOps job description from a wallet company named MOCO.
+Here is a specific DevOps job description from a wallet company named MOCO. This might help you understand DevOps role more than a wall of text could ever.
 
 **Duties and Responsibilities:**
 
@@ -71,17 +69,52 @@ Here is a specific DevOps job description from a wallet company named MOCO.
 - Experience: At least 1 year
 
 
+In general, you need to learn the following to get a DevOps job.
+- Virtual Machines
+- Linux terminal
+- Shell scripting
+- Database
+- Docker 
+- Kubernetes
+- Version control
+- CICD
+- Infrastructure as Code tool
+- Cloud
 
-Core Role Definition — What each actually does (building features vs. infrastructure/deployment)
-Skills Required — Backend (languages, databases, APIs) vs. DevOps (Linux, containers, CI/CD, cloud)
-Job Market Demand in Nepal — Which is more hiring, salary ranges, which companies
-Learning Curve — Time to first productive contribution for each
-Career Trajectory & Earning Potential — 5–10 year salary comparison, ceiling differences
-Day-to-Day Work & Lifestyle — On-call culture, production incidents, stress differences
-Technology Lifespan — Which skills stay relevant longer (backend fundamentals vs. DevOps tools changing fast)
-Transition Path — Can you move backend→DevOps or DevOps→backend? How hard?
-Geographic Arbitrage — Which role is easier to move abroad with (visa, remote work, sponsorship)
-Final Recommendation — Best choice for freshers in Nepal's context
+
+# Companies that hire DevOps engineers in Nepal
+
+You should understand where DevOps engineers are required.
+
+They are required in places where software is being maintained in-house. They are required in places where a real customer is using the software. 
+
+I have listed lots of Nepali IT companies in the blog below:
+
+https://berojgarengineer.com/blog/list-of-actively-hiring-it-companies-in-nepal/
+
+
+From that, pick companies that 
+- either have a product for users in Nepal
+- or are off-shored i.e., complete software development activities are off-shored including DevOps.
+
+Examples of such companies could be Khalti and Logpoint.
+
+DevOps being a security critical job, true remote devops jobs are less likely. However you can do consultation, one-off deployments for clients remotely as well.
+
+# Salary
+
+I have discused the salary details for jobs in Nepal in this blog post:
+
+https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
+
+Read the Salary section, it is at the start.
+
+# Learning DevOps
+
+I have written a blog post on how to learn Devops. It is titled "45 days of DevOps". You can read about it here.
+
+https://berojgarengineer.com/blog/45-days-of-devops/
+
 
 # workload
 Note that labor laws are pretty loose in Nepal. On top of that, DevOps is a role that is done in shifts in the USA, and other developed countries. Since Nepalese companies are greedy, they will expect you to be 24x7 available. But they will only pay when you do the actual work, not for the time you have been in stand by.
