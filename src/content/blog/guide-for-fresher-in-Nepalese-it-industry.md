@@ -3,7 +3,7 @@ title: 2 Years in Nepal Tech Support, What I'd Tell My Fresher Self
 description: First-hand roadmap for Nepali freshers in IT support, salary, remote work, and exam prep.
 date: 2026-05-16
 author: cst
-image: /images/blog/fresher-it.png
+image: /images/blog/fresher-it.jpeg
 ---
 
 Even in current seemingly dim scenarios, I heavily bet on Information Technology careers in Nepal. Nepali IT will grow if the Nepalese economy has to grow because we do not have other options. The government putting IT as a "strategic industry" just validates my point further. I will provide guidance on a few areas that I believe freshers want to know but do not have a reliable way of knowing.
