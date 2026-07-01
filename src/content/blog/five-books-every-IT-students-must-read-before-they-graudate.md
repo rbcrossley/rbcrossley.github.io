@@ -1,7 +1,7 @@
 ---
 title: Five things every IT student must learn before they graduate
 description: Learn these five things before you graduate from university 
-date: 2026-07-29
+date: 2026-07-01
 author: admin
 image: /images/blog/books.jpeg
 ---
