@@ -1,6 +1,6 @@
 ---
 title: How to study Computer Engineering in Nepal
-description: Learn these five things before you graduate from university 
+description: Techniques for being a successful engineering student
 date: 2026-07-01
 author: admin
 image: /images/blog/learning.jpeg
