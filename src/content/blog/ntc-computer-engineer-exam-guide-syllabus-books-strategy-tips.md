@@ -78,6 +78,8 @@ If you clear both first and second paper, you will enter interview stage. Interv
 
 > Note that there is negative marking in MCQs. 20% marks are deducted for every 1 wrong answer.
 
+> Note that the age limit to apply is 35 years for male, and 40 years for female.
+
 To get qualified you will need 40 marks each in first and second paper. But your name will be published by PSC only if you are in the topper list. 
 
 The topper list means that if three seats are open, then there will be around 9 toppers who will be called for interview. 
