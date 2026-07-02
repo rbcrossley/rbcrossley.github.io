@@ -101,10 +101,6 @@ Start posting content in places where recruiters live and breathe. For example: 
 
 You can always cold email people from Nepal who work for remote companies. But I doubt the hit rate of such brute force methods.
 
-I am doing 45 days of DevOps series just for that purpose. Follow the blog by bookmarking the site below:
-
-https://berojgarengineer.com/blog/45-days-of-devops/
-
 
 # My experience
 

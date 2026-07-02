@@ -52,11 +52,7 @@ So learning the Linux terminal helps you navigate the infrastructure. Most of th
 
 > By the way, if you are interested in learning more about my journey, interview preparation tips, and companies list, visit the following blogs:
 
-https://berojgarengineer.com/blog/most-important-interview-question-asked-in-it-jobs-in-kathmandu/
-
 https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
-
-https://berojgarengineer.com/blog/list-of-actively-hiring-it-companies-in-nepal/
 
 Many people online will recommend using the Linux operating system on your daily driver computer. But I do not recommend it. The better way is to install a Virtualization tool, install Linux OS over it, and use it there. Linux OS as a daily driver OS on desktops is not that fun if I am being really honest. Mac is good, though.
 
