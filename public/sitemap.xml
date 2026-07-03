@@ -2,130 +2,115 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://berojgarengineer.com/</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://berojgarengineer.com/about</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://berojgarengineer.com/become-a-contributer</loc>
-    <lastmod>2024-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://berojgarengineer.com/affiliate-disclosure</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://berojgarengineer.com/blog</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal</loc>
-    <lastmod>2024-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-<url>
-    <loc>https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry</loc>
-    <lastmod>2024-05-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://berojgarengineer.com/blog/45-days-of-devops</loc>
-    <lastmod>2026-05-16</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://berojgarengineer.com/blog/computer-network-for-loksewa-computer-engineer</loc>
-    <lastmod>2026-05-07</lastmod>
+    <loc>https://berojgarengineer.com/blog/computer-engineering-bsc-csit-career-guidance-for-plus-two-graduates</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://berojgarengineer.com/blog/how-to-make-money-with-purpleads-in-nepal</loc>
-    <lastmod>2026-05-31</lastmod>
+    <loc>https://berojgarengineer.com/blog/five-books-every-it-students-must-read-before-they-graudate</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://berojgarengineer.com/blog/list-of-actively-hiring-IT-companies-in-Nepal</loc>
-    <lastmod>2026-05-15</lastmod>
+    <loc>https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
-    <loc>https://berojgarengineer.com/blog/most-important-interview-question-asked-in-IT-jobs-in-Kathmandu</loc>
-    <lastmod>2026-05-29</lastmod>
+    <loc>https://berojgarengineer.com/blog/how-to-study-computer-engineering-in-nepal</loc>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://berojgarengineer.com/blog/ntc-computer-engineer-exam-guide-syllabus-books-strategy-tips</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://berojgarengineer.com/blog/pyq-loksewa</loc>
-    <lastmod>2026-05-30</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
+  <url>
+    <loc>https://berojgarengineer.com/blog/rbb-fifth-level-senior-assistant-it-vacancy-job-roadmap</loc>
+    <lastmod>2026-07-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
   <url>
     <loc>https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
   <url>
     <loc>https://berojgarengineer.com/contact</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://berojgarengineer.com/cookie-policy</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://berojgarengineer.com/courses</loc>
-    <lastmod>2024-05-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://berojgarengineer.com/disclaimer</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://berojgarengineer.com/privacy-policy</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://berojgarengineer.com/suggest-a-topic</loc>
-    <lastmod>2024-05-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://berojgarengineer.com/terms</loc>
-    <lastmod>2024-05-07</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

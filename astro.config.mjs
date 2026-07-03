@@ -26,7 +26,7 @@ export default defineConfig({
   build: {
     assets: 'assets',
   },
-  integrations: [tailwind(), mdx()],
+  integrations: [tailwind(), mdx(), sitemap()],
   server: {
     host: '0.0.0.0',
     port: 3000,
