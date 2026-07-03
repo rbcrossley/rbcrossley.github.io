@@ -3,9 +3,9 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { link } from '../../lib/link';
 
-const posts = (await getCollection('blog')).sort(
-  (a, b) => +new Date(b.data.date) - +new Date(a.data.date)
-);
+const posts = (await getCollection('blog'))
+  .filter((post) => post.slug !== 'pyq-loksewa')
+  .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 ---
 <Base title="Blog » Berojgar Engineer" description="Latest articles on computer science topics">
   <section class="page">
