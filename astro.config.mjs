@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
-import sitemap from '@astrojs/sitemap';
 
 // =============================================================================
 // GitHub Pages configuration
@@ -26,7 +25,7 @@ export default defineConfig({
   build: {
     assets: 'assets',
   },
-  integrations: [tailwind(), mdx(), sitemap()],
+  integrations: [tailwind(), mdx()],
   server: {
     host: '0.0.0.0',
     port: 3000,
