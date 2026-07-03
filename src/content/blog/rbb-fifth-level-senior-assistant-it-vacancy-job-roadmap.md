@@ -60,12 +60,13 @@ Only candidates who qualify in the written examination will be called for the in
 
 ### Written Examination Structure
 
+
 The written examination is divided into **two papers**, each carrying **100 marks**.
 
-| Paper    | Subject                                                                   | Marks |           Duration | Question Type      |
-| -------- | ------------------------------------------------------------------------- | ----: | -----------------: | ------------------ |
-| Paper I  | Information Technology & Management + Banking & Organizational Management |   100 |            3 Hours | MCQs + Descriptive |
-| Paper II | Information Technology & Management                                       |   100 | 2 Hours 30 Minutes | Descriptive        |
+| Paper | Subject | Marks | Duration | Question Type |
+|---|---|---:|---:|---|
+| Paper I | Information Technology & Management + Banking & Organizational Management | 100 | 3 Hours | MCQs + Descriptive |
+| Paper II | Information Technology & Management | 100 | 2 Hours 30 Minutes | Descriptive |
 
 
 ### Paper I Breakdown (100 Marks)
