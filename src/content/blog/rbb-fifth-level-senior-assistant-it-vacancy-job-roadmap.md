@@ -65,30 +65,30 @@ Only candidates who qualify in the written examination will be called for the in
 The written examination is divided into **two papers**, each carrying **100 marks**.
 
 <div class="overflow-x-auto">
-<table class="min-w-full border-collapse">
-	<thead>
+<table class="min-w-full table-auto border-2 border-gray-300 rounded-lg">
+	<thead class="bg-gray-50">
 		<tr>
-			<th class="text-left px-4 py-2">Paper</th>
-			<th class="text-left px-4 py-2">Subject</th>
-			<th class="text-right px-4 py-2">Marks</th>
-			<th class="text-right px-4 py-2">Duration</th>
-			<th class="text-left px-4 py-2">Question Type</th>
+			<th class="text-left px-4 py-2 border-r border-gray-300">Paper</th>
+			<th class="text-left px-4 py-2 border-r border-gray-300">Subject</th>
+			<th class="text-right px-4 py-2 border-r border-gray-300">Marks</th>
+			<th class="text-right px-4 py-2 border-r border-gray-300">Duration</th>
+			<th class="text-left px-4 py-2 border-gray-300">Question Type</th>
 		</tr>
 	</thead>
-	<tbody>
-		<tr>
-			<td class="px-4 py-2">Paper I</td>
-			<td class="px-4 py-2">Information Technology & Management + Banking & Organizational Management</td>
-			<td class="text-right px-4 py-2">100</td>
-			<td class="text-right px-4 py-2">3 Hours</td>
-			<td class="px-4 py-2">MCQs + Descriptive</td>
+	<tbody class="bg-white divide-y divide-gray-300">
+		<tr class="hover:bg-gray-50">
+			<td class="px-4 py-2 border-r border-gray-300">Paper I</td>
+			<td class="px-4 py-2 border-r border-gray-300">Information Technology & Management + Banking & Organizational Management</td>
+			<td class="text-right px-4 py-2 border-r border-gray-300">100</td>
+			<td class="text-right px-4 py-2 border-r border-gray-300">3 Hours</td>
+			<td class="px-4 py-2 border-gray-300">MCQs + Descriptive</td>
 		</tr>
-		<tr>
-			<td class="px-4 py-2">Paper II</td>
-			<td class="px-4 py-2">Information Technology & Management</td>
-			<td class="text-right px-4 py-2">100</td>
-			<td class="text-right px-4 py-2">2 Hours 30 Minutes</td>
-			<td class="px-4 py-2">Descriptive</td>
+		<tr class="hover:bg-gray-50">
+			<td class="px-4 py-2 border-r border-gray-300">Paper II</td>
+			<td class="px-4 py-2 border-r border-gray-300">Information Technology & Management</td>
+			<td class="text-right px-4 py-2 border-r border-gray-300">100</td>
+			<td class="text-right px-4 py-2 border-r border-gray-300">2 Hours 30 Minutes</td>
+			<td class="px-4 py-2 border-gray-300">Descriptive</td>
 		</tr>
 	</tbody>
 </table>
@@ -124,8 +124,8 @@ Paper II is entirely descriptive and focuses on technical knowledge.
 
 It consists of:
 
-* **12 Short Questions × 5 marks = 60 marks**
-* **4 Long Questions × 10 marks = 40 marks**
+- **12 Short Questions × 5 marks = 60 marks**
+- **4 Long Questions × 10 marks = 40 marks**
 
 **Duration:** 2 hours 30 minutes
 
@@ -149,9 +149,9 @@ Candidates who pass the written examination are invited for a **30-mark intervie
 
 Candidates should be careful while attempting the MCQ section.
 
-* **20% of the marks assigned to each incorrect MCQ answer will be deducted.**
-* There is **no penalty for unanswered questions.**
-* Answers must be marked using **capital letters (A, B, C, or D)** as instructed in the examination guidelines. 
+- **20% of the marks assigned to each incorrect MCQ answer will be deducted.**
+- There is **no penalty for unanswered questions.**
+- Answers must be marked using **capital letters (A, B, C, or D)** as instructed in the examination guidelines. 
 
 # Exam date
 The exam date is not finalized yet. In the past, the pattern was that the exam happened within 3 months of the vacancy publication.
@@ -176,3 +176,8 @@ I have also discussed the complete roadmap for Loksewa Computer Engineer and IT 
 
 https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 
+# Old questions
+
+The old questions can be purchased from the link provided below:
+
+https://berojgarengineer.com/blog/pyq-loksewa/
