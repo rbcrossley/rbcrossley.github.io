@@ -67,7 +67,6 @@ The written examination is divided into **two papers**, each carrying **100 mark
 | Paper I  | Information Technology & Management + Banking & Organizational Management |   100 |            3 Hours | MCQs + Descriptive |
 | Paper II | Information Technology & Management                                       |   100 | 2 Hours 30 Minutes | Descriptive        |
 
----
 
 ### Paper I Breakdown (100 Marks)
 
@@ -75,19 +74,19 @@ Paper I consists of **both objective and descriptive questions**.
 
 #### Section A – Information Technology & Management (Objective)
 
-* **50 MCQs**
-* **1 mark each**
-* **Total: 50 marks**
-* **Duration: 45 minutes**
+- **50 MCQs**
+- **1 mark each**
+- **Total: 50 marks**
+- **Duration: 45 minutes**
 
 This section tests the candidate's basic understanding of Information Technology concepts.
 
 #### Section B – Banking & Organizational Management (Descriptive)
 
-* **6 Short Questions × 5 marks = 30 marks**
-* **2 Long Questions × 10 marks = 20 marks**
-* **Total: 50 marks**
-* **Duration: 2 hours 15 minutes**
+- **6 Short Questions × 5 marks = 30 marks**
+- **2 Long Questions × 10 marks = 20 marks**
+- **Total: 50 marks**
+- **Duration: 2 hours 15 minutes**
 
 This section focuses on banking concepts, banking laws, organizational behavior, digital payment systems, and related regulations. 
 
