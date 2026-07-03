@@ -16,14 +16,14 @@ But for 5th-level posts, a Bachelor's degree suffices.
 
 Here is the gist of the open vacancy.
 
-Post: Senior Assistant (IT)
-Level: 5th
-Total seats: 17
-Open: 8
-Women: 3
-Indigenous: 3
-Madhesi: 2
-Disabled: 1
+- Post: Senior Assistant (IT)
+- Level: 5th
+- Total seats: 17
+- Open: 8
+- Women: 3
+- Indigenous: 3
+- Madhesi: 2
+- Disabled: 1
 
 
 
@@ -51,10 +51,10 @@ https://www.rbb.com.np/uploads/files/career/1635584347Level%205,%20IT%20(Open).p
 
 # Exam Pattern
 
-The recruitment process for the **Senior Assistant (Information Technology)** position consists of **two stages**:
+The recruitment process for the Senior Assistant (Information Technology) position consists of two stages:
 
-1. **Written Examination (200 Marks)**
-2. **Interview (30 Marks)**
+1. Written Examination (200 Marks)
+2. Interview (30 Marks)
 
 Only candidates who qualify in the written examination will be called for the interview. 
 
@@ -62,7 +62,7 @@ Only candidates who qualify in the written examination will be called for the in
 
 
 
-The written examination is divided into **two papers**, each carrying **100 marks**.
+The written examination is divided into two papers, each carrying 100 marks.
 
 <div class="overflow-x-auto">
 <table class="min-w-full table-auto border-2 border-gray-300 rounded-lg">
@@ -97,23 +97,23 @@ The written examination is divided into **two papers**, each carrying **100 mark
 
 ### Paper I Breakdown (100 Marks)
 
-Paper I consists of **both objective and descriptive questions**.
+Paper I consists of both objective and descriptive questions.
 
-#### Section A – Information Technology & Management (Objective)
+#### Section A: Information Technology & Management (Objective)
 
-- **50 MCQs**
-- **1 mark each**
-- **Total: 50 marks**
-- **Duration: 45 minutes**
+- 50 MCQs
+- 1 mark each
+- Total: 50 marks
+- Duration: 45 minutes
 
 This section tests the candidate's basic understanding of Information Technology concepts.
 
-#### Section B – Banking & Organizational Management (Descriptive)
+#### Section B: Banking & Organizational Management (Descriptive)
 
-- **6 Short Questions × 5 marks = 30 marks**
-- **2 Long Questions × 10 marks = 20 marks**
-- **Total: 50 marks**
-- **Duration: 2 hours 15 minutes**
+- 6 Short Questions × 5 marks = 30 marks
+- 2 Long Questions × 10 marks = 20 marks
+- Total: 50 marks
+- Duration: 2 hours 15 minutes
 
 This section focuses on banking concepts, banking laws, organizational behavior, digital payment systems, and related regulations. 
 
@@ -124,10 +124,10 @@ Paper II is entirely descriptive and focuses on technical knowledge.
 
 It consists of:
 
-- **12 Short Questions × 5 marks = 60 marks**
-- **4 Long Questions × 10 marks = 40 marks**
+- 12 Short Questions × 5 marks = 60 marks
+- 4 Long Questions × 10 marks = 40 marks
 
-**Duration:** 2 hours 30 minutes
+Duration: 2 hours 30 minutes
 
 Topics include:
 
@@ -141,7 +141,7 @@ Topics include:
 
 ## Interview (30 Marks)
 
-Candidates who pass the written examination are invited for a **30-mark interview**. The final merit list is prepared by combining the written examination and interview scores. 
+Candidates who pass the written examination are invited for a 30-mark interview. The final merit list is prepared by combining the written examination and interview scores. 
 
 > Note that "passing" the written exam means being a topper. Here we have 8 seats in the open category. Thus, Loksewa will likely schedule interviews for 8*2=16 toppers.
 
@@ -149,9 +149,9 @@ Candidates who pass the written examination are invited for a **30-mark intervie
 
 Candidates should be careful while attempting the MCQ section.
 
-- **20% of the marks assigned to each incorrect MCQ answer will be deducted.**
-- There is **no penalty for unanswered questions.**
-- Answers must be marked using **capital letters (A, B, C, or D)** as instructed in the examination guidelines. 
+- 20% of the marks assigned to each incorrect MCQ answer will be deducted.
+- There is no penalty for unanswered questions.
+- Answers must be marked using capital letters (A, B, C, or D) as instructed in the examination guidelines. 
 
 # Exam date
 The exam date is not finalized yet. In the past, the pattern was that the exam happened within 3 months of the vacancy publication.
