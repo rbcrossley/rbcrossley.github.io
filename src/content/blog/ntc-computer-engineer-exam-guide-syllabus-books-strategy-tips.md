@@ -8,7 +8,7 @@ image: /images/blog/ntc.jpeg
 
 # Introduction
 
-You've completed your Computer Engineering degree. Months have passed. Friends are either abroad or changing careers. You're applying everywhere, but interviews rarely come. If this sounds familiar, you're not alone.
+You've completed your Computer Engineering degree. Months have passed. Friends are either abroad or starting careers. You're applying everywhere, but interviews rarely come. If this sounds familiar, you're not alone.
 
 For many engineering graduates in Nepal, government technical jobs like Nepal Telecom (NTC) represent more than just employment. They represent stability, respect, financial security, and a meaningful engineering career.
 
