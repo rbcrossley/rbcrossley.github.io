@@ -185,7 +185,9 @@ These appear fewer in between but are of higher priority.
 
 ## previous year questions
 
-The highly recommended way of tackling preparation for any competitive exam is by solving its previous year question papers. Unfortunately, as yet questions of Computer Engineering, IT officer are not available completely in public domain. I have heard that PSC, Kamalpokhari office where the question papers are located is planning to publish such question papers in PSC website itself. PSC has indicated plans to gradually publish more archived question papers online. The website was revamped few weeks ago as well.
+The previous year question papers can be found in the link provided below:
+
+https://berojgarengineer.com/blog/pyq-loksewa/
 
 ## Exam Pattern
 
@@ -230,9 +232,7 @@ Good notes do help a lot however by saving time and headache.
 
 The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity bookshops.
 
-You can get [this book](https://s.daraz.com.np/s.Z4Xio?cc) for technical paper:
-
-Or you can visit [daraz](https://s.daraz.com.np/s.Z2t4t) and get any books from there.
+You can get [this book](https://s.daraz.com.np/s.Z4Xio?cc) for technical paper.
 
 
 ## job+Loksewa
@@ -243,13 +243,3 @@ If you have read this and are looking for actionable roadmap on cracking Loksewa
 
 https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
 
-> Note: I have given complete guidance on preparing for loksewa computer engineer and IT Officer in Nepal. I have also given proper roadmap to crack Loksewa computer engineer and IT Officer exams in Nepal. I am an aspirant like you. Maybe I have more information due to my experience preparing for exams, filling forms, giving exams, and so on. I repeat that I have given complete guidance in these two blogs. Still if you want tailored guidance, or want to just have a call with me regarding Loksewa computer engineer and IT officer, or want to ask some additional questions, pay Rs.2500 to the QR present in the blog below.
-
-<img src="/images/blog/qr-nmb.png" width="300" />
-
-
-And fill the form below:
-
-https://forms.gle/zV6ijRVU5mh6DGnv5
-
-I will inform you within the next 24 hours and schedule a call when our time is suitable. Keep the questions prepared so that the session can be succinct.
