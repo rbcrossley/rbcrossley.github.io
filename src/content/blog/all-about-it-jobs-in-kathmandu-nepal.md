@@ -3,7 +3,7 @@ title: All About IT Jobs and Careers in Nepal
 description: A complete guide to IT jobs in Nepal, covering government, private, and international careers, top hiring companies, and real interview questions.
 date: 2026-07-04
 author: admin
-image: /images/blog/ct.png
+image: /images/blog/it.jpeg
 ---
 
 Every year, thousands of computer engineering and IT graduates in Nepal ask the same set of questions. Should I prepare for a government job or look for something in the private sector? Which companies are actually hiring right now? Is it worth paying for an institute, or should I learn on my own? What do interviewers actually ask a fresher?
