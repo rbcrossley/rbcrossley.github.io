@@ -47,7 +47,9 @@ For 5th level aspirants, the form fee is Rs.500. For each inclusive quota, you w
 
 The syllabus for the Loksewa exam of RBB Senior Assistant (IT) 5th level is presented here:
 
-https://www.rbb.com.np/uploads/files/career/1635584347Level%205,%20IT%20(Open).pdf
+https://www.rbb.com.np/uploads/files/career/1771751873Level%205,%20IT%20(Senior%20Assistant-IT).pdf
+
+> This is the correct and updated syllabus. The one that you find while googling "RBB Senior Assistant IT 5th level syllabus" is not the correct updated syllabus. Although both of them are in RBB website.
 
 # Exam Pattern
 
