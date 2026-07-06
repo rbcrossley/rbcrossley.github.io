@@ -156,6 +156,10 @@ If you are joining Udemy for the first time, please use [this link](https://trk.
 
 Next, get one book from a publisher like Manning or Apress. These two publishers consistently produce high-quality technical books, and there is almost always a solid title covering whatever a fresher would want to learn. Once you have the digital copy, take it to a nearby printing shop and ask them to print it with proper book-style binding and a colored cover. Having a physical copy makes a real difference when you are trying to study consistently.
 
+To get digital copy of books from Manning, use the following affiliate link:
+
+https://www.manning.com/?utm_source=BEROJGARENGINEER&utm_medium=affiliate&utm_campaign=affiliate&a_aid=BEROJGARENGINEER
+
 Finally, use YouTube to fill in the gaps. YouTube is a fantastic learning resource, but it works best as a supplement rather than a starting point. Since you already have structure from your course and your book, you can use YouTube videos to clarify specific concepts instead of depending on it entirely, which is what most people who struggle with YouTube-only learning end up doing.
 
 ## Common IT Job Roles in Nepal
