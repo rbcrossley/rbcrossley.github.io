@@ -127,13 +127,21 @@ Since you are in college, you already have your college library. Study there eve
 If you are looking for paid study libraries, there are various "study rooms" that charge around Rs.3500/month. They are insanely helpful. But I believe you, as a student, do not need such expensive libraries. Just visit your college library. Ask the coordinator to make college libraries open on weekends as well. You will see a rapid increase in your grades when you start studying in the library. Trust me on this.
 
 
-# Best productivity apps
+# Best productivity apps and tools
 
 I use couple of apps that you can call productivity apps. I use Android phone btw.
 
 - CoffeePomodoro Premium(for pomodoros tracking and analysis)
 
 That is all to be honest. Or maybe I forgot. I will add more when I remember.
+
+Get a good chair. It makes a huge difference. I got a VBON Cude chair a year ago, and it has been directly impacting my productivity. I do not have to think about the pain of sitting in a plastic chair. I feel extremely comfortable when seated. And it is not even a very hi-fi chair. It is a basic office chair.
+
+VBON gives lots of warranty on their chair. You will not need any warranty because the chair is very good.
+
+Buy the chair from the link provided below:
+
+https://s.daraz.com.np/s.ZhInu?cc
 
 # Note-taking techniques
 
@@ -155,9 +163,9 @@ https://s.daraz.com.np/s.Z6hOD?cc
 For Chiyanotes copy, you can visit any stationery shops near you.
 But that yellow colored copy is only available in selected few stationaries, not every stationary seem to keep it. Maybe due to its pricing.
 
-To get the best of both worlds, you can buy a tablet. iPads are great but expensive. The one that I recommend is the Xiaomi Pad 8.
+To get the best of both worlds, you can buy a tablet. iPads are great but expensive. So I prefer Android. The one that I recommend is the Xiaomi Pad 8.
 
-Buy it from the link below and start creating beautiful notes:
+Buy it from the link below and start creating beautiful handwritten notes digitally:
 
 https://s.daraz.com.np/s.Z6hFR?cc
 
@@ -216,5 +224,5 @@ If you want to further research on techniques to study or in general learn new s
 
 https://trk.udemy.com/BnmL4B
 
-> Kindly please use the link above if you are buying a new course or a subscription from Udemy. This is udemy's affiliate link. I get commission from Udemy without any additional cost to you. I repeat, this helps to motivate me create more helpful content.
+> Kindly please use the link above if you are buying a new course or a subscription from Udemy. This is udemy's affiliate link. I get commission from Udemy without any additional cost to you.
 
