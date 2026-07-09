@@ -96,6 +96,11 @@ Sleep 8 hours every day.
 
 Meditate and/or exercise a few times per week.
 
+
+> One thing that has greatly helped me to be consistent in these habits(sleep and exercise mainly) is getting a smartwatch. I personally went for HUAWEI Band 10 because I was on a budget and wanted maximum value for money product. I am very happy with this product. Get it from the link below:
+
+https://s.daraz.com.np/s.ZSZ4b?cc
+
 Interleave between subjects. I personally favored interleaving with Pomodoro.
 
 The interleaving technique that I use works like this
