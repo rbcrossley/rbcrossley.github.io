@@ -235,6 +235,13 @@ The best books are as I said earlier, the standard textbooks. The topics are in 
 You can get [this book](https://s.daraz.com.np/s.Z4Xio?cc) for technical paper.
 
 
+# best books for first paper
+I have researched a lot on this. I have bought many GK books, IQ books, and first paper books of NTC. So, far the only book that I liked is GK King by Ashman Upadhayay. 
+
+The book's link is given below:
+
+https://s.daraz.com.np/s.Z5LSb?cc
+
 ## job+Loksewa
 
 Many students start preparing for Loksewa along with a low paying job. It takes around 6 months to 1 year of full-time studies to complete the entire syllabus given rudimentary only knowledge. Most IT companies provide two days leaves. If you think you can manage that, go ahead. I feel that it is not manageable for many reasons. But I also started preparing along with a job. So you can start like that as well.

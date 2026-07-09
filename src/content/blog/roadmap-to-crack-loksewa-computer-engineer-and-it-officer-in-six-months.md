@@ -118,6 +118,7 @@ https://s.daraz.com.np/s.Z4XTp?cc
 
 Reading books will take time. Keep that in mind. But believe me, it is absolutely worth it. Do you want to be a government officer who cannot read? I guess not.
 
+
 # Month-by-month study routine
 
 You have to prioritize subjects really well. I urge you to target two subjects per month. But even if you do not, the last month is left free; you could finish it in the last month.
@@ -158,6 +159,13 @@ Wrap up studies.
 You are done with studies. Now, buy the
 old questions.
 And start solving them. You can take help from your notes or the internet while solving them. Your goal is to make proper materials for exam time and increase your chances of selection.
+
+# best books for first paper
+I have researched a lot on this. I have bought many GK books, IQ books, and first paper books of NTC. So, far the only book that I liked is GK King by Ashman Upadhayay. 
+
+The book's link is given below:
+
+https://s.daraz.com.np/s.Z5LSb?cc
 
 # Daily study routine
 
