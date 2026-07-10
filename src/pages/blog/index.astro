@@ -4,7 +4,7 @@ import Base from '../../layouts/Base.astro';
 import { link } from '../../lib/link';
 
 const posts = (await getCollection('blog'))
-  .filter((post) => post.slug !== 'pyq-loksewa')
+  .filter((post) => post.slug !== 'pyq-loksewa' && post.slug !== 'micro-syllabus-of-data-structures-and-algorithms')
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 ---
 <Base title="Blog » Berojgar Engineer" description="Latest articles on computer science topics">

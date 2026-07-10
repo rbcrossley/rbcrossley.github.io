@@ -5,7 +5,7 @@ import theme from '../../theme.config.js';
 import { link } from '../lib/link';
 
 const blogPosts = (await getCollection('blog'))
-  .filter((post) => post.slug !== 'pyq-loksewa')
+  .filter((post) => post.slug !== 'pyq-loksewa' && post.slug !== 'micro-syllabus-of-data-structures-and-algorithms')
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date))
   .slice(0, 3);
 ---
