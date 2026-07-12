@@ -234,6 +234,7 @@ The best books are as I said earlier, the standard textbooks. The topics are in 
 
 You can get [this book](https://s.daraz.com.np/s.Z4Xio?cc) for technical paper.
 
+Your expectations from this type of Loksewa books should not be to "learn the concept by reading these book". They have zero quality for you to learn from them. Instead use this book as a reference of which topics to not leave for loksewa computer engineer/IT officer exam. There are also some old questions present in this book. 
 
 # best books for first paper
 I have researched a lot on this. I have bought many GK books, IQ books, and first paper books of NTC. So, far the only book that I liked is GK King by Ashman Upadhayay. 
