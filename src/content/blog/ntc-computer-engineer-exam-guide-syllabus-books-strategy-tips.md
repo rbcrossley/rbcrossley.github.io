@@ -2,7 +2,7 @@
 title: NTC Computer Engineer exam guide 
 description: From Berojgar to NTC Engineer, The Complete Nepal Telecom Level 7 Computer Engineer Preparation Roadmap
 date: 2026-07-02
-author: admin
+author: BerojgarEngineer
 image: /images/blog/ntc.jpeg
 ---
 

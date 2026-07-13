@@ -2,9 +2,14 @@
 title: Rastriya Banijya Bank 5th level Senior Assistant IT job full guidance
 description: End-to-end guidance for cracking RBB 5th level Senior Assistant IT exams
 date: 2026-07-03
-author: admin
+author: BerojgarEngineer
 image: /images/blog/thumbnail-rbb.jpeg
 ---
+
+If you prefer watching the video:
+
+https://www.youtube.com/watch?v=N-VpfJlCIr4
+
 
 Today, 2083/03/19, was a great day for Loksewa aspirants. Lots of vacancies have come. Surprisingly, many IT-related roles have opened up. I will be talking about Rastriya Banijya Bank's 2083 Senior Assistant IT vacancy. The goal of this article is to guide you from today to the date of the exam.
 

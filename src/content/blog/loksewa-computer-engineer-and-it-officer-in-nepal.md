@@ -6,6 +6,9 @@ author: cst
 image: /images/blog/roadmap1.png
 ---
 
+If you prefer watching the video:
+
+https://www.youtube.com/watch?v=BE7k2SKOgvQ
 
 Government IT and Computer Engineering jobs in Nepal have become increasingly competitive due to job security, structured career progression, fixed working hours, and stable salary benefits.
 

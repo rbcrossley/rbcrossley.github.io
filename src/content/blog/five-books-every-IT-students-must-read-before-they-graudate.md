@@ -2,9 +2,14 @@
 title: Five things every IT student must learn before they graduate
 description: Learn these five things before you graduate from university 
 date: 2026-07-01
-author: admin
+author: BerojgarEngineer
 image: /images/blog/books.jpeg
 ---
+
+
+If you prefer watching the video:
+
+https://www.youtube.com/watch?v=5WusxO5OOsU
 
 You must have seen lots of videos and blogs posting five books every IT student must read before they graduate. Is my blog an addition to that spam? No. I will tell you why. In this blog, I will not be telling complicated book titles just to sound smart. I will tell you what you will enjoy reading given your BE/BscSIT educational background in Nepal.
 

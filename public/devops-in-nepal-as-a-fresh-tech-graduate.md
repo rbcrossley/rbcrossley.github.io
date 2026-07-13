@@ -2,7 +2,7 @@
 title: DevOps Careers for fresh Nepali Information Technology Graduates
 description: Guidance for freshers thinking of starting a career as a DevOps Engineer in Nepal
 date: 2026-07-29
-author: admin
+author: BerojgarEngineer
 image: /images/blog/qa-vs-backend.png
 ---
 
