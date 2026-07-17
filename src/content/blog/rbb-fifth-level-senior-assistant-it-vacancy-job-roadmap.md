@@ -185,6 +185,12 @@ https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-ne
 
 # Old questions
 
-The old questions can be purchased from the link provided below:
+If you are here, you might also be preparing for 6th/7th level positions in other corporations or nijamati/sangh.
+You might need old questions for practicing.
+
+The old questions for the technical portion of 6th/7th level position can be purchased from the link provided below.
 
 https://berojgarengineer.com/blog/pyq-loksewa/
+
+> Note it does not have 4th or 5th level questions
+

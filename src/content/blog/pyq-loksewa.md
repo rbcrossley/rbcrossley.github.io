@@ -14,7 +14,14 @@ But you do not have to.
 
 I have collected the previous year question papers from NEA, NTC, NRB, Nepal Army, Nepal Police, SSF, CIT, CAAN, Nijamati and many more. The question papers were collected by physically visiting the Loksewa Office at Kamalpokhari as well as enrolling in various institutes.
 
-Pay Rs.499 to the QR below:
+There are 71 pages full of Loksewa Computer Engineer question, NRB IT Assistant Director old questions, Nepal Army Computer Engineer old questions, Nijamati Computer Engineer old questions, and many more. Basically this is the entire repository of questions that exist in institutes and Loksewa office Kamalpokhari. 
+
+I continuously keep updating this question set. Every 6 months, I will send you the updated questions bank with latest exam question papers.
+
+In the questions bank, there are 50(at the time of writing this blog, it will increase within some time) sets of questions of technical part. Not just that, from other 100+ loksewa exams, I have collected subject wise important questions that are not present in the the earlier sets. 
+
+
+To get access to this old questions resource, pay Rs.499 to the QR below:
 
 <img src="/images/blog/qr-nmb.png" width="300" />
 

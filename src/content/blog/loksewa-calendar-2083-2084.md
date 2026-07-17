@@ -14,6 +14,12 @@ https://psc.gov.np/site_uploads/files/-196256990.pdf
 
 I will discuss notable companies for Computer Engineers and IT officers and discuss their vacancy,exam and result timeline.
 
+By the way, if you are preparing for Loksewa Computer Engineering and IT officer roles in Nepal, you might want to check this blog:
+
+https://berojgarengineer.com/blog/pyq-loksewa/
+
+It contains all the previous year questions of loksewa computer engineer and it officer related roles. It contains questions of only the second paper i.e., the technical part+technical MCQs of first paper.
+
 
 # NTC vacancy 2083
 Nepal Telecom Vacancy in 2083 will open at Ashoj/Kartik.
