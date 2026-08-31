@@ -2,7 +2,7 @@
 title: Computer Engineering and BSc.CSIT career guidance for Plus Two Graduates of Nepal
 description: All your doubts about Computer Engineering as well as BSc.CSIT covered in one article
 date: 2026-06-22
-author: cst
+author: BerojgarEngineer
 image: /images/blog/ct.png
 ---
 
