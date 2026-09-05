@@ -3,7 +3,7 @@ title: GitLab and Jenkins, Polling vs Webhook Integration
 description: Learn how to connect self-hosted GitLab and Jenkins using Poll SCM and webhooks, with a practical Rocky Linux lab setup.
 date: 2026-09-05
 author: BerojgarEngineer
-image: /images/blog/gitlab.png
+image: /images/blog/gitlab.jpg
 ---
 
 # GitLab + Jenkins: Polling vs Webhook Integration (Self-Hosted Lab)
