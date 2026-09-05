@@ -217,13 +217,11 @@ There are very few available question papers so you cannot extrapolate accuratel
 
 ## Preparation providing institutes
 
-There are three institutes providing classes for Loksewa computer engineer and IT officer. 
+There are only three institutes providing classes for Loksewa computer engineer and IT officer. 
 
 - Line Academy
 - iGlobe Academy
 - APEX Academy 
-
-> I felt huge difference in my studies after I joined institute. But I had given enough time for self study before joining institute. My expectations were simple from institute. I just wanted structure of topics, what to write, how long to write and institute provided that.
 
 ## Notes
 
@@ -235,16 +233,23 @@ Good notes do help a lot however by saving time and headache.
 
 The best books are as I said earlier, the standard textbooks. The topics are in the syllabi. And the possible questions and patterns are present in PYQs. if you still need some help, get any books that are available for Computer Engineer/IT Officer technical paper in Bhotahity bookshops.
 
-You can get [this book](https://s.daraz.com.np/s.Z4Xio?cc) for technical paper.
-
-Your expectations from this type of Loksewa books should not be to "learn the concept by reading these book". They have zero quality for you to learn from them. Instead use this book as a reference of which topics to not leave for loksewa computer engineer/IT officer exam. There are also some old questions present in this book. 
+There are no good books for technical paper.
 
 # best books for first paper
 I have researched a lot on this. I have bought many GK books, IQ books, and first paper books of NTC. So, far the only book that I liked is GK King by Ashman Upadhayay. 
 
 The book's link is given below:
 
-https://s.daraz.com.np/s.Z5LSb?cc
+GK King(for structured GK study):
+
+https://s.daraz.com.np/s.ZPjHZ?cc
+
+GK Saurav(For old questions solved):
+
+https://s.daraz.com.np/s.ZPjry?cc
+
+If you can get any one of them, get the latter one. It rocks for real. It contains all old questions till 2083 baisakh of GK organized in an easy to digest form. It is organized syllabus unit wise.
+
 
 ## job+Loksewa
 

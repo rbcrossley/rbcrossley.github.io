@@ -21,7 +21,7 @@ I continuously keep updating this question set. Every 6 months, I will send you 
 In the questions bank, there are 50(at the time of writing this blog, it will increase within some time) sets of questions of technical part. Not just that, from other 100+ loksewa exams, I have collected subject wise important questions that are not present in the the earlier sets. 
 
 
-To get access to this old questions resource, pay Rs.1200 to the QR below:
+To get access to this old questions resource, pay Rs.1500 to the QR below:
 
 <img src="/images/blog/qr-nmb.png" width="300" />
 
