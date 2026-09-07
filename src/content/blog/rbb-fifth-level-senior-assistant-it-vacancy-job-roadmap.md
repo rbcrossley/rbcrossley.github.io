@@ -163,9 +163,9 @@ Candidates should be careful while attempting the MCQ section.
 # Exam date
 The exam date is not finalized yet. In the past, the pattern was that the exam happened within 3 months of the vacancy publication.
 
-You can join the Discord server for discussions related to government IT jobs. Its link is provided below:
+You can join the Facebook group for discussions related to government IT jobs. Its link is provided below:
 
-https://discord.gg/hJt3gTQakB
+https://www.facebook.com/share/g/1TBYQgS2DB/
 
 # Salary
 It is interesting and motivational to know about the salary for the position you are preparing for. The salary of a 5th-level IT assistant is not available from RBB itself in the public domain. But I have official data on the salary of a 6th-level RBB Officer. It is nearly 81,000 per month. This was before the 21% salary increment.
