@@ -1,6 +1,6 @@
 ---
 title: LEMP stack deployment in Linux
-description: Deploy WordPress with NGINX, MySQL, and PHP on a Red Hat-based Linux server, including services, firewall, SELinux, and setup.
+description: Follow my step-by-step LEMP and WordPress deployment on a Red Hat Linux server using NGINX, MySQL, and PHP, with firewall, SELinux, services, and testing.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/wordpress-using-nginx.jpg

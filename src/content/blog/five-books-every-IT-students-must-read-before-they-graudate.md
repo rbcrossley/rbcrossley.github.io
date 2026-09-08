@@ -1,6 +1,6 @@
 ---
 title: Five things every IT student must learn before they graduate
-description: Learn these five things before you graduate from university 
+description: Five important things every IT student in Nepal should learn before graduation, including technical skills, communication, projects, careers, and practical work habits.
 date: 2026-07-01
 author: BerojgarEngineer
 image: /images/blog/books.jpeg

@@ -1,6 +1,6 @@
 ---
 title: Roadmap to crack Loksewa Computer Engineer and IT officer in six months
-description: A realistic six-month Loksewa preparation plan for Computer Engineer and IT Officer exams.
+description: My realistic six-month plan for Loksewa Computer Engineer and IT Officer exams, with a study routine, syllabus priorities, revision method, and preparation advice.
 date: 2026-06-05
 author: cst
 image: /images/blog/loksewa-roadmap-thumbnail.png

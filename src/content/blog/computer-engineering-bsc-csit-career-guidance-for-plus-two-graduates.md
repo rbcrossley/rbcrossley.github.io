@@ -1,6 +1,6 @@
 ---
 title: Computer Engineering and BSc.CSIT career guidance for Plus Two Graduates of Nepal
-description: All your doubts about Computer Engineering as well as BSc.CSIT covered in one article
+description: Honest career guidance for Plus Two graduates in Nepal comparing Computer Engineering and BSc.CSIT, including study choices, entrance exams, skills, and careers.
 date: 2026-06-22
 author: BerojgarEngineer
 image: /images/blog/ct.png

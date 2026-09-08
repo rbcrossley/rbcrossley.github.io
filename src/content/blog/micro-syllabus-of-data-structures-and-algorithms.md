@@ -1,6 +1,6 @@
 ---
 title: Micro syllabus of data structures and algorithms for Loksewa Computer Engineer Examination
-description: This product contains the micro level syllabus for studying data structures and algorithms for Loksewa Computer Engineer and IT officer examinations.
+description: A focused micro syllabus for Data Structures and Algorithms in Loksewa Computer Engineer and IT Officer exams, showing what to study, how deeply, and why it matters.
 date: 2026-07-10
 author: BerojgarEngineer
 image: /images/blog/pyq.png

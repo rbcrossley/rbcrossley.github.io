@@ -1,6 +1,6 @@
 ---
 title: Homelabbing in Nepal
-description: Homelabbing in Nepal with constrained resources
+description: Learn how I built a practical homelab in Nepal with limited space and budget, using servers, Linux, networking, Kubernetes, and lessons from support work.
 date: 2026-08-31
 author: BerojgarEngineer
 image: /images/blog/homelab.png

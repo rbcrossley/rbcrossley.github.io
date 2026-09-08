@@ -1,6 +1,6 @@
 ---
 title: 2 Years in Nepal Tech Support, What I'd Tell My Fresher Self
-description: First-hand roadmap for Nepali freshers in IT support, salary, remote work, and exam prep.
+description: What I learned during two years in Nepal's IT support industry, including fresher jobs, salary expectations, remote work, skills, and government exam preparation.
 date: 2026-05-16
 author: BerojgarEngineer
 image: /images/blog/fresher-it.jpeg

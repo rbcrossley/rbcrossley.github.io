@@ -1,6 +1,6 @@
 ---
 title: All about Loksewa Vacancy Calendar 2083/84
-description: Details present about when will specific organization(NTC,NEA,NRB,Sangh) vacancy open.
+description: Check the Loksewa vacancy and exam calendar for 2083/84, including expected openings from NTC, NEA, NRB, Sangh, and other Nepali organizations.
 date: 2026-07-17
 author: BerojgarEngineer
 image: /images/blog/calendar.jpg

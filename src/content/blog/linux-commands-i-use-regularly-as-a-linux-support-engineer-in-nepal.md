@@ -1,6 +1,6 @@
 ---
 title: Linux Commands that I use regularly as a Production Linux Support Engineer in Nepal
-description: Practical Linux commands for production support engineers, covering log searches, disk usage, file transfers, services, and troubleshooting.
+description: Linux commands I use as a production support engineer in Nepal for log searches, disk usage, file transfers, services, networking, troubleshooting, and daily work.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/commands.jpg

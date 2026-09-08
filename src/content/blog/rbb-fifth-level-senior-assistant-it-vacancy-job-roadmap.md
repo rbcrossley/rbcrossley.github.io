@@ -1,6 +1,6 @@
 ---
 title: Rastriya Banijya Bank 5th level Senior Assistant IT job full guidance
-description: End-to-end guidance for cracking RBB 5th level Senior Assistant IT exams
+description: A complete roadmap for the RBB 5th level Senior Assistant IT exam, covering the vacancy, syllabus, preparation strategy, technical subjects, and useful resources.
 date: 2026-07-03
 author: BerojgarEngineer
 image: /images/blog/thumbnail-rbb.jpeg

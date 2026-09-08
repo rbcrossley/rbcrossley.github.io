@@ -1,6 +1,6 @@
 ---
 title: How to study Computer Engineering in Nepal
-description: Techniques for being a successful engineering student
+description: My practical guide to studying Computer Engineering in Nepal, managing difficult subjects, preparing for exams, building skills, and becoming a better engineer.
 date: 2026-07-01
 author: BerojgarEngineer
 image: /images/blog/learning.jpeg
