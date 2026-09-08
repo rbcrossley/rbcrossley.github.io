@@ -7,7 +7,7 @@ const posts = (await getCollection('blog'))
   .filter((post) => post.slug !== 'pyq-loksewa' && post.slug !== 'micro-syllabus-of-data-structures-and-algorithms')
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 ---
-<Base title="Blog » Berojgar Engineer" description="Latest articles on computer science topics">
+<Base title="Blog » Berojgar Engineer" description="Read practical articles on computer science, Linux, IT careers, Loksewa preparation, engineering studies, and working in Nepal's technology industry.">
   <section class="page">
     <div class="container">
       <h1 class="page-title">Latest from the Blog</h1>

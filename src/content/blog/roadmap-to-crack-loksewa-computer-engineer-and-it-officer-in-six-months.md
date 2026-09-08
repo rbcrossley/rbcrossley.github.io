@@ -1,17 +1,14 @@
 ---
 title: Roadmap to crack Loksewa Computer Engineer and IT officer in six months
-description: My realistic six-month plan for Loksewa Computer Engineer and IT Officer exams, with a study routine, syllabus priorities, revision method, and preparation advice.
+description: My six-month plan for Loksewa Computer Engineer and IT Officer exams, with a study routine, syllabus priorities, revision, and advice.
 date: 2026-06-05
 author: cst
 image: /images/blog/loksewa-roadmap-thumbnail.png
 ---
-
 If you prefer watching the video:
-
 https://www.youtube.com/watch?v=lpdcrsbNQfs
 
 The idea for this post came around when a member of my Facebook group DM'd me regarding how to prepare for Loksewa in 3-6 months. btw, if you haven't joined that Facebook group yet, please do. Link is here: https://www.facebook.com/share/g/1TBYQgS2DB/
-
 I had to be honest. 3 months of preparation is not enough for most average people. That might set the wrong impression that you can crack Loksewa exams with 3 months of preparation. I am not saying people have not cracked by studying properly within that time frame. I have personally seen lots of talented people who have cracked Loksewa Computer Engineer examinations within that time frame.
 
 If you are fully directed, fully motivated,100% efficient, then 6 months of full-time study can be sufficient.

@@ -1,17 +1,14 @@
 ---
 title: 2 Years in Nepal Tech Support, What I'd Tell My Fresher Self
-description: What I learned during two years in Nepal's IT support industry, including fresher jobs, salary expectations, remote work, skills, and government exam preparation.
+description: What I learned in two years of Nepal's IT support industry, including fresher jobs, salary, remote work, skills, and exam preparation advice.
 date: 2026-05-16
 author: BerojgarEngineer
 image: /images/blog/fresher-it.jpeg
 ---
-
 Even in current seemingly dim scenarios, I heavily bet on Information Technology careers in Nepal. Nepali IT will grow if the Nepalese economy has to grow because we do not have other options. The government putting IT as a "strategic industry" just validates my point further. I will provide guidance on a few areas that I believe freshers want to know but do not have a reliable way of knowing.
-
 # Salary
 
 The base salary is standard in almost all "established" companies. They are not released publicly. So everyone has to make an educated guess or tell from their own experience. I do not have a huge collection of people who are willing to disclose their salaries honestly, and neither do I have ways to cross-check the salaries. But I do have a general idea of the market rate.
-
 What you receive will depend on your negotiation skills, indispensability in the organization, rapport in the team, and your perception in the company. If you have made the manager feel that you are indispensable, then you "might" get higher salaries.
 
 As a rule of thumb, here is the salary breakdown:

@@ -1,17 +1,14 @@
 ---
 title: All previous year question papers of Loksewa Computer Engineering and IT officer
-description: Access previous year Loksewa Computer Engineer and IT Officer question papers from Nepal, with exam patterns, subject-wise practice sets, and preparation advice.
+description: Access previous year Loksewa Computer Engineer and IT Officer papers from Nepal, with exam patterns, subject-wise sets, and preparation advice.
 date: 2026-05-30
 author: cst
 image: /images/blog/pyq.png
 ---
-
 Previous year question papers of Loksewa are very important to crack Loksewa exams. They give the pattern of questions that are being asked. You might think it is good to be highly knowledgeable in all subjects and that will be enough. But you would be wrong.
-
 Cracking an exam and learning the material well are two different things. I learnt it the hard way. and had to waste a lot of time in that phase.
 
 But you do not have to. 
-
 I have collected the previous year question papers from NEA, NTC, NRB, Nepal Army, Nepal Police, SSF, CIT, CAAN, Nijamati and many more. The question papers were collected by physically visiting the Loksewa Office at Kamalpokhari as well as enrolling in various institutes.
 
 There are over 80 pages full of Loksewa Computer Engineer question, NRB IT Assistant Director old questions, Nepal Army Computer Engineer old questions, Nijamati Computer Engineer old questions, and many more. Basically this is the entire repository of questions that exist in institutes and Loksewa office Kamalpokhari. 

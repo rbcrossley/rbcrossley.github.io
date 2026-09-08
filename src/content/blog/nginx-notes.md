@@ -1,17 +1,14 @@
 ---
 title: My notes on NGINX web servers
-description: Practical NGINX server notes for Rocky Linux and other Red Hat-based distributions, covering installation, configuration, SSL, and troubleshooting.
+description: Practical NGINX notes for Rocky Linux and Red Hat distributions, covering installation, server blocks, SSL, reverse proxies, troubleshooting, and daily work.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/nginx.jpg
 ---
-
 # Infrastructure required
-
 I am using Rocky Linux 9, you can use any linux distributions and the result will be same. But I will recommend choose any Red-hat based distributions. Make sure to have at least 3 servers ready. Example:
 
 ```
-192.168.1.2
 192.168.1.3
 192.168.1.4
 ```

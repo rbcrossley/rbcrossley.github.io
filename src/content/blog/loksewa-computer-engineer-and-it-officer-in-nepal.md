@@ -1,17 +1,14 @@
 ---
 title: Loksewa Computer Engineer and IT Officer in Nepal
-description: A practical guide to Loksewa Computer Engineer and IT Officer careers in Nepal, covering eligibility, syllabus, exam strategy, preparation resources, and career paths.
+description: A guide to Loksewa Computer Engineer and IT Officer careers in Nepal, covering eligibility, syllabus, exam strategy, resources, and career options.
 date: 2026-05-07
 author: cst
 image: /images/blog/roadmap1.png
 ---
-
 If you prefer watching the video:
-
 https://www.youtube.com/watch?v=BE7k2SKOgvQ
 
 Government IT and Computer Engineering jobs in Nepal have become increasingly competitive due to job security, structured career progression, fixed working hours, and stable salary benefits.
-
 This guide covers:
 - Salary details
 - Qualification requirements

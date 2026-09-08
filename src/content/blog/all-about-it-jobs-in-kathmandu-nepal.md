@@ -1,6 +1,6 @@
 ---
 title: All About IT Jobs and Careers in Nepal
-description: My complete guide to IT jobs in Kathmandu and Nepal, covering government and private careers, hiring companies, fresher skills, salaries, and real interview questions.
+description: My guide to IT jobs in Kathmandu and Nepal, covering government and private careers, hiring companies, fresher skills, salaries, and interview questions.
 date: 2026-07-04
 author: BerojgarEngineer
 image: /images/blog/it.jpeg

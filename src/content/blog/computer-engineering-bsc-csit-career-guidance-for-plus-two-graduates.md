@@ -1,17 +1,14 @@
 ---
 title: Computer Engineering and BSc.CSIT career guidance for Plus Two Graduates of Nepal
-description: Honest career guidance for Plus Two graduates in Nepal comparing Computer Engineering and BSc.CSIT, including study choices, entrance exams, skills, and careers.
+description: Career guidance for Plus Two graduates in Nepal comparing Computer Engineering and BSc.CSIT, including choices, entrance exams, skills, and jobs.
 date: 2026-06-22
 author: BerojgarEngineer
 image: /images/blog/ct.png
 ---
-
 Hello, bhai baini haru! I am an ordinary and recent computer engineering graduate from a private college of Tribhuvan University. I completed the plus two with 86% in the aggregate. I got a 3-digit rank in the IOE entrance examination. I graduated in computer engineering in 2022 with 71% in aggregate. I worked as an IT support engineer for more than two years. I am now preparing for government jobs in computer engineering and IT-related fields.
-
 I know the struggle faced by students once they graduate from Plus Two in Nepal. I know you, the first-generation-to-be university students, especially in the fields of science and technology, and the struggle you face for guidance.
 
 I know you probably raised eyebrows when I said I am a graduate from a private college. If you are as studious as I was (till plus two), you cannot even think of joining private colleges even in your worst dreams. You think you deserve a proper government college.
-
 
 I noticed that on the Nepali internet (Reddit, Facebook), guidance is hard to come by. "I faced so much struggle, so why should someone else have it easy from my experience?" is the "sick mindset" prevalent in Nepal.
 

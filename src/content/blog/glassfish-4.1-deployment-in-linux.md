@@ -1,6 +1,6 @@
 ---
 title: Glassfish 4.1 Deployment in Red Hat distribution Linux(Centos 7)
-description: Deploy GlassFish 4.1 on CentOS 7 or another Red Hat Linux distribution with this practical guide to Java installation, domains, services, configuration, and testing.
+description: Deploy GlassFish 4.1 on CentOS 7 or Red Hat Linux with this practical guide to Java installation, domains, services, configuration, and deployment testing.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/glassfish.jpg

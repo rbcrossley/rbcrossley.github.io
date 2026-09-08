@@ -1,17 +1,14 @@
 ---
 title: All about Loksewa Vacancy Calendar 2083/84
-description: Check the Loksewa vacancy and exam calendar for 2083/84, including expected openings from NTC, NEA, NRB, Sangh, and other Nepali organizations.
+description: Check the Loksewa vacancy and exam calendar for 2083/84 this year, including expected openings from NTC, NEA, NRB, Sangh, and other offices.
 date: 2026-07-17
 author: BerojgarEngineer
 image: /images/blog/calendar.jpg
 ---
-
 Today is 2083-04-01. And like every year, Loksewa has published its yearly vacancy+exam+... calendar.
-
 For downloading the calendar, visit the below link:
 
 https://psc.gov.np/site_uploads/files/-196256990.pdf
-
 I will discuss notable companies for Computer Engineers and IT officers and discuss their vacancy,exam and result timeline.
 
 By the way, if you are preparing for Loksewa Computer Engineering and IT officer roles in Nepal, you might want to check this blog:
