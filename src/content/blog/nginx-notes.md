@@ -1,6 +1,6 @@
 ---
 title: My notes on NGINX web servers
-description: Mainly taken from Zeal Vora's Udemy courses
+description: Practical NGINX server notes for Rocky Linux and other Red Hat-based distributions, covering installation, configuration, SSL, and troubleshooting.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/nginx.jpg

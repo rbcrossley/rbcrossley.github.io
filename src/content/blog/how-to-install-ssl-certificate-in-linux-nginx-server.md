@@ -1,6 +1,6 @@
 ---
 title: How to install SSL certificate in Red Hat Linux NGINX web server
-description: Tried and tested in production
+description: Learn how to install SSL certificates on a Red Hat Linux NGINX server, including certificate chains, backups, testing, and reloads.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/ssl.jpg

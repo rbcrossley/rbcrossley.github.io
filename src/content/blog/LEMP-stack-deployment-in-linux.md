@@ -1,6 +1,6 @@
 ---
 title: LEMP stack deployment in Linux
-description: Learn how to deploy wordpress using NGINX as a web server instead of Apache HTTP server.
+description: Deploy WordPress with NGINX, MySQL, and PHP on a Red Hat-based Linux server, including services, firewall, SELinux, and setup.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/wordpress-using-nginx.jpg
