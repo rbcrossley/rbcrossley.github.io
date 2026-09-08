@@ -6,13 +6,20 @@ import Base from '../layouts/Base.astro';
     <div class="container narrow">
       <h1 class="page-title">Contact us</h1>
       <p>For inquiries, please email <a href="mailto:admin@berojgarengineer.com">admin@berojgarengineer.com</a>.</p>
-      <p>I typically respond within 48 hours and join the Facebook group(<a href="https://www.facebook.com/share/g/1TBYQgS2DB/">https://www.facebook.com/share/g/1TBYQgS2DB/</a>) for faster response.</p>
+      <p>I typically respond within 48 hours. Join the <a href="https://www.facebook.com/share/g/1TBYQgS2DB/" target="_blank" rel="noopener">Facebook group</a> for a faster response.</p>
     </div>
   </section>
 </Base>
 <style>
   .page { padding: 50px 0 60px; }
-  .narrow { max-width: 760px; }
+  .narrow { width: 100%; max-width: 760px; }
   .page-title { font-size: 36px; font-weight: 800; margin-bottom: 12px; color: var(--c-text); }
-  p { color: var(--c-muted); margin-bottom: 24px; }
+  p { color: var(--c-muted); margin-bottom: 24px; line-height: 1.75; }
+  a { overflow-wrap: anywhere; }
+
+  @media (max-width: 640px) {
+    .page { padding: 32px 0 44px; }
+    .page-title { font-size: 30px; }
+    p { line-height: 1.7; }
+  }
 </style>
