@@ -8,7 +8,7 @@ image: /images/blog/loksewa-roadmap-thumbnail.png
 If you prefer watching the video:
 https://www.youtube.com/watch?v=lpdcrsbNQfs
 
-The idea for this post came around when a member of my Facebook group DM'd me regarding how to prepare for Loksewa in 3-6 months. btw, if you haven't joined that Facebook group yet, please do. Link is here: https://www.facebook.com/share/g/1TBYQgS2DB/
+The idea for this post came around when a reader DM'd me regarding how to prepare for Loksewa in 3-6 months.
 I had to be honest. 3 months of preparation is not enough for most average people. That might set the wrong impression that you can crack Loksewa exams with 3 months of preparation. I am not saying people have not cracked by studying properly within that time frame. I have personally seen lots of talented people who have cracked Loksewa Computer Engineer examinations within that time frame.
 
 If you are fully directed, fully motivated,100% efficient, then 6 months of full-time study can be sufficient.
@@ -66,9 +66,7 @@ For overall technical subjects scope coverage(i.e., what to study, how deep to g
 
 You basically need an outline of topics to study. When I say IO Organization, what comes to your mind? The book on COA will cover many different topics in this chapter. But the most important topics are polled I/O, interrupt driven I/O, and Direct Memory Access.
 
-Previous year question papers help in this situation. Note that you can get the old questions from the link provided below.
-
-Link: https://berojgarengineer.com/blog/pyq-loksewa/
+Previous year question papers help in this situation.
 
 You can extrapolate based on the available old questions. That is one way. For me, what helped was following Loksewa Computer Engineering Institute’s notes. They were not anything extraordinary. But they provided a much-needed structure. You could call this a micro syllabus as well.
 
@@ -182,8 +180,4 @@ Read more from this blog:
 Full guidance on Loksewa Computer Engineer and IT Officer in Nepal
 
 https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
-
-All old questions of Computer Engineering and IT officer in Nepal
-
-https://berojgarengineer.com/blog/pyq-loksewa/
 

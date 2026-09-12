@@ -5,7 +5,9 @@ import { link } from '../../lib/link';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
-  return posts.map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
+  return posts
+    .filter((p) => p.slug !== 'pyq-loksewa')
+    .map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
 }
 
 const { post } = Astro.props;

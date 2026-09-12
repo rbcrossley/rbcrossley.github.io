@@ -32,8 +32,6 @@ I feel I am weak on:
 
 I will be using resources on demand. Udemy courses will be my goto source until I start Sanjiv Karn's course. Mostly I will read Manning's publications on specific topics like Kubernetes and Terraform. 
 
-Join [this](https://www.facebook.com/share/g/1TBYQgS2DB/) Facebook group for discussion.
-
 # Curriculum
 
 This is the [curriculum](https://professionalitsolution.com/courses/devops-professional-training) that I will be following.

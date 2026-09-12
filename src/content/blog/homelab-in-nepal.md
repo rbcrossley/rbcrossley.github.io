@@ -77,11 +77,6 @@ A good UPS for a mini PC will cost me around 20,000 NPR.
 My immediate goal is to learn production-grade hardening and security.
 
 
-If you are also interested in all this stuff, join the Facebook group given below:
-
-https://www.facebook.com/share/g/1TBYQgS2DB/
-
-
 
 
 

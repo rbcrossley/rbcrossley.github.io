@@ -28,6 +28,8 @@ export const GET: APIRoute = async ({ site }) => {
   const entries = await getCollection('blog');
 
   const posts = entries
+    // retired posts: not served to the app
+    .filter((entry) => entry.slug !== 'pyq-loksewa')
     // newest first
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
     .map((entry) => ({

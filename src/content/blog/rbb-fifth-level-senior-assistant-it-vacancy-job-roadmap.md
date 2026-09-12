@@ -160,10 +160,6 @@ Candidates should be careful while attempting the MCQ section.
 # Exam date
 The exam date is not finalized yet. In the past, the pattern was that the exam happened within 3 months of the vacancy publication.
 
-You can join the Facebook group for discussions related to government IT jobs. Its link is provided below:
-
-https://www.facebook.com/share/g/1TBYQgS2DB/
-
 # Salary
 It is interesting and motivational to know about the salary for the position you are preparing for. The salary of a 5th-level IT assistant is not available from RBB itself in the public domain. But I have official data on the salary of a 6th-level RBB Officer. It is nearly 81,000 per month. This was before the 21% salary increment.
 
@@ -179,15 +175,4 @@ https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and
 I have also discussed the complete roadmap for Loksewa Computer Engineer and IT officer in the article provided below:
 
 https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
-
-# Old questions
-
-If you are here, you might also be preparing for 6th/7th level positions in other corporations or nijamati/sangh.
-You might need old questions for practicing.
-
-The old questions for the technical portion of 6th/7th level position can be purchased from the link provided below.
-
-https://berojgarengineer.com/blog/pyq-loksewa/
-
-> Note it does not have 4th or 5th level questions
 

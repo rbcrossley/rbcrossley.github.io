@@ -161,6 +161,4 @@ Hence, these are the skills that one needs to learn to build the pillars of thei
 
 It is not enough to be a copy-paste guru if you are to survive in the modern IT world. You need to understand the internals, and for that, these books play a tremendous role.
 
-Buy those books, study from them, and if you want to join our Facebook group for conversation around DevOps, government IT and Computer Engineering jobs, join it as well.
-
-https://www.facebook.com/share/g/1TBYQgS2DB/
+Buy those books and study from them. They will do more for your career than any amount of scrolling.
