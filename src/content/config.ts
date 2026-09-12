@@ -48,7 +48,7 @@ const blog = defineCollection({
     description: z.string().optional(),
     date: z.coerce.date(),
     image: z.string().optional(),
-    author: z.string().default('cst'),
+    author: z.string().default('bijan'),
   }),
 });
 

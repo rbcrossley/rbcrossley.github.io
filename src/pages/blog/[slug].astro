@@ -1,6 +1,8 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import AuthorBio from '../../components/AuthorBio.astro';
+import { getAuthor } from '../../config/author';
 import { link } from '../../lib/link';
 
 export async function getStaticPaths() {
@@ -12,6 +14,10 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await post.render();
+
+// Resolve the frontmatter `author` value ("cst", "BerojgarEngineer", missing…)
+// to the real author defined in src/config/author.ts.
+const author = getAuthor(post.data.author);
 ---
 <Base title={`${post.data.title} » Berojgar Engineer`} description={post.data.description}>
   <article class="blog-article">
@@ -19,7 +25,7 @@ const { Content } = await post.render();
       <a href={link('/blog')} class="back">← Back to Blog</a>
       <h1>{post.data.title}</h1>
       <div class="meta">
-        <span>{post.data.author}</span>
+        <a class="byline" href={link('/about')}>{author.shortName}</a>
         <span>·</span>
         <time>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
       </div>
@@ -28,6 +34,7 @@ const { Content } = await post.render();
     <div class="content">
       <Content />
     </div>
+    <AuthorBio author={post.data.author} />
   </article>
 </Base>
 
@@ -37,6 +44,8 @@ const { Content } = await post.render();
   .back { color: var(--c-primary); font-weight: 600; text-decoration: none; font-size: 14px; }
   .head h1 { font-size: 36px; margin: 14px 0 12px; line-height: 1.2; }
   .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--c-muted); font-size: 14px; }
+  .byline { color: var(--c-muted); text-decoration: none; font-weight: 600; }
+  .byline:hover { color: var(--c-primary); text-decoration: underline; }
   .hero-banner { aspect-ratio: 21/9; background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark)); border-radius: 14px; margin: 12px 0 30px; }
   .content :global(h1) { font-size: 32px; font-weight: 700; margin: 30px 0 16px; color: var(--c-text); }
   .content :global(h2) { font-size: 26px; margin: 28px 0 14px; }

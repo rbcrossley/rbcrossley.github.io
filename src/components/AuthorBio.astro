@@ -1,0 +1,127 @@
+---
+// =============================================================================
+// AuthorBio — renders the author card shown at the end of every blog post.
+// All content comes from src/config/author.ts. Nothing is hardcoded here.
+//
+// Usage:  <AuthorBio author={post.data.author} />
+// =============================================================================
+import { getAuthor, initialsOf } from '../config/author';
+import { link } from '../lib/link';
+
+export interface Props {
+  /** Raw value from post frontmatter. Missing/unknown falls back to default. */
+  author?: string;
+}
+
+const { author: authorKey } = Astro.props;
+const author = getAuthor(authorKey);
+const initials = initialsOf(author);
+const isExternal = (href: string) => /^([a-z]+:)?\/\//i.test(href);
+---
+
+<aside class="author-bio" aria-label={`About ${author.name}`}>
+  <div class="avatar">
+    {author.avatar
+      ? <img src={link(author.avatar)} alt={author.name} width="72" height="72" loading="lazy" />
+      : <span class="initials" aria-hidden="true">{initials}</span>}
+  </div>
+
+  <div class="body">
+    <p class="eyebrow">Written by</p>
+    <h3 class="name">
+      <a href={link('/about')}>{author.name}</a>
+    </h3>
+    <p class="role">{author.role} &middot; {author.location}</p>
+    <p class="blurb">{author.bioShort}</p>
+
+    {author.links.length > 0 && (
+      <ul class="links">
+        {author.links.map((l) => (
+          <li>
+            <a
+              href={link(l.href)}
+              target={l.external ?? isExternal(l.href) ? '_blank' : undefined}
+              rel={l.external ?? isExternal(l.href) ? 'noopener noreferrer' : undefined}
+            >{l.label}</a>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
+</aside>
+
+<style>
+  .author-bio {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin: 48px 0 0;
+    padding: 26px;
+    border: 1px solid var(--c-card-border);
+    border-left: 4px solid var(--c-primary);
+    border-radius: 14px;
+    background: var(--c-card-bg);
+  }
+
+  .avatar {
+    flex: 0 0 auto;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--c-logo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .initials {
+    color: #fff;
+    font-weight: 800;
+    font-size: 26px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+  }
+
+  .body { min-width: 0; }
+  .eyebrow {
+    margin: 0 0 2px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--c-muted);
+  }
+  .name { font-size: 20px; margin: 0 0 4px; }
+  .name a { color: var(--c-text); text-decoration: none; }
+  .name a:hover { color: var(--c-primary); }
+  .role { margin: 0 0 10px; font-size: 14px; color: var(--c-muted); }
+  .blurb { margin: 0 0 14px; font-size: 15px; line-height: 1.75; color: var(--c-text); }
+
+  .links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+  .links a {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid var(--c-card-border);
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--c-primary);
+    text-decoration: none;
+    transition: background 0.2s ease, border-color 0.2s ease;
+  }
+  .links a:hover { background: var(--c-card-hover); border-color: var(--c-primary); }
+
+  @media (max-width: 640px) {
+    .author-bio { flex-direction: column; gap: 14px; padding: 22px; margin-top: 36px; }
+    .avatar { width: 60px; height: 60px; }
+    .initials { font-size: 22px; }
+  }
+</style>
