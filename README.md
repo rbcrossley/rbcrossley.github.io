@@ -270,7 +270,7 @@ export default {
   },
   site: {
     name: 'Berojgar Engineer',
-    tagline: 'Concept Clarity for Computer Science Students',
+    tagline: 'Linux, DevOps and Loksewa Prep for Nepali IT Graduates',
     logoText: 'BE',
     domain: 'rbcrossley.github.io',
     contactEmail: 'contact@berojgarengineer.com',
