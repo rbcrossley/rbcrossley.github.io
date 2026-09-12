@@ -11,6 +11,7 @@
 
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { getAuthor } from '../config/author';
 
 // Bump when the JSON shape changes in a way older app builds can't read.
 const FEED_VERSION = 1;
@@ -37,7 +38,10 @@ export const GET: APIRoute = async ({ site }) => {
       title: entry.data.title,
       description: entry.data.description ?? null,
       date: entry.data.date.toISOString(),
-      author: entry.data.author,
+      // Resolved through src/config/author.ts so the app never receives a raw
+      // frontmatter key like "cst" or "BerojgarEngineer".
+      author: getAuthor(entry.data.author).name,
+      authorRole: getAuthor(entry.data.author).role,
       image: absolute(entry.data.image, origin),
       url: `${origin}/blog/${entry.slug}`,
       // Raw Markdown. The app renders this natively.

@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import theme from '../../theme.config.js';
 import { link } from '../lib/link';
+import { getAuthor } from '../config/author';
 
 const blogPosts = (await getCollection('blog'))
   .filter((post) => post.slug !== 'pyq-loksewa' && post.slug !== 'micro-syllabus-of-data-structures-and-algorithms')
@@ -80,7 +81,7 @@ const blogPosts = (await getCollection('blog'))
               <h3>{post.data.title}</h3>
               <p>{post.data.description}</p>
               <span class="read-more">Read More »</span>
-              <div class="meta">{post.data.author} · No Comments</div>
+              <div class="meta">{getAuthor(post.data.author).shortName} · No Comments</div>
             </div>
           </a>
         ))}
