@@ -270,7 +270,7 @@ export default {
   },
   site: {
     name: 'Berojgar Engineer',
-    tagline: 'Linux, DevOps and Loksewa Prep for Nepali IT Graduates',
+    tagline: 'Linux, DevOps and IT Careers for Nepali IT Graduates',
     logoText: 'BE',
     domain: 'rbcrossley.github.io',
     contactEmail: 'contact@berojgarengineer.com',

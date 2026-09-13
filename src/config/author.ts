@@ -69,11 +69,11 @@ const bijan: Author = {
   bioShort:
     'IT Support Engineer based in Nepal with 3+ years in fintech and finance. ' +
     'Computer Engineering graduate of Kathmandu Engineering College (first division), ' +
-    'writing about Linux, Kubernetes, IT careers and Loksewa preparation.',
+    'writing about Linux, Kubernetes and IT careers.',
 
   bio: [
     'I am <strong>Bijan Aryal</strong>, an IT Support Engineer based in Nepal. I have worked in fintech and finance companies for over three years, supporting the systems that keep those businesses running day to day.',
-    'I am a Computer Engineering graduate from <strong>Kathmandu Engineering College</strong>, where I passed with first division. Alongside my work, I am preparing for the <strong>Loksewa Computer Engineer and IT Officer</strong> examinations, and much of what I learn along the way ends up on this site.',
+    'I am a Computer Engineering graduate from <strong>Kathmandu Engineering College</strong>, where I passed with first division. Much of what I learn along the way ends up on this site.',
   ],
 
   sections: [
