@@ -94,7 +94,6 @@ const bijan: Author = {
   links: [
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
-    { label: 'YouTube', href: 'https://www.youtube.com/@LoksewaComputerEngineeringPrep' },
   ],
 };
 

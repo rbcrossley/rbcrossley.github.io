@@ -5,12 +5,6 @@ date: 2026-07-01
 author: BerojgarEngineer
 image: /images/blog/learning.jpeg
 ---
-
-If you prefer to watch video:
-
-https://www.youtube.com/watch?v=K9-44CHOFeY
-
-
 Namaskar, everyone reading this article.
 
 I am a Computer Engineering graduate from private college of Institute of Engineering, Tribhuvan University. I had 3 digits rank in IOE entrance exam solely based on my plus two studies(I mean that is what it should be LOL. What I mean to say is that I did not take any entrance preparation classes). I graduated with 71% on aggregate. I have already got my engineering license(on my first attempt). And currently I am preparing for loksewa computer engineer and IT officer.

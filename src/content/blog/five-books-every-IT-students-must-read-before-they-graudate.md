@@ -5,12 +5,6 @@ date: 2026-07-01
 author: BerojgarEngineer
 image: /images/blog/books.jpeg
 ---
-
-
-If you prefer watching the video:
-
-https://www.youtube.com/watch?v=5WusxO5OOsU
-
 You must have seen lots of videos and blogs posting five books every IT student must read before they graduate. Is my blog an addition to that spam? No. I will tell you why. In this blog, I will not be telling complicated book titles just to sound smart. I will tell you what you will enjoy reading given your BE/BscSIT educational background in Nepal.
 
 I specifically say your educational background in Nepal, because let's be real. Nepalese students do not read even the assigned textbooks. The private colleges' libraries contain at most two reference materials. You're unlikely to find most textbooks even if you wanted to buy them through shops. I have to consider all of these factors while I am writing this blog.

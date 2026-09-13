@@ -5,8 +5,6 @@ import { getAuthor } from '../config/author';
 import { link } from '../lib/link';
 
 const author = getAuthor();
-const isExternal = (href: string) => /^([a-z]+:)?\/\//i.test(href);
-const youtube = author.links.find((l) => l.label.toLowerCase() === 'youtube');
 const contact = author.links.find((l) => l.label.toLowerCase() === 'contact');
 ---
 <Base
@@ -31,20 +29,6 @@ const contact = author.links.find((l) => l.label.toLowerCase() === 'contact');
           If you have a question or would like to connect, please visit our{' '}
           <a href={link(contact.href)}>contact page</a>.
         </p>
-      )}
-
-      {youtube && (
-        <>
-          <h2>Join Our Community</h2>
-          <p>
-            Subscribe to my YouTube channel for updates:{' '}
-            <a
-              href={youtube.href}
-              target={youtube.external ?? isExternal(youtube.href) ? '_blank' : undefined}
-              rel={youtube.external ?? isExternal(youtube.href) ? 'noopener noreferrer' : undefined}
-            >{youtube.href}</a>
-          </p>
-        </>
       )}
     </div>
   </section>

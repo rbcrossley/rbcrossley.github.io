@@ -5,11 +5,6 @@ date: 2026-07-03
 author: BerojgarEngineer
 image: /images/blog/thumbnail-rbb.jpeg
 ---
-If you prefer watching the video:
-https://www.youtube.com/watch?v=N-VpfJlCIr4
-
-
-
 A Master's degree is required for officer-level posts (6th level and onwards) only in government banks(except NRB) and selected finance companies.
 
 But for 5th-level posts, a Bachelor's degree suffices.
