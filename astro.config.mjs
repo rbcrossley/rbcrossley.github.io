@@ -14,8 +14,15 @@ import mdx from '@astrojs/mdx';
 //   set BASE  = '/'
 // =============================================================================
 
-const SITE = process.env.SITE || 'https://berojgarengineer.com';
-const BASE = process.env.BASE || '/';
+// Hardcoded on purpose. These feed every canonical URL, og:url, JSON-LD url
+// and sitemap <loc> on the site, so they must always be the live domain.
+// They used to read process.env.SITE / process.env.BASE, which let the
+// GitHub Actions workflow override SITE with the github.io URL at deploy time
+// — that made the deployed pages declare github.io as their canonical home.
+// The site is served from berojgarengineer.com (see public/CNAME), so there is
+// no case where these should be anything else.
+const SITE = 'https://berojgarengineer.com';
+const BASE = '/';
 
 export default defineConfig({
   site: SITE,
