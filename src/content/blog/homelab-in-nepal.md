@@ -4,6 +4,7 @@ description: Learn how I built a practical homelab in Nepal with limited space a
 date: 2026-08-31
 author: BerojgarEngineer
 image: /images/blog/homelab.png
+tags: ["homelab", "self-hosting", "home server", "Linux", "Kubernetes", "home networking", "DevOps learning", "Proxmox", "virtualization", "refurbished hardware", "homelab on a budget", "hands-on practice"]
 ---
 
 # whoami

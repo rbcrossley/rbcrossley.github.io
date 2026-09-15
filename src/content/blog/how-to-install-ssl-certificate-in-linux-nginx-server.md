@@ -4,6 +4,7 @@ description: Learn how to install and renew SSL certificates on a Red Hat Linux 
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/ssl.jpg
+tags: ["SSL certificate", "NGINX", "HTTPS", "TLS", "Red Hat Linux", "certificate chain", "SSL renewal", "certificate installation", "web server security", "Linux server administration", "server configuration", "SSL troubleshooting"]
 ---
 
 Installing an SSL certificate sounds like a five minute job until you actually do it on a production server at 11 PM with a certificate that expires at midnight. Then you discover that the certificate authority sent you four separate files, NGINX refuses to start, and the browser still shows the old certificate even after a reload.

@@ -35,7 +35,7 @@ export interface Author {
   role: string;
   location: string;
 
-  /** Path to a square image in /public, e.g. '/images/author/bijan.jpg'.
+  /** Path to a square image in /public, e.g. '/images/author/avatar.jpg'.
    *  Leave empty ('') to fall back to initials in a coloured circle. */
   avatar: string;
 
@@ -55,25 +55,24 @@ export interface Author {
 // EDIT BELOW
 // -----------------------------------------------------------------------------
 
-const bijan: Author = {
-  key: 'bijan',
-  aliases: ['cst', 'BerojgarEngineer', 'Berojgar Engineer', 'Bijan Aryal', 'bijan-aryal'],
+const raju: Author = {
+  key: 'raju',
+  aliases: ['cst', 'BerojgarEngineer', 'Berojgar Engineer'],
 
-  name: 'Bijan Aryal',
-  shortName: 'Bijan Aryal',
+  name: 'Raju Khadka',
+  shortName: 'Raju Khadka',
   role: 'IT Support Engineer',
-  location: 'Kathmandu, Nepal',
+  location: 'Nepal',
 
-  avatar: '', // e.g. '/images/author/bijan.jpg' once you add the file to /public
+  avatar: '', // e.g. '/images/author/avatar.jpg' once you add the file to /public
 
   bioShort:
-    'IT Support Engineer based in Nepal with 3+ years in fintech and finance. ' +
-    'Computer Engineering graduate of Kathmandu Engineering College (first division), ' +
-    'writing about Linux, Kubernetes and IT careers.',
+    'IT Support Engineer in Nepal working with Linux and Kubernetes, ' +
+    'writing about Linux, DevOps and IT careers.',
 
   bio: [
-    'I am <strong>Bijan Aryal</strong>, an IT Support Engineer based in Nepal. I have worked in fintech and finance companies for over three years, supporting the systems that keep those businesses running day to day.',
-    'I am a Computer Engineering graduate from <strong>Kathmandu Engineering College</strong>, where I passed with first division. Much of what I learn along the way ends up on this site.',
+    'I am <strong>Raju Khadka</strong>, an IT Support Engineer in Nepal working with Linux and Kubernetes.',
+    'Much of what I learn along the way ends up on this site.',
   ],
 
   sections: [
@@ -102,10 +101,10 @@ const bijan: Author = {
 // -----------------------------------------------------------------------------
 
 export const authors: Record<string, Author> = {
-  [bijan.key]: bijan,
+  [raju.key]: raju,
 };
 
-export const defaultAuthorKey = bijan.key;
+export const defaultAuthorKey = raju.key;
 
 /** Pre-built lookup of every key and alias, lower-cased. */
 const lookup: Record<string, Author> = {};
@@ -125,7 +124,7 @@ export function getAuthor(value?: string | null): Author {
   return lookup[String(value).trim().toLowerCase()] ?? authors[defaultAuthorKey];
 }
 
-/** Initials for the avatar fallback, e.g. "Bijan Aryal" -> "BA". */
+/** Initials for the avatar fallback, e.g. "Raju Khadka" -> "RK". */
 export function initialsOf(author: Author): string {
   return author.name
     .split(/\s+/)

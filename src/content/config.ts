@@ -48,7 +48,12 @@ const blog = defineCollection({
     description: z.string().optional(),
     date: z.coerce.date(),
     image: z.string().optional(),
-    author: z.string().default('bijan'),
+    author: z.string().default('raju'),
+    // Machine-readable topic tags. These never render on the page — they feed
+    // the BlogPosting structured data and the article:tag meta tags so that
+    // search engines can see what a post is about. Keep them accurate and
+    // few (5–8); tags that do not describe the post are spam, not SEO.
+    tags: z.array(z.string()).default([]),
   }),
 });
 

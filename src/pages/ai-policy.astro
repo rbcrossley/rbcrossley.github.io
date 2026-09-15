@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+import theme from '../../theme.config.js';
+import { link } from '../lib/link';
+const siteName = theme.site.name;
+const domain = theme.site.domain;
+const email = 'admin@berojgarengineer.com';
+const lastUpdated = 'September 15, 2026';
+---
+<Base
+  title={`AI Use Policy » ${siteName}`}
+  description={`How ${siteName} uses AI tools when writing, and the verification every article goes through before it is published.`}
+>
+  <section class="page">
+    <div class="container narrow">
+      <h1 class="page-title">AI Use Policy</h1>
+      <p class="meta">Last updated: <strong>{lastUpdated}</strong></p>
+
+      <p>
+        This page explains, plainly, how artificial intelligence tools are used in producing the content on
+        <strong>{siteName}</strong>. I would rather tell you this openly than have you wonder about it.
+      </p>
+
+      <h2>1. The short version</h2>
+      <p>
+        <strong>AI helps me write. It does not decide what is true.</strong> Every technical instruction, command,
+        configuration file and exam detail published here is something I have run, tested or checked against a primary
+        source myself before it went live. If I have not verified it, it does not get published — or it is clearly
+        labelled as untested.
+      </p>
+
+      <h2>2. What AI is used for</h2>
+      <p>I use large language models (such as ChatGPT and Claude) as writing and editing assistants. Specifically:</p>
+      <ul>
+        <li><strong>Structure and outlining</strong> — turning a messy set of notes from a real troubleshooting session into a readable order.</li>
+        <li><strong>Language and grammar</strong> — English is not my first language. AI helps me tighten sentences and fix grammar so the writing does not get in the way of the content.</li>
+        <li><strong>Editing and shortening</strong> — cutting repetition, rewriting paragraphs that do not read well.</li>
+        <li><strong>Formatting</strong> — converting notes into tables, code blocks and headings.</li>
+        <li><strong>Catching gaps</strong> — asking "what did I forget to explain here?" before publishing.</li>
+      </ul>
+
+      <h2>3. What AI is never used for</h2>
+      <ul>
+        <li>
+          <strong>Generating technical steps I have not performed.</strong> Commands, configuration files, error
+          messages and fixes in the Linux, DevOps and self-hosting articles come from my own machines, my own homelab
+          and my own work — not from a model's guess.
+        </li>
+        <li>
+          <strong>Inventing facts, dates, numbers or sources.</strong> Exam dates, syllabus points, vacancy details and
+          salary figures are checked against the official source (Lok Sewa Aayog, the hiring organisation, or the
+          published notice) before they appear here.
+        </li>
+        <li>
+          <strong>Fabricating personal experience.</strong> When an article says "I did this" or "this is what happened
+          to me", that is my actual experience. My opinions, mistakes and career advice are mine.
+        </li>
+        <li>
+          <strong>Publishing unreviewed output.</strong> No article on this site is AI output pasted straight to the
+          blog. Everything passes through my own reading and editing.
+        </li>
+      </ul>
+
+      <h2>4. How verification actually works</h2>
+      <p>Before a technical post is published, it goes through this:</p>
+      <ul>
+        <li>Every command is run on a real system — usually a virtual machine or a box in my homelab — from a clean state.</li>
+        <li>Configuration files are copied from the working system, not retyped from memory.</li>
+        <li>The operating system and version I tested on are stated in the post, because instructions that work on Rocky Linux 10 may not work on CentOS 7.</li>
+        <li>Where a step failed for me the first time, I leave the failure in the post. The mistakes are usually the most useful part.</li>
+      </ul>
+      <p>For exam and career content, I check the current official notice or syllabus, and I say when something is my opinion rather than an official rule.</p>
+
+      <h2>5. Why I am telling you this</h2>
+      <p>
+        Two reasons. First, a lot of what is published about Loksewa preparation and IT careers in Nepal is copied,
+        outdated or simply made up, and readers deserve to know which kind of site they are reading. Second, this site
+        exists to reduce information asymmetry for Nepali IT graduates — being vague about my own process would be a
+        strange way to do that.
+      </p>
+      <p>
+        Using AI to write better English does not make the content less mine. Publishing something I have not verified
+        would.
+      </p>
+
+      <h2>6. Things do still go wrong</h2>
+      <p>
+        Software changes, package repositories move, syllabi get revised and I make mistakes like everyone else. If you
+        find something on this site that is wrong, outdated or does not work on your system, please tell me — it will be
+        corrected or removed. You can <a href={link('/contact')}>contact me here</a> or email
+        <a href={`mailto:${email}`}>{email}</a>.
+      </p>
+
+      <h2>7. Changes to this policy</h2>
+      <p>
+        If the way I use these tools changes, this page changes with it. It applies to all content published on
+        <strong>https://{domain}</strong>.
+      </p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .page { padding: 50px 0 60px; }
+  .narrow { max-width: 800px; }
+  .page-title { font-size: 36px; font-weight: 800; margin-bottom: 8px; color: var(--c-text); }
+  .meta { color: var(--c-muted); font-size: 14px; margin-bottom: 30px; }
+  h2 { font-size: 22px; margin: 30px 0 12px; color: var(--c-primary-dark); }
+  p { line-height: 1.85; margin: 0 0 14px; }
+  ul { margin: 0 0 16px 22px; line-height: 1.85; }
+  li { margin-bottom: 6px; }
+  a { color: var(--c-primary); text-decoration: underline; }
+</style>

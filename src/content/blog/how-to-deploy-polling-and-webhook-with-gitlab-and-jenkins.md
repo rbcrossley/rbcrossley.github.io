@@ -4,6 +4,7 @@ description: Learn to connect self-hosted GitLab and Jenkins with polling and we
 date: 2026-09-05
 author: BerojgarEngineer
 image: /images/blog/gitlab.jpg
+tags: ["Jenkins", "GitLab", "CI/CD", "webhooks", "SCM polling", "DevOps", "Rocky Linux", "build automation", "continuous integration", "self-hosted GitLab", "Jenkins job configuration", "pipeline triggers"]
 ---
 
 # GitLab + Jenkins: Polling vs Webhook Integration (Self-Hosted Lab)

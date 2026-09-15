@@ -4,6 +4,7 @@ description: Never miss any Loksewa Computer Engineer and IT officer vacancy. De
 date: 2026-09-15
 author: BerojgarEngineer
 image: /images/blog/monitor.jpg
+tags: ["Loksewa", "changedetection.io", "Docker", "Docker Compose", "Rocky Linux", "self-hosting", "website change monitoring", "XPath filter", "vacancy alerts", "PSC notices", "Playwright", "notification setup"]
 ---
 
 If you are preparing for Loksewa, you already know the problem. The notice you needed was published on a Sunday, you opened the site on Wednesday, and by then half the application window is gone. Refreshing psc.gov.np five times a day is not a strategy.
@@ -212,12 +213,3 @@ docker compose pull && docker compose up -d
 ```
 
 One thing to watch: `docker compose down` leaves the named volume intact, but `docker compose down -v` destroys your entire watch history and config. Easy to type by reflex.
-
----
-
-## A note on how this post was written
-
-This post was written with AI assistance — I used an LLM to help structure the sections and tighten the wording.
-
-I verified each step end to end before publishing it.
-

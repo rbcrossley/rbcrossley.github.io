@@ -6,9 +6,59 @@ import Footer from '../components/Footer.astro';
 export interface Props {
   title?: string;
   description?: string;
+  /** Site-root-relative image path, e.g. '/images/blog/nginx.jpg'. Used for social cards. */
+  image?: string;
+  /** 'article' for blog posts, 'website' for everything else. */
+  type?: 'website' | 'article';
+  /** Machine-readable topic tags. Emitted as article:tag meta — not shown to readers. */
+  tags?: string[];
+  publishedTime?: Date | string;
+  modifiedTime?: Date | string;
+  /** Optional schema.org object. Falls back to a WebSite schema when omitted. */
+  jsonLd?: Record<string, unknown>;
 }
-const { title = theme.site.name, description = theme.site.tagline } = Astro.props;
+
+const {
+  title = theme.site.name,
+  description = theme.site.tagline,
+  image,
+  type = 'website',
+  tags = [],
+  publishedTime,
+  modifiedTime,
+  jsonLd,
+} = Astro.props;
+
 const c = theme.colors;
+
+// ---------------------------------------------------------------------------
+// Canonical + social URLs
+// ---------------------------------------------------------------------------
+// Astro.site comes from `site` in astro.config.mjs. Astro.url.pathname already
+// includes the configured base path. Trailing slashes are stripped so that the
+// canonical URL matches the form used in sitemap.xml exactly.
+const siteURL = Astro.site ?? new URL(`https://${theme.site.domain}`);
+const pathname = Astro.url.pathname.replace(/\/+$/, '') || '/';
+const canonicalURL = new URL(pathname, siteURL).href;
+
+const baseTrimmed = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+const socialImage = new URL(image ? `${baseTrimmed}${image}` : `${baseTrimmed}/favicon.svg`, siteURL).href;
+
+const toISO = (d?: Date | string) => (d ? new Date(d).toISOString() : undefined);
+
+const structuredData = jsonLd ?? {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: theme.site.name,
+  url: siteURL.href,
+  description: theme.site.tagline,
+  inLanguage: 'en',
+  publisher: {
+    '@type': 'Organization',
+    name: theme.site.name,
+    url: siteURL.href,
+  },
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -16,6 +66,29 @@ const c = theme.colors;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={socialImage} />
+    <meta property="og:site_name" content={theme.site.name} />
+    <meta property="og:locale" content="en_US" />
+    {type === 'article' && publishedTime && (
+      <meta property="article:published_time" content={toISO(publishedTime)} />
+    )}
+    {type === 'article' && modifiedTime && (
+      <meta property="article:modified_time" content={toISO(modifiedTime)} />
+    )}
+    {type === 'article' && tags.map((tag) => <meta property="article:tag" content={tag} />)}
+
+    <!-- Twitter / X card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImage} />
 
     <link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL.replace(/\/$/, '')}/favicon.svg`} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,6 +103,7 @@ const c = theme.colors;
       gtag('config', 'G-PR6JJ0FR56');
     </script>
     <title>{title}</title>
+    <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <style is:global define:vars={{
       'c-primary': c.primary,
       'c-primary-dark': c.primaryDark,

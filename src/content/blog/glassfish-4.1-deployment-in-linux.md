@@ -4,6 +4,7 @@ description: Deploy GlassFish 4.1 on CentOS 7 or Red Hat Linux with this practic
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/glassfish.jpg
+tags: ["GlassFish", "GlassFish 4.1", "Java application server", "Java EE", "CentOS 7", "Red Hat Linux", "application deployment", "Linux server administration", "JDK installation", "systemd service", "WAR deployment", "application server configuration"]
 ---
 
 If you work in support for a Nepali bank, insurance company or any organisation running enterprise Java applications, sooner or later you will meet GlassFish. Plenty of core banking modules, reporting systems and internal portals built between 2012 and 2018 run on it, and those systems do not get rewritten just because a newer application server exists.

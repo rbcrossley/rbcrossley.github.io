@@ -81,7 +81,7 @@ const blogPosts = (await getCollection('blog'))
               <h3>{post.data.title}</h3>
               <p>{post.data.description}</p>
               <span class="read-more">Read More »</span>
-              <div class="meta">{getAuthor(post.data.author).shortName} · No Comments</div>
+              <div class="meta">{getAuthor(post.data.author).shortName}</div>
             </div>
           </a>
         ))}

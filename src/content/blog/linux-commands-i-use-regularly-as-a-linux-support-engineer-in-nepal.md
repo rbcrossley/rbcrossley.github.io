@@ -4,6 +4,7 @@ description: Linux commands I use as a production support engineer in Nepal for 
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/commands.jpg
+tags: ["Linux commands", "Linux support engineer", "production support", "troubleshooting", "system administration", "shell commands", "log analysis", "disk usage", "rsync", "scp", "systemd services", "networking commands"]
 ---
 
 Every Linux tutorial teaches you `ls`, `cd`, `grep` and `chmod`. Almost none of them teach you what you actually spend your day doing in production support, which is finding one error in a 4 GB compressed log file while someone from the business team asks for an update every ten minutes.

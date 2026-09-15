@@ -4,6 +4,7 @@ description: Follow my step-by-step LEMP and WordPress deployment on a Red Hat L
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/wordpress-using-nginx.jpg
+tags: ["LEMP stack", "NGINX", "MySQL", "PHP", "WordPress", "Red Hat Linux", "CentOS", "Linux server administration", "web server setup", "SELinux", "firewalld", "self-hosted WordPress"]
 ---
 
 Almost every Nepali IT graduate I know has installed WordPress at some point, usually through a hosting control panel where a single click does everything. That works, but it teaches you nothing about what is actually running underneath.

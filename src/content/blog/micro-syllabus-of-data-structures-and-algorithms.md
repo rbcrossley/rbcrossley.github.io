@@ -4,6 +4,7 @@ description: A micro syllabus for Data Structures and Algorithms in Loksewa Comp
 date: 2026-07-10
 author: BerojgarEngineer
 image: /images/blog/pyq.png
+tags: ["Loksewa", "data structures", "algorithms", "Loksewa syllabus", "Computer Engineer", "IT Officer", "micro syllabus", "exam preparation"]
 ---
 I know a genuine problem of Loksewa aspirants. The Loksewa syllabus is not succinct at all. It does not tell what to study or what not to study. It is very vague.
 I have joined Loksewa Preparation Institute and spent nearly a year preparing for Loksewa Computer Engineer and IT Officer full-time.

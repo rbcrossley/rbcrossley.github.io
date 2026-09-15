@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import AuthorBio from '../../components/AuthorBio.astro';
 import { getAuthor } from '../../config/author';
 import { link } from '../../lib/link';
+import theme from '../../../theme.config.js';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -18,8 +19,56 @@ const { Content } = await post.render();
 // Resolve the frontmatter `author` value ("cst", "BerojgarEngineer", missing…)
 // to the real author defined in src/config/author.ts.
 const author = getAuthor(post.data.author);
+
+// ---------------------------------------------------------------------------
+// SEO: tags from frontmatter feed the structured data below and the
+// article:tag meta tags in Base.astro. They are machine-readable only —
+// nothing about this renders on the page.
+// ---------------------------------------------------------------------------
+const tags = post.data.tags ?? [];
+const siteURL = Astro.site ?? new URL(`https://${theme.site.domain}`);
+const baseTrimmed = (import.meta.env.BASE_URL || '/').replace(/\/$/, '');
+const pageURL = new URL(Astro.url.pathname.replace(/\/+$/, ''), siteURL).href;
+const imageURL = post.data.image
+  ? new URL(`${baseTrimmed}${post.data.image}`, siteURL).href
+  : undefined;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: new Date(post.data.date).toISOString(),
+  dateModified: new Date(post.data.date).toISOString(),
+  inLanguage: 'en',
+  mainEntityOfPage: { '@type': 'WebPage', '@id': pageURL },
+  url: pageURL,
+  ...(imageURL ? { image: imageURL } : {}),
+  ...(tags.length
+    ? { keywords: tags.join(', '), about: tags.map((t) => ({ '@type': 'Thing', name: t })) }
+    : {}),
+  author: {
+    '@type': 'Person',
+    name: author.name,
+    jobTitle: author.role,
+    url: new URL(`${baseTrimmed}/about`, siteURL).href,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: theme.site.name,
+    url: siteURL.href,
+  },
+};
 ---
-<Base title={`${post.data.title} » Berojgar Engineer`} description={post.data.description}>
+<Base
+  title={`${post.data.title} » Berojgar Engineer`}
+  description={post.data.description}
+  image={post.data.image}
+  type="article"
+  tags={tags}
+  publishedTime={post.data.date}
+  jsonLd={jsonLd}
+>
   <article class="blog-article">
     <header class="head">
       <a href={link('/blog')} class="back">← Back to Blog</a>
@@ -27,7 +76,7 @@ const author = getAuthor(post.data.author);
       <div class="meta">
         <a class="byline" href={link('/about')}>{author.shortName}</a>
         <span>·</span>
-        <time>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+        <time datetime={new Date(post.data.date).toISOString()}>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
       </div>
     </header>
     <div class="hero-banner" style={post.data.image ? `background-image: url('${post.data.image}'); background-size: contain; background-position: center; background-repeat: no-repeat;` : ''}></div>

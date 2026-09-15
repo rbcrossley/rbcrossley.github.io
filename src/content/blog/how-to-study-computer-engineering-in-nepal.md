@@ -4,6 +4,7 @@ description: My practical guide to studying Computer Engineering in Nepal, manag
 date: 2026-07-01
 author: BerojgarEngineer
 image: /images/blog/learning.jpeg
+tags: ["Computer Engineering", "IOE", "Tribhuvan University", "study tips", "education in Nepal", "engineering exams", "semester exams", "difficult subjects", "engineering students", "exam preparation", "practical skills", "academic advice"]
 ---
 Namaskar, everyone reading this article.
 
