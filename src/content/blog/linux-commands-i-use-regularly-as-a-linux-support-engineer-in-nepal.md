@@ -9,7 +9,7 @@ tags: ["Linux commands", "Linux support engineer", "production support", "troubl
 
 Every Linux tutorial teaches you `ls`, `cd`, `grep` and `chmod`. Almost none of them teach you what you actually spend your day doing in production support, which is finding one error in a 4 GB compressed log file while someone from the business team asks for an update every ten minutes.
 
-These are the commands I reached for regularly over more than two years supporting production Linux servers in Nepal's fintech sector. They are not organised by topic or by difficulty. They are organised by how often a real incident needed them, which is a different and more useful ordering.
+These are the commands I reached for regularly over more than two years supporting production Linux servers in Nepal. They are not organised by topic or by difficulty. They are organised by how often a real incident needed them, which is a different and more useful ordering.
 
 For each one I have explained not just the syntax but the situation that produces it, because the syntax is easy to look up and the situation is what tells you which command you need.
 

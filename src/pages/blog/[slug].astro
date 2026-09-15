@@ -5,11 +5,12 @@ import AuthorBio from '../../components/AuthorBio.astro';
 import { getAuthor } from '../../config/author';
 import { link } from '../../lib/link';
 import theme from '../../../theme.config.js';
+import { isPublished } from '../../config/hidden-posts';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts
-    .filter((p) => p.slug !== 'pyq-loksewa')
+    .filter(isPublished)
     .map((p) => ({ params: { slug: p.slug }, props: { post: p } }));
 }
 

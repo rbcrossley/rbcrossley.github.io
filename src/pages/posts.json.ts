@@ -12,6 +12,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import { getAuthor } from '../config/author';
+import { isPublished } from '../config/hidden-posts';
 
 // Bump when the JSON shape changes in a way older app builds can't read.
 const FEED_VERSION = 1;
@@ -30,7 +31,7 @@ export const GET: APIRoute = async ({ site }) => {
 
   const posts = entries
     // retired posts: not served to the app
-    .filter((entry) => entry.slug !== 'pyq-loksewa')
+    .filter(isPublished)
     // newest first
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
     .map((entry) => ({

@@ -12,12 +12,7 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 import theme from '../../theme.config.js';
-
-/** Posts that exist as pages but are deliberately not linked from any index. */
-const EXCLUDED_SLUGS = new Set([
-  'pyq-loksewa',
-  'micro-syllabus-of-data-structures-and-algorithms',
-]);
+import { isPublished } from '../config/hidden-posts';
 
 /** Standalone pages. Add a new entry here when you add a new .astro page. */
 const STATIC_PAGES: { path: string; changefreq: string; priority: string }[] = [
@@ -47,7 +42,7 @@ export const GET: APIRoute = async ({ site }) => {
     new URL(path === '/' ? `${base}/` : `${base}${path}`, origin).href;
 
   const posts = (await getCollection('blog'))
-    .filter((post) => !EXCLUDED_SLUGS.has(post.slug))
+    .filter(isPublished)
     .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 
   const today = isoDay(new Date());

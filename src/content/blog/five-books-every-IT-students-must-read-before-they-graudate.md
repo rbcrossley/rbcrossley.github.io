@@ -48,7 +48,7 @@ I will not only recommend one book. Yes, there will be one book that you need to
 
 The IT world is full of Linux. The servers where code runs are almost always Linux. It could be Rocky Linux or Ubuntu server, but it is Linux.
 
-So learning the Linux terminal helps you navigate the infrastructure. Most of the work that I did as a support engineer in a Nepali fintech company revolved around being proficient in using the terminal.
+So learning the Linux terminal helps you navigate the infrastructure. Most of the work that I did as a support engineer revolved around being proficient in using the terminal.
 
 > By the way, if you are interested in learning more about my journey, interview preparation tips, and companies list, visit the following blogs:
 

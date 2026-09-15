@@ -4,9 +4,10 @@ import Base from '../layouts/Base.astro';
 import theme from '../../theme.config.js';
 import { link } from '../lib/link';
 import { getAuthor } from '../config/author';
+import { isPublished } from '../config/hidden-posts';
 
 const blogPosts = (await getCollection('blog'))
-  .filter((post) => post.slug !== 'pyq-loksewa' && post.slug !== 'micro-syllabus-of-data-structures-and-algorithms')
+  .filter(isPublished)
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date))
   .slice(0, 3);
 ---

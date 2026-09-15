@@ -2,9 +2,10 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import { link } from '../../lib/link';
+import { isPublished } from '../../config/hidden-posts';
 
 const posts = (await getCollection('blog'))
-  .filter((post) => post.slug !== 'pyq-loksewa' && post.slug !== 'micro-syllabus-of-data-structures-and-algorithms')
+  .filter(isPublished)
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 ---
 <Base title="Blog » Berojgar Engineer" description="Read practical articles on computer science, Linux, IT careers, engineering studies, and working in Nepal's technology industry.">
