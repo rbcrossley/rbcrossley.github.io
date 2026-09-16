@@ -459,6 +459,44 @@ find /images/. -name "*.jpg" -exec chmod 0644 {} \;
 
 `0644` is correct for static content: the owner can write, everyone can read, and nobody can execute. Uploaded files should never be executable, since an executable file in a web-served directory is a straightforward path to remote code execution.
 
+## Reading chmod's three-digit numbers
+
+Every `chmod` command above uses a three digit number, and it is worth actually understanding those digits instead of memorising "777 bad, 644 good" as folklore. Sooner or later you will need a permission that isn't one of the four you have memorised, and at that point you either know the trick or you are guessing.
+
+The three digits are owner, group and others, in that order. Within each digit, the value is just read (4) plus write (2) plus execute (1), so you build the number by adding up whichever of the three apply:
+
+```
+r = 4
+w = 2
+x = 1
+```
+
+Take `600`, the permission you'll find on `~/.ssh/id_rsa` and on most other private key files:
+
+* **6** = `4+2` = read + write, for the owner
+* **0** = nothing, for the group
+* **0** = nothing, for others
+
+Written the way `ls -l` shows it, `600` is `rw-------`: only the file's owner can even open it. There's no execute bit because a private key isn't a program you run.
+
+Once you have the addition down, every value you'll ever type falls out of it:
+
+```
+0 = ---   nothing
+1 = --x   execute only
+4 = r--   read only
+5 = r-x   read + execute
+6 = rw-   read + write
+7 = rwx   read + write + execute
+```
+
+Which makes the common combinations easy to read instead of memorise:
+
+* `777` = `rwxrwxrwx` — everyone can read, write and execute. See the warning above for why this is almost never the right answer on a production box.
+* `755` = `rwxr-xr-x` — owner has full control, everyone else can read and execute but not modify. The usual default for scripts and directories.
+* `644` = `rw-r--r--` — owner can edit, everyone else can only read. The default for ordinary files, including the `.jpg` example above.
+* `600` = `rw-------` — owner only, nobody else gets so much as a read. The standard for anything that must stay private on a shared box: SSH private keys, `.env` files, credentials of any kind.
+
 ## Back up all files except some folders
 
 ```
