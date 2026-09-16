@@ -5,6 +5,7 @@ date: 2026-06-22
 author: BerojgarEngineer
 image: /images/blog/ct.png
 tags: ["Computer Engineering", "BSc CSIT", "career guidance", "engineering entrance exam", "IOE entrance", "plus two graduates", "education in Nepal", "BE vs BSc CSIT", "Tribhuvan University", "choosing a degree", "IT career path", "computer science in Nepal"]
+categories: ["it-education"]
 ---
 Hello, bhai baini haru! I am an ordinary and recent computer engineering graduate from a private college of Tribhuvan University. I completed the plus two with 86% in the aggregate. I got a 3-digit rank in the IOE entrance examination. I graduated in computer engineering in 2022 with 71% in aggregate. I worked as an IT support engineer for more than two years. I am now preparing for government jobs in computer engineering and IT-related fields.
 I know the struggle faced by students once they graduate from Plus Two in Nepal. I know you, the first-generation-to-be university students, especially in the fields of science and technology, and the struggle you face for guidance.

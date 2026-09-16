@@ -5,6 +5,7 @@ date: 2026-07-17
 author: BerojgarEngineer
 image: /images/blog/calendar.jpg
 tags: ["Loksewa", "Lok Sewa Aayog", "Loksewa calendar 2083/84", "Public Service Commission Nepal", "government vacancy in Nepal", "Nepal Telecom", "Nepal Electricity Authority", "Nepal Rastra Bank", "exam schedule", "PSC exam dates", "vacancy notice", "sarkari job Nepal"]
+categories: ["loksewa"]
 ---
 
 At the start of Shrawan 2083, the Public Service Commission published its annual calendar for 2083/84, laying out when each organisation is expected to advertise vacancies, hold written exams, and publish results.

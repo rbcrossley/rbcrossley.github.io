@@ -5,6 +5,7 @@ date: 2026-07-02
 author: BerojgarEngineer
 image: /images/blog/ntc.jpeg
 tags: ["Nepal Telecom", "NTC", "NTC Computer Engineer", "Level 7", "Loksewa", "Loksewa syllabus", "exam preparation", "engineering books", "study strategy", "exam roadmap", "government IT jobs in Nepal", "telecom jobs in Nepal"]
+categories: ["loksewa"]
 ---
 # Introduction
 You've completed your Computer Engineering degree. Months have passed. Friends are either abroad or starting careers. You're applying everywhere, but interviews rarely come. If this sounds familiar, you're not alone.

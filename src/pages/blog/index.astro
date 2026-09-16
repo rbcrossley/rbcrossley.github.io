@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { link } from '../../lib/link';
+import CategoryFilter from '../../components/CategoryFilter.astro';
 import { isPublished } from '../../config/hidden-posts';
 
 const posts = (await getCollection('blog'))
@@ -12,44 +12,16 @@ const posts = (await getCollection('blog'))
   <section class="page">
     <div class="container">
       <h1 class="page-title">Latest from the Blog</h1>
-      <p class="page-sub">Articles, tutorials and tips for computer science students.</p>
+      <p class="page-sub">Articles, tutorials and tips for computer science students. Filter by topic below.</p>
 
-      <div class="blog-grid">
-        {posts.map((post) => (
-          <a href={link(`/blog/${post.slug}`)} class="blog-card">
-            <div
-              class="blog-image"
-              style={`background-image: ${post.data.image ? `url('${post.data.image}')` : `linear-gradient(135deg, var(--c-primary), var(--c-primary-dark))`}; background-size: cover; background-position: center;`}
-            >
-              <span class="blog-tag">Blog</span>
-            </div>
-            <div class="blog-body">
-              <h3>{post.data.title}</h3>
-              <p>{post.data.description}</p>
-              <time>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
-              <span class="read-more">Read More »</span>
-            </div>
-          </a>
-        ))}
-      </div>
+      <CategoryFilter posts={posts} id="blog-topic-filter" />
     </div>
   </section>
 </Base>
 
 <style>
   .page { padding: 50px 0; }
+  .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
   .page-title { font-size: 36px; font-weight: 800; text-align: center; margin-bottom: 8px; color: var(--c-text); }
   .page-sub { text-align: center; color: var(--c-muted); margin-bottom: 40px; }
-  .blog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-  .blog-card { background: #fff; border-radius: 14px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,0.06); text-decoration: none; color: var(--c-text); transition: transform 0.2s ease, box-shadow 0.2s ease; }
-  .blog-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.10); }
-  .blog-image { aspect-ratio: 16/9; background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark)); position: relative; }
-  .blog-tag { position: absolute; bottom: 14px; left: 14px; background: rgba(0,0,0,0.55); color: #fff; padding: 4px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; }
-  .blog-body { padding: 22px; }
-  .blog-body h3 { font-size: 18px; line-height: 1.35; margin-bottom: 10px; }
-  .blog-body p { font-size: 14px; color: var(--c-muted); margin: 0 0 12px; }
-  .blog-body time { font-size: 12px; color: var(--c-muted); }
-  .read-more { display: block; color: var(--c-primary); font-weight: 600; font-size: 14px; margin-top: 12px; }
-  @media (max-width: 1024px) { .blog-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 640px) { .blog-grid { grid-template-columns: 1fr; } }
 </style>

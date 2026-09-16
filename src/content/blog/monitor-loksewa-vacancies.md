@@ -5,6 +5,7 @@ date: 2026-09-15
 author: BerojgarEngineer
 image: /images/blog/monitor.jpg
 tags: ["Loksewa", "changedetection.io", "Docker", "Docker Compose", "Rocky Linux", "self-hosting", "website change monitoring", "XPath filter", "vacancy alerts", "PSC notices", "Playwright", "notification setup"]
+categories: ["loksewa", "devops"]
 ---
 
 If you are preparing for Loksewa, you already know the problem. The notice you needed was published on a Sunday, you opened the site on Wednesday, and by then half the application window is gone. Refreshing psc.gov.np five times a day is not a strategy.

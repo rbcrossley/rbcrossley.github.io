@@ -1,0 +1,102 @@
+---
+// =============================================================================
+// EmailSignup — the newsletter box. Currently posts nowhere; wire it up to a
+// free email tool in 2 minutes:
+//
+//   1. Create a free Brevo account: https://www.brevo.com (free plan stores up
+//      to 100,000 contacts; only sending is capped at 300 emails/day, which is
+//      fine for an occasional newsletter).
+//   2. In Brevo: Contacts > Forms > create a "Subscription form", grab the
+//      plain HTML form it gives you.
+//   3. Replace FORM_ACTION_URL below with the `action` URL from that form, and
+//      copy any hidden <input> fields Brevo includes into the form below.
+//
+// Until then this form just prevents default submit and shows a friendly
+// "not connected yet" message — it won't lose real emails.
+// =============================================================================
+import Icon from './Icon.astro';
+
+const FORM_ACTION_URL = 'https://9531b8b5.sibforms.com/serve/MUIFAOJCAW6BjaLAIj21I9_rJb6JBrCnKNG1rD93I-DUlNzOBeWphdH0vFm3wy9jvC1g-dB5t7YBbYYfryvsanRa-xOR6FwV1MZD8n0X6mgeFQL5HvdQQ4742k2EqEUqGaVePG31M5D9t5OEi6lui3nM9htVSTCpZCwfI6dy87KAn4PzIu_H6mc2nuYtpmvuyo8QpujicSQfPCYrlg=='; // <-- paste your Brevo (or other) form action URL here
+---
+
+<section class="signup">
+  <div class="container signup-inner">
+    <div class="signup-icon"><Icon name="mail" size={26} /></div>
+    <div class="signup-copy">
+      <h3>Get New Guides in Your Inbox</h3>
+      <p>Join the list to get new Linux, DevOps, career and Loksewa guides as soon as they're published. No spam, unsubscribe anytime.</p>
+    </div>
+    <form class="signup-form" data-connected={FORM_ACTION_URL ? 'true' : 'false'} action={FORM_ACTION_URL || undefined} method="post" target="_blank">
+      <input type="email" name="EMAIL" placeholder="Enter your email address" required aria-label="Email address" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+  <p class="signup-note" id="signup-note" hidden>
+    This form isn't connected to an email list yet — see the comment in src/components/EmailSignup.astro to wire it up (Brevo's free plan works well for this).
+  </p>
+</section>
+
+<style>
+  .signup { background: var(--c-primary-light); padding: 44px 0; }
+  .signup-inner {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+  }
+  .signup-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: var(--c-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .signup-copy h3 { font-size: 20px; margin: 0 0 4px; color: var(--c-text); }
+  .signup-copy p { margin: 0; font-size: 14px; color: var(--c-muted); max-width: 480px; }
+  .signup-form { display: flex; gap: 10px; flex-wrap: wrap; }
+  .signup-form input {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1.5px solid var(--c-border);
+    min-width: 240px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  .signup-form input:focus { outline: none; border-color: var(--c-primary); }
+  .signup-form button {
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    background: var(--c-primary);
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  .signup-form button:hover { background: var(--c-primary-dark); }
+  .signup-note { max-width: 1280px; margin: 10px auto 0; padding: 0 28px; font-size: 12px; color: var(--c-muted); text-align: center; }
+
+  @media (max-width: 860px) {
+    .signup-inner { grid-template-columns: 1fr; text-align: center; }
+    .signup-icon { margin: 0 auto; }
+    .signup-copy p { margin: 0 auto; }
+    .signup-form { justify-content: center; }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll<HTMLFormElement>('.signup-form').forEach((form) => {
+      if (form.dataset.connected === 'true') return; // real form action set — let it submit normally
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const note = document.getElementById('signup-note');
+        if (note) note.hidden = false;
+      });
+    });
+  });
+</script>

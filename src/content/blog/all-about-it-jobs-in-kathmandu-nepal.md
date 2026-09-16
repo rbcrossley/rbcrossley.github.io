@@ -5,6 +5,7 @@ date: 2026-07-04
 author: BerojgarEngineer
 image: /images/blog/it.jpeg
 tags: ["IT jobs in Nepal", "IT jobs in Kathmandu", "IT careers", "fresher IT jobs", "IT salary in Nepal", "IT companies in Nepal", "software companies in Kathmandu", "job interview preparation", "government IT jobs in Nepal", "private sector IT jobs", "IT job skills", "career guidance Nepal"]
+categories: ["it-careers"]
 ---
 
 Every year, thousands of computer engineering and IT graduates in Nepal ask the same set of questions. Should I prepare for a government job or look for something in the private sector? Which companies are actually hiring right now? Is it worth paying for an institute, or should I learn on my own? What do interviewers actually ask a fresher?

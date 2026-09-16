@@ -31,6 +31,16 @@ const {
 
 const c = theme.colors;
 
+// Flatten colors.categories = { linux: {bg,text,chip}, ... } into CSS vars
+// like --c-cat-linux-bg, --c-cat-linux-text, --c-cat-linux-chip so any
+// component can style a category chip/badge without importing theme.config.js.
+const categoryVars: Record<string, string> = {};
+for (const [catId, catColors] of Object.entries(c.categories ?? {})) {
+  for (const [key, value] of Object.entries(catColors as Record<string, string>)) {
+    categoryVars[`c-cat-${catId}-${key}`] = value;
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Canonical + social URLs
 // ---------------------------------------------------------------------------
@@ -124,6 +134,8 @@ const structuredData = jsonLd ?? {
       'c-footer-bg': c.footerBg,
       'c-footer-text': c.footerText,
       'c-border': c.border,
+      'c-accent-warm': c.accentWarm,
+      ...categoryVars,
     }}>
       :root { color-scheme: light; }
       * { box-sizing: border-box; }
@@ -150,7 +162,7 @@ const structuredData = jsonLd ?? {
   </head>
   <body>
     <Header />
-    <main>
+    <main data-pagefind-body>
       <slot />
     </main>
     <Footer />

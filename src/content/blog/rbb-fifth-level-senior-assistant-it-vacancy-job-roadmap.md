@@ -5,6 +5,7 @@ date: 2026-07-03
 author: BerojgarEngineer
 image: /images/blog/thumbnail-rbb.jpeg
 tags: ["Rastriya Banijya Bank", "RBB", "Senior Assistant IT", "RBB Level 5", "banking jobs in Nepal", "Loksewa", "Loksewa syllabus", "exam preparation", "vacancy notice", "bank IT jobs", "study plan", "government bank Nepal"]
+categories: ["loksewa"]
 ---
 A Master's degree is required for officer-level posts (6th level and onwards) only in government banks(except NRB) and selected finance companies.
 

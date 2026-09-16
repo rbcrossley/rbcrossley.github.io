@@ -5,6 +5,7 @@ date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/nginx.jpg
 tags: ["NGINX", "Rocky Linux", "reverse proxy", "web server", "SSL", "server blocks", "upstream", "load balancing", "NGINX configuration", "Linux server administration", "troubleshooting", "Red Hat Linux"]
+categories: ["linux", "devops"]
 ---
 
 NGINX now sits in front of a large share of the world's busiest websites, and in Nepal you will find it in front of almost every serious deployment: banking portals, internal applications, Kubernetes ingress controllers, and just about every VPS anyone has set up in the last decade.

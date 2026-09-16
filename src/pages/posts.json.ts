@@ -44,6 +44,9 @@ export const GET: APIRoute = async ({ site }) => {
       author: getAuthor(entry.data.author).name,
       authorRole: getAuthor(entry.data.author).role,
       image: absolute(entry.data.image, origin),
+      // Reader-facing topic categories (see src/config/categories.ts) — additive
+      // field, safe for older app builds that don't read it yet.
+      categories: entry.data.categories ?? [],
       url: `${origin}/blog/${entry.slug}`,
       // Raw Markdown. The app renders this natively.
       body: entry.body,

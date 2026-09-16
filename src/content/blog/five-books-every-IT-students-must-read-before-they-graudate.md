@@ -5,6 +5,7 @@ date: 2026-07-01
 author: BerojgarEngineer
 image: /images/blog/books.jpeg
 tags: ["IT students", "student advice", "career preparation", "soft skills", "communication skills", "Linux terminal", "personal projects", "internships in Nepal", "education in Nepal", "graduate employability", "IT careers", "practical skills"]
+categories: ["it-education", "devops"]
 ---
 You must have seen lots of videos and blogs posting five books every IT student must read before they graduate. Is my blog an addition to that spam? No. I will tell you why. In this blog, I will not be telling complicated book titles just to sound smart. I will tell you what you will enjoy reading given your BE/BscSIT educational background in Nepal.
 

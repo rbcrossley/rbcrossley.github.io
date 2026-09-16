@@ -1,0 +1,187 @@
+---
+// =============================================================================
+// CategoryFilter — multi-select topic chips + a live-filtered post grid.
+// Used on the homepage ("Browse by what interests you") and on /blog.
+//
+// Categories are NOT mutually exclusive: a post can carry more than one, and
+// selecting more than one chip shows every post matching ANY selected chip
+// (an OR filter) — e.g. selecting "Linux" and "DevOps" shows posts tagged
+// with either.
+//
+// Reads ?category=slug1,slug2 from the URL on load so a link like
+// `/blog?category=devops` (used by the homepage "Start Here" cards and the
+// header mega-menu) lands with that filter already applied.
+// =============================================================================
+import type { CollectionEntry } from 'astro:content';
+import { categories } from '../config/categories';
+import PostCard from './PostCard.astro';
+
+export interface Props {
+  posts: CollectionEntry<'blog'>[];
+  /** Show only this many cards until a filter is applied or "Show more" is clicked. Omit to always show all. */
+  cap?: number;
+  id?: string;
+}
+
+const { posts, cap, id = 'topic-filter' } = Astro.props;
+---
+
+<div class="category-filter" id={id} data-cap={cap ?? ''}>
+  <div class="chips" role="group" aria-label="Filter by topic">
+    <button type="button" class="chip chip-all" data-cat="" aria-pressed="true">All Topics</button>
+    {categories.map((c) => (
+      <button
+        type="button"
+        class="chip"
+        data-cat={c.id}
+        aria-pressed="false"
+        style={`--chip-bg: var(--c-cat-${c.id}-bg); --chip-text: var(--c-cat-${c.id}-text); --chip-dot: var(--c-cat-${c.id}-chip);`}
+      >
+        <span class="dot"></span>{c.shortLabel}
+      </button>
+    ))}
+  </div>
+
+  <div class="grid">
+    {posts.map((post) => (
+      <PostCard post={post} showDate />
+    ))}
+  </div>
+
+  <p class="empty" hidden>No posts match that combination yet — try a different topic.</p>
+
+  {cap && posts.length > cap && (
+    <div class="show-more-wrap">
+      <button type="button" class="show-more">Show more</button>
+    </div>
+  )}
+</div>
+
+<style>
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px;
+    border-radius: 999px;
+    border: 1.5px solid var(--c-border);
+    background: #fff;
+    color: var(--c-text);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--chip-dot, var(--c-primary)); }
+  .chip:hover { border-color: var(--chip-dot, var(--c-primary)); }
+  .chip[aria-pressed="true"] {
+    background: var(--chip-bg, var(--c-primary-light));
+    color: var(--chip-text, var(--c-primary-dark));
+    border-color: transparent;
+  }
+  .chip-all[aria-pressed="true"] { background: var(--c-text); color: #fff; }
+  .chip-all .dot { display: none; }
+
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  .grid :global(.post-card.is-hidden) { display: none; }
+  .empty { text-align: center; color: var(--c-muted); padding: 40px 0; }
+
+  .show-more-wrap { display: flex; justify-content: center; margin-top: 28px; }
+  .show-more {
+    padding: 10px 26px;
+    border-radius: 999px;
+    border: 2px solid var(--c-primary);
+    background: transparent;
+    color: var(--c-primary-dark);
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .show-more:hover { background: var(--c-primary-light); }
+  .show-more[hidden] { display: none; }
+
+  @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+</style>
+
+<script>
+  function initCategoryFilters() {
+    document.querySelectorAll<HTMLElement>('.category-filter').forEach((root) => {
+      if (root.dataset.jsInit === '1') return;
+      root.dataset.jsInit = '1';
+
+      const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('.chip'));
+      const cards = Array.from(root.querySelectorAll<HTMLElement>('.post-card'));
+      const emptyMsg = root.querySelector<HTMLElement>('.empty');
+      const showMoreBtn = root.querySelector<HTMLButtonElement>('.show-more');
+      const cap = root.dataset.cap ? parseInt(root.dataset.cap, 10) : 0;
+      let expanded = !cap;
+      let selected = new Set<string>();
+
+      // Pre-select from ?category=a,b in the URL.
+      const params = new URLSearchParams(window.location.search);
+      const fromUrl = params.get('category');
+      if (fromUrl) {
+        fromUrl.split(',').map((s) => s.trim()).filter(Boolean).forEach((c) => selected.add(c));
+        expanded = true;
+      }
+
+      function applyChipStyles() {
+        chips.forEach((chip) => {
+          const cat = chip.dataset.cat || '';
+          const isAll = cat === '';
+          const active = isAll ? selected.size === 0 : selected.has(cat);
+          chip.setAttribute('aria-pressed', String(active));
+        });
+      }
+
+      function render() {
+        let visibleCount = 0;
+        cards.forEach((card, i) => {
+          const catsAttr = card.dataset.categories || '';
+          const catList = catsAttr.split(',').filter(Boolean);
+          const matches = selected.size === 0 || catList.some((c) => selected.has(c));
+          let show = matches;
+          if (show && !expanded && cap && visibleCount >= cap) show = false;
+          card.classList.toggle('is-hidden', !show);
+          if (show) visibleCount++;
+        });
+        if (emptyMsg) emptyMsg.hidden = visibleCount > 0;
+        if (showMoreBtn) {
+          const matchingTotal = cards.filter((c) => {
+            const catList = (c.dataset.categories || '').split(',').filter(Boolean);
+            return selected.size === 0 || catList.some((cc) => selected.has(cc));
+          }).length;
+          showMoreBtn.hidden = expanded || matchingTotal <= cap;
+        }
+      }
+
+      chips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          const cat = chip.dataset.cat || '';
+          if (cat === '') {
+            selected.clear();
+          } else if (selected.has(cat)) {
+            selected.delete(cat);
+          } else {
+            selected.add(cat);
+          }
+          applyChipStyles();
+          render();
+        });
+      });
+
+      showMoreBtn?.addEventListener('click', () => {
+        expanded = true;
+        render();
+        showMoreBtn.hidden = true;
+      });
+
+      applyChipStyles();
+      render();
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initCategoryFilters);
+  document.addEventListener('astro:page-load', initCategoryFilters);
+</script>

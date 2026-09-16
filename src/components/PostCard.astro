@@ -1,0 +1,83 @@
+---
+// =============================================================================
+// PostCard — the one blog-post card used everywhere (homepage featured guides,
+// homepage latest articles, the topic filter grid, and /blog). Keeping a
+// single card means a style tweak only has to happen in one place.
+// =============================================================================
+import type { CollectionEntry } from 'astro:content';
+import { link } from '../lib/link';
+import { getCategories } from '../config/categories';
+
+export interface Props {
+  post: CollectionEntry<'blog'>;
+  /** Overrides the auto badge (post's first category). Pass false to hide the badge entirely. */
+  badge?: string | false;
+  showDate?: boolean;
+}
+
+const { post, badge, showDate = false } = Astro.props;
+const cats = getCategories(post.data.categories);
+const badgeText = badge === false ? null : badge ?? cats[0]?.label ?? 'Blog';
+const badgeColorKey = cats[0]?.id ?? null;
+const dateStr = new Date(post.data.date).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+---
+
+<a
+  href={link(`/blog/${post.slug}`)}
+  class="post-card"
+  data-categories={post.data.categories?.join(',') ?? ''}
+>
+  <div
+    class="post-image"
+    style={`background-image: ${post.data.image ? `url('${post.data.image}')` : 'linear-gradient(135deg, var(--c-primary), var(--c-primary-dark))'}; background-size: cover; background-position: center;`}
+  >
+    {badgeText && (
+      <span class="post-badge" style={badgeColorKey ? `background: var(--c-cat-${badgeColorKey}-bg); color: var(--c-cat-${badgeColorKey}-text);` : ''}>
+        {badgeText}
+      </span>
+    )}
+  </div>
+  <div class="post-body">
+    <h3>{post.data.title}</h3>
+    <p>{post.data.description}</p>
+    {showDate && <time>{dateStr}</time>}
+    <span class="read-more">Read More »</span>
+  </div>
+</a>
+
+<style>
+  .post-card {
+    background: var(--c-card-bg);
+    border: 1px solid var(--c-card-border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+    text-decoration: none;
+    color: var(--c-text);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    display: flex;
+    flex-direction: column;
+  }
+  .post-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12); }
+  .post-image { aspect-ratio: 16/9; position: relative; }
+  .post-badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(255, 255, 255, 0.92);
+    color: var(--c-primary-dark);
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .post-body { padding: 22px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
+  .post-body h3 { font-size: 18px; line-height: 1.35; margin: 0 0 6px; }
+  .post-body p { font-size: 14px; color: var(--c-muted); margin: 0 0 10px; flex: 1; }
+  .post-body time { font-size: 12px; color: var(--c-muted); margin-bottom: 6px; }
+  .read-more { color: var(--c-primary-dark); font-weight: 600; font-size: 14px; }
+</style>

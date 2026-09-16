@@ -5,6 +5,7 @@ date: 2026-05-16
 author: BerojgarEngineer
 image: /images/blog/fresher-it.jpeg
 tags: ["IT support", "fresher IT jobs", "IT careers", "IT jobs in Nepal", "career advice", "first job", "technical support engineer", "remote work", "IT salary in Nepal", "skill development", "exam preparation", "career switch"]
+categories: ["it-careers"]
 ---
 Even in current seemingly dim scenarios, I heavily bet on Information Technology careers in Nepal. Nepali IT will grow if the Nepalese economy has to grow because we do not have other options. The government putting IT as a "strategic industry" just validates my point further. I will provide guidance on a few areas that I believe freshers want to know but do not have a reliable way of knowing.
 # Salary

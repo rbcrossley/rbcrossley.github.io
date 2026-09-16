@@ -1,0 +1,54 @@
+---
+// =============================================================================
+// FaqSection — renders src/config/faqs.ts as an accordion. To add, remove or
+// reword a question, edit that file only — nothing here needs to change.
+// =============================================================================
+import { faqs } from '../config/faqs';
+import Icon from './Icon.astro';
+---
+
+<section class="faq">
+  <div class="container">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-list">
+      {faqs.map((item, i) => (
+        <details class="faq-item" name="faq" open={i === 0}>
+          <summary>
+            <span>{item.question}</span>
+            <span class="chevron"><Icon name="chevron-down" size={18} /></span>
+          </summary>
+          <div class="answer" set:html={item.answer} />
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq { padding: 56px 0; background: #fafafa; }
+  .section-title { font-size: 30px; font-weight: 800; margin-bottom: 28px; color: var(--c-text); }
+  .faq-list { display: flex; flex-direction: column; gap: 10px; max-width: 820px; }
+  .faq-item {
+    background: #fff;
+    border: 1px solid var(--c-border);
+    border-radius: 10px;
+    padding: 4px 20px;
+  }
+  .faq-item summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 0;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--c-text);
+    list-style: none;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .chevron { color: var(--c-primary); flex-shrink: 0; transition: transform 0.2s ease; display: inline-flex; }
+  .faq-item[open] .chevron { transform: rotate(180deg); }
+  .answer { padding: 0 0 18px; color: var(--c-muted); font-size: 14px; line-height: 1.7; }
+  .answer :global(a) { color: var(--c-primary-dark); font-weight: 600; }
+</style>
