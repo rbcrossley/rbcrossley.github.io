@@ -4,6 +4,7 @@ description: Learn how I built a budget homelab in Nepal using a second-hand
   ThinkPad T450, Proxmox, Docker, and Ethernet — including costs, power use,
   hardware lessons, and real projects.
 date: 2026-09-16
+image: /images/blog/budget-homelab.jpg
 author: raju
 categories:
   - linux
