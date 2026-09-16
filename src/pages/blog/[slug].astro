@@ -88,6 +88,63 @@ const jsonLd = {
   </article>
 </Base>
 
+<script>
+  function initCodeCopyButtons() {
+    const copyIcon =
+      '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>';
+    const checkIcon =
+      '<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>';
+
+    document.querySelectorAll('.content pre').forEach((pre) => {
+      if (pre.querySelector('.copy-code-btn')) return;
+      const code = pre.querySelector('code');
+      if (!code) return;
+
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'copy-code-btn';
+      btn.setAttribute('aria-label', 'Copy code to clipboard');
+      btn.innerHTML = `${copyIcon}<span class="copy-code-label">Copy</span>`;
+
+      let resetTimer;
+      btn.addEventListener('click', async () => {
+        const text = code.innerText;
+        try {
+          if (navigator.clipboard && window.isSecureContext) {
+            await navigator.clipboard.writeText(text);
+          } else {
+            const ta = document.createElement('textarea');
+            ta.value = text;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            ta.remove();
+          }
+          btn.classList.add('copied');
+          btn.innerHTML = `${checkIcon}<span class="copy-code-label">Copied!</span>`;
+        } catch (err) {
+          btn.innerHTML = `${copyIcon}<span class="copy-code-label">Failed</span>`;
+        }
+        clearTimeout(resetTimer);
+        resetTimer = setTimeout(() => {
+          btn.classList.remove('copied');
+          btn.innerHTML = `${copyIcon}<span class="copy-code-label">Copy</span>`;
+        }, 2000);
+      });
+
+      pre.appendChild(btn);
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCodeCopyButtons);
+  } else {
+    initCodeCopyButtons();
+  }
+</script>
+
 <style>
   .blog-article { max-width: 820px; margin: 0 auto; padding: 40px 28px 60px; }
   .head { margin-bottom: 24px; }
@@ -114,6 +171,34 @@ const jsonLd = {
   .content :global(blockquote) { margin: 16px 0; padding: 12px 16px; border-left: 4px solid var(--c-primary); background: var(--c-card-bg); font-style: italic; color: var(--c-muted); }
   .content :global(img), .content :global(iframe), .content :global(embed), .content :global(video) { max-width: 100%; height: auto; }
   .content :global(pre), .content :global(code) { white-space: pre-wrap; word-break: break-word; }
+  .content :global(pre) { position: relative; padding: 16px !important; border-radius: 8px; margin: 20px 0; }
+  .content :global(.copy-code-btn) {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    font-family: 'Poppins', system-ui, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    color: #e1e4e8;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  }
+  .content :global(.copy-code-btn:hover) { background: rgba(255, 255, 255, 0.2); }
+  .content :global(.copy-code-btn:focus-visible) { outline: 2px solid var(--c-primary); outline-offset: 2px; }
+  .content :global(.copy-code-btn.copied) { background: #2ea043; border-color: #2ea043; color: #fff; }
+  .content :global(.copy-code-btn svg) { flex-shrink: 0; }
+  @media (max-width: 480px) {
+    .content :global(.copy-code-btn .copy-code-label) { display: none; }
+    .content :global(.copy-code-btn) { padding: 6px; }
+  }
   .content :global(h1), .content :global(h2), .content :global(h3), .content :global(h4), .content :global(h5), .content :global(h6),
   .content :global(p), .content :global(li), .content :global(blockquote), .content :global(th), .content :global(td) { overflow-wrap: break-word; word-break: break-word; }
   @media (max-width: 768px) {

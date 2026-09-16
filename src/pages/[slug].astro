@@ -128,7 +128,14 @@ if (!discover || discover.length === 0) {
   .article-content :global(th), .article-content :global(td) { border: 1px solid var(--c-border); padding: 10px 14px; text-align: left; }
   .article-content :global(th) { background: var(--c-primary-light); }
   .article-content :global(img) { max-width: 100%; height: auto; margin: 18px 0; border-radius: 8px; }
-  .article-content :global(code) { background: #f3f4f6; padding: 2px 6px; border-radius: 4px; font-size: 14px; }
+  .article-content :global(code) {
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+    background: #f3f4f6;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+  .article-content :global(pre code) { background: transparent; padding: 0; border-radius: 0; font-size: 1em; }
   .placeholder { color: var(--c-muted); font-style: italic; }
   .prev-next { display: flex; justify-content: space-between; gap: 16px; margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--c-border); flex-wrap: wrap; }
   .pn { display: inline-flex; padding: 10px 16px; background: var(--c-primary-light); color: var(--c-primary-dark); border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 14px; transition: background 0.2s ease, color 0.2s ease; }
