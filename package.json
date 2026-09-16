@@ -7,7 +7,9 @@
     "dev": "astro dev --host 0.0.0.0 --port 3000",
     "build": "astro build && pagefind --site dist --output-path dist/pagefind",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "cms": "npm --prefix cms start",
+    "cms:install": "npm --prefix cms install"
   },
   "dependencies": {
     "@astrojs/mdx": "^3.1.9",

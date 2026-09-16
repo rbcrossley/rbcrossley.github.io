@@ -61,6 +61,11 @@ const blog = defineCollection({
     categories: z
       .array(z.enum(['linux', 'devops', 'it-careers', 'it-education', 'loksewa']))
       .default([]),
+    // Draft flag set by the CMS ("Save Draft" vs "Publish"). Optional and
+    // defaults to false so every existing post (which has no `draft` field
+    // at all) is unaffected. Checked by isPublished() in
+    // src/config/hidden-posts.ts alongside the HIDDEN_POST_SLUGS list.
+    draft: z.boolean().default(false),
   }),
 });
 

@@ -1,0 +1,134 @@
+# =============================================================================
+# Decap CMS schema for Berojgar Engineer's blog.
+# -----------------------------------------------------------------------------
+# This mirrors the Zod schema in ../../src/content/config.ts field-for-field.
+# It does NOT introduce a new content model — every field below maps to a
+# frontmatter key that already exists (or, for `draft`, was just added
+# alongside this CMS). Posts saved here are indistinguishable in format from
+# the 17 posts already in src/content/blog/: plain Markdown + YAML
+# frontmatter, same filenames-as-slugs convention, same image convention.
+#
+# This runs ONLY on your own laptop (see ../server.js) — it is never
+# deployed, never built into the public site, and never reachable from
+# anywhere but http://localhost.
+# =============================================================================
+
+backend:
+  name: github
+  repo: rbcrossley/rbcrossley.github.io
+  branch: main
+  # Points Decap at the local OAuth proxy in cms/server.js instead of a
+  # hosted OAuth broker. Must match the PORT in cms/.env (default 8081).
+  base_url: http://localhost:8081
+  auth_endpoint: auth
+
+# Posts are committed straight to `main`, matching how you already publish
+# today (a plain `git push` triggers the GitHub Pages workflow). If you'd
+# rather review changes before they go live, switch this to:
+#   publish_mode: editorial_workflow
+# which makes Decap open a PR-like draft/review/ready pipeline instead of
+# committing directly. Left off by default to keep the workflow identical to
+# what you have now.
+# publish_mode: editorial_workflow
+
+media_folder: "public/images/blog"
+public_folder: "/images/blog"
+
+collections:
+  - name: "blog"
+    label: "Blog Posts"
+    label_singular: "Post"
+    folder: "src/content/blog"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: "title"
+    summary: "{{title}} — {{fields.date}}"
+    sortable_fields: ["date", "title"]
+    view_filters:
+      - label: "Published"
+        field: draft
+        pattern: "false"
+      - label: "Drafts"
+        field: draft
+        pattern: "true"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+        required: true
+
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        required: false
+        hint: "Shown on blog index cards and used as the meta description. A sentence or two."
+
+      # Auto-set to now for a new post; you can still change it (e.g. to
+      # backdate a post) — it's the same `date` field every existing post
+      # already has, just pre-filled.
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        default: "{{now}}"
+        required: true
+
+      - label: "Cover Image"
+        name: "image"
+        widget: "image"
+        required: false
+        media_library:
+          config:
+            multiple: false
+        hint: "Stored in public/images/blog, same as every existing post. Optional — posts without one just skip the hero banner."
+
+      # Locked to the one author defined in src/config/author.ts. You never
+      # need to type a name here — if you ever add a second author entry
+      # there, change this to a `select` widget listing the author keys.
+      - label: "Author"
+        name: "author"
+        widget: "hidden"
+        default: "raju"
+
+      - label: "Categories"
+        name: "categories"
+        widget: "select"
+        multiple: true
+        required: false
+        hint: "Reader-facing topic chips. A post can have more than one."
+        options:
+          - { label: "Linux", value: "linux" }
+          - { label: "DevOps", value: "devops" }
+          - { label: "IT Careers", value: "it-careers" }
+          - { label: "IT Education", value: "it-education" }
+          - { label: "Loksewa & Govt Exams", value: "loksewa" }
+
+      - label: "Tags (SEO only — never shown to readers)"
+        name: "tags"
+        widget: "list"
+        required: false
+        hint: "Machine-readable keywords for structured data only. Keep it accurate, 5-8 tags."
+        default: []
+
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: true
+        hint: "On = hidden from the live site (Save Draft). Off = published on your next commit."
+
+      - label: "Article"
+        name: "body"
+        widget: "markdown"
+        required: true
+        hint: >-
+          The toolbar covers bold, italic, headings, lists, links, blockquote,
+          inline code, fenced code blocks (with language) and images. Tables
+          aren't a toolbar button in this editor — use the "Show raw
+          Markdown" toggle in the editor's top-right to drop in a Markdown
+          table directly; everything else in this field is normal Markdown
+          and safe to hand-edit there too.

@@ -1,0 +1,17 @@
+{
+  "name": "berojgar-engineer-cms",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local-only Decap CMS admin + GitHub OAuth proxy for writing Berojgar Engineer blog posts. Runs on 127.0.0.1 only; never deployed; not part of the Astro build.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cstaleem-clone": "file:..",
+    "express": "^4.19.2"
+  }
+}

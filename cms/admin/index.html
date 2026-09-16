@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Berojgar Engineer — Content Manager</title>
+    <!--
+      This page is never deployed anywhere. It only exists inside this repo
+      so `npm run cms` can serve it from your own laptop on localhost. It is
+      not part of the Astro build (astro build only looks at src/pages and
+      public/ — this cms/ folder is invisible to it) and is not shipped to
+      GitHub Pages.
+    -->
+    <meta name="robots" content="noindex, nofollow" />
+    <style>
+      html, body { margin: 0; height: 100%; background: #0f172a; }
+    </style>
+  </head>
+  <body>
+    <!-- Decap CMS auto-detects config.yml sitting next to this file. -->
+    <script src="https://unpkg.com/decap-cms@^3/dist/decap-cms.js"></script>
+  </body>
+</html>
