@@ -57,7 +57,7 @@ Out of everything I've run on this box — and I've experimented with a fair num
 
 I use it to monitor Public Service Commission (PSC) and corporation vacancy pages for Loksewa IT vacancy updates. Missing a vacancy notice is one of the most common — and most painful — mistakes Loksewa aspirants make in Nepal, since notices go up quietly and don't always get shared widely before deadlines approach. changedetection.io watches those pages and flags changes automatically, so I don't have to manually refresh government websites every day.
 
-I actually wrote a full walkthrough of that exact setup — Docker, XPath filters, and all — over on the blog. Check it out here: **[link to the changedetection.io / Loksewa vacancy monitoring post]**
+I actually wrote a full walkthrough of that exact setup — Docker, XPath filters, and all — over on the blog. Check it out here: https://berojgarengineer.com/blog/monitor-loksewa-vacancies/
 
 Of everything running on this little 14,000 NPR laptop, this is the one that's paid for itself many times over in actual usefulness.
 
