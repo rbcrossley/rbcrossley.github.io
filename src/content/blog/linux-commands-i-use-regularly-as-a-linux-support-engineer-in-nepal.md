@@ -492,10 +492,10 @@ Once you have the addition down, every value you'll ever type falls out of it:
 
 Which makes the common combinations easy to read instead of memorise:
 
-* `777` = `rwxrwxrwx` — everyone can read, write and execute. See the warning above for why this is almost never the right answer on a production box.
-* `755` = `rwxr-xr-x` — owner has full control, everyone else can read and execute but not modify. The usual default for scripts and directories.
-* `644` = `rw-r--r--` — owner can edit, everyone else can only read. The default for ordinary files, including the `.jpg` example above.
-* `600` = `rw-------` — owner only, nobody else gets so much as a read. The standard for anything that must stay private on a shared box: SSH private keys, `.env` files, credentials of any kind.
+* `777` = `rwxrwxrwx` - everyone can read, write and execute. See the warning above for why this is almost never the right answer on a production box.
+* `755` = `rwxr-xr-x` - owner has full control, everyone else can read and execute but not modify. The usual default for scripts and directories.
+* `644` = `rw-r--r--` - owner can edit, everyone else can only read. The default for ordinary files, including the `.jpg` example above.
+* `600` = `rw-------` - owner only, nobody else gets so much as a read. The standard for anything that must stay private on a shared box: SSH private keys, `.env` files, credentials of any kind.
 
 ## Back up all files except some folders
 

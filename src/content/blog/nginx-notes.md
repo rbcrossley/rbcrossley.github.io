@@ -204,11 +204,11 @@ This is one of the most common "it works in Postman but not in the browser" prob
 
 There are various Response Status Codes available:
 
-- 100-199 — Informational Status Codes
-- 200-299 — Success Status Codes
-- 300-399 — Redirection Status Codes
-- 400-499 — Client Error Status Codes
-- 500-599 — Server Error Status Codes
+- 100-199: Informational Status Codes
+- 200-299: Success Status Codes
+- 300-399: Redirection Status Codes
+- 400-499: Client Error Status Codes
+- 500-599: Server Error Status Codes
 
 The single most useful thing this classification gives you is the 4xx/5xx split. A 4xx means the client sent something wrong; a 5xx means the server failed. When an incident comes in, that division tells you immediately whether to look at the application or at the request, and it is the first thing I check in the access log.
 
@@ -252,9 +252,9 @@ Example: 500 Internal Server Error
 
 For NGINX acting as a proxy, these have specific meanings that point straight at the cause:
 
-- **502 Bad Gateway** — NGINX reached the backend but got an invalid or empty response. Usually the backend process is down or the socket path is wrong.
-- **504 Gateway Timeout** — the backend accepted the connection but did not respond within `proxy_read_timeout`. The backend is alive but too slow.
-- **503 Service Unavailable** — often NGINX itself, when every server in an upstream group has been marked unhealthy.
+- **502 Bad Gateway**: NGINX reached the backend but got an invalid or empty response. Usually the backend process is down or the socket path is wrong.
+- **504 Gateway Timeout**: the backend accepted the connection but did not respond within `proxy_read_timeout`. The backend is alive but too slow.
+- **503 Service Unavailable**: often NGINX itself, when every server in an upstream group has been marked unhealthy.
 
 Distinguishing 502 from 504 saves a lot of time: one means "it is not there", the other means "it is there but stuck".
 
@@ -1120,11 +1120,11 @@ This exists to handle applications that store session state in server memory, wh
 
 These are the areas I am still working through, and they are the natural next steps if you have followed everything above:
 
-- **Caching subsystem** — `proxy_cache` can serve responses from disk without touching the backend at all. On a content-heavy site this is the single largest performance improvement available.
-- **Advanced logging** — conditional logging, excluding health checks from the access log, and shipping logs to a central collector.
-- **Cryptography module** — TLS version and cipher selection, OCSP stapling, HSTS.
-- **Static asset optimisation** — `gzip` and `brotli` compression, `expires` headers, and `open_file_cache`.
-- **Access control** — `allow` and `deny`, rate limiting with `limit_req`, and basic authentication.
+- **Caching subsystem**: `proxy_cache` can serve responses from disk without touching the backend at all. On a content-heavy site this is the single largest performance improvement available.
+- **Advanced logging**: conditional logging, excluding health checks from the access log, and shipping logs to a central collector.
+- **Cryptography module**: TLS version and cipher selection, OCSP stapling, HSTS.
+- **Static asset optimisation**: `gzip` and `brotli` compression, `expires` headers, and `open_file_cache`.
+- **Access control**: `allow` and `deny`, rate limiting with `limit_req`, and basic authentication.
 
 Of those, rate limiting is the one I would learn first. `limit_req_zone` is a few lines of configuration and it is the most effective defence available against brute force login attempts and scraping.
 

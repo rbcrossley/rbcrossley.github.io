@@ -164,6 +164,9 @@ I am not sure if government banks have increased the salary as per the FY 2083/8
 
 If not, then it will be 15-20% lower than the officer-level salary.
 
+# practical exam
+There will be no practical exam for RBB IT Assistant 5th level post as per official documents.
+
 # Preparation strategy
 I have discussed more about the preparation strategy, recommended study materials, and other advice in the article provided below:
 

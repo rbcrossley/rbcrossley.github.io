@@ -3,8 +3,6 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import PostCard from '../components/PostCard.astro';
-import CategoryFilter from '../components/CategoryFilter.astro';
-import FaqSection from '../components/FaqSection.astro';
 import EmailSignup from '../components/EmailSignup.astro';
 import { link } from '../lib/link';
 import { isPublished } from '../config/hidden-posts';
@@ -16,47 +14,6 @@ const allPosts = (await getCollection('blog'))
 
 const featuredPosts = pickFeatured(allPosts);
 const latestPosts = allPosts.slice(0, 3);
-
-// "Start Here" role cards. Each routes to /blog pre-filtered by category —
-// see src/components/CategoryFilter.astro for how ?category= is read.
-const startHere = [
-  {
-    title: "I'm a Student",
-    desc: 'Career advice, skills to learn, future opportunities.',
-    icon: 'cap' as const,
-    href: link('/blog?category=it-education'),
-    cta: 'Explore Student Guides',
-  },
-  {
-    title: "I'm Looking for an IT Job",
-    desc: 'Fresher tips, job roles, interview preparation and career growth.',
-    icon: 'briefcase' as const,
-    href: link('/blog?category=it-careers'),
-    cta: 'Explore Career Guides',
-  },
-  {
-    title: "I'm Preparing for Government IT Jobs",
-    desc: 'Loksewa, NTC, RBB, NEA and other public service exams.',
-    icon: 'landmark' as const,
-    href: link('/blog?category=loksewa'),
-    cta: 'Explore Exam Guides',
-  },
-  {
-    title: 'I Want to Learn IT Skills',
-    desc: 'Linux, DevOps, servers, command line and more.',
-    icon: 'terminal' as const,
-    href: link('/blog?category=linux,devops'),
-    cta: 'Explore Technical Guides',
-  },
-];
-
-const values = [
-  { icon: 'check' as const, label: 'First-hand experience' },
-  { icon: 'book' as const, label: 'Practical & tested guides' },
-  { icon: 'flag' as const, label: 'Nepal-specific information' },
-  { icon: 'users' as const, label: 'Community focused' },
-  { icon: 'heart' as const, label: 'Always learning and sharing' },
-];
 ---
 
 <Base title="Berojgar Engineer - Linux, DevOps and IT Careers in Nepal" description="Practical Linux, DevOps and Kubernetes notes plus honest IT career guidance for engineering graduates in Nepal.">
@@ -71,78 +28,13 @@ const values = [
           career decisions.
         </p>
         <div class="hero-cta">
-          <a href={link('/blog')} class="btn-primary">Explore Guides <Icon name="arrow-right" size={16} /></a>
-          <a href="#latest" class="btn-ghost">Read Latest Posts</a>
+          <a href={link('/blog')} class="btn-primary">Read Latest Posts <Icon name="arrow-right" size={16} /></a>
         </div>
         <div class="hero-stats">
           <div class="stat"><Icon name="cap" size={20} /><div><strong>Career Guidance</strong><span>For students &amp; freshers</span></div></div>
           <div class="stat"><Icon name="landmark" size={20} /><div><strong>Government Jobs</strong><span>Loksewa, NTC, RBB &amp; more</span></div></div>
           <div class="stat"><Icon name="terminal" size={20} /><div><strong>Practical IT Skills</strong><span>Linux, DevOps, Server, etc.</span></div></div>
         </div>
-      </div>
-
-      <div class="hero-illu">
-        <svg viewBox="0 0 520 480" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- sky glow -->
-          <circle cx="420" cy="70" r="120" fill="#22D3EE" opacity="0.12" />
-          <!-- mountains -->
-          <path d="M-10 300 L90 170 L160 250 L230 140 L320 300 Z" fill="#1E293B" />
-          <path d="M120 300 L230 190 L300 260 L400 150 L530 300 Z" fill="#152033" />
-          <!-- pagoda silhouettes -->
-          <path d="M70 250 l14 -18 l14 18 z" fill="#22D3EE" opacity="0.7" />
-          <rect x="78" y="250" width="12" height="16" fill="#22D3EE" opacity="0.7" />
-          <path d="M370 240 l16 -20 l16 20 z" fill="#22D3EE" opacity="0.55" />
-          <rect x="379" y="240" width="14" height="18" fill="#22D3EE" opacity="0.55" />
-          <!-- ground -->
-          <ellipse cx="260" cy="440" rx="240" ry="26" fill="#0B1220" />
-          <path d="M-10 300 L530 300 L530 300 L530 440 L-10 440 Z" fill="#111827" />
-
-          <!-- signpost -->
-          <rect x="345" y="150" width="8" height="180" rx="3" fill="#94A3B8" />
-          <g font-family="Poppins, sans-serif" font-size="14" font-weight="700" fill="#0F172A">
-            <path d="M353 168 h84 l14 14 l-14 14 h-84 Z" fill="#06B6D4" />
-            <text x="393" y="187" text-anchor="middle" fill="#0F172A">Better Skills</text>
-
-            <path d="M353 202 h96 l14 14 l-14 14 h-96 Z" fill="#22D3EE" />
-            <text x="399" y="221" text-anchor="middle" fill="#0F172A">Government Jobs</text>
-
-            <path d="M353 236 h70 l14 14 l-14 14 h-70 Z" fill="#F59E0B" />
-            <text x="386" y="255" text-anchor="middle" fill="#0F172A">IT Career</text>
-
-            <path d="M353 270 h100 l14 14 l-14 14 h-100 Z" fill="#A78BFA" />
-            <text x="401" y="289" text-anchor="middle" fill="#0F172A">Brighter Future</text>
-          </g>
-
-          <!-- figure with backpack, viewed from behind -->
-          <g transform="translate(150,230)">
-            <ellipse cx="30" cy="185" rx="46" ry="8" fill="#000" opacity="0.25" />
-            <circle cx="30" cy="20" r="17" fill="#F8C9A0" />
-            <path d="M8 36 q22 -14 44 0 l6 70 q-28 14 -56 0 Z" fill="#0E7490" />
-            <rect x="6" y="44" width="48" height="58" rx="10" fill="#0891B2" />
-            <rect x="14" y="52" width="32" height="4" fill="#67E8F9" opacity="0.7" />
-            <rect x="14" y="62" width="32" height="4" fill="#67E8F9" opacity="0.5" />
-            <path d="M18 104 l-10 66 h12 l12 -60 Z" fill="#1E293B" />
-            <path d="M42 104 l10 66 h-12 l-12 -60 Z" fill="#1E293B" />
-          </g>
-        </svg>
-      </div>
-    </div>
-  </section>
-
-  <!-- START HERE -->
-  <section class="start-here">
-    <div class="container">
-      <h2 class="section-title">Start Here – What Are You Looking For?</h2>
-      <p class="section-sub">Choose a category to find the most relevant guides, resources and articles.</p>
-      <div class="start-grid">
-        {startHere.map((item, i) => (
-          <a href={item.href} class={`start-card start-card-${i}`}>
-            <span class="start-icon"><Icon name={item.icon} size={26} /></span>
-            <h3>{item.title}</h3>
-            <p>{item.desc}</p>
-            <span class="start-link">{item.cta} <Icon name="arrow-right" size={14} /></span>
-          </a>
-        ))}
       </div>
     </div>
   </section>
@@ -162,40 +54,8 @@ const values = [
     </section>
   )}
 
-  <!-- WHY BEROJGAR ENGINEER -->
-  <section class="why">
-    <div class="container why-inner">
-      <div class="why-copy">
-        <h2 class="section-title">Why Berojgar Engineer?</h2>
-        <p>
-          I'm a Computer Engineering graduate from Nepal. This site documents what I have learned,
-          tested and experienced while navigating the Nepali IT industry. My goal is to reduce the
-          information gap for engineering students and IT professionals in Nepal.
-        </p>
-        <a href={link('/about')} class="btn-outline">Read My Story</a>
-      </div>
-      <div class="why-grid">
-        {values.map((v) => (
-          <div class="why-item">
-            <span class="why-icon"><Icon name={v.icon} size={22} /></span>
-            <span>{v.label}</span>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
-  <!-- BROWSE BY TOPIC -->
-  <section class="browse">
-    <div class="container">
-      <h2 class="section-title">Browse by What Interests You</h2>
-      <p class="section-sub">Pick one or more topics — a post can belong to more than one, so mix and match.</p>
-      <CategoryFilter posts={allPosts} cap={6} id="home-topic-filter" />
-    </div>
-  </section>
-
   <!-- LATEST ARTICLES (auto) -->
-  <section class="latest" id="latest">
+  <section class="latest">
     <div class="container">
       <div class="section-head">
         <h2 class="section-title">Latest Articles</h2>
@@ -207,82 +67,44 @@ const values = [
     </div>
   </section>
 
-  <FaqSection />
   <EmailSignup />
 </Base>
 
 <style>
-  .hero { background: var(--c-hero-bg); color: var(--c-hero-text); padding: 64px 0 56px; position: relative; overflow: hidden; }
-  .hero::before { content: ''; position: absolute; top: -140px; right: -140px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(6,182,212,0.22), transparent 70%); }
-  .hero-inner { display: grid; grid-template-columns: 1.05fr 1fr; gap: 44px; align-items: center; position: relative; }
+  .hero { background: var(--c-hero-bg); color: var(--c-hero-text); padding: 72px 0; position: relative; overflow: hidden; }
+  .hero::before { content: ''; position: absolute; top: -140px; right: -140px; width: 380px; height: 380px; border-radius: 50%; background: radial-gradient(circle, rgba(156,181,107,0.16), transparent 70%); }
+  .hero-inner { position: relative; }
+  .hero-text { max-width: 680px; }
   .hero h1 { font-size: 42px; line-height: 1.15; color: var(--c-hero-accent); font-weight: 800; margin-bottom: 20px; }
   .hero p { font-size: 16.5px; line-height: 1.75; color: #cbd5e1; max-width: 600px; }
   .hero-cta { margin-top: 26px; display: flex; gap: 14px; flex-wrap: wrap; }
-  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: var(--c-primary); color: #0F172A; border-radius: 999px; font-weight: 700; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; box-shadow: 0 4px 14px rgba(6, 182, 212, 0.35); }
-  .btn-primary:hover { background: var(--c-hero-accent); transform: translateY(-1px); }
-  .btn-ghost { display: inline-flex; align-items: center; padding: 13px 26px; border: 2px solid rgba(255,255,255,0.28); color: #fff; border-radius: 999px; font-weight: 700; text-decoration: none; transition: border-color 0.2s ease, background 0.2s ease; }
-  .btn-ghost:hover { border-color: var(--c-primary); background: rgba(6, 182, 212, 0.12); }
+  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: var(--c-primary); color: #fff; border-radius: 999px; font-weight: 700; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; box-shadow: 0 4px 14px rgba(75, 83, 32, 0.35); }
+  .btn-primary:hover { background: var(--c-hero-accent); color: #1F2415; transform: translateY(-1px); }
   .hero-stats { display: flex; gap: 26px; margin-top: 36px; flex-wrap: wrap; }
   .stat { display: flex; align-items: center; gap: 10px; color: #e2e8f0; }
-  .stat :global(svg) { color: var(--c-primary); flex-shrink: 0; }
+  .stat :global(svg) { color: var(--c-hero-accent); flex-shrink: 0; }
   .stat strong { display: block; font-size: 13.5px; }
   .stat span { display: block; font-size: 12px; color: #94a3b8; }
-  .hero-illu svg { width: 100%; height: auto; max-width: 520px; margin-left: auto; }
 
   .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
   .section-title { font-size: 30px; font-weight: 800; color: var(--c-text); margin: 0 0 6px; }
-  .section-sub { color: var(--c-muted); margin: 0 0 28px; font-size: 15px; }
   .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 10px; }
   .section-head .section-title { margin: 0; }
   .view-all { display: inline-flex; align-items: center; gap: 6px; color: var(--c-primary-dark); font-weight: 700; font-size: 14px; text-decoration: none; }
   .view-all:hover { text-decoration: underline; }
 
-  /* Start Here */
-  .start-here { padding: 56px 0 8px; }
-  .start-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
-  .start-card { border-radius: 14px; padding: 26px; text-decoration: none; color: var(--c-text); border: 1px solid var(--c-border); transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; }
-  .start-card:hover { transform: translateY(-4px); box-shadow: 0 12px 28px rgba(15,23,42,0.1); }
-  .start-card-0 { background: var(--c-cat-it-education-bg); }
-  .start-card-1 { background: var(--c-cat-it-careers-bg); }
-  .start-card-2 { background: var(--c-cat-loksewa-bg); }
-  .start-card-3 { background: var(--c-cat-devops-bg); }
-  .start-icon { width: 44px; height: 44px; border-radius: 10px; background: rgba(255,255,255,0.7); display: flex; align-items: center; justify-content: center; margin-bottom: 14px; color: var(--c-primary-dark); }
-  .start-card h3 { font-size: 17px; margin: 0 0 8px; }
-  .start-card p { font-size: 13.5px; color: var(--c-muted); margin: 0 0 16px; flex: 1; }
-  .start-link { font-size: 13px; font-weight: 700; color: var(--c-primary-dark); display: inline-flex; align-items: center; gap: 6px; }
-
   /* Featured / Latest grids */
   .featured, .latest { padding: 56px 0; }
   .post-grid.three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
 
-  /* Why */
-  .why { padding: 56px 0; background: #fafafa; }
-  .why-inner { display: grid; grid-template-columns: 1fr 1.1fr; gap: 40px; align-items: center; }
-  .why-copy p { color: var(--c-muted); line-height: 1.75; margin: 0 0 22px; }
-  .btn-outline { display: inline-flex; padding: 11px 26px; border: 2px solid var(--c-primary); color: var(--c-primary-dark); border-radius: 999px; font-weight: 700; text-decoration: none; transition: background 0.2s ease, color 0.2s ease; }
-  .btn-outline:hover { background: var(--c-primary); color: #0F172A; }
-  .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
-  .why-item { display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; font-size: 13px; font-weight: 600; color: var(--c-text); }
-  .why-icon { width: 52px; height: 52px; border-radius: 50%; background: var(--c-primary-light); color: var(--c-primary-dark); display: flex; align-items: center; justify-content: center; }
-
-  /* Browse by topic */
-  .browse { padding: 56px 0; }
-
   @media (max-width: 1024px) {
     .hero h1 { font-size: 34px; }
-    .start-grid { grid-template-columns: repeat(2, 1fr); }
     .post-grid.three { grid-template-columns: repeat(2, 1fr); }
-    .why-inner { grid-template-columns: 1fr; }
-    .why-grid { grid-template-columns: repeat(5, 1fr); }
   }
   @media (max-width: 768px) {
-    .hero-inner { grid-template-columns: 1fr; gap: 32px; }
-    .hero-illu { order: -1; max-width: 380px; margin: 0 auto; }
     .hero h1 { font-size: 28px; }
   }
   @media (max-width: 640px) {
-    .start-grid { grid-template-columns: 1fr; }
     .post-grid.three { grid-template-columns: 1fr; }
-    .why-grid { grid-template-columns: repeat(3, 1fr); }
   }
 </style>

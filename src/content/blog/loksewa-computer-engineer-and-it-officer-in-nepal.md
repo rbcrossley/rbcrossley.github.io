@@ -177,7 +177,7 @@ These appear fewer in between but are of higher priority.
 - Advanced DBMS (Replication, Indexing, Query Optimization)
 - Project Management (PERT, CPM, Monitoring)
 - VHDL, Embedded Systems, PID Controller
-- Theory of Computation (TOC – DFA, PDA, TM, NP)
+- Theory of Computation (TOC - DFA, PDA, TM, NP)
 - Compiler Design
 - Computer Graphics
 - Electrical / Electronics Fundamentals

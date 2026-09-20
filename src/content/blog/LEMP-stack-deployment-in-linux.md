@@ -276,10 +276,10 @@ Now open `http://your-server-ip/wordpress` in the browser. WordPress detects tha
 
 The wizard asks for four things:
 
-1. **Database name** — `wordpress`
-2. **Username** — `blog`
-3. **Password** — `b10g`
-4. **Database host** — `localhost`
+1. **Database name**: `wordpress`
+2. **Username**: `blog`
+3. **Password**: `b10g`
+4. **Database host**: `localhost`
 
 WordPress writes these into `wp-config.php` and then asks for your site title and an administrator account. Choose a real password for the admin account even in a lab; installs get found by scanners faster than you would expect.
 
@@ -291,15 +291,15 @@ Once the install completes, your site is at `http://your-server-ip/wordpress` an
 
 The four failures I see most often, and what each one actually means:
 
-**502 Bad Gateway** — NGINX reached the PHP-FPM socket and got nothing back. Either PHP-FPM is stopped (`systemctl status php-fpm`) or the socket path in `fastcgi_pass` does not match the one PHP-FPM is listening on.
+**502 Bad Gateway**: NGINX reached the PHP-FPM socket and got nothing back. Either PHP-FPM is stopped (`systemctl status php-fpm`) or the socket path in `fastcgi_pass` does not match the one PHP-FPM is listening on.
 
-**PHP code shown as plain text** — the `location ~ \.php$` block is not matching. Check for a typo, and confirm the file is inside the server block you think it is.
+**PHP code shown as plain text**: the `location ~ \.php$` block is not matching. Check for a typo, and confirm the file is inside the server block you think it is.
 
-**403 Forbidden** — a permissions or SELinux issue. Check ownership is `nginx:nginx`, then check `ausearch -m avc -ts recent` for SELinux denials.
+**403 Forbidden**: a permissions or SELinux issue. Check ownership is `nginx:nginx`, then check `ausearch -m avc -ts recent` for SELinux denials.
 
-**White screen, nothing in the NGINX log** — this is the signature of a firewall or SELinux block. If the request never reaches NGINX, NGINX cannot log it. Test from the server itself with `curl localhost` to confirm the stack works, then work outward.
+**White screen, nothing in the NGINX log**: this is the signature of a firewall or SELinux block. If the request never reaches NGINX, NGINX cannot log it. Test from the server itself with `curl localhost` to confirm the stack works, then work outward.
 
-**"Error establishing a database connection"** — the credentials in `wp-config.php` do not match what MySQL has, or MySQL is not running. Verify by connecting manually: `mysql -u blog -p wordpress`.
+**"Error establishing a database connection"**: the credentials in `wp-config.php` do not match what MySQL has, or MySQL is not running. Verify by connecting manually: `mysql -u blog -p wordpress`.
 
 # Frequently asked questions
 

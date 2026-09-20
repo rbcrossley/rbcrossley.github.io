@@ -10,7 +10,7 @@ categories: ["loksewa", "devops"]
 
 If you are preparing for Loksewa, you already know the problem. The notice you needed was published on a Sunday, you opened the site on Wednesday, and by then half the application window is gone. Refreshing psc.gov.np five times a day is not a strategy.
 
-So instead of checking the site, let the site check itself and mail you when something changes. This post sets up a self-hosted [changedetection.io](https://changedetection.io) instance on Rocky Linux 10, points it at the three PSC pages that actually matter, and tunes the filters so you only get pinged for real notices — not for every visitor counter and rotating banner on the page.
+So instead of checking the site, let the site check itself and mail you when something changes. This post sets up a self-hosted [changedetection.io](https://changedetection.io) instance on Rocky Linux 10, points it at the three PSC pages that actually matter, and tunes the filters so you only get pinged for real notices - not for every visitor counter and rotating banner on the page.
 
 ## 1. Prep the system
 
@@ -35,7 +35,7 @@ sudo curl -fsSL -o /etc/yum.repos.d/docker-ce.repo \
   https://download.docker.com/linux/rhel/docker-ce.repo
 ```
 
-Note the `/rhel/` path. A lot of guides still tell you to use the CentOS repo — that was a workaround from when Docker v28 had no RHEL 10 repository, and it's no longer needed.
+Note the `/rhel/` path. A lot of guides still tell you to use the CentOS repo - that was a workaround from when Docker v28 had no RHEL 10 repository, and it's no longer needed.
 
 ```bash
 sudo dnf -y install docker-ce docker-ce-cli containerd.io \
@@ -108,7 +108,7 @@ EOF
 
 Three deliberate choices in there:
 
-- **sockpuppetbrowser has no published ports.** Plenty of example compose files map `3000` or `5041` to the host. It doesn't need to be — changedetection reaches it over the internal compose network by hostname. Exposing a remote-controllable Chrome on your LAN is a bad idea.
+- **sockpuppetbrowser has no published ports.** Plenty of example compose files map `3000` or `5041` to the host. It doesn't need to be - changedetection reaches it over the internal compose network by hostname. Exposing a remote-controllable Chrome on your LAN is a bad idea.
 - **`cap_add: SYS_ADMIN`** is required for Chrome's sandbox to work.
 - **`BASE_URL`** is what gets embedded in notification links. Get it wrong and your alert emails will point at `localhost`.
 
@@ -122,7 +122,7 @@ docker compose logs -f changedetection
 
 ## 5. Turn the Chrome fetcher on
 
-This is the step that trips up almost everyone, and it's why you'll find threads full of people whose Playwright setup "doesn't work." Setting `PLAYWRIGHT_DRIVER_URL` only makes the fetcher *available* — it doesn't make it the default.
+This is the step that trips up almost everyone, and it's why you'll find threads full of people whose Playwright setup "doesn't work." Setting `PLAYWRIGHT_DRIVER_URL` only makes the fetcher *available* - it doesn't make it the default.
 
 Open `http://<LAN-IP>:5000`, then:
 
@@ -131,7 +131,7 @@ Open `http://<LAN-IP>:5000`, then:
 
 ## 6. The three PSC pages worth watching
 
-Lok Sewa Aayog publishes different things on different category pages, and the one most people bookmark (the homepage) is the noisiest of the lot. For Computer Engineer and IT Officer aspirants applying through the **sangathit** (organised institutions — banks, NEA, NTC, and similar corporations) route, these three are the ones that matter:
+Lok Sewa Aayog publishes different things on different category pages, and the one most people bookmark (the homepage) is the noisiest of the lot. For Computer Engineer and IT Officer aspirants applying through the **sangathit** (organised institutions - banks, NEA, NTC, and similar corporations) route, these three are the ones that matter:
 
 | What you get | URL |
 |---|---|
@@ -141,17 +141,17 @@ Lok Sewa Aayog publishes different things on different category pages, and the o
 
 Add each one separately. From the changedetection dashboard, paste the URL into the **Add a new change detection watch** box and hit **Watch**. Do it three times, once per URL.
 
-Give each watch a sensible title and tag while you're at it — open the watch, go to the **General** tab, and set:
+Give each watch a sensible title and tag while you're at it - open the watch, go to the **General** tab, and set:
 
-- **Title**: `PSC — Sangathit Vacancies` (and so on for the other two)
-- **Group / tag**: `loksewa` — later you can filter the dashboard by this tag and, more usefully, attach one notification setting to the whole group instead of repeating it three times
+- **Title**: `PSC - Sangathit Vacancies` (and so on for the other two)
+- **Group / tag**: `loksewa` - later you can filter the dashboard by this tag and, more usefully, attach one notification setting to the whole group instead of repeating it three times
 - **Recheck time**: every **3 hours** is plenty. PSC publishes during office hours, and hammering a government site every 60 seconds is both rude and a good way to get your IP throttled.
 
 While you're in the watch settings, confirm the **Request** tab is using the Chrome/Playwright fetcher. These pages render their notice tables through the theme's JavaScript, and the plain HTTP fetcher gives you an inconsistent snapshot.
 
 ## 7. Filters: the one XPath that makes this usable
 
-Here is what happens if you watch those URLs raw: you get a notification almost every single check. Not because a new notice was published, but because the page footer has a visitor counter, the sidebar has a rotating notice widget, and the nav has a Nepali date that changes daily. Signal drowns in noise, and within a week you start ignoring the mails — which defeats the entire purpose.
+Here is what happens if you watch those URLs raw: you get a notification almost every single check. Not because a new notice was published, but because the page footer has a visitor counter, the sidebar has a rotating notice widget, and the nav has a Nepali date that changes daily. Signal drowns in noise, and within a week you start ignoring the mails - which defeats the entire purpose.
 
 The fix is to tell changedetection to look at *only* the notice table. Open the watch → **Filters & Triggers** tab → the **CSS/JSONPath/JQ/XPath Filters** box, and put in:
 
@@ -161,17 +161,17 @@ The fix is to tell changedetection to look at *only* the notice table. Open the 
 
 Read it left to right:
 
-- `//table` — find the table anywhere in the document, no matter how deeply the theme nests it in divs. This is why XPath beats a brittle CSS selector like `div.content > div.row > table` here; if PSC reshuffles its layout, `//table` survives it.
-- `//tbody/tr` — take the body rows only. The `<thead>` row is skipped, so a header re-render never counts as a change.
-- `[position() <= 10]` — and keep only the **first ten** rows.
+- `//table`: find the table anywhere in the document, no matter how deeply the theme nests it in divs. This is why XPath beats a brittle CSS selector like `div.content > div.row > table` here; if PSC reshuffles its layout, `//table` survives it.
+- `//tbody/tr`: take the body rows only. The `<thead>` row is skipped, so a header re-render never counts as a change.
+- `[position() <= 10]`: and keep only the **first ten** rows.
 
 That last bracket is the important part, and it's doing two jobs.
 
-First, **it kills pagination noise.** These category pages list dozens of old notices. Every time PSC adds one entry at the top, every row below shifts down a position, and an unfiltered diff reports the whole table as changed. By pinning the window to the top ten, a new notice pushes exactly one row off the bottom and the diff stays small and readable — you can see the actual new notice in the mail body instead of a wall of red and green.
+First, **it kills pagination noise.** These category pages list dozens of old notices. Every time PSC adds one entry at the top, every row below shifts down a position, and an unfiltered diff reports the whole table as changed. By pinning the window to the top ten, a new notice pushes exactly one row off the bottom and the diff stays small and readable - you can see the actual new notice in the mail body instead of a wall of red and green.
 
 Second, **it keeps you looking at the newest entries only.** PSC sorts newest first. Anything older than the top ten is not something you need an alert about; you either already applied or the deadline is gone.
 
-Ten is a starting point, not a law. If a heavy publishing week means several notices land between two checks, bump it to `position() <= 15`. If you want to be alerted only for the single newest item, `position() = 1` works too — just be aware that if two notices land inside one recheck interval, you'll only ever see the later one.
+Ten is a starting point, not a law. If a heavy publishing week means several notices land between two checks, bump it to `position() <= 15`. If you want to be alerted only for the single newest item, `position() = 1` works too - just be aware that if two notices land inside one recheck interval, you'll only ever see the later one.
 
 Apply the same filter to all three watches. The vacancies, examinations, and results pages share the same table layout, so the same XPath works unchanged on all of them.
 
@@ -186,7 +186,7 @@ changedetection uses [Apprise](https://github.com/caronc/apprise) URLs, so the f
 tgram://<bot-token>/<chat-id>
 discord://<webhook_id>/<webhook_token>
 ```
-Telegram is honestly the better choice here — mail from a self-hosted box tends to land in spam, and a Telegram ping actually reaches your phone.
+Telegram is honestly the better choice here - mail from a self-hosted box tends to land in spam, and a Telegram ping actually reaches your phone.
 
 Set Notification Body.
 
@@ -198,7 +198,7 @@ Set Notification Body.
 {{diff}}
 ```
 
-`{{diff}}` inlines the added and removed lines, which — thanks to the `position() <= 10` filter — is usually just the one new row. That means you can read the notice title straight off your phone's lock screen and decide whether to open the laptop.
+`{{diff}}` inlines the added and removed lines, which - thanks to the `position() <= 10` filter - is usually just the one new row. That means you can read the notice title straight off your phone's lock screen and decide whether to open the laptop.
 
 Use **Send test notification** before you walk away. A silent notification pipeline is worse than no pipeline, because you'll assume no mail means no vacancy.
 

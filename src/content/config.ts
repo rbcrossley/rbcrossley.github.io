@@ -49,15 +49,15 @@ const blog = defineCollection({
     date: z.coerce.date(),
     image: z.string().optional(),
     author: z.string().default('raju'),
-    // Machine-readable topic tags. These never render on the page — they feed
+    // Machine-readable topic tags. These never render on the page - they feed
     // the BlogPosting structured data and the article:tag meta tags so that
     // search engines can see what a post is about. Keep them accurate and
-    // few (5–8); tags that do not describe the post are spam, not SEO.
+    // few (5-8); tags that do not describe the post are spam, not SEO.
     tags: z.array(z.string()).default([]),
     // Reader-facing category chips (see src/config/categories.ts). Different
     // from `tags` above: these DO render on the page (cards, filters) and are
     // a small fixed taxonomy, not free-form SEO keywords. A post may carry
-    // more than one — e.g. ["linux", "devops"].
+    // more than one - e.g. ["linux", "devops"].
     categories: z
       .array(z.enum(['linux', 'devops', 'it-careers', 'it-education', 'loksewa']))
       .default([]),

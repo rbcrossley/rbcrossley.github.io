@@ -1,35 +1,6 @@
 ---
 import { link } from '../lib/link';
 import Icon from './Icon.astro';
-
-// Role-based "Start Here" mega-menu. Each entry routes to /blog pre-filtered
-// by one or more categories (see src/config/categories.ts) via ?category=.
-const startHere = [
-  {
-    title: "I'm a Student",
-    desc: 'Career guidance and skills to learn',
-    icon: 'cap' as const,
-    href: link('/blog?category=it-education'),
-  },
-  {
-    title: "I'm Looking for an IT Job",
-    desc: 'Fresher tips, roles, interview prep',
-    icon: 'briefcase' as const,
-    href: link('/blog?category=it-careers'),
-  },
-  {
-    title: "I'm Preparing for Government IT Jobs",
-    desc: 'Loksewa, NTC, RBB and other exams',
-    icon: 'landmark' as const,
-    href: link('/blog?category=loksewa'),
-  },
-  {
-    title: 'I Want to Learn IT Skills',
-    desc: 'Linux, DevOps, servers, command line',
-    icon: 'terminal' as const,
-    href: link('/blog?category=linux,devops'),
-  },
-];
 ---
 
 <header class="site-header">
@@ -40,24 +11,6 @@ const startHere = [
 
     <nav class="main-nav" id="mainNav">
       <a href={link('/')} class="nav-link">Home</a>
-
-      <div class="nav-dropdown">
-        <button type="button" class="nav-link nav-dropdown-trigger">
-          Start Here <span class="caret"><Icon name="chevron-down" size={13} /></span>
-        </button>
-        <div class="dropdown-panel mega-panel">
-          {startHere.map((item) => (
-            <a href={item.href} class="mega-item">
-              <span class="mega-icon"><Icon name={item.icon} size={18} /></span>
-              <span>
-                <span class="mega-title">{item.title}</span>
-                <span class="mega-desc">{item.desc}</span>
-              </span>
-            </a>
-          ))}
-        </div>
-      </div>
-
       <a href={link('/blog')} class="nav-link">Blog</a>
       <a href={link('/about')} class="nav-link">About Us</a>
       <a href={link('/contact')} class="nav-link">Contact us</a>
@@ -82,7 +35,7 @@ const startHere = [
     </div>
     <div id="search"></div>
     <p class="search-fallback" id="searchFallback" hidden>
-      Search isn't available in the dev server — it's built by Pagefind during
+      Search isn't available in the dev server - it's built by Pagefind during
       <code>npm run build</code>. Run <code>npm run build &amp;&amp; npm run preview</code> to try it locally, or just check the live site.
     </p>
   </div>
@@ -97,18 +50,6 @@ const startHere = [
   .nav-link { color: #1E293B; font-weight: 600; font-size: 16px; text-decoration: none; padding: 6px 2px; transition: color 0.2s ease; position: relative; background: none; border: none; font-family: inherit; cursor: pointer; display: inline-flex; align-items: center; }
   .nav-link:hover { color: var(--c-primary-dark); }
   .nav-link.active { color: var(--c-primary-dark); }
-  .caret { display: inline-flex; margin-left: 4px; }
-  .nav-dropdown { position: relative; }
-  .nav-dropdown:hover .dropdown-panel,
-  .nav-dropdown:focus-within .dropdown-panel { opacity: 1; visibility: visible; transform: translate(-50%, 0); }
-  .dropdown-panel { position: absolute; top: 100%; left: 50%; transform: translate(-50%, 8px); background: #fff; border-radius: 12px; box-shadow: 0 16px 40px rgba(15, 23, 42, 0.16); padding: 10px; opacity: 0; visibility: hidden; transition: opacity 0.18s ease, transform 0.18s ease; z-index: 60; }
-  .mega-panel { min-width: 420px; display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
-  .mega-item { display: flex; align-items: flex-start; gap: 12px; padding: 12px; border-radius: 8px; text-decoration: none; color: var(--c-text); }
-  .mega-item:hover { background: var(--c-primary-light); }
-  .mega-icon { flex-shrink: 0; width: 34px; height: 34px; border-radius: 8px; background: var(--c-primary-light); color: var(--c-primary-dark); display: flex; align-items: center; justify-content: center; }
-  .mega-item:hover .mega-icon { background: #fff; }
-  .mega-title { display: block; font-weight: 700; font-size: 13.5px; line-height: 1.3; }
-  .mega-desc { display: block; font-size: 12px; color: var(--c-muted); margin-top: 2px; line-height: 1.4; }
 
   .header-actions { display: flex; align-items: center; gap: 10px; }
   .icon-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 999px; border: none; background: transparent; color: var(--c-text); cursor: pointer; transition: background 0.15s ease; }
@@ -128,9 +69,6 @@ const startHere = [
     .main-nav { position: absolute; top: 100%; left: 0; right: 0; background: var(--c-primary-light); flex-direction: column; align-items: stretch; gap: 0; padding: 12px 24px 24px; display: none; border-top: 1px solid var(--c-border); }
     .main-nav.open { display: flex; }
     .nav-link { width: 100%; padding: 12px 0; border-bottom: 1px solid var(--c-border); justify-content: space-between; }
-    .nav-dropdown { width: 100%; }
-    .dropdown-panel { position: static; transform: none; box-shadow: none; opacity: 1; visibility: visible; background: transparent; padding: 0; }
-    .mega-panel { grid-template-columns: 1fr; min-width: 0; }
     .mobile-toggle { display: inline-flex; }
   }
   @media (max-width: 540px) {

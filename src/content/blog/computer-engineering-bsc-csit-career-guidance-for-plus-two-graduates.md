@@ -22,7 +22,7 @@ Enough of chattering! Let's get into the core fast.
 
 # Is Computer Engineering worth it in Nepal?
 
-Usually, computer engineering is an expensive course. Likewise, plus two students seem to be informed (or should I say misinformed?). I will explain it soon—keep reading—that engineering is a rigorous course. That is why students seem to be concerned if a computer engineering degree is worth it in Nepal.
+Usually, computer engineering is an expensive course. Likewise, plus two students seem to be informed (or should I say misinformed?). I will explain it soon - keep reading - that engineering is a rigorous course. That is why students seem to be concerned if a computer engineering degree is worth it in Nepal.
 
 Looking for a return on investment is absolutely rational. It really does not matter whether you are from a middle-class family or from an ultra-rich family. The money that will be spent on your education in college, you, and your parents could have spent it elsewhere. For example: Maybe you would have gotten to travel more, spend more on your motorcycle, spend more on textbooks, spend more on personal development courses, and so on.
 

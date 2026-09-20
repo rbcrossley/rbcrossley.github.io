@@ -1,25 +1,26 @@
 // =============================================================================
 // Theme Configuration
 // Edit these colors to customize the look of your site. This is the ONLY file
-// you need to touch to reskin the whole site — every component reads its
+// you need to touch to reskin the whole site - every component reads its
 // colors from here (via CSS variables injected in src/layouts/Base.astro).
 // After changing colors, restart the dev server (sudo supervisorctl restart frontend)
 // =============================================================================
 
 export default {
   colors: {
-    // Primary accent color (used for headings, active links, buttons)
-    primary: '#06B6D4',         // electric cyan
-    primaryDark: '#0E7490',     // darker cyan for hover
-    primaryLight: '#ECFEFF',    // very light cyan for header background / sidebar headers
+    // Primary accent color - army green, the site's identity color (used for
+    // headings, active links, buttons, logo, and the sidebar/hero accents).
+    primary: '#4B5320',         // army green
+    primaryDark: '#333D16',     // deep olive for hover / on-light text
+    primaryLight: '#EEF1E4',    // pale sage tint for header background / sidebar headers
 
     // Logo badge
-    logo: '#0F172A',            // deep navy
+    logo: '#4B5320',            // army green
 
     // Hero section
-    heroBg: '#0F172A',          // deep navy background of hero
+    heroBg: '#1F2415',          // near-black olive background of hero
     heroText: '#FFFFFF',
-    heroAccent: '#22D3EE',      // bright cyan heading color in hero
+    heroAccent: '#9CB56B',      // lighter sage-green heading color in hero
 
     // Body / general
     bg: '#FFFFFF',
@@ -28,26 +29,26 @@ export default {
 
     // Cards
     cardBg: '#FFFFFF',
-    cardBorder: '#E2E8F0',
-    cardHover: '#ECFEFF',
+    cardBorder: '#E2E7D8',
+    cardHover: '#F1F4EC',
 
     // Sidebar
-    sidebarSection: '#CFFAFE',  // category header bg
-    sidebarActive: '#06B6D4',   // active item bg
+    sidebarSection: '#E9EEDF',  // category header bg
+    sidebarActive: '#4B5320',   // active item bg
     sidebarText: '#1E293B',
 
     // Footer
-    footerBg: '#0F172A',
+    footerBg: '#1B1F12',
     footerText: '#E5E7EB',
 
     // Borders / dividers
-    border: '#E2E8F0',
+    border: '#E2E7D8',
 
-    // Secondary accent — used sparingly for warm CTAs (e.g. the subscribe button)
+    // Secondary accent - used sparingly for warm CTAs (e.g. the subscribe button)
     accentWarm: '#F59E0B',
 
     // -------------------------------------------------------------------------
-    // Category chip colors — one pastel per reader-facing category (see
+    // Category chip colors - one pastel per reader-facing category (see
     // src/config/categories.ts). Keyed by category id. Each entry needs a light
     // `bg`, a readable `text`, and a saturated `chip` used for dots/active states.
     // -------------------------------------------------------------------------

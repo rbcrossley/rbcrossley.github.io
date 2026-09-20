@@ -72,7 +72,7 @@ Apply the configuration:
 gitlab-ctl reconfigure
 ```
 
-GitLab runs on port 80 by default, so visit `http://GITLAB_SERVER_IP:80`. Make sure the firewall allows port 80 — for this lab, I simply disabled the firewall:
+GitLab runs on port 80 by default, so visit `http://GITLAB_SERVER_IP:80`. Make sure the firewall allows port 80 - for this lab, I simply disabled the firewall:
 
 ```bash
 systemctl disable --now firewalld

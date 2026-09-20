@@ -1,5 +1,5 @@
 // =============================================================================
-// Author Configuration — SINGLE SOURCE OF TRUTH
+// Author Configuration - SINGLE SOURCE OF TRUTH
 // -----------------------------------------------------------------------------
 // Edit your name, role, bio and links HERE and nowhere else. This file feeds:
 //
@@ -8,7 +8,7 @@
 //   • the byline on every post     (src/pages/blog/[slug].astro)
 //
 // You never need to type your name into a markdown post again. Posts may keep
-// `author: BerojgarEngineer`, `author: cst`, or omit the field entirely — all of
+// `author: BerojgarEngineer`, `author: cst`, or omit the field entirely - all of
 // those resolve to the default author below via the `aliases` list.
 //
 // To add a guest author later: add a second entry to `authors`, give it a key,
@@ -39,7 +39,7 @@ export interface Author {
    *  Leave empty ('') to fall back to initials in a coloured circle. */
   avatar: string;
 
-  /** 1–2 sentences. Used in the bio box at the end of every post. */
+  /** 1-2 sentences. Used in the bio box at the end of every post. */
   bioShort: string;
   /** Full bio, one string per paragraph. Used on the About page. */
   bio: string[];
@@ -79,13 +79,13 @@ const raju: Author = {
     {
       heading: 'What I Work With',
       paragraphs: [
-        'My day-to-day work is on <strong>Linux servers and the command line</strong> — administering, troubleshooting and keeping production systems healthy. I also operate <strong>Kubernetes</strong> workloads, working with pods and deployments in containerised environments.',
+        'My day-to-day work is on <strong>Linux servers and the command line</strong> - administering, troubleshooting and keeping production systems healthy. I also operate <strong>Kubernetes</strong> workloads, working with pods and deployments in containerised environments.',
       ],
     },
     {
       heading: 'Why This Site Exists',
       paragraphs: [
-        'My vision is to be a highly rated resource for freshers seeking to enter the IT industry. My mission is to solve the information asymmetry problem prevalent in IT careers in Nepal — the honest guidance I wish someone had given me when I was starting out.',
+        'My vision is to be a highly rated resource for freshers seeking to enter the IT industry. My mission is to solve the information asymmetry problem prevalent in IT careers in Nepal - the honest guidance I wish someone had given me when I was starting out.',
       ],
     },
   ],
@@ -97,7 +97,7 @@ const raju: Author = {
 };
 
 // -----------------------------------------------------------------------------
-// Registry + resolver — you normally do not need to touch anything below.
+// Registry + resolver - you normally do not need to touch anything below.
 // -----------------------------------------------------------------------------
 
 export const authors: Record<string, Author> = {

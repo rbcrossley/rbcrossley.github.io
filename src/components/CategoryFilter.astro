@@ -1,11 +1,11 @@
 ---
 // =============================================================================
-// CategoryFilter — multi-select topic chips + a live-filtered post grid.
+// CategoryFilter - multi-select topic chips + a live-filtered post grid.
 // Used on the homepage ("Browse by what interests you") and on /blog.
 //
 // Categories are NOT mutually exclusive: a post can carry more than one, and
 // selecting more than one chip shows every post matching ANY selected chip
-// (an OR filter) — e.g. selecting "Linux" and "DevOps" shows posts tagged
+// (an OR filter) - e.g. selecting "Linux" and "DevOps" shows posts tagged
 // with either.
 //
 // Reads ?category=slug1,slug2 from the URL on load so a link like
@@ -48,7 +48,7 @@ const { posts, cap, id = 'topic-filter' } = Astro.props;
     ))}
   </div>
 
-  <p class="empty" hidden>No posts match that combination yet — try a different topic.</p>
+  <p class="empty" hidden>No posts match that combination yet - try a different topic.</p>
 
   {cap && posts.length > cap && (
     <div class="show-more-wrap">

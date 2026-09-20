@@ -1,15 +1,15 @@
 // =============================================================================
-// Content Categories — SINGLE SOURCE OF TRUTH
+// Content Categories - SINGLE SOURCE OF TRUTH
 // -----------------------------------------------------------------------------
 // Reader-facing topic categories. Shown as colored chips on post cards, and
 // used to power the "Browse by what interests you" filter on the homepage and
 // the /blog index.
 //
-// These are DIFFERENT from the `tags` field in blog post frontmatter — `tags`
+// These are DIFFERENT from the `tags` field in blog post frontmatter - `tags`
 // is machine-readable-only SEO metadata (schema.org / article:tag) and never
 // renders on the page. `categories` is the reader-visible taxonomy.
 //
-// A post can belong to more than one category — e.g. a GitLab/Jenkins post can
+// A post can belong to more than one category - e.g. a GitLab/Jenkins post can
 // be both "devops" and "linux" at once. Categories intersect; they are not
 // mutually-exclusive lanes.
 //
@@ -28,7 +28,7 @@ export interface Category {
   /** Used in tight spaces (chips, mobile). */
   shortLabel: string;
   description: string;
-  /** Icon name — see src/components/Icon.astro for the available set. */
+  /** Icon name - see src/components/Icon.astro for the available set. */
   icon: string;
 }
 
