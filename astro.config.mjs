@@ -24,11 +24,21 @@ import mdx from '@astrojs/mdx';
 const SITE = 'https://berojgarengineer.com';
 const BASE = '/';
 
+// -----------------------------------------------------------------------------
+// Redirects for retired/renamed post URLs. GitHub Pages can't do server-side
+// redirects, so Astro generates a static HTML page at the old path with a
+// <meta http-equiv="refresh"> (plus a fallback link) pointing at the new one.
+// -----------------------------------------------------------------------------
+const REDIRECTS = {
+  '/blog/most-important-interview-question-asked-in-it-jobs-in-kathmandu': '/blog/all-about-it-jobs-in-kathmandu-nepal',
+};
+
 export default defineConfig({
   site: SITE,
   base: BASE,
   output: 'static',
   trailingSlash: 'ignore',
+  redirects: REDIRECTS,
   build: {
     assets: 'assets',
   },
