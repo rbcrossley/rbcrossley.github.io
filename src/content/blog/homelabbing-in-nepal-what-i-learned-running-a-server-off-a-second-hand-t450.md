@@ -15,8 +15,6 @@ tags:
     server administration homelab Nepal DevOps Nepal
 draft: false
 ---
-# Homelabbing in Nepal: What I Learned Running a Server Off a Second-Hand T450
-
 If you've been in the Nepali IT/DevOps space for a while, you've probably thought about running your own homelab at some point. Cloud is expensive, AWS free tier runs out fast, and honestly - there's no better way to actually *learn* Kubernetes, Docker, or Linux server administration than breaking things on your own hardware.
 
 Here's my experience setting one up in Kathmandu, on a budget, with second-hand gear.
@@ -75,9 +73,9 @@ That said - even with the regret, the T450 has been a genuinely useful learning 
 
 If you're serious about DevOps, Kubernetes, Docker, or just understanding how servers actually work beyond following tutorials - yes, absolutely. But go in with realistic expectations for a developing-country setup:
 
-- **Budget hardware** will have compromises. Buy carefully, test before paying, and don't expect Hamrobazaar listings to be what they claim.
-- **Ethernet matters more than you'd think** for Proxmox - plan your physical setup around it, even if that just means keeping your server near your router.
-- **24x7 uptime isn't always worth it.** Run your lab when you're using it. Electricity costs are real here.
-- **Pick one genuinely useful project** to justify the setup. For me, that was changedetection.io monitoring government vacancy pages - something that solves a real problem I have, not just a tech demo.
+* **Budget hardware** will have compromises. Buy carefully, test before paying, and don't expect Hamrobazaar listings to be what they claim.
+* **Ethernet matters more than you'd think** for Proxmox - plan your physical setup around it, even if that just means keeping your server near your router.
+* **24x7 uptime isn't always worth it.** Run your lab when you're using it. Electricity costs are real here.
+* **Pick one genuinely useful project** to justify the setup. For me, that was changedetection.io monitoring government vacancy pages - something that solves a real problem I have, not just a tech demo.
 
 A homelab doesn't need to be expensive or always-on to be worth it. Mine cost 14,000 NPR, runs on a laptop with a broken screen, and gets turned off most of the day - and it still does something genuinely useful for my Loksewa prep every single week.
