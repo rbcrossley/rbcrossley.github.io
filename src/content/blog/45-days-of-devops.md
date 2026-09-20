@@ -1,9 +1,10 @@
 ---
-title: How to learn DevOps
+title: 45 days of DevOps
 description: Follow a support engineer’s honest 45-day DevOps learning journey and practical skill roadmap.
-date: 2026-05-16
+date: 2026-09-20
 author: cst
 image: /images/blog/45-days-of-devops.png
+draft: true
 ---
 
 Learning DevOps properly can take years. I am not claiming to learn DevOps in 45 days. 
@@ -30,9 +31,8 @@ I feel I am weak on:
 
 # Resources 
 
-I will be using resources on demand. Udemy courses will be my goto source until I start Sanjiv Karn's course. Mostly I will read Manning's publications on specific topics like Kubernetes and Terraform. 
+I will be using resources on demand. Udemy courses will be my goto source. Along with youtube and articles available online.
 
-# Curriculum
+I have picked two udemy courses. One is on LEMP on Rocky Linux 10 and another is about Jenkins CI/CD.
 
-This is the [curriculum](https://professionalitsolution.com/courses/devops-professional-training) that I will be following.
 
