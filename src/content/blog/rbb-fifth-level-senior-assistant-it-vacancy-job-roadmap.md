@@ -1,12 +1,14 @@
 ---
 title: Rastriya Banijya Bank 5th level Senior Assistant IT job full guidance
 description: A roadmap for the RBB 5th level Senior Assistant IT exam, covering vacancy details, syllabus, preparation strategy, subjects, and resources.
-date: 2026-07-03
+date: 2026-09-22
 author: BerojgarEngineer
 image: /images/blog/thumbnail-rbb.jpeg
 tags: ["Rastriya Banijya Bank", "RBB", "Senior Assistant IT", "RBB Level 5", "banking jobs in Nepal", "Loksewa", "Loksewa syllabus", "exam preparation", "vacancy notice", "bank IT jobs", "study plan", "government bank Nepal"]
 categories: ["loksewa"]
 ---
+
+
 A Master's degree is required for officer-level posts (6th level and onwards) only in government banks(except NRB) and selected finance companies.
 
 But for 5th-level posts, a Bachelor's degree suffices.
@@ -156,6 +158,8 @@ Candidates should be careful while attempting the MCQ section.
 
 # Exam date
 The exam date is not finalized yet. In the past, the pattern was that the exam happened within 3 months of the vacancy publication.
+
+**Update: The exam date has been finalized. It will occur in Kartik 14 and 15 at 2PM. The exam center will be published shortly after.**
 
 # Salary
 It is interesting and motivational to know about the salary for the position you are preparing for. The salary of a 5th-level IT assistant is not available from RBB itself in the public domain. But I have official data on the salary of a 6th-level RBB Officer. It is nearly 81,000 per month. This was before the 21% salary increment.
