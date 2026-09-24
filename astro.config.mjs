@@ -31,6 +31,7 @@ const BASE = '/';
 // -----------------------------------------------------------------------------
 const REDIRECTS = {
   '/blog/most-important-interview-question-asked-in-it-jobs-in-kathmandu': '/blog/all-about-it-jobs-in-kathmandu-nepal',
+  '/pyq-loksewa': '/blog/loksewa-computer-engineer-and-it-officer-in-nepal/',
 };
 
 export default defineConfig({
