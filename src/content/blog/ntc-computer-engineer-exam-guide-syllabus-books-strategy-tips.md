@@ -125,13 +125,9 @@ For getting all the past questions of loksewa computer engineer and IT officer(i
 https://berojgarengineer.com/blog/pyq-loksewa/
 
 # Books
-For GK: https://s.daraz.com.np/s.Z5LSb?cc
+For GK+Technical textbooks recommendations, visit the blog given below:
 
-For technical part: https://s.daraz.com.np/s.Z4Xio?cc
-
-For core subject textbooks recommendations, visit the blog given below:
-
-https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
+https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 
 
 # Roadmap

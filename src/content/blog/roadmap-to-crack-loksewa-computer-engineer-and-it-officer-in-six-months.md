@@ -95,25 +95,16 @@ For some of the core subjects,get these textbooks.
 
 - operating system concepts 
 
-https://s.daraz.com.np/s.Z4XYk?cc
 
 - database management systems
-
-https://s.daraz.com.np/s.Z4XXQ?cc
-
 If you can, get the database book by Conolly Begg as well. It is a terrific resource. But it is not sufficient on its own.
 
 - computer networking Kurose Ross
 
-https://s.daraz.com.np/s.Z4Xef?cc
-
 - software engineering sommerville
-
-https://s.daraz.com.np/s.Z4XUb?cc
 
 - COA
 
-https://s.daraz.com.np/s.Z4XTp?cc
 
 Reading books will take time. Keep that in mind. But believe me, it is absolutely worth it. Do you want to be a government officer who cannot read? I guess not.
 
@@ -160,11 +151,10 @@ old questions.
 And start solving them. You can take help from your notes or the internet while solving them. Your goal is to make proper materials for exam time and increase your chances of selection.
 
 # best books for first paper
-I have researched a lot on this. I have bought many GK books, IQ books, and first paper books of NTC. So, far the only book that I liked is GK King by Ashman Upadhayay. 
+I have researched a lot on this. I have bought many GK books, IQ books etc. I have listed the best books in this blog.
 
-The book's link is given below:
+https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 
-https://s.daraz.com.np/s.Z5LSb?cc
 
 # Daily study routine
 
