@@ -117,6 +117,11 @@ To check vacancies at sangh/nijamati
 
 [nijamati vacancies](https://psc.gov.np/category/notice-advertisement)
 
+The better solution is to automate this using changedetection software.
+
+https://berojgarengineer.com/blog/monitor-loksewa-vacancies/
+
+Read the blog above for how to achieve real time loksewa monitoring.
 
 ## Job titles
 Officer level positions' title that are open in these companies:
