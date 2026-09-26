@@ -39,7 +39,8 @@ export interface Author {
    *  Leave empty ('') to fall back to initials in a coloured circle. */
   avatar: string;
 
-  /** 1-2 sentences. Used in the bio box at the end of every post. */
+  /** 1-2 sentences. Used in the bio box at the end of every post, as the About
+   *  page's meta description, and in each post's structured data. */
   bioShort: string;
   /** Full bio, one string per paragraph. Used on the About page. */
   bio: string[];
@@ -67,11 +68,11 @@ const raju: Author = {
   avatar: '', // e.g. '/images/author/avatar.jpg' once you add the file to /public
 
   bioShort:
-    'IT Support Engineer in Nepal working with Linux and Kubernetes, ' +
-    'writing about Linux, DevOps and IT careers.',
+    'Raju Khadka is the pen name of an IT Support Engineer in Nepal who works with ' +
+    'Linux and Kubernetes and writes about Linux, DevOps and IT careers.',
 
   bio: [
-    'I am <strong>Raju Khadka</strong>, an IT Support Engineer in Nepal working with Linux and Kubernetes.',
+    'I write this site under the pen name <strong>Raju Khadka</strong>. I am an IT Support Engineer in Nepal working with Linux and Kubernetes.',
     'Much of what I learn along the way ends up on this site.',
   ],
 
