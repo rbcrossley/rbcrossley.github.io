@@ -6,6 +6,7 @@ import { getAuthor } from '../../config/author';
 import { link } from '../../lib/link';
 import theme from '../../../theme.config.js';
 import { isPublished } from '../../config/hidden-posts';
+import { getRelatedPosts } from '../../lib/related';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -18,23 +19,12 @@ const { post } = Astro.props;
 const { Content } = await post.render();
 
 // ---------------------------------------------------------------------------
-// Related Posts: the top 3 other published posts that share the most
-// frontmatter `tags` with this one (tags are otherwise SEO-only and never
-// rendered elsewhere - this is what they're for). Ties break by newest
-// first, and posts with zero shared tags still fill remaining slots so the
-// section always has content when there are enough other posts.
+// Related Posts: the 3 published posts whose actual content is most similar
+// to this one (TF-IDF over title, description, tags and body, plus a small
+// boost for shared categories). See src/lib/related.ts.
 // ---------------------------------------------------------------------------
-const currentTags = new Set(post.data.tags ?? []);
-const relatedPosts = (await getCollection('blog'))
-  .filter(isPublished)
-  .filter((p) => p.slug !== post.slug)
-  .map((p) => ({
-    post: p,
-    score: (p.data.tags ?? []).filter((t) => currentTags.has(t)).length,
-  }))
-  .sort((a, b) => b.score - a.score || +new Date(b.post.data.date) - +new Date(a.post.data.date))
-  .slice(0, 3)
-  .map((x) => x.post);
+const publishedPosts = (await getCollection('blog')).filter(isPublished);
+const relatedPosts = getRelatedPosts(post, publishedPosts, 3);
 
 // Resolve the frontmatter `author` value ("cst", "BerojgarEngineer", missing…)
 // to the real author defined in src/config/author.ts.

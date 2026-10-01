@@ -10,9 +10,16 @@ categories:
   - linux
   - devops
 tags:
-  - homelab homelabbing in Nepal Proxmox Proxmox VE ThinkPad T450 home server
-    Linux server Linux homelab DevOps homelab Docker Kubernetes self-hosting
-    server administration homelab Nepal DevOps Nepal
+  - homelab
+  - homelabbing in Nepal
+  - Proxmox VE
+  - ThinkPad T450
+  - home server
+  - Linux server
+  - Docker
+  - Kubernetes
+  - self-hosting
+  - DevOps Nepal
 draft: false
 ---
 If you've been in the Nepali IT/DevOps space for a while, you've probably thought about running your own homelab at some point. Cloud is expensive, AWS free tier runs out fast, and honestly - there's no better way to actually *learn* Kubernetes, Docker, or Linux server administration than breaking things on your own hardware.
