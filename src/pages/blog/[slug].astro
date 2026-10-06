@@ -90,7 +90,7 @@ const jsonLd = {
         <time datetime={new Date(post.data.date).toISOString()}>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
       </div>
     </header>
-    <div class="hero-banner" style={post.data.image ? `background-image: url('${post.data.image}'); background-size: contain; background-position: center; background-repeat: no-repeat;` : ''}></div>
+    <div class="hero-banner" style={post.data.image ? `background-color: transparent; background-image: url('${post.data.image}'); background-size: contain; background-position: center; background-repeat: no-repeat;` : ''}></div>
     <div class="content">
       <Content />
     </div>
@@ -105,7 +105,7 @@ const jsonLd = {
           <a href={link(`/blog/${p.slug}`)} class="related-card">
             <span
               class="related-thumb"
-              style={`background-image: ${p.data.image ? `url('${p.data.image}')` : 'linear-gradient(135deg, var(--c-primary), var(--c-primary-dark))'};`}
+              style={`background-color: var(--c-primary); background-image: ${p.data.image ? `url('${p.data.image}')` : 'none'};`}
             ></span>
             <span class="related-body">
               <span class="related-card-title">{p.data.title}</span>
@@ -186,7 +186,7 @@ const jsonLd = {
   .meta { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; color: var(--c-muted); font-size: 14px; }
   .byline { color: var(--c-muted); text-decoration: none; font-weight: 600; }
   .byline:hover { color: var(--c-primary); text-decoration: underline; }
-  .hero-banner { aspect-ratio: 21/9; background: linear-gradient(135deg, var(--c-primary), var(--c-primary-dark)); border-radius: 14px; margin: 12px 0 30px; }
+  .hero-banner { aspect-ratio: 21/9; background-color: var(--c-primary); border-radius: 14px; margin: 12px 0 30px; }
 
   /* Related posts: one column, stacked, matching the article's 820px width. */
   .related-posts { max-width: 820px; margin: 0 auto; padding: 0 28px 64px; }
