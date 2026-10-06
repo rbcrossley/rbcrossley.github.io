@@ -19,10 +19,11 @@ export const FEATURED_POST_SLUGS: string[] = [
   'loksewa-computer-engineer-and-it-officer-in-nepal',
   'guide-for-fresher-in-nepalese-it-industry',
   'how-to-deploy-polling-and-webhook-with-gitlab-and-jenkins',
+  'homelabbing-in-nepal-what-i-learned-running-a-server-off-a-second-hand-t450',
 ];
 
 /** How many featured posts to actually render on the homepage. */
-export const FEATURED_COUNT = 3;
+export const FEATURED_COUNT = 4;
 
 /** Convenience: given all published posts, return the featured ones in curated order. */
 export function pickFeatured<T extends { slug: string }>(posts: T[]): T[] {
