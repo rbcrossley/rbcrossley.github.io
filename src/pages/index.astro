@@ -182,8 +182,14 @@ const tracks = [
 
   /* Featured: one lead story, two compact stories stacked beside it. */
   .featured { padding: 144px 0 80px; }
-  .featured-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: start; }
-  .featured-side { display: flex; flex-direction: column; gap: 24px; }
+  .featured-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: stretch; }
+  /* Side stories spread evenly down the full height of the lead story:
+     first one level with its image, last one level with its last line. */
+  .featured-side { display: flex; flex-direction: column; }
+  .featured-side :global(.post-card) { flex: 1 1 0; padding: 24px 0; border-radius: 0; }
+  .featured-side :global(.post-card:first-child) { padding-top: 0; }
+  .featured-side :global(.post-card:last-child) { padding-bottom: 0; }
+  .featured-side :global(.post-card + .post-card) { border-top: 1px solid var(--c-border); }
 
   /* Latest: sticky intro on the left, rows on the right. */
   .latest { padding: 64px 0 96px; }
@@ -197,7 +203,7 @@ const tracks = [
     .tracks { margin-bottom: -96px; max-width: 560px; }
     .featured { padding-top: 144px; }
     .featured-grid { grid-template-columns: 1fr; }
-    .featured-side { padding-top: 0; }
+    .featured-side :global(.post-card) { flex: none; }
     .latest-grid { grid-template-columns: 1fr; gap: 32px; }
     .latest-head { position: static; }
   }

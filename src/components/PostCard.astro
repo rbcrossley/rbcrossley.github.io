@@ -45,10 +45,9 @@ const image = post.data.image ? link(post.data.image) : null;
     {image
       ? <img src={image} alt="" loading={variant === 'feature' ? 'eager' : 'lazy'} decoding="async" />
       : <span class="media-fallback" aria-hidden="true">BE</span>}
-    {badgeText && variant !== 'compact' && <span class="badge">{badgeText}</span>}
   </div>
   <div class="body">
-    {variant === 'compact' && badgeText && <span class="kicker">{badgeText}</span>}
+    {badgeText && <span class="kicker">{badgeText}</span>}
     <h3 class="title">{post.data.title}</h3>
     {variant !== 'compact' && post.data.description && <p class="desc">{post.data.description}</p>}
     {showDate && <time datetime={date.toISOString()}>{dateStr}</time>}
@@ -67,9 +66,9 @@ const image = post.data.image ? link(post.data.image) : null;
   }
 
   /* Media ------------------------------------------------------------------ */
+  /* The thumbnail is always shown whole: no fixed frame, no cropping. */
   .media {
     position: relative;
-    aspect-ratio: 16 / 9;
     border-radius: 16px;
     overflow: hidden;
     background: var(--c-primary);
@@ -78,13 +77,11 @@ const image = post.data.image ? link(post.data.image) : null;
   }
   .media img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
     transition: transform var(--dur) var(--ease);
   }
   .media-fallback {
-    position: absolute;
-    inset: 0;
+    aspect-ratio: 16 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,19 +90,6 @@ const image = post.data.image ? link(post.data.image) : null;
     line-height: 1;
     font-weight: 700;
     letter-spacing: -0.02em;
-  }
-  .badge {
-    position: absolute;
-    top: 12px;
-    left: 12px;
-    padding: 4px 8px;
-    border-radius: 4px;
-    background: #fff;
-    color: var(--c-primary-dark);
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 600;
-    box-shadow: var(--shadow-sm);
   }
 
   /* Text ------------------------------------------------------------------- */
@@ -139,13 +123,12 @@ const image = post.data.image ? link(post.data.image) : null;
 
   /* Feature ---------------------------------------------------------------- */
   .v-feature { gap: 24px; }
-  .v-feature .media { aspect-ratio: 16 / 10; }
   .v-feature .title { font-size: 30px; line-height: 36px; font-weight: 700; letter-spacing: -0.02em; }
   .v-feature .desc { font-size: 16px; line-height: 24px; -webkit-line-clamp: 4; }
 
   /* Compact ---------------------------------------------------------------- */
-  .v-compact { flex-direction: row; align-items: center; gap: 16px; }
-  .v-compact .media { flex: 0 0 40%; border-radius: 12px; }
+  .v-compact { flex-direction: row; align-items: center; gap: 24px; }
+  .v-compact .media { flex: 0 0 44%; border-radius: 12px; }
   .v-compact .title { font-size: 18px; line-height: 28px; }
 
   /* Row -------------------------------------------------------------------- */
