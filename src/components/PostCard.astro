@@ -1,8 +1,16 @@
 ---
 // =============================================================================
-// PostCard - the one blog-post card used everywhere (homepage featured guides,
-// homepage latest articles, the topic filter grid, and /blog). Keeping a
-// single card means a style tweak only has to happen in one place.
+// PostCard - the one blog post card used everywhere (homepage featured guides,
+// homepage latest articles, the topic filter grid, and /blog).
+//
+// Variants:
+//   default  - image on top, text below. Used in grids.
+//   feature  - the large lead story in the homepage featured grid.
+//   compact  - image left, text right, smaller type. Sits beside a feature.
+//   row      - wide horizontal row for lists (latest articles, blog archive).
+//
+// No box: no border, no shadow, no white panel. The image carries the shape
+// and the text sits on the page.
 // =============================================================================
 import type { CollectionEntry } from 'astro:content';
 import { link } from '../lib/link';
@@ -13,71 +21,151 @@ export interface Props {
   /** Overrides the auto badge (post's first category). Pass false to hide the badge entirely. */
   badge?: string | false;
   showDate?: boolean;
+  variant?: 'default' | 'feature' | 'compact' | 'row';
+  /** Position in a group, used to stagger the scroll reveal. */
+  index?: number;
 }
 
-const { post, badge, showDate = false } = Astro.props;
+const { post, badge, showDate = false, variant = 'default', index = 0 } = Astro.props;
 const cats = getCategories(post.data.categories);
 const badgeText = badge === false ? null : badge ?? cats[0]?.label ?? 'Blog';
-const badgeColorKey = cats[0]?.id ?? null;
-const dateStr = new Date(post.data.date).toLocaleDateString('en-US', {
-  year: 'numeric',
-  month: 'long',
-  day: 'numeric',
-});
+const date = new Date(post.data.date);
+const dateStr = date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const image = post.data.image ? link(post.data.image) : null;
 ---
 
 <a
   href={link(`/blog/${post.slug}`)}
-  class="post-card"
+  class:list={['post-card', `v-${variant}`]}
   data-categories={post.data.categories?.join(',') ?? ''}
+  data-reveal
+  data-reveal-i={index}
 >
-  <div
-    class="post-image"
-    style={`background-color: var(--c-primary); background-image: ${post.data.image ? `url('${post.data.image}')` : 'none'}; background-size: cover; background-position: center;`}
-  >
-    {badgeText && (
-      <span class="post-badge" style={badgeColorKey ? `background: var(--c-cat-${badgeColorKey}-bg); color: var(--c-cat-${badgeColorKey}-text);` : ''}>
-        {badgeText}
-      </span>
-    )}
+  <div class="media">
+    {image
+      ? <img src={image} alt="" loading={variant === 'feature' ? 'eager' : 'lazy'} decoding="async" />
+      : <span class="media-fallback" aria-hidden="true">BE</span>}
+    {badgeText && variant !== 'compact' && <span class="badge">{badgeText}</span>}
   </div>
-  <div class="post-body">
-    <h3>{post.data.title}</h3>
-    <p>{post.data.description}</p>
-    {showDate && <time>{dateStr}</time>}
-    <span class="read-more">Read More »</span>
+  <div class="body">
+    {variant === 'compact' && badgeText && <span class="kicker">{badgeText}</span>}
+    <h3 class="title">{post.data.title}</h3>
+    {variant !== 'compact' && post.data.description && <p class="desc">{post.data.description}</p>}
+    {showDate && <time datetime={date.toISOString()}>{dateStr}</time>}
   </div>
 </a>
 
 <style>
   .post-card {
-    background: var(--c-card-bg);
-    border: 1px solid var(--c-card-border);
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
-    text-decoration: none;
-    color: var(--c-text);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    color: var(--c-text);
+    text-decoration: none;
+    border-radius: 16px;
+    min-width: 0;
   }
-  .post-card:hover { transform: translateY(-4px); box-shadow: 0 14px 32px rgba(15, 23, 42, 0.12); }
-  .post-image { aspect-ratio: 16/9; position: relative; }
-  .post-badge {
+
+  /* Media ------------------------------------------------------------------ */
+  .media {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--c-primary);
+    box-shadow: var(--shadow-sm);
+    transition: box-shadow var(--dur) var(--ease), transform var(--dur) var(--ease);
+  }
+  .media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--dur) var(--ease);
+  }
+  .media-fallback {
     position: absolute;
-    top: 14px;
-    left: 14px;
-    background: rgba(255, 255, 255, 0.92);
-    color: var(--c-primary-dark);
-    padding: 4px 12px;
-    border-radius: 999px;
-    font-size: 12px;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-khaki);
+    font-size: 48px;
+    line-height: 1;
     font-weight: 700;
+    letter-spacing: -0.02em;
   }
-  .post-body { padding: 22px; display: flex; flex-direction: column; gap: 4px; flex: 1; }
-  .post-body h3 { font-size: 18px; line-height: 1.35; margin: 0 0 6px; }
-  .post-body p { font-size: 14px; color: var(--c-muted); margin: 0 0 10px; flex: 1; }
-  .post-body time { font-size: 12px; color: var(--c-muted); margin-bottom: 6px; }
-  .read-more { color: var(--c-primary-dark); font-weight: 600; font-size: 14px; }
+  .badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: #fff;
+    color: var(--c-primary-dark);
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    box-shadow: var(--shadow-sm);
+  }
+
+  /* Text ------------------------------------------------------------------- */
+  .body { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .kicker { font-size: 12px; line-height: 16px; font-weight: 600; color: var(--c-primary); }
+  .title {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    transition: color var(--dur-micro) var(--ease);
+  }
+  .desc {
+    margin: 0;
+    max-width: 65ch;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--c-muted);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  time { font-size: 12px; line-height: 16px; color: var(--c-muted); font-variant-numeric: tabular-nums; }
+
+  /* States ----------------------------------------------------------------- */
+  .post-card:hover .media { box-shadow: var(--shadow-md); transform: translateY(-4px); }
+  .post-card:hover .media img { transform: scale(1.04); }
+  .post-card:hover .title { color: var(--c-primary); }
+  .post-card:active .media { transform: translateY(-4px) scale(0.98); transition-duration: 200ms; }
+
+  /* Feature ---------------------------------------------------------------- */
+  .v-feature { gap: 24px; }
+  .v-feature .media { aspect-ratio: 16 / 10; }
+  .v-feature .title { font-size: 30px; line-height: 36px; font-weight: 700; letter-spacing: -0.02em; }
+  .v-feature .desc { font-size: 16px; line-height: 24px; -webkit-line-clamp: 4; }
+
+  /* Compact ---------------------------------------------------------------- */
+  .v-compact { flex-direction: row; align-items: center; gap: 16px; }
+  .v-compact .media { flex: 0 0 40%; border-radius: 12px; }
+  .v-compact .title { font-size: 18px; line-height: 28px; }
+
+  /* Row -------------------------------------------------------------------- */
+  .v-row {
+    display: grid;
+    grid-template-columns: minmax(0, 320px) minmax(0, 1fr);
+    align-items: center;
+    gap: 32px;
+    padding: 24px 0;
+    border-radius: 0;
+    border-top: 1px solid var(--c-border);
+  }
+  .v-row .title { font-size: 24px; line-height: 32px; font-weight: 700; letter-spacing: -0.015em; }
+  .v-row .desc { font-size: 16px; line-height: 24px; -webkit-line-clamp: 2; }
+
+  @media (max-width: 720px) {
+    .v-feature .title { font-size: 24px; line-height: 32px; }
+    .v-compact { flex-direction: column; align-items: stretch; }
+    .v-compact .media { flex-basis: auto; border-radius: 16px; }
+    .v-row { grid-template-columns: 1fr; gap: 16px; }
+    .v-row .title { font-size: 20px; line-height: 28px; }
+  }
 </style>

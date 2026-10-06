@@ -31,7 +31,7 @@ const isExternal = (href: string) => /^([a-z]+:)?\/\//i.test(href);
     <h3 class="name">
       <a href={link('/about')}>{author.name}</a>
     </h3>
-    <p class="role">{author.role} &middot; {author.location}</p>
+    <p class="role">{author.role}, {author.location}</p>
     <p class="blurb">{author.bioShort}</p>
 
     {author.links.length > 0 && (
@@ -53,75 +53,53 @@ const isExternal = (href: string) => /^([a-z]+:)?\/\//i.test(href);
 <style>
   .author-bio {
     display: flex;
-    gap: 20px;
+    gap: 24px;
     align-items: flex-start;
-    margin: 48px 0 0;
-    padding: 26px;
-    border: 1px solid var(--c-card-border);
-    border-left: 4px solid var(--c-primary);
-    border-radius: 14px;
-    background: var(--c-card-bg);
+    margin: 64px 0 0;
+    padding: 24px;
+    border: 1px solid var(--c-border);
+    border-radius: 24px;
   }
-
   .avatar {
     flex: 0 0 auto;
     width: 72px;
     height: 72px;
-    border-radius: 50%;
+    border-radius: 16px;
     overflow: hidden;
-    background: var(--c-logo);
+    background: var(--c-khaki);
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
-  .initials {
-    color: #fff;
-    font-weight: 800;
-    font-size: 26px;
-    letter-spacing: 0.5px;
-    line-height: 1;
-  }
+  .initials { color: var(--c-on-khaki); font-weight: 700; font-size: 24px; line-height: 32px; letter-spacing: -0.02em; }
 
   .body { min-width: 0; }
-  .eyebrow {
-    margin: 0 0 2px;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: var(--c-muted);
-  }
-  .name { font-size: 20px; margin: 0 0 4px; }
-  .name a { color: var(--c-text); text-decoration: none; }
+  .eyebrow { margin: 0 0 4px; font-size: 14px; line-height: 20px; font-weight: 500; color: var(--c-muted); }
+  .name { font-size: 20px; line-height: 28px; margin: 0 0 4px; }
+  .name a { color: var(--c-text); text-decoration: none; transition: color var(--dur-micro) var(--ease); }
   .name a:hover { color: var(--c-primary); }
-  .role { margin: 0 0 10px; font-size: 14px; color: var(--c-muted); }
-  .blurb { margin: 0 0 14px; font-size: 15px; line-height: 1.75; color: var(--c-text); }
+  .role { margin: 0 0 12px; font-size: 14px; line-height: 20px; color: var(--c-muted); }
+  .blurb { margin: 0 0 16px; max-width: 60ch; font-size: 16px; line-height: 24px; color: var(--c-text); }
 
-  .links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-  }
+  .links { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; }
   .links a {
     display: inline-block;
-    padding: 6px 14px;
-    border: 1px solid var(--c-card-border);
-    border-radius: 999px;
-    font-size: 13px;
+    padding: 4px 12px;
+    border: 1px solid var(--c-border);
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
     font-weight: 600;
     color: var(--c-primary);
     text-decoration: none;
-    transition: background 0.2s ease, border-color 0.2s ease;
+    transition: background-color var(--dur-micro) var(--ease), border-color var(--dur-micro) var(--ease), color var(--dur-micro) var(--ease), transform var(--dur) var(--ease);
   }
-  .links a:hover { background: var(--c-card-hover); border-color: var(--c-primary); }
+  .links a:hover { background: var(--c-primary); border-color: var(--c-primary); color: #fff; }
+  .links a:active { transform: scale(0.96); }
 
   @media (max-width: 640px) {
-    .author-bio { flex-direction: column; gap: 14px; padding: 22px; margin-top: 36px; }
-    .avatar { width: 60px; height: 60px; }
-    .initials { font-size: 22px; }
+    .author-bio { flex-direction: column; gap: 16px; padding: 24px; margin-top: 48px; }
+    .avatar { width: 64px; height: 64px; }
   }
 </style>

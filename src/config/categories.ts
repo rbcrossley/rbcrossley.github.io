@@ -1,9 +1,8 @@
 // =============================================================================
 // Content Categories - SINGLE SOURCE OF TRUTH
 // -----------------------------------------------------------------------------
-// Reader-facing topic categories. Shown as colored chips on post cards, and
-// used to power the "Browse by what interests you" filter on the homepage and
-// the /blog index.
+// Reader-facing topic categories. Shown as labels on post cards, and used to
+// power the topic filter on the /blog index and the homepage topic panel.
 //
 // These are DIFFERENT from the `tags` field in blog post frontmatter - `tags`
 // is machine-readable-only SEO metadata (schema.org / article:tag) and never
@@ -16,9 +15,9 @@
 // To tag a post: add/edit its `categories:` array in frontmatter, e.g.
 //   categories: ["linux", "devops"]
 //
-// To add a brand-new category: add an entry below with a unique `id`, then add
-// a matching color entry to `colors.categories` in theme.config.js, then
-// reference the new id from any post's frontmatter.
+// To add a brand-new category: add an entry below with a unique `id`, then
+// reference the new id from any post's frontmatter. Categories share the one
+// army green accent, so no color entry is needed.
 // =============================================================================
 
 export interface Category {

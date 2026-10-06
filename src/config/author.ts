@@ -78,15 +78,15 @@ const raju: Author = {
 
   sections: [
     {
-      heading: 'What I Work With',
+      heading: 'What I work with',
       paragraphs: [
-        'My day-to-day work is on <strong>Linux servers and the command line</strong> - administering, troubleshooting and keeping production systems healthy. I also operate <strong>Kubernetes</strong> workloads, working with pods and deployments in containerised environments.',
+        'My day-to-day work is on <strong>Linux servers and the command line</strong>: administering, troubleshooting and keeping production systems healthy. I also operate <strong>Kubernetes</strong> workloads, working with pods and deployments in containerised environments.',
       ],
     },
     {
-      heading: 'Why This Site Exists',
+      heading: 'Why this site exists',
       paragraphs: [
-        'My vision is to be a highly rated resource for freshers seeking to enter the IT industry. My mission is to solve the information asymmetry problem prevalent in IT careers in Nepal - the honest guidance I wish someone had given me when I was starting out.',
+        'My vision is to be a highly rated resource for freshers seeking to enter the IT industry. My mission is to solve the information asymmetry problem prevalent in IT careers in Nepal, and to give the honest guidance I wish someone had given me when I was starting out.',
       ],
     },
   ],

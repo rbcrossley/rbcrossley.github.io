@@ -25,14 +25,14 @@ import Icon from './Icon.astro';
 </section>
 
 <style>
-  .faq { padding: 56px 0; background: #fafafa; }
-  .section-title { font-size: 30px; font-weight: 800; margin-bottom: 28px; color: var(--c-text); }
+  .faq { padding: 64px 0; }
+  .section-title { font-size: 30px; line-height: 36px; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 32px; color: var(--c-text); }
   .faq-list { display: flex; flex-direction: column; gap: 10px; max-width: 820px; }
   .faq-item {
     background: #fff;
     border: 1px solid var(--c-border);
-    border-radius: 10px;
-    padding: 4px 20px;
+    border-radius: 12px;
+    padding: 4px 24px;
   }
   .faq-item summary {
     display: flex;
@@ -42,13 +42,14 @@ import Icon from './Icon.astro';
     padding: 16px 0;
     cursor: pointer;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 24px;
     color: var(--c-text);
     list-style: none;
   }
   .faq-item summary::-webkit-details-marker { display: none; }
-  .chevron { color: var(--c-primary); flex-shrink: 0; transition: transform 0.2s ease; display: inline-flex; }
+  .chevron { color: var(--c-primary); flex-shrink: 0; transition: transform var(--dur) var(--ease); display: inline-flex; }
   .faq-item[open] .chevron { transform: rotate(180deg); }
-  .answer { padding: 0 0 18px; color: var(--c-muted); font-size: 14px; line-height: 1.7; }
+  .answer { padding: 0 0 18px; color: var(--c-muted); font-size: 16px; line-height: 24px; }
   .answer :global(a) { color: var(--c-primary-dark); font-weight: 600; }
 </style>

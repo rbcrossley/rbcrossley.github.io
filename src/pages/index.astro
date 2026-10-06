@@ -13,56 +13,76 @@ const allPosts = (await getCollection('blog'))
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 
 const featuredPosts = pickFeatured(allPosts);
+const [leadPost, ...sidePosts] = featuredPosts;
 const latestPosts = allPosts.slice(0, 3);
+
+const tracks = [
+  { icon: 'cap', title: 'Career guidance', text: 'For students and freshers', href: '/blog?category=it-careers' },
+  { icon: 'landmark', title: 'Government jobs', text: 'Loksewa, NTC, RBB and more', href: '/blog?category=loksewa' },
+  { icon: 'terminal', title: 'Practical IT skills', text: 'Linux, DevOps, servers and more', href: '/blog?category=linux' },
+] as const;
 ---
 
-<Base title="Berojgar Engineer - Linux, DevOps and IT Careers in Nepal" description="Practical Linux, DevOps and Kubernetes notes plus honest IT career guidance for engineering graduates in Nepal.">
-  <!-- HERO -->
+<Base title="Berojgar Engineer: Linux, DevOps and IT careers in Nepal" description="Practical Linux, DevOps and Kubernetes notes plus honest IT career guidance for engineering graduates in Nepal.">
   <section class="hero">
-    <div class="hero-inner container">
+    <div class="container hero-grid">
       <div class="hero-text">
-        <h1>Practical IT Career Guidance for Engineers in Nepal</h1>
+        <h1>Practical IT career guidance for engineers in Nepal</h1>
         <p>
           Berojgar Engineer shares real experience, exam guides, technical tutorials and career
           advice to help Nepali engineering students, freshers and IT professionals make better
           career decisions.
         </p>
-        <div class="hero-cta">
-          <a href={link('/blog')} class="btn-primary">Read Latest Posts <Icon name="arrow-right" size={16} /></a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><Icon name="cap" size={20} /><div><strong>Career Guidance</strong><span>For students &amp; freshers</span></div></div>
-          <div class="stat"><Icon name="landmark" size={20} /><div><strong>Government Jobs</strong><span>Loksewa, NTC, RBB &amp; more</span></div></div>
-          <div class="stat"><Icon name="terminal" size={20} /><div><strong>Practical IT Skills</strong><span>Linux, DevOps, Server, etc.</span></div></div>
-        </div>
+        <a href={link('/blog')} class="btn">Read the latest posts <Icon name="arrow-right" size={18} /></a>
       </div>
+
+      <nav class="tracks" aria-label="Browse by topic">
+        <h2 class="tracks-title">Start with a topic</h2>
+        <ul>
+          {tracks.map((t) => (
+            <li>
+              <a href={link(t.href)} class="track">
+                <span class="track-icon"><Icon name={t.icon} size={22} /></span>
+                <span class="track-text">
+                  <strong>{t.title}</strong>
+                  <span>{t.text}</span>
+                </span>
+                <Icon name="arrow-right" size={18} class="track-arrow" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
     </div>
   </section>
 
-  <!-- FEATURED GUIDES -->
-  {featuredPosts.length > 0 && (
-    <section class="featured">
+  {leadPost && (
+    <section class="featured" aria-labelledby="featured-title">
       <div class="container">
-        <div class="section-head">
-          <h2 class="section-title">Featured Guides</h2>
-          <a class="view-all" href={link('/blog')}>View All Guides <Icon name="arrow-right" size={14} /></a>
+        <div class="section-head" data-reveal>
+          <h2 class="section-title" id="featured-title">Featured guides</h2>
+          <a class="text-link" href={link('/blog')}>See all guides <Icon name="arrow-right" size={16} /></a>
         </div>
-        <div class="post-grid three">
-          {featuredPosts.map((post) => <PostCard post={post} />)}
+        <div class="featured-grid">
+          <PostCard post={leadPost} variant="feature" />
+          {sidePosts.length > 0 && (
+            <div class="featured-side">
+              {sidePosts.map((post, i) => <PostCard post={post} variant="compact" index={i + 1} />)}
+            </div>
+          )}
         </div>
       </div>
     </section>
   )}
 
-  <!-- LATEST ARTICLES (auto) -->
-  <section class="latest">
-    <div class="container">
-      <div class="section-head">
-        <h2 class="section-title">Latest Articles</h2>
-        <a class="view-all" href={link('/blog')}>View All Articles <Icon name="arrow-right" size={14} /></a>
+  <section class="latest" aria-labelledby="latest-title">
+    <div class="container latest-grid">
+      <div class="latest-head" data-reveal>
+        <h2 class="section-title" id="latest-title">Latest articles</h2>
+        <a class="text-link" href={link('/blog')}>Browse every article <Icon name="arrow-right" size={16} /></a>
       </div>
-      <div class="post-grid three">
-        {latestPosts.map((post) => <PostCard post={post} showDate />)}
+      <div class="latest-list">
+        {latestPosts.map((post, i) => <PostCard post={post} variant="row" showDate index={i} />)}
       </div>
     </div>
   </section>
@@ -71,39 +91,123 @@ const latestPosts = allPosts.slice(0, 3);
 </Base>
 
 <style>
-  .hero { background: var(--c-hero-bg); color: var(--c-hero-text); padding: 72px 0; position: relative; overflow: hidden; }
-  .hero-inner { position: relative; }
+  /* Hero: pure khaki, slides up under the floating header. */
+  .hero {
+    position: relative;
+    margin-top: calc(var(--header-h) * -1);
+    padding: calc(var(--header-h) + 80px) 0 96px;
+    background: var(--c-khaki);
+    color: var(--c-on-khaki);
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 7fr) minmax(0, 5fr);
+    gap: 64px;
+    align-items: end;
+  }
   .hero-text { max-width: 680px; }
-  .hero h1 { font-size: 42px; line-height: 1.15; color: var(--c-hero-accent); font-weight: 800; margin-bottom: 20px; }
-  .hero p { font-size: 16.5px; line-height: 1.75; color: #cbd5e1; max-width: 600px; }
-  .hero-cta { margin-top: 26px; display: flex; gap: 14px; flex-wrap: wrap; }
-  .btn-primary { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; background: var(--c-primary); color: #fff; border-radius: 999px; font-weight: 700; text-decoration: none; transition: background 0.2s ease, transform 0.2s ease; box-shadow: 0 4px 14px rgba(75, 83, 32, 0.35); }
-  .btn-primary:hover { background: var(--c-hero-accent); color: #1F2415; transform: translateY(-1px); }
-  .hero-stats { display: flex; gap: 26px; margin-top: 36px; flex-wrap: wrap; }
-  .stat { display: flex; align-items: center; gap: 10px; color: #e2e8f0; }
-  .stat :global(svg) { color: var(--c-hero-accent); flex-shrink: 0; }
-  .stat strong { display: block; font-size: 13.5px; }
-  .stat span { display: block; font-size: 12px; color: #94a3b8; }
+  .hero h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    color: var(--c-on-khaki);
+    margin-bottom: 24px;
+  }
+  .hero p {
+    max-width: 56ch;
+    margin: 0 0 32px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--c-primary-dark);
+  }
 
-  .container { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
-  .section-title { font-size: 30px; font-weight: 800; color: var(--c-text); margin: 0 0 6px; }
-  .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 24px; flex-wrap: wrap; gap: 10px; }
-  .section-head .section-title { margin: 0; }
-  .view-all { display: inline-flex; align-items: center; gap: 6px; color: var(--c-primary-dark); font-weight: 700; font-size: 14px; text-decoration: none; }
-  .view-all:hover { text-decoration: underline; }
+  /* Topic panel overlaps the hero's bottom edge into the next section. */
+  .tracks {
+    position: relative;
+    margin-bottom: -112px;
+    padding: 24px;
+    border-radius: 24px;
+    background: #fff;
+    box-shadow: var(--shadow-lg);
+  }
+  .tracks-title { font-size: 14px; line-height: 20px; font-weight: 600; color: var(--c-muted); margin: 0 0 8px 12px; }
+  .tracks ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 4px; }
+  .track {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    color: var(--c-text);
+    text-decoration: none;
+    transition: background-color var(--dur-micro) var(--ease), transform var(--dur) var(--ease);
+  }
+  .track:hover { background: rgba(195, 176, 145, 0.24); }
+  .track:active { transform: scale(0.98); }
+  .track-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--c-primary);
+    color: #fff;
+  }
+  .track-text { display: flex; flex-direction: column; min-width: 0; }
+  .track-text strong { font-size: 16px; line-height: 24px; font-weight: 600; }
+  .track-text span { font-size: 14px; line-height: 20px; color: var(--c-muted); }
+  .track :global(.track-arrow) { color: var(--c-primary); transition: transform var(--dur) var(--ease); }
+  .track:hover :global(.track-arrow) { transform: translateX(4px); }
 
-  /* Featured / Latest grids */
-  .featured, .latest { padding: 56px 0; }
-  .post-grid.three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+  /* Section heads */
+  .section-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
+  .section-title { font-size: 36px; line-height: 40px; font-weight: 700; letter-spacing: -0.025em; color: var(--c-text); }
+  .text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--c-primary);
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    text-underline-offset: 4px;
+  }
+  .text-link:hover { text-decoration: underline; }
+  .text-link :global(svg) { transition: transform var(--dur) var(--ease); }
+  .text-link:hover :global(svg) { transform: translateX(4px); }
+
+  /* Featured: one lead story, two compact stories stacked beside it. */
+  .featured { padding: 144px 0 80px; }
+  .featured-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: start; }
+  .featured-side { display: flex; flex-direction: column; gap: 32px; padding-top: 48px; }
+
+  /* Latest: sticky intro on the left, rows on the right. */
+  .latest { padding: 64px 0 96px; }
+  .latest-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 64px; align-items: start; }
+  .latest-head { position: sticky; top: 112px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
+  .latest-head p { margin: 0; max-width: 32ch; color: var(--c-muted); }
+  .latest-list :global(.post-card:last-child) { border-bottom: 1px solid var(--c-border); }
 
   @media (max-width: 1024px) {
-    .hero h1 { font-size: 34px; }
-    .post-grid.three { grid-template-columns: repeat(2, 1fr); }
+    .hero-grid { grid-template-columns: 1fr; gap: 48px; }
+    .tracks { margin-bottom: -96px; max-width: 560px; }
+    .featured { padding-top: 144px; }
+    .featured-grid { grid-template-columns: 1fr; }
+    .featured-side { padding-top: 0; }
+    .latest-grid { grid-template-columns: 1fr; gap: 32px; }
+    .latest-head { position: static; }
   }
-  @media (max-width: 768px) {
-    .hero h1 { font-size: 28px; }
-  }
-  @media (max-width: 640px) {
-    .post-grid.three { grid-template-columns: 1fr; }
+  @media (max-width: 720px) {
+    .hero { padding: calc(var(--header-h) + 48px) 0 64px; }
+    .hero h1 { font-size: 36px; line-height: 40px; }
+    .hero p { font-size: 16px; line-height: 24px; }
+    .tracks { padding: 12px; border-radius: 16px; }
+    .tracks-title { margin: 8px 0 8px 12px; }
+    .section-title { font-size: 30px; line-height: 36px; }
+    .featured { padding: 136px 0 64px; }
   }
 </style>

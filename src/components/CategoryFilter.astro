@@ -9,8 +9,8 @@
 // with either.
 //
 // Reads ?category=slug1,slug2 from the URL on load so a link like
-// `/blog?category=devops` (used by the homepage "Start Here" cards and the
-// header mega-menu) lands with that filter already applied.
+// `/blog?category=devops` (used by the homepage topic panel) lands with that
+// filter already applied.
 // =============================================================================
 import type { CollectionEntry } from 'astro:content';
 import { categories } from '../config/categories';
@@ -28,27 +28,24 @@ const { posts, cap, id = 'topic-filter' } = Astro.props;
 
 <div class="category-filter" id={id} data-cap={cap ?? ''}>
   <div class="chips" role="group" aria-label="Filter by topic">
-    <button type="button" class="chip chip-all" data-cat="" aria-pressed="true">All Topics</button>
+    <button type="button" class="chip chip-all" data-cat="" aria-pressed="true">All topics</button>
     {categories.map((c) => (
-      <button
-        type="button"
-        class="chip"
-        data-cat={c.id}
-        aria-pressed="false"
-        style={`--chip-bg: var(--c-cat-${c.id}-bg); --chip-text: var(--c-cat-${c.id}-text); --chip-dot: var(--c-cat-${c.id}-chip);`}
-      >
-        <span class="dot"></span>{c.shortLabel}
+      <button type="button" class="chip" data-cat={c.id} aria-pressed="false">
+        {c.shortLabel}
       </button>
     ))}
   </div>
 
   <div class="grid">
     {posts.map((post) => (
-      <PostCard post={post} showDate />
+      <PostCard post={post} showDate variant="row" />
     ))}
   </div>
 
-  <p class="empty" hidden>No posts match that combination yet - try a different topic.</p>
+  <div class="empty" hidden>
+    <p>No posts in that topic combination yet.</p>
+    <button type="button" class="btn reset">Show all topics</button>
+  </div>
 
   {cap && posts.length > cap && (
     <div class="show-more-wrap">
@@ -58,50 +55,51 @@ const { posts, cap, id = 'topic-filter' } = Astro.props;
 </div>
 
 <style>
-  .chips { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 32px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
   .chip {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 9px 18px;
-    border-radius: 999px;
-    border: 1.5px solid var(--c-border);
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--c-border);
     background: #fff;
     color: var(--c-text);
-    font-weight: 600;
+    font-family: inherit;
     font-size: 14px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-  }
-  .chip .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--chip-dot, var(--c-primary)); }
-  .chip:hover { border-color: var(--chip-dot, var(--c-primary)); }
-  .chip[aria-pressed="true"] {
-    background: var(--chip-bg, var(--c-primary-light));
-    color: var(--chip-text, var(--c-primary-dark));
-    border-color: transparent;
-  }
-  .chip-all[aria-pressed="true"] { background: var(--c-text); color: #fff; }
-  .chip-all .dot { display: none; }
-
-  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
-  .grid :global(.post-card.is-hidden) { display: none; }
-  .empty { text-align: center; color: var(--c-muted); padding: 40px 0; }
-
-  .show-more-wrap { display: flex; justify-content: center; margin-top: 28px; }
-  .show-more {
-    padding: 10px 26px;
-    border-radius: 999px;
-    border: 2px solid var(--c-primary);
-    background: transparent;
-    color: var(--c-primary-dark);
+    line-height: 20px;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color var(--dur-micro) var(--ease), border-color var(--dur-micro) var(--ease), color var(--dur-micro) var(--ease), transform var(--dur) var(--ease);
   }
-  .show-more:hover { background: var(--c-primary-light); }
-  .show-more[hidden] { display: none; }
+  .chip:hover { border-color: var(--c-primary); }
+  .chip:active { transform: scale(0.96); }
+  .chip[aria-pressed="true"] { background: var(--c-primary); border-color: var(--c-primary); color: #fff; }
 
-  @media (max-width: 1024px) { .grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 640px) { .grid { grid-template-columns: 1fr; } }
+  .grid { display: flex; flex-direction: column; }
+  .grid :global(.post-card:last-of-type) { border-bottom: 1px solid var(--c-border); }
+  .grid :global(.post-card.is-hidden) { display: none; }
+  /* Reveal is driven by the filter here, so cards are always visible. */
+  .grid :global(.post-card[data-reveal]) { opacity: 1; transform: none; filter: none; }
+
+  .empty { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 48px 0 64px; border-top: 1px solid var(--c-border); }
+  .empty[hidden] { display: none; }
+  .empty p { margin: 0; font-size: 18px; line-height: 28px; color: var(--c-muted); }
+
+  .show-more-wrap { display: flex; margin-top: 32px; }
+  .show-more {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--c-primary);
+    background: transparent;
+    color: var(--c-primary);
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color var(--dur-micro) var(--ease), color var(--dur-micro) var(--ease), transform var(--dur) var(--ease);
+  }
+  .show-more:hover { background: var(--c-primary); color: #fff; }
+  .show-more:active { transform: scale(0.98); }
+  .show-more[hidden] { display: none; }
 </style>
 
 <script>
@@ -113,6 +111,7 @@ const { posts, cap, id = 'topic-filter' } = Astro.props;
       const chips = Array.from(root.querySelectorAll<HTMLButtonElement>('.chip'));
       const cards = Array.from(root.querySelectorAll<HTMLElement>('.post-card'));
       const emptyMsg = root.querySelector<HTMLElement>('.empty');
+      const resetBtn = root.querySelector<HTMLButtonElement>('.reset');
       const showMoreBtn = root.querySelector<HTMLButtonElement>('.show-more');
       const cap = root.dataset.cap ? parseInt(root.dataset.cap, 10) : 0;
       let expanded = !cap;
@@ -169,6 +168,12 @@ const { posts, cap, id = 'topic-filter' } = Astro.props;
           applyChipStyles();
           render();
         });
+      });
+
+      resetBtn?.addEventListener('click', () => {
+        selected.clear();
+        applyChipStyles();
+        render();
       });
 
       showMoreBtn?.addEventListener('click', () => {

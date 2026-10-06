@@ -118,7 +118,7 @@ https://trk.udemy.com/4axraG
 
 This course I feel is more important than I would think. The reason is that I can deploy applications following the steps but the networking, application and stuffs like that does not make sense to me how they connect. Beyond a basic network architecture, it feels to me that I lack the core concepts of application layer networking. Since I believe this course will help me on getting this concept, I will be getting this course
 
-4) The Perfect NGINX Server - RHEL 10 Edition
+4) The Perfect NGINX Server: RHEL 10 Edition
 
 
 https://trk.udemy.com/rEqzEB

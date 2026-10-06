@@ -87,7 +87,7 @@ On servers where NGINX was compiled from source and has no systemd unit, the equ
 curl -vI https://example.com
 ```
 
-Note the explicit `https://`. Without a scheme, curl defaults to HTTP and you will see no TLS handshake at all — which looks like a failure but tells you nothing. The `-v` flag prints the handshake details(it stands for verbose), including the certificate the server actually presented and its validity dates.
+Note the explicit `https://`. Without a scheme, curl defaults to HTTP and you will see no TLS handshake at all, which looks like a failure but tells you nothing. The `-v` flag prints the handshake details(it stands for verbose), including the certificate the server actually presented and its validity dates.
 
 ## With Certbot
 
@@ -114,7 +114,7 @@ certbot --nginx -d example.com
 
 Certbot proves you control the domain by placing a file at `http://example.com/.well-known/acme-challenge/` and having Let's Encrypt fetch it. That means port 80 must be reachable from the internet and your DNS must point at this server. For domains that are not publicly reachable, use the DNS-01 challenge instead, which proves ownership through a TXT record and needs no inbound port at all.
 
-The `--nginx` plugin edits your server blocks for you, adding the certificate paths and an HTTP to HTTPS redirect, then reloads NGINX itself. If you would rather it did not touch your configuration, use `certbot certonly --nginx -d example.com` and wire up the paths yourself — in which case point `ssl_certificate` at `fullchain.pem`, never `cert.pem`, since the latter is the leaf alone with no intermediates.
+The `--nginx` plugin edits your server blocks for you, adding the certificate paths and an HTTP to HTTPS redirect, then reloads NGINX itself. If you would rather it did not touch your configuration, use `certbot certonly --nginx -d example.com` and wire up the paths yourself, in which case point `ssl_certificate` at `fullchain.pem`, never `cert.pem`, since the latter is the leaf alone with no intermediates.
 
 ### Renewal
 

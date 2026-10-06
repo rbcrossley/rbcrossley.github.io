@@ -1,50 +1,98 @@
 ---
 import { link } from '../lib/link';
+
+const mainLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/blog', label: 'Blog' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+];
+const legalLinks = [
+  { href: '/privacy-policy', label: 'Privacy policy' },
+  { href: '/terms', label: 'Terms and conditions' },
+  { href: '/disclaimer', label: 'Disclaimer' },
+  { href: '/ai-policy', label: 'AI use policy' },
+  { href: '/affiliate-disclosure', label: 'Affiliate disclosure' },
+  { href: '/cookie-policy', label: 'Cookie policy' },
+];
 ---
 <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="col">
-      <div class="logo-mark">BE</div>
-      <p class="about">My vision is to be a highly rated resource for freshers seeking to enter IT industry. My mission is to solve the information assymetry problem prevalent in IT careers in Nepal.</p>
+  <div class="container footer-top">
+    <div class="brand">
+      <span class="logo-mark" aria-hidden="true">BE</span>
+      <p>
+        My vision is to be a highly rated resource for freshers seeking to enter the IT industry.
+        My mission is to solve the information asymmetry problem prevalent in IT careers in Nepal.
+      </p>
     </div>
-    <div class="col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href={link('/')}>Home</a></li>
-        <li><a href={link('/blog')}>Blog</a></li>
-        <li><a href={link('/about')}>About Us</a></li>
-        <li><a href={link('/contact')}>Contact us</a></li>
-      </ul>
-    </div>
-    <div class="col">
-      <h4>Legal</h4>
-      <ul>
-        <li><a href={link('/privacy-policy')}>Privacy Policy</a></li>
-        <li><a href={link('/terms')}>Terms &amp; Conditions</a></li>
-        <li><a href={link('/disclaimer')}>Disclaimer</a></li>
-        <li><a href={link('/ai-policy')}>AI Use Policy</a></li>
-        <li><a href={link('/affiliate-disclosure')}>Affiliate Disclosure</a></li>
-        <li><a href={link('/cookie-policy')}>Cookie Policy</a></li>
-      </ul>
-    </div>
+    <nav class="main-links" aria-label="Footer">
+      {mainLinks.map((l) => <a href={link(l.href)}>{l.label}</a>)}
+    </nav>
   </div>
-  <div class="footer-bottom">
-    <p>© {new Date().getFullYear()} Berojgar Engineer. All rights reserved.</p>
+  <div class="container footer-bottom">
+    <p>© {new Date().getFullYear()} Berojgar Engineer</p>
+    <nav class="legal" aria-label="Legal">
+      {legalLinks.map((l) => <a href={link(l.href)}>{l.label}</a>)}
+    </nav>
   </div>
 </footer>
 
 <style>
-  .site-footer { width: 100%; background: var(--c-footer-bg); color: var(--c-footer-text); margin-top: auto; }
-  .footer-inner { max-width: 1280px; margin: 0 auto; padding: 56px 28px 32px; display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 36px; width: 100%; }
-  .col h4 { color: #fff; font-size: 16px; font-weight: 700; margin: 0 0 16px; }
-  .col ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; }
-  .col a { color: var(--c-footer-text); text-decoration: none; font-size: 14px; transition: color 0.2s ease; }
-  .col a:hover { color: var(--c-primary); }
-  .logo-mark { width: 56px; height: 50px; border-radius: 6px; background: var(--c-logo); color: #fff; font-weight: 800; font-style: italic; font-size: 22px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 14px; }
-  .about { color: #cfd2dc; font-size: 14px; line-height: 1.7; max-width: 380px; }
-  .footer-bottom { width: 100%; background: rgba(0, 0, 0, 0.2); padding: 16px 28px; text-align: center; border-top: 1px solid rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
-  .footer-bottom p { margin: 0; font-size: 13px; color: #a8acb8; }
-  @media (max-width: 1024px) { .footer-inner { grid-template-columns: 1fr 1fr 1fr; gap: 28px; } }
-  @media (max-width: 700px) { .footer-inner { grid-template-columns: 1fr 1fr; padding: 40px 24px; } }
-  @media (max-width: 480px) { .footer-inner { grid-template-columns: 1fr; } }
+  .site-footer { width: 100%; margin-top: auto; background: var(--c-khaki); color: var(--c-on-khaki); }
+  .footer-top {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 48px;
+    align-items: end;
+    padding-top: 64px;
+    padding-bottom: 48px;
+  }
+  .brand { display: flex; flex-direction: column; gap: 24px; }
+  .logo-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+    background: var(--c-primary);
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+  .brand p { margin: 0; max-width: 48ch; font-size: 18px; line-height: 28px; color: var(--c-primary-dark); }
+
+  .main-links { display: flex; flex-wrap: wrap; gap: 8px 32px; }
+  .main-links a {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    color: var(--c-on-khaki);
+    text-decoration: none;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+  }
+  .main-links a:hover { text-decoration: underline; }
+
+  .footer-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    padding-top: 24px;
+    padding-bottom: 32px;
+    position: relative;
+  }
+  .footer-bottom::before { content: ''; position: absolute; top: 0; left: 24px; right: 24px; height: 1px; background: rgba(31, 36, 21, 0.2); }
+  .footer-bottom p { margin: 0; font-size: 14px; line-height: 20px; color: var(--c-primary-dark); font-variant-numeric: tabular-nums; }
+  .legal { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+  .legal a { font-size: 14px; line-height: 20px; color: var(--c-primary-dark); text-decoration: none; text-underline-offset: 4px; }
+  .legal a:hover { color: var(--c-on-khaki); text-decoration: underline; }
+
+  @media (max-width: 860px) {
+    .footer-top { grid-template-columns: 1fr; gap: 32px; padding-top: 48px; padding-bottom: 32px; }
+    .footer-bottom { flex-direction: column-reverse; align-items: flex-start; }
+  }
 </style>

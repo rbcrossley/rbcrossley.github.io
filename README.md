@@ -257,26 +257,21 @@ Edit `theme.config.js`:
 ```js
 export default {
   colors: {
-    primary: '#E91E63',         // accent (links, buttons, active items)
-    primaryDark: '#C2185B',     // hover
-    primaryLight: '#FDE8EC',    // header bg / sidebar headers
-    logo: '#A02020',            // logo background
-    heroBg: '#2E3141',          // dark hero background
-    heroAccent: '#E91E63',      // hero heading
-    sidebarSection: '#FBD9DC',
-    sidebarActive: '#E91E63',
-    footerBg: '#2E3141',
-    // … see file for the full list
+    primary: '#4B5320',     // army green: the one accent (buttons, links, active states)
+    primaryDark: '#333D16', // hover, and body text on khaki
+    khaki: '#C3B091',       // hero band and footer
+    onKhaki: '#1F2415',     // headings on khaki
+    bg: '#FFFFFF',
+    text: '#1F2415',
+    muted: '#5C5E4E',
+    border: '#DCD8CA',
+    codeBg: '#181818',      // code blocks
   },
-  site: {
-    name: 'Berojgar Engineer',
-    tagline: 'Linux, DevOps and IT Careers for Nepali IT Graduates',
-    logoText: 'BE',
-    domain: 'rbcrossley.github.io',
-    contactEmail: 'contact@berojgarengineer.com',
-  },
+  site: { /* name, tagline, domain, contact email */ },
 };
 ```
+
+Flat colors only: no gradients, no pale tints, one accent.
 
 After changing, run `yarn dev` (auto-reloads) or rebuild for production.
 
