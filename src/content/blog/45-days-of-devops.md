@@ -1,10 +1,10 @@
 ---
 title: 45 days of DevOps
 description: Follow a support engineer’s honest 45-day DevOps learning journey and practical skill roadmap.
-date: 2026-09-20
+date: 2026-10-08
 author: cst
 image: /images/blog/45-days-of-devops.png
-draft: true
+draft: false
 ---
 
 Learning DevOps properly can take years. I am not claiming to learn DevOps in 45 days. 
