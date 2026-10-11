@@ -18,8 +18,6 @@
 // =============================================================================
 
 export const HIDDEN_POST_SLUGS = new Set<string>([
-  'pyq-loksewa',
-  'micro-syllabus-of-data-structures-and-algorithms',
 ]);
 
 /** Convenience predicate: `posts.filter(isPublished)`. */
