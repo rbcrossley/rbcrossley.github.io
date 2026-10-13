@@ -66,7 +66,7 @@ Using both Debian and Red Hat distributions ensures that I am prepared for any o
 
 Until I purchase a mini PC, power is not an issue because my T450 has a battery that lasts for hours. And power cuts in Kathmandu do not usually happen for hours.
 
-But once I get a mini PC, it will be crucial that I get some UPS. I am seeing some UPS in the market and will likely get one from sirpower.com.np.
+But once I get a mini PC, it will be crucial that I get some UPS. 
 
 The reason behind it is that sudden power fluctuations or cuts will degrade the mini PC.
 
