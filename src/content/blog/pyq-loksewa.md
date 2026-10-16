@@ -18,16 +18,10 @@ I continuously keep updating this question set. Every 1.5 year, I will send you 
 
 
 
-To get access to this old questions resource, pay Rs.1499 to the QR below:
+Send me an e-mail to:
 
-<img src="/images/blog/qr-nmb.png" width="300" />
+admin@berojgarengineer.com. I will guide you on how to purchase it.
 
-
-and fill this google form below:
-
-https://docs.google.com/forms/d/e/1FAIpQLSeTeSID_hFrNR1FtiCuFmh7h7m33OAd1nnJG9Y5GqVFtNTOdw/viewform?usp=sharing&ouid=114599004406069542884
-
-You will receive the old questions within 24 hours of filling the form.
 
 I really do not have to tell you the importance of past questions because you are from Nepal. Hence you already know its importance. But just sharing my experience on how I use these question papers. I feed the questions, and syllabus of the corporation I am preparing for into LLM, ask it to prepare 20 questions per subject. I solve each of those questions. This has helped me so much in getting confident in technical paper part. I highly recommend you to get these previous year questions.
 
