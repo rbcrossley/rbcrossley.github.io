@@ -15,12 +15,6 @@ const allPosts = (await getCollection('blog'))
 const featuredPosts = pickFeatured(allPosts);
 const [leadPost, ...sidePosts] = featuredPosts;
 const latestPosts = allPosts.slice(0, 3);
-
-const tracks = [
-  { icon: 'cap', title: 'Career guidance', text: 'For students and freshers', href: '/blog?category=it-careers' },
-  { icon: 'landmark', title: 'Government jobs', text: 'Loksewa, NTC, RBB and more', href: '/blog?category=loksewa' },
-  { icon: 'terminal', title: 'Practical IT skills', text: 'Linux, DevOps, servers and more', href: '/blog?category=linux' },
-] as const;
 ---
 
 <Base title="Berojgar Engineer: Linux, DevOps and IT careers in Nepal" description="Practical Linux, DevOps and Kubernetes notes plus honest IT career guidance for engineering graduates in Nepal.">
@@ -36,23 +30,6 @@ const tracks = [
         <a href={link('/blog')} class="btn">Read the latest posts <Icon name="arrow-right" size={18} /></a>
       </div>
 
-      <nav class="tracks" aria-label="Browse by topic">
-        <h2 class="tracks-title">Start with a topic</h2>
-        <ul>
-          {tracks.map((t) => (
-            <li>
-              <a href={link(t.href)} class="track">
-                <span class="track-icon"><Icon name={t.icon} size={22} /></span>
-                <span class="track-text">
-                  <strong>{t.title}</strong>
-                  <span>{t.text}</span>
-                </span>
-                <Icon name="arrow-right" size={18} class="track-arrow" />
-              </a>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </div>
   </section>
 
