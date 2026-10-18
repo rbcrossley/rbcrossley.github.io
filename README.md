@@ -60,7 +60,7 @@ That’s it. ~2 minutes after every push, the site is live at **https://rbcrossl
 │       ├── blog/                      # /blog and /blog/<post>
 │       ├── about.astro
 │       ├── contact.astro
-│       ├── privacy-policy.astro       # AdSense-required
+│       ├── privacy-policy.astro       # Privacy policy page
 │       ├── terms.astro
 │       ├── disclaimer.astro
 │       └── cookie-policy.astro
@@ -277,40 +277,6 @@ After changing, run `yarn dev` (auto-reloads) or rebuild for production.
 
 ---
 
-## 💰 Google AdSense Integration
-
-The site already includes the standard AdSense-required pages:
-
-- `/about` — About Us
-- `/contact` — Contact Us
-- `/privacy-policy` — Privacy Policy (mentions AdSense + DART cookies + GDPR + CCPA)
-- `/terms` — Terms & Conditions
-- `/disclaimer` — Disclaimer
-- `/cookie-policy` — Cookie Policy
-
-All four legal pages are linked from the **Legal** column in the footer.
-
-### Add your AdSense publisher ID
-
-1. Get your AdSense `ca-pub-XXXXXXXXXXXXXXXX` from <https://www.google.com/adsense/>.
-2. Open `src/layouts/Base.astro`.
-3. Inside `<head>`, add:
-
-   ```html
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
-   ```
-
-4. Replace the `XXXXXXXXXXXXXXXX` with your real ID, commit and push.
-5. Add an `ads.txt` file at the repo root (i.e., `public/ads.txt`):
-
-   ```
-   google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
-   ```
-
-6. To insert auto-ads or in-article ads, paste the AdSense `<ins class="adsbygoogle">` snippet anywhere inside Markdown content (it will render as raw HTML).
-
-> Make sure you have at least 15–25 quality articles before applying for AdSense.
-
 ---
 
 ## 📦 Commands Reference
@@ -334,9 +300,6 @@ A: Create a topic Markdown with the same filename as the course slug. e.g. cours
 
 **Q: Images don’t show after deploy.**
 A: Ensure the image is inside `public/` and you reference it with an absolute path starting with `/`. Astro copies everything in `public/` to the site root verbatim.
-
-**Q: Can I disable AdSense pages?**
-A: Just delete the page files and remove the corresponding `<a>` tags in `src/components/Footer.astro`.
 
 ---
 
