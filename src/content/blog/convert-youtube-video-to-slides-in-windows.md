@@ -6,7 +6,7 @@ author: BerojgarEngineer
 image: /images/blog/youtube-to-slides.png
 tags: ["video to slides", "youtube video converted to slides for free", "study hack to watch video faster", "study plan"]
 categories: ["devops"]
-draft: true
+draft: false
 ---
 
 
