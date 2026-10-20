@@ -1,5 +1,5 @@
 ---
-title: How to convert youtube videot to slides pdf in windows?
+title: How to convert youtube videos to slides pdf in windows?
 description: A guide that helps a student get pdf slides of youtube videos using ffmpeg, python, and yt-dlp
 date: 2026-10-20
 author: BerojgarEngineer
