@@ -8,6 +8,7 @@ tags: ["Loksewa", "Computer Engineer", "IT Officer", "study plan", "six month ro
 categories: ["loksewa"]
 ---
 The idea for this post came around when a reader DM'd me regarding how to prepare for Loksewa in 3-6 months.
+
 I had to be honest. 3 months of preparation is not enough for most average people. That might set the wrong impression that you can crack Loksewa exams with 3 months of preparation. I am not saying people have not cracked by studying properly within that time frame. I have personally seen lots of talented people who have cracked Loksewa Computer Engineer examinations within that time frame.
 
 If you are fully directed, fully motivated,100% efficient, then 6 months of full-time study can be sufficient.
@@ -17,10 +18,6 @@ The biggest problem that aspirants face is “which corporation syllabus should 
 But do not worry.
 
 It is true that the Loksewa computer engineer syllabus is very vast and differs corporation-wise. But there is a pattern. There are some common subjects in every corporation.
-
-I have mentioned this in this detailed blog.
-
-Link: https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 
 The Loksewa computer engineer/IT officer exam contains two papers(except in NRB, which is 3 papers).
 
@@ -47,9 +44,9 @@ The Common subjects in the technical part include:
 
 There are 10 common technical subjects. You want to be prepared within 6 months. So you have to finish 3 subjects every 2 months. Note that these are just common subjects.
 
-While in month 2, if a vacancy for some corporations appears, then you can obviously follow their syllabi. You do not have to force yourself to study topics that are not in that corporation’s syllabus. And try to complete it.
+While in month 2, if a vacancy for some corporations appears, then you can obviously follow their syllabi. You do not have to force yourself to study topics that are not in that corporation’s syllabus.
 
-I will assume no vacancies appear for 6 months.
+In this case, I will assume no vacancies appear for the next 6 months.
 
 # How to study?
 
@@ -59,25 +56,24 @@ Loksewa computer engineering and IT officer exams test on breadth of knowledge. 
 
 The hardest part of the following Loksewa-provided syllabus for Computer Engineer and IT Officer is that the micro-level syllabus is not clear based on the provided syllabus in many corporations. That causes genuine frustration. I wasted a lot of time going too deep because of this reason.
 
-While joining an institute helped me heavily here, you do not have to if you do not want to.
+This is a huge problem. What do you study when the syllabus simply says Cryptography(case in point, RBB Sr. IT Assistant 5th level syllabus)? It is just teasing you.
 
-For overall technical subjects scope coverage(i.e., what to study, how deep to go, what breadth to follow), I recommend [this](https://s.daraz.com.np/s.Z4Xio?cc) book. Get it immediately if you are not thinking of spending a fortune on institutes.
+### How to get the micro-syllabus of each subject?
+- get a loksewa IT officer textbooks from bhotahity. Note that those books usually do not contain past question papers of loksewa computer engineer and IT officer. Most of the times, they are just copy-paste from Claude and Chatgpt. Specially if they are published few weeks after the vacancy is announced. cost=1500 onwards. And there is no surity that it will be worth the money.
 
-You basically need an outline of topics to study. When I say IO Organization, what comes to your mind? The book on COA will cover many different topics in this chapter. But the most important topics are polled I/O, interrupt driven I/O, and Direct Memory Access.
+- join an institute for preparation because institute will provide notes and you can deduce the micro-syllabus based on the institute's notes. cost=10,000 onwards. This option is too costly. While it is a good option, not everyone is in a position(not just financially) to spend 10,000 and onwards in an institute. And even institutes do not have entire collection of loksewa computer engineer and IT officer previous year question papers. I also joined an institute, and I can say that it was not 100% worth it. Joining an institute has its perks like getting guidance in online class, meeting people with similar goals i.e., cracking loksewa computer engineer and IT officer etc. Following institute's notes gives a structure to your study. While even the teachers might not be aware of what actually the syllabus means, but they are people who actually cracked PSC. So, I think they have some idea. You are just learning from their experience but by paying too much money.
 
-Previous year question papers help in this situation.
-
-You can extrapolate based on the available old questions. That is one way. For me, what helped was following Loksewa Computer Engineering Institute’s notes. They were not anything extraordinary. But they provided a much-needed structure. You could call this a micro syllabus as well.
-
-I will personally release such study guides soon on this blog. It will consist of a micro syllabus for every subject in Loksewa Computer Engineering and the IT Officer. Keep following the blog for more information. It will definitely take time, though. Otherwise, you can just think about the usual important questions while learning and study those as well as get some help from the previous year questions.
-
+- buy the previous year questions papers. https://berojgarengineer.com/blog/pyq-loksewa/. Previous year question papers help in situations where you need to get an outline of possible exam questions from the topic/sub-topic. For example, when I say IO Organization, what comes to your mind? The book on COA will cover many different topics in this chapter. But the most important topics are polled I/O, interrupt driven I/O, and Direct Memory Access. Now even under DMA, the important topics can be related to DMA modes like burst mode, cycle-stealing mode etc. You can extrapolate based on the available old questions. 
+s
 # Techniques to study
 
 Some techniques come in handy while studying.
 
-- Make notes. Make detailed notes. Do not cheap out on making notes. Invest time. Make sure the notes are what you can write in the exam if the exam was the next day.
-- I personally do a 45-minute Pomodoro session. I do not follow Pomodoro and its breaks too strictly, though. I just use it to give myself a structure and track my progress. I use the CoffeePomodoro app.
-- Revise. It is the most important thing for learning as well as getting good marks. I learnt this late. And it wasted so much time for me. Revise frequently. If you are not revising what you are studying, it is all going down the drain. It is a waste of time.
+- Make notes. Make detailed notes. Do not cheap out on making notes. Invest time. Make sure the notes are what you can write in the exam if the exam was the next day. I know lot of people who copy paste from chatgpt, claude, geeksforgeeks without understanding. They think they will memorize it but not all can memorize that well.
+
+- I personally do a 45-minute Pomodoro session. I do not follow Pomodoro and its breaks too strictly, though. I just use it to give myself a structure and track my progress. I use an app for it.
+
+- Revise. It is the most important thing for learning as well as getting good marks. I learnt this late. And it wasted so much time for me. Revise frequently. If you are not revising what you are studying, it is all going down the drain. The time spent learning the material for the first time is wasted if you do not revise it continuously.
 
 # Resources to follow
 
@@ -130,7 +126,7 @@ month-2
 month=3
 
 - Software engineering
-- dsa
+- DSA
 
 month-4
 
@@ -144,17 +140,24 @@ month-5
 
 month-6
 
-Wrap up studies.
+- Wrap up studies.
 
-You are done with studies. Now, buy the
-old questions.
-And start solving them. You can take help from your notes or the internet while solving them. Your goal is to make proper materials for exam time and increase your chances of selection.
+You are done with studies. 
 
 # best books for first paper
-I have researched a lot on this. I have bought many GK books, IQ books etc. I have listed the best books in this blog.
+I have researched a lot on this. I have bought many GK books, IQ books, and first paper books of NTC. So, far the only book that I liked is GK King by Ashman Upadhayay.
 
-https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
+The book’s link is given below:
 
+GK King(for structured GK study):
+
+https://s.daraz.com.np/s.ZPjHZ?cc
+
+GK Saurav(For old questions solved):
+
+https://s.daraz.com.np/s.ZPjry?cc
+
+If you can get any one of them, get the latter one. It rocks for real. It contains all old questions till 2083 baisakh of GK organized in an easy to digest form. It is organized syllabus unit wise.
 
 # Daily study routine
 
@@ -164,9 +167,8 @@ What to do in those 6 hours?
 
 From this book, pick the topics and learn them on your own. You could use YouTube, books, whatever to learn. It is totally on you.
 
-Read more from this blog:
+Hence, I hope this guide was useful for loksewa aspirants. If you have something to say, contact me:
 
-Full guidance on Loksewa Computer Engineer and IT Officer in Nepal
+https://berojgarengineer.com/contact/
 
-https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 

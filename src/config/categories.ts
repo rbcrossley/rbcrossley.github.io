@@ -67,6 +67,14 @@ export const categories: Category[] = [
     description: 'Public Service Commission, NTC, RBB and other government IT exams.',
     icon: 'landmark',
   },
+
+    {
+    id: 'computer-science-and-engineering',
+    label: 'Computer Science and Engineering',
+    shortLabel: 'CSE',
+    description: 'Topics related to computer science and engineering principles.',
+    icon: 'laptop',
+  },
 ];
 
 export const categoryById: Record<string, Category> = Object.fromEntries(
