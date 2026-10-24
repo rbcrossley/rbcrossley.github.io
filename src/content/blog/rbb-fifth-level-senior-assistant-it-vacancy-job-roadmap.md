@@ -164,9 +164,9 @@ The exam date is not finalized yet. In the past, the pattern was that the exam h
 # Salary
 It is interesting and motivational to know about the salary for the position you are preparing for. The salary of a 5th-level IT assistant is not available from RBB itself in the public domain. But I have official data on the salary of a 6th-level RBB Officer. It is nearly 81,000 per month. This was before the 21% salary increment.
 
-I am not sure if government banks have increased the salary as per the FY 2083/84 budget, but if they have done so, the current salary of the 5th level should be 81,000 per month.
+I am not sure if government banks have increased the salary as per the FY 2083/84 budget(most likely they will), but if they have done so, the current salary of the 5th level should be 81,000 per month.
 
-If not, then it will be 15-20% lower than the officer-level salary.
+If not, then it will be 15-20% lower than the officer-level salary which is like 65,000 per month.
 
 # practical exam
 There will be no practical exam for RBB IT Assistant 5th level post as per official documents.
@@ -180,3 +180,8 @@ I have also discussed the complete roadmap for Loksewa Computer Engineer and IT 
 
 https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 
+For getting the old questions of Loksewa computer engineer and IT officer:
+
+https://berojgarengineer.com/blog/pyq-loksewa/
+
+Note that it does not have questions for RBB-5 IT.

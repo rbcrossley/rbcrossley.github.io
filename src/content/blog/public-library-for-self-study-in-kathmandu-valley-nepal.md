@@ -8,7 +8,7 @@ image: /images/blog/public-libraries.png
 
 # Kaiser Library
 
-Kaisere library information is old data (before the 9-6 office time set by the government), so use it with a caution. If you know the current timings, send me an e-mail at admin@berojgarengineer.com.
+Kaiser library information is old data (before the 9-6 office time set by the government), so use it with a caution. If you know the current timings, send me an e-mail at admin@berojgarengineer.com.
 
 Opening days: Entire week
 
