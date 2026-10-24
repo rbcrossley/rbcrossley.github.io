@@ -59,7 +59,16 @@ const blog = defineCollection({
     // a small fixed taxonomy, not free-form SEO keywords. A post may carry
     // more than one - e.g. ["linux", "devops"].
     categories: z
-      .array(z.enum(['linux', 'devops', 'it-careers', 'it-education', 'loksewa']))
+      .array(
+        z.enum([
+          'linux',
+          'devops',
+          'it-careers',
+          'it-education',
+          'loksewa',
+          'computer-science-and-engineering',
+        ])
+      )
       .default([]),
     // Draft flag set by the CMS ("Save Draft" vs "Publish"). Optional and
     // defaults to false so every existing post (which has no `draft` field
