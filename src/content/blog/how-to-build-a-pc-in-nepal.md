@@ -45,7 +45,7 @@ Note that I am not even getting a dedicated GPU at this price with this laptop. 
 
 Compare this to the following laptop:
 
-![acer-aspire.png](/public/images/blog/acer-aspire.png)
+![acer-aspire.png](blog/acer-aspire.png)
 
 I asked the seller and adding another 16GB DDR4 RAM(for 32GB RAM total) will take its price to just 1,75,000. I bet I can negotiate if I research a bit more.  However I will still publish this writeup because I have already written it. I do not think anyone needs the review of that laptop because it is well-reviewed(I mean it has many reviews, not just good reviews) laptop already.
 
