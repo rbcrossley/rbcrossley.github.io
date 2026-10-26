@@ -45,7 +45,7 @@ Note that I am not even getting a dedicated GPU at this price with this laptop. 
 
 Compare this to the following laptop:
 
-![acer-aspire.png](blog/acer-aspire.png)
+![acer-aspire.png](/images/blog/acer-aspire.png)
 
 I asked the seller and adding another 16GB DDR4 RAM(for 32GB RAM total) will take its price to just 1,75,000. I bet I can negotiate if I research a bit more.  However I will still publish this writeup because I have already written it. I do not think anyone needs the review of that laptop because it is well-reviewed(I mean it has many reviews, not just good reviews) laptop already.
 
@@ -83,7 +83,7 @@ I will discuss my goals with the PC below.
 
 I am doing devops labs. I have courses that are waiting for me to view and complete in Udemy and probably more on my wishlist. 
 
-![udemy.png](/public/images/blog/udemy.png)
+![udemy.png](/images/blog/udemy.png)
 
 I am building a series about 45 days of DevOps. You can read more about it below:
 
