@@ -18,9 +18,7 @@ I continuously keep updating this question set. Every 1.5 year, I will send you 
 
 
 
-Send me an e-mail to:
-
-admin@berojgarengineer.com. I will guide you on how to purchase it. It is currently priced at Rs.2999.
+**Note that I am not currently selling these previous year questions because of loksewa competition.But this page will remain because I will start selling it soon.**
 
 
 I really do not have to tell you the importance of past questions because you are from Nepal. Hence you already know its importance. But just sharing my experience on how I use these question papers. I feed the questions, and syllabus of the corporation I am preparing for into LLM, ask it to prepare 20 questions per subject. I solve each of those questions. This has helped me so much in getting confident in technical paper part. I highly recommend you to get these previous year questions.
