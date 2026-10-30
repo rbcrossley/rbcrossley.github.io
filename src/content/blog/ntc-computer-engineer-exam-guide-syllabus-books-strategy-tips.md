@@ -1,16 +1,42 @@
 ---
 title: NTC Computer Engineer exam guide 
-description: A Nepal Telecom Level 7 Computer Engineer roadmap covering the syllabus, books, subjects, preparation strategy, and lessons from my journey.
-date: 2026-07-02
+description: A Nepal Telecom Level 7 Computer Engineer roadmap covering the latest kartik 13 vacancy, syllabus, books, subjects, preparation strategy, and lessons.
+date: 2026-10-30
 author: BerojgarEngineer
 image: /images/blog/ntc.jpeg
-tags: ["Nepal Telecom", "NTC", "NTC Computer Engineer", "Level 7", "Loksewa", "Loksewa syllabus", "exam preparation", "engineering books", "study strategy", "exam roadmap", "government IT jobs in Nepal", "telecom jobs in Nepal"]
+tags: ["nepal telecom computer engineer syllabus", "NTC", "NTC Computer Engineer vacancy 2083", "Level 7", "ntc computer engineer syllabus", "Loksewa syllabus", "exam preparation", "engineering books", "study strategy", "exam roadmap", "government IT jobs in Nepal", "telecom jobs in Nepal"]
 categories: ["loksewa"]
 ---
+# Update Kartik 13,2083:
+Nepal Telecom has opened a huge amount of vacancies dated Kartik 13,2083.
+
+This is huge for computer engineers.
+
+The official vacancy details is present in the pdf below:
+
+https://cms.ntc.net.np/storage/media/zFsAo7GtKypyEI9LV5ldXpykXv9f4pPNa5PKMl7N.pdf
+
+For computer engineering, level 7:
+
+total seats=10
+
+Open category=6
+
+Rest four are reserved quota for madhesi, disabled, adibasi/janjati, and mahila.
+
+> Please note that as a Computer engineer, you are eligible for the post of electronics and communications engineer as well. But it will require you to study the electronics syllabus which is not easy. And given that the vacancies are in low amount in Electronics and Communications vs Computer Engineering, the safer and convenient choice is to go with Computer Engineering.
+
+The last date of form submission is till Mangsir 03. With double dastur, you can go upto Mangsir 10,2083.
+
+
+For level 6 and 7, the exam fee is 700 Rupees only. For inclusion quota, you will have to pay 200 rupees extra.
+
+
 # Introduction
 You've completed your Computer Engineering degree. Months have passed. Friends are either abroad or starting careers. You're applying everywhere, but interviews rarely come. If this sounds familiar, you're not alone.
 
 For many engineering graduates in Nepal, government technical jobs like Nepal Telecom (NTC) represent more than just employment. They represent stability, respect, financial security, and a meaningful engineering career.
+
 The good news? Unlike private companies that often demand years of experience for an entry level role, the NTC Computer Engineer exam rewards preparation far more than experience.
 
 This guide is written specifically for berojgar engineers who are determined to change their future through focused preparation.
@@ -114,6 +140,10 @@ Section B:
 This is entirely technical and subjective.
 
 There is no written priority or weightage of subjects given officially by NTC. So, each subjects hold equal priority.
+
+**The official Nepal Telecom computer engineer level 7 syllabus is present in the link below:**
+
+https://cms.ntc.net.np/storage/media/BFF4YyBxf0jXNo9Ihl1wCelOUkpnu2zNcpaEDwJX.pdf
 
 I have provided a roadmap to prepare for Loksewa's Computer Engineer and IT officer exams in the blog below:
 
