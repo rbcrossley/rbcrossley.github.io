@@ -4,7 +4,7 @@ description: A Nepal Telecom Level 7 Computer Engineer roadmap covering the late
 date: 2026-10-30
 author: BerojgarEngineer
 image: /images/blog/ntc.jpeg
-tags: ["nepal telecom computer engineer syllabus", "NTC", "NTC Computer Engineer vacancy 2083", "Level 7", "ntc computer engineer syllabus", "Loksewa syllabus", "exam preparation", "engineering books", "study strategy", "exam roadmap", "government IT jobs in Nepal", "telecom jobs in Nepal"]
+tags: ["nepal telecom computer engineer syllabus", "NTC computer engineer", "NTC Computer Engineer vacancy 2083", "Level 7", "ntc computer engineer syllabus", "government IT jobs in Nepal", "telecom jobs in Nepal"]
 categories: ["loksewa"]
 ---
 # Update Kartik 13,2083:
@@ -145,9 +145,6 @@ There is no written priority or weightage of subjects given officially by NTC. S
 
 https://cms.ntc.net.np/storage/media/BFF4YyBxf0jXNo9Ihl1wCelOUkpnu2zNcpaEDwJX.pdf
 
-I have provided a roadmap to prepare for Loksewa's Computer Engineer and IT officer exams in the blog below:
-
-https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
 
 # Past Questions
 For getting all the past questions of loksewa computer engineer and IT officer(including NTC), visit the link provided below:
@@ -159,6 +156,30 @@ For GK+Technical textbooks recommendations, visit the blog given below:
 
 https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 
+
+TLDR(For GK):
+
+- get GK Saurav(For old questions solved):
+
+https://s.daraz.com.np/s.ZPjry?cc
+
+
+This helps for GK. This is beyond what you need for GK. It contains all the previous year questions collected+solved in one book.
+
+For the mathematics and statistics books, there is a gate publications' book. But I do not recommend it. For the first paper as well, they have a book. But I did not find it "that" helpful to recommend to the readers of the blog. 
+
+The sad thing is that there are no alternative books if you do not buy those books by gate publications. But I believe more books will arrive in the future as the mega ntc vacancy has happened for computer engineers.
+
+For technical part: use the notes you probably made during your university degree days.
+
+# Institutes
+
+- apex
+- line
+- iglobe
+- pragyanam
+
+All probably use(I know 3 of them) AI to make slides/notes and teach that. So I do not recommend joining institutes. It will cost you over 10,000 Rupees to join their online classes.
 
 # Roadmap
 The roadmap is present in the blog given below:
