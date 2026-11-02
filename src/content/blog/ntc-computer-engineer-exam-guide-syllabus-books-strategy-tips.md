@@ -31,6 +31,10 @@ The last date of form submission is till Mangsir 03. With double dastur, you can
 
 For level 6 and 7, the exam fee is 700 Rupees only. For inclusion quota, you will have to pay 200 rupees extra.
 
+**To apply:**
+
+https://recruit.ntc.net.np/
+
 
 # Introduction
 You've completed your Computer Engineering degree. Months have passed. Friends are either abroad or starting careers. You're applying everywhere, but interviews rarely come. If this sounds familiar, you're not alone.
