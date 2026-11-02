@@ -32,6 +32,11 @@ I bought a ThinkPad T450 from a seller on Hamrobazaar for **14,000 NPR**. It has
 
 I'll be honest: I somewhat regretted the purchase. The laptop's screen has a visible line running through the middle of the display. It's usable, but it's not something you'd want to stare at all day. That said, for a homelab, the monitor barely matters: I'm not running a desktop environment on it or looking at its screen day to day. It sits headless doing server work.
 
+Here is how my homelab looks like:
+![t450 homelab](/images/blog/homelab/homelab-t450-1.jpg)
+
+
+
 ## From VirtualBox to Proxmox
 
 I started out running VMs on VirtualBox, mostly because it was the easy, familiar option. But VirtualBox is a type-2 hypervisor, meaning you're running a full host OS underneath it just to host your VMs. That's wasted overhead on a machine with only 12GB of RAM to begin with.
