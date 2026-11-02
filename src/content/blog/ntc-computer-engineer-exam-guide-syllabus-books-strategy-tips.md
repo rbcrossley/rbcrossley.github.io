@@ -167,6 +167,8 @@ TLDR(For GK):
 
 https://s.daraz.com.np/s.ZPjry?cc
 
+![GK books](/public/images/blog/gk-books.jpg)
+
 
 This helps for GK. This is beyond what you need for GK. It contains all the previous year questions collected+solved in one book.
 
