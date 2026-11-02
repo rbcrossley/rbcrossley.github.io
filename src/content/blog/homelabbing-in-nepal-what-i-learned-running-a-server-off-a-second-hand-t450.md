@@ -35,7 +35,7 @@ I'll be honest: I somewhat regretted the purchase. The laptop's screen has a vis
 Here is how my homelab looks like:
 ![t450 homelab](/images/blog/homelab/homelab-t450-1.jpg)
 
-![t450 homelab](/images/blog/homelab/homelab-t450-2.jpg)
+![t450 homelab2](/images/blog/homelab/homelab-t450-2.jpg)
 
 
 ## From VirtualBox to Proxmox
