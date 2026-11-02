@@ -169,6 +169,7 @@ https://s.daraz.com.np/s.ZPjry?cc
 
 ![GK books](/public/images/blog/gk-books.jpg)
 
+These are the GK and first paper books I have collected over the time. What I am suggesting comes from my experience with these books. So you can trust my recommendations.
 
 This helps for GK. This is beyond what you need for GK. It contains all the previous year questions collected+solved in one book.
 
