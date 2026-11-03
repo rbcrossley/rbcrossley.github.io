@@ -1,10 +1,10 @@
 ---
-title: NTC Computer Engineer exam guide 
-description: A Nepal Telecom Level 7 Computer Engineer roadmap covering the latest kartik 13 vacancy, syllabus, books, subjects, preparation strategy, and lessons.
+title: NRB IT assistant director vacancy, syllabus, and guidance 
+description: Will NRB IT AD vacancy open in 2083 and the day-to-day work of NRB IT Assistant Director
 date: 2026-11-03
 author: BerojgarEngineer
 image: /images/blog/ntc.jpeg
-tags: ["nepal rastra bank IT Assistant Director syllabus", "NRB IT Assistant Director", "NTC Computer Engineer vacancy 2083", "Level 7", "ntc computer engineer syllabus", "government IT jobs in Nepal", "telecom jobs in Nepal"]
+tags: ["nepal rastra bank IT Assistant Director syllabus", "NRB IT Assistant Director", "government IT jobs in Nepal", "nepal rastra bank IT jobs in Nepal"]
 categories: ["loksewa"]
 ---
 
