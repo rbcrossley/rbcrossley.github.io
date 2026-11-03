@@ -186,7 +186,8 @@ For technical part: use the notes you probably made during your university degre
 - iglobe
 - pragyanam
 
-All probably use(I know 3 of them) AI to make slides/notes and teach that. So I do not recommend joining institutes. It will cost you over 10,000 Rupees to join their online classes.
+and others.
+
 
 # Roadmap
 The roadmap is present in the blog given below:
