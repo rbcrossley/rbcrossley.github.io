@@ -39,7 +39,7 @@ export default defineConfig({
   site: SITE,
   base: BASE,
   output: 'static',
-  trailingSlash: 'ignore',
+  trailingSlash: 'always',
   redirects: REDIRECTS,
   build: {
     assets: 'assets',
