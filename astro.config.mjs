@@ -31,6 +31,8 @@ const BASE = '/';
 // -----------------------------------------------------------------------------
 const REDIRECTS = {
   '/blog/most-important-interview-question-asked-in-it-jobs-in-kathmandu': '/blog/all-about-it-jobs-in-kathmandu-nepal',
+  '/post/monthwise-self-study-computer-science-progress-logs': '/blog/five-books-every-it-students-must-read-before-they-graudate',
+  '/post/google-and-youtube-search-techniques-for-learning-new-concepts': '/blog/five-books-every-it-students-must-read-before-they-graudate',
 };
 
 export default defineConfig({
