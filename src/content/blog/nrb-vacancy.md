@@ -18,8 +18,7 @@ NRB is better even when compared with other government banks jobs because NRB do
 As an IT graduate, you can apply for Assistant Director(IT) in NRB.
 
 
-# Why Nepal Telecom
-## Job Security
+# Why Nepal Rastra Bank
 Nepal Rastra Bank job is a stable government job. It provides you with job security. Pension does not exist anymore though but there are various retirement benefits. 
 
 It is (almost) future proof. 
@@ -63,55 +62,12 @@ You will get good promotion prospects. NRB is absolutely top-most respected job 
 
 ## Work You'll Actually Do
 
-The work that you will do as a Assistant Director (IT or Cyber Security) in NRB will be mostly related to SupTech, RegTech. Your task is to audit bank's "defense" against cyber threats. Your task it ensure that the cyber resilience guidelines, IT guidelines, AI guidelines, etc., are being followed properly.
+The work that you will do as a Assistant Director (IT or Cyber Security) in NRB will be mostly related to SupTech, RegTech. Your task is to audit bank's "defense" against cyber threats. Your task it ensure that the cyber resilience guidelines, IT guidelines, AI guidelines, etc., are being followed properly in A class banks.
+
+
 
 # Exam Pattern
 
-Based on the official syllabus, the written examination consists of 200 marks followed by an interview.
-The first paper is of 100 marks. It is divided into first 45 minutes and next 1 hour 30 minutes exams.
-The second paper is of 100 marks. It is of 3 hours.
-
-If you clear both first and second paper, you will enter interview stage. Interview is of 30 marks.
-
-> Note that there is negative marking in MCQs. 20% marks are deducted for every 1 wrong answer.
-
-> Note that the age limit to apply is 35 years for male, and 40 years for female.
-
-To get qualified you will need 40 marks each in first and second paper. But your name will be published by PSC only if you are in the topper list. 
-
-The topper list means that if three seats are open, then there will be around 9 toppers who will be called for interview. 
-
-**Paper I (100 Marks)**
-- General Awareness and Contemporary Issues (MCQs):30 marks
-- Mathematics and Statistics(MCQs):20 marks
-- Management & Institutional Awareness (Subjective):50 marks
-
-**Paper II (100 Marks)**
-The subjects for Computer Engineering in second paper are as follows:
-Section A:
-(It is of 50 marks. It consists of 2 short questions worth 5 marks each, and 4 long questions worth 10 marks each.)
-- digital signal processing
-- digital systems design
-- computer architectures
-- principles of VLSI
-- computer communications
-- artificial intelligence and expert systems
-- distributed systems and cloud computing
-
-Section B:
-(It is of 50 marks. It consists of 2 short questions worth 5 marks each, and 4 long questions worth 10 marks each.)
-- program design and data structures
-- operating systems
-- software engineering
-- databases and file systems
-- internet programming
-- client server computing
-- cryptography and network security
-- basic electricity and electronics
-
-This is entirely technical and subjective.
-
-There is no written priority or weightage of subjects given officially by NTC. So, each subjects hold equal priority.
 
 **The official Nepal Telecom computer engineer level 7 syllabus is present in the link below:**
 
