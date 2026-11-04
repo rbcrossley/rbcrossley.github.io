@@ -90,7 +90,9 @@ so hand-editing there is always safe.
 
 **Images**: uploaded through the Cover Image field or inserted inline go to
 `public/images/blog/`, the exact folder every existing post's images
-already live in.
+already live in. Inline image links are written as `/images/blog/filename.png`;
+on the site, every Markdown image is automatically centered, styled, and
+clickable to open its full-size version in a new tab.
 
 ## Why this is actually private, not just hidden
 

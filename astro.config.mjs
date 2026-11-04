@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import mdx from '@astrojs/mdx';
+import remarkBlogImages from './src/lib/remark-blog-images.mjs';
 
 // =============================================================================
 // GitHub Pages configuration
@@ -41,6 +42,9 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'always',
   redirects: REDIRECTS,
+  markdown: {
+    remarkPlugins: [remarkBlogImages],
+  },
   build: {
     assets: 'assets',
   },

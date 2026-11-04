@@ -126,9 +126,11 @@ collections:
         widget: "markdown"
         required: true
         hint: >-
-          The toolbar covers bold, italic, headings, lists, links, blockquote,
-          inline code, fenced code blocks (with language) and images. Tables
-          aren't a toolbar button in this editor — use the "Show raw
+          Images uploaded or inserted with the toolbar use /images/blog/ paths.
+          On the site, Markdown images are automatically shown as centered,
+          clickable full-size images. The toolbar also covers bold, italic,
+          headings, lists, links, blockquote, inline code and fenced code
+          blocks (with language). Tables aren't a toolbar button in this editor — use the "Show raw
           Markdown" toggle in the editor's top-right to drop in a Markdown
           table directly; everything else in this field is normal Markdown
           and safe to hand-edit there too.
