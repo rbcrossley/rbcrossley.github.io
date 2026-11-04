@@ -3,7 +3,7 @@ title: NRB IT assistant director vacancy, syllabus, and guidance
 description: Will NRB IT AD vacancy open in 2083 and the day-to-day work of NRB IT Assistant Director
 date: 2026-11-03
 author: BerojgarEngineer
-image: /images/blog/ntc.jpeg
+image: /images/blog/thumbnail-nrb-it-ad.png
 tags: ["nepal rastra bank IT Assistant Director syllabus", "NRB IT Assistant Director", "government IT jobs in Nepal", "nepal rastra bank IT jobs in Nepal"]
 categories: ["loksewa"]
 ---
