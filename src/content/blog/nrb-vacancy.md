@@ -177,7 +177,9 @@ Most of the part of NRB is purely technical except some laws, regulations, and g
 
 I have the book by Er. Nikesh Neupane named "Foundations of Computer Engineering". I am selling that book. Note that you will not get this book even if you want to purchase new in the market. Probably due to less number of vacancies being opened in the past few years, this book stopped publishing.
 
-![Book for NRB IT preparation](/images/blog/foundations-of-computer-engineering.jpg)
+<a href="/images/blog/foundations-of-computer-engineering.jpg" target="_blank" rel="noopener" aria-label="View the full-size book cover">
+  <img src="/images/blog/foundations-of-computer-engineering.jpg" alt="Book for NRB IT preparation" width="360" loading="lazy" decoding="async" style="display: block; width: min(100%, 360px); height: auto; margin: 1.5rem auto; border-radius: 12px; box-shadow: 0 4px 16px rgb(0 0 0 / 12%); cursor: zoom-in;" />
+</a>
 
 The best part about this book is that it contains significant number of previous year questions, which is very tough to get anywhere else.
 
@@ -202,4 +204,3 @@ https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and
 
 
 It contains the roadmap to cracking PSC and being a government computer engineer, IT officer. It is not specific to NRB IT Assistant Director but covers the core concept behind how exams could be cracked.
-
