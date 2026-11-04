@@ -82,10 +82,8 @@ https://www.nrb.org.np/contents/uploads/2023/09/12-Assistant-Director-Cyber-Secu
 
 The exam pattern is same for both CS and IT roles:
 
-![NRB Exam Pattern for IT AD](/images/blog/nrb-career-notice.png)
+![NRB Exam Pattern for IT AD](/images/blog/nrb-it-exam-pattern.png)
 
-
-However some subjects differ.
 
 ## IT 
 
@@ -130,6 +128,42 @@ Once you become topper in this exam, you will have to sit through a practical ex
 
 ## CyberSecurity
 
+## 1st paper
+- coa
+- digital logic
+- operating system
+- dbms
+- computer network
+- distributed system
+- it in nepalese financial sector and related act, policy and guidelines
+
+## 2nd paper
+- programming language
+- dsa
+- toc
+- compiler design
+- computer graphics
+- SAAD
+- software engineering principles
+- web engineering and programming
+- e-commerce, e-governance and underlying technology
+
+
+## 3rd paper
+- fundamental of information security/cybersecurity
+- network and system security
+- software and application security
+- security models and architecture
+- cryptography
+- hacking technique, tools and incident handling
+- information secrity and IS risk management
+- information security law, regulations, and policies, and best practices
+
+
+Once you become topper in this exam, you will be going through a practical exam.
+
+![NRB Practical Exam Pattern for IT Assistant Director](/images/blog/nrb-practical-cs.png)
+
 
 # Past Questions
 For getting all the past questions of loksewa computer engineer and IT officer(including NRB IT and CyberSecurity), visit the link provided below:
@@ -137,37 +171,29 @@ For getting all the past questions of loksewa computer engineer and IT officer(i
 https://berojgarengineer.com/blog/pyq-loksewa/
 
 # Books
-For GK+Technical textbooks recommendations, visit the blog given below:
-
-https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
 
 
-TLDR(For GK):
+Most of the part of NRB is purely technical except some laws, regulations, and guidelines.
 
-- get GK Saurav(For old questions solved):
+I have the book by Er. Nikesh Neupane named "Foundations of Computer Engineering". I am selling that book. Note that you will not get this book even if you want to purchase new in the market. Probably due to less number of vacancies being opened in the past few years, this book stopped publishing.
 
-https://s.daraz.com.np/s.ZPjry?cc
+![Book for NRB IT preparation](/images/blog/foundations-of-computer-engineering.jpg)
 
-![GK books](/images/blog/gk-books.jpg)
+The best part about this book is that it contains significant number of previous year questions, which is very tough to get anywhere else.
 
-These are the GK and first paper books I have collected over the time. What I am suggesting comes from my experience with these books. So you can trust my recommendations.
+Price=Rs. 1,000 for this used book.
 
-This helps for GK. This is beyond what you need for GK. It contains all the previous year questions collected+solved in one book.
+I do not think you will get a single book that contains all materials for NRB IT Assistant Director. It will be 10,000+ pages book if one tries to write that.
 
-For the mathematics and statistics books, there is a gate publications' book. But I do not recommend it. For the first paper as well, they have a book. But I did not find it "that" helpful to recommend to the readers of the blog. 
-
-The sad thing is that there are no alternative books if you do not buy those books by gate publications. But I believe more books will arrive in the future as the mega ntc vacancy has happened for computer engineers.
-
-For technical part: use the notes you probably made during your university degree days.
+You will have to use your Bachelors' degree notes, reference textbooks, claude pro or chatgpt premium and find your way through.
 
 # Institutes
 
+The following institutes are the likely candidate to conduct NRB IT Assistant Director classes if vacancy opens this year.
+
 - apex
-- line
-- iglobe
 - pragyanam
 
-All probably use(I know 3 of them) AI to make slides/notes and teach that. So I do not recommend joining institutes. It will cost you over 10,000 Rupees to join their online classes.
 
 # Roadmap
 The roadmap is present in the blog given below:
@@ -175,4 +201,5 @@ The roadmap is present in the blog given below:
 https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
 
 
-It is not specific for NTC though. But it contains the gist of what you should do while preparing for any corporation specific exams.
+It contains the roadmap to cracking PSC and being a government computer engineer, IT officer. It is not specific to NRB IT Assistant Director but covers the core concept behind how exams could be cracked.
+
