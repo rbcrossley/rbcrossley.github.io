@@ -8,6 +8,16 @@ tags: ["Loksewa", "changedetection.io", "Docker", "Docker Compose", "Rocky Linux
 categories: ["loksewa", "devops"]
 ---
 
+
+**I guess this is not everyone's cup of tea. If this setup deployment seems tough to you, do not worry, you can hire me for an affordable price. I will take only 2,500 rupees to do this.**
+
+Contact me via e-mail:
+
+https://berojgarengineer.com/contact/
+
+If you do not need the help, keep reading the post on how to do it.
+
+
 If you are preparing for Loksewa, you already know the problem. The notice you needed was published on a Sunday, you opened the site on Wednesday, and by then half the application window is gone. Refreshing psc.gov.np five times a day is not a strategy.
 
 So instead of checking the site, let the site check itself and mail you when something changes. This post sets up a self-hosted [changedetection.io](https://changedetection.io) instance on Rocky Linux 10, points it at the three PSC pages that actually matter, and tunes the filters so you only get pinged for real notices, not for every visitor counter and rotating banner on the page.

@@ -431,26 +431,6 @@ To confirm what is deployed, and to remove something:
 
 For a redeployment during testing, `redeploy` replaces the running application without an undeploy step. In production, most teams prefer a stop, deploy, start cycle so the state is unambiguous.
 
-# Frequently asked questions
-
-**Can I run GlassFish 4.1 on Java 11 or Java 17?**
-No. GlassFish 4.1 depends on internal APIs removed in Java 9, so it fails at startup. You need GlassFish 5.x for Java EE 8, or Payara if you want an actively maintained server.
-
-**Should I still use GlassFish for a new project?**
-For a new project, no. GlassFish 4.1 no longer receives security updates. Payara is the direct migration path and is largely drop-in compatible, and WildFly is the other common choice. GlassFish 4.1 remains relevant because a great many existing systems run on it and must be supported.
-
-**Where are the logs?**
-`glassfish4/glassfish/domains/<domain-name>/logs/server.log`. This is the first place to look for any startup failure, and it carries far more detail than `systemctl status`.
-
-**How much memory should I give each domain?**
-The default heap is 512 MB, which is low for anything real. Set it per domain in `domain.xml` or with `asadmin create-jvm-options -Xmx2g`. Remember each domain is a separate JVM, so five domains at 2 GB each need 10 GB before you count the operating system.
-
-**Why does the admin console refuse remote connections?**
-Remote administration is disabled by default. Run `asadmin enable-secure-admin` and restart the domain. Then restrict access to port 4848 at the firewall.
-
-**How do I start a domain automatically when there are several?**
-Either create one systemd unit per domain, each naming its domain in `ExecStart`, or use a single unit calling `asadmin start-domain` once per domain. Separate units are easier to reason about when one domain needs restarting.
-
 # Wrapping up
 
 GlassFish is not the application server anyone would choose for a greenfield project today, but it is very much the one you will meet if you support enterprise Java systems in Nepal's banking and insurance sector. Knowing how to install it, run it under systemd as an unprivileged user, and carve a server into isolated domains is directly useful support engineering work.

@@ -65,8 +65,7 @@ Mastering Linux: The Comprehensive Guide by Janis Seeman is the best course that
 
 Supplement this course with a Linux textbook. I recommend the Evi Nemeth Unix and Linux handbook. National Book Shop, Bhotahity, brought it to Nepal just a year ago. 
 
-https://nationalbook.com.np/product/unix-and-linux-system-administration-handbook-nemeth-snyder
-
+![Evi Nemeth Unix and Linux system admin handbook cover page](images/blog/evi-nemeth-sysadmin-handbook.jpg)
 
 I know students love to know the time that they should give to a subject. But I do not want to tell you how much time you should give to this. Give it as much time as it requires. That is all. Because they are the foundations of your IT career. Do not miss them.
 
