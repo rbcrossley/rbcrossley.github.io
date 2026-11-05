@@ -16,15 +16,20 @@
 // =============================================================================
 import Icon from './Icon.astro';
 
+export interface Props {
+  compact?: boolean;
+}
+
+const { compact = false } = Astro.props;
 const FORM_ACTION_URL = 'https://9531b8b5.sibforms.com/serve/MUIFAOJCAW6BjaLAIj21I9_rJb6JBrCnKNG1rD93I-DUlNzOBeWphdH0vFm3wy9jvC1g-dB5t7YBbYYfryvsanRa-xOR6FwV1MZD8n0X6mgeFQL5HvdQQ4742k2EqEUqGaVePG31M5D9t5OEi6lui3nM9htVSTCpZCwfI6dy87KAn4PzIu_H6mc2nuYtpmvuyo8QpujicSQfPCYrlg=='; // <-- paste your Brevo (or other) form action URL here
 ---
 
-<section class="signup" aria-labelledby="signup-title">
+<section class:list={['signup', { 'signup-compact': compact }]} aria-labelledby="signup-title">
   <div class="container signup-inner" data-reveal>
     <div class="signup-copy">
       <span class="signup-icon" aria-hidden="true"><Icon name="mail" size={24} /></span>
-      <h2 id="signup-title">Get new guides by email</h2>
-      <p>Join the list to get new blogs as they are published. No spam.</p>
+      <h2 id="signup-title">Get Vacancy Notices by e-mail</h2>
+      <p>Get computer engineering and IT related government job vacancies as soon as they are published in your e-mail.</p>
     </div>
     <form class="signup-form" novalidate data-connected={FORM_ACTION_URL ? 'true' : 'false'} action={FORM_ACTION_URL || undefined} method="post" target="_blank">
       <label for="signup-email" class="sr-only">Email address</label>
@@ -48,6 +53,8 @@ const FORM_ACTION_URL = 'https://9531b8b5.sibforms.com/serve/MUIFAOJCAW6BjaLAIj2
     gap: 48px;
     align-items: end;
   }
+  .signup-compact { padding: 48px 0; }
+  .signup-compact .signup-inner { max-width: 768px; grid-template-columns: 1fr; gap: 24px; align-items: start; }
   .signup-icon {
     display: inline-flex;
     align-items: center;
