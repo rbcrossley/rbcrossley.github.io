@@ -3,7 +3,7 @@ title: Nepal Electricity Authority Computer Engineering Vacancy, Exam Preparatio
 description: NEA has opened computer engineering 7th level post vacancy dated Kartik 20,2083. Everything you need to know to apply, prepare and crack this exam.
 date: 2026-11-06
 author: BerojgarEngineer
-image: /images/blog/thumbnail-nrb-it-ad.png
+image: /images/blog/nea.png
 tags: ["nepal electricity authority computer engineer syllabus", "NEA computer engineer", "NEA Computer Engineer vacancy 2083", "Level 7", "nea computer engineer syllabus", "government IT computer jobs in Nepal", "electricity jobs in Nepal", "nea computer  computer engineer 7th level past questions", "nea computer engineer old question paper", "nea computer engineer syllabus", "nea computer engineer syllabus 2083", "notes for computer engineer nea", "nepal electricity authority important qn for seventh level computer engineer", "nea vacancy 2083", "nea syllabus computer engineer", "nea 7th level computer engineer book", "nea computer engneering", "nea level 7th e and com engineering syllabus", "nea engineer", "nea job vacancy 2083", "nea computer engineer preparation book pdf"]
 categories: ["loksewa"]
 ---
