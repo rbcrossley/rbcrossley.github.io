@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import AuthorBio from '../../components/AuthorBio.astro';
-import EmailSignup from '../../components/EmailSignup.astro';
+import NewsletterSignup from '../newslettersignup.astro';
 import PostCard from '../../components/PostCard.astro';
 import Icon from '../../components/Icon.astro';
 import { getAuthor } from '../../config/author';
@@ -103,7 +103,7 @@ const jsonLd = {
     <AuthorBio author={post.data.author} />
   </article>
 
-  <EmailSignup compact />
+  <NewsletterSignup />
 
   {relatedPosts.length > 0 && (
     <section class="related-posts" aria-labelledby="related-title">
