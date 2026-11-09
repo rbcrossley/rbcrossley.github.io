@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import PostCard from '../components/PostCard.astro';
-import EmailSignup from '../components/EmailSignup.astro';
+import NewsletterSignup from './newslettersignup.astro';
 import { link } from '../lib/link';
 import { isPublished } from '../config/hidden-posts';
 import { pickFeatured } from '../config/featured-posts';
@@ -67,7 +67,7 @@ const latestPosts = allPosts.slice(0, 3);
     </div>
   </section>
 
-  <EmailSignup />
+  <NewsletterSignup />
 </Base>
 
 <style>
