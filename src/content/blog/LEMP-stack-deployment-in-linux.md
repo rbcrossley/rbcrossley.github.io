@@ -8,14 +8,6 @@ tags: ["LEMP stack", "NGINX", "MySQL", "PHP", "WordPress", "Red Hat Linux", "Cen
 categories: ["linux", "devops"]
 ---
 
-Almost every Nepali IT graduate I know has installed WordPress at some point, usually through a hosting control panel where a single click does everything. That works, but it teaches you nothing about what is actually running underneath.
-
-Building the stack yourself is different. You find out why PHP needs a separate process manager, why NGINX serves a blank page instead of your site, and what SELinux is really doing when it silently refuses to let the web server read a file. Those are the problems you will face on a real server, and they are the ones interviewers ask about.
-
-This walkthrough deploys a complete LEMP stack on a Red Hat based Linux server and installs WordPress on top of it. I run this in my homelab on a virtual machine, and you can follow along on any VM with 2 GB of RAM and a fresh Rocky Linux, AlmaLinux, RHEL or CentOS install.
-
-**A note before you start:** this is a lab build. Some steps below deliberately choose convenience over security so you can see the moving parts clearly, and I have flagged every one of them. Do not copy this configuration onto a public server without reading those warnings.
-
 LEMP stack stands for:
 
 - Linux
@@ -24,10 +16,6 @@ LEMP stack stands for:
 - PHP
 
 The E in LEMP comes from the way NGINX is pronounced, "Engine X". It is the same idea as the older LAMP stack, with Apache swapped out for NGINX.
-
-That swap is the interesting part. Apache creates a process or thread for every connection, which is simple but memory hungry under load. NGINX uses an event driven model where a small fixed number of worker processes handle thousands of connections each. On a small VPS, which is what most of us are actually deploying to, that difference decides whether your site survives a traffic spike.
-
-The one thing NGINX does not do is execute PHP. Apache embeds a PHP module directly; NGINX hands PHP requests off to a separate service called PHP-FPM (FastCGI Process Manager) over a socket. Understanding that handoff explains most of the errors you will hit later, so keep it in mind when you get to the NGINX configuration.
 
 LEMP stack can be used to create a wordpress site.
 
@@ -39,29 +27,40 @@ These are the download and archive utilities the later steps depend on. A minima
 dnf install -y wget curl tar unzip
 ```
 
+For some reasons, this was taking too much time. I have waited for more than 10 minutes for this to run completely. 
+
+
 **Configure firewall & selinux**
 
 To allow ports. Else just disable for lab purposes.
 
-This step trips up more people than anything else in the build, because when it goes wrong nothing appears in your NGINX logs. The service is running, the config is valid, and the page still will not load.
-
-For a lab, opening the ports properly takes one command and is a better habit than disabling the firewall:
-
-```bash
-firewall-cmd --permanent --add-service=http
-firewall-cmd --permanent --add-service=https
-firewall-cmd --reload
 ```
-
-SELinux is the second gate. Even with the firewall open, SELinux will block NGINX from reading files in non-standard locations or from opening network connections. For this lab you can allow what we need:
-
-```bash
-setsebool -P httpd_can_network_connect 1
-semanage fcontext -a -t httpd_sys_rw_content_t "/var/www/html(/.*)?"
-restorecon -Rv /var/www/html
+systemctl disable --now firewalld
 ```
+I will make a separate post on firewall hardening later on.
 
-> **If you disable SELinux instead:** understand that you are turning off a mandatory access control system that limits the damage a compromised web application can do. That is an acceptable tradeoff on a throwaway lab VM. It is not one on a server anyone else can reach. When something fails and you suspect SELinux, check `ausearch -m avc -ts recent` before reaching for `setenforce 0`.
+
+Disable selinux as well.
+
+```
+vi /etc/selinux/config
+```
+And set `SELINUX=enforcing` to `disabled`.
+
+And reboot.
+
+Issue faced: I lost my IP address of the Virtual Machine after I rebooted.
+
+I rebooted it again to verify if earlier reboot was not done successfully.
+
+
+But turns out it is a different case.
+
+I will have to investigate a bit on this, and surely will write up what I found out.
+
+All I had to do was to wait for some time and I got the ip in my vm. I had not set static IP in the vm, so maybe that is why due to other devices in the same LAN occupying that IP address, it hesitated to get that IP again. I will write up on how to set static IP later on.
+
+
 
 **Install LEMP stack(along with PHP's extensions) & enable services**
 
@@ -70,21 +69,10 @@ dnf install -y epel-release
 dnf install -y nginx mysql mysql-server php php-mysqlnd php-pgsql php-curl php-json php-gd php-xml php-mbstring php-zip
 systemctl enable --now nginx.service && systemctl enable --now mysqld && sudo systemctl enable --now php-fpm
 ```
+My preferred way of executing these commands is saving them in a file (install-and-enable-services.sh), and executing them with:
 
-Those PHP extensions are not arbitrary. WordPress will refuse to install or will break in confusing ways without them:
-
-- `php-mysqlnd` is the MySQL driver. Without it WordPress cannot reach the database at all.
-- `php-gd` handles image resizing, which is how WordPress generates thumbnails.
-- `php-xml` and `php-mbstring` are needed by the WordPress core and by most plugins for feed parsing and multibyte text handling. Anything in Nepali or Devanagari script depends on `mbstring`.
-- `php-zip` is what lets WordPress install plugins and themes from the admin panel.
-- `php-curl` handles outbound HTTP requests, including update checks.
-
-`systemctl enable --now` does two things at once: it starts the service immediately and marks it to start on boot. Forgetting the `enable` half is a classic homelab mistake, discovered the next time the VM reboots.
-
-Confirm all three are actually up before moving on:
-
-```bash
-systemctl status nginx mysqld php-fpm --no-pager
+```
+bash install-and-enable-services.sh
 ```
 
 **mysql_secure_installation**
