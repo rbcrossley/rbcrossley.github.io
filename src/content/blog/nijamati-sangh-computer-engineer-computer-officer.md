@@ -16,7 +16,7 @@ If you want to enter Government fields, this is your last chance that will come 
 
 Please note that this level of vacancy will definitely not arrive for the next 4-5 years. For the aspirants of current batch(including myself), I want to aware this fact properly. You will simply not get such kind of opportunity to enter government as a computer engineer in a half a decade. Currently you might be a fresher from college or just 2-3 years of graduating from college, so I think this is such a good time for aspirants.
 
-![Sangh Computer Engineer vacancy 2083](images/blog/sangh.png)
+![Sangh Computer Engineer vacancy 2083](/images/blog/sangh.png)
 
 Please note that this article is not just about vacancy updates. I will also tell how to prepare for this exam. Obviously I cannot tell how to crack since I myself haven't cracked any Loksewa exam yet. But I want to share helpful content.
 
@@ -107,7 +107,7 @@ https://psc.gov.np/site_uploads/course/20231110070747654dd6c3886821.pdf
 
 The exam pattern
 
-![Sangh Computer Officer Exam Pattern](images/blog/sangh-engineer.png)
+![Sangh Computer Officer Exam Pattern](/images/blog/sangh-engineer.png)
 
 The exam pattern will be like this:
 
