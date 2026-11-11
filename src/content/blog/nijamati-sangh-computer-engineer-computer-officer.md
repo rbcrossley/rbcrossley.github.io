@@ -130,8 +130,6 @@ Practical exam will consist questions from:
 
 ## Computer Engineer
 
-![Sangh Computer Engineer exam pattern](public/images/blog/sangh-computer-engineer-real.png)
-
 
 # Best resources for computer engineer
 
