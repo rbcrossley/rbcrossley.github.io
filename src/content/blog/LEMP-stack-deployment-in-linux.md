@@ -1,6 +1,6 @@
 ---
 title: LEMP stack deployment in Linux
-description: Follow my step-by-step LEMP and WordPress deployment on a Red Hat Linux server using NGINX, MySQL, and PHP, with firewall, SELinux, services, and testing.
+description: Follow my step-by-step LEMP and WordPress deployment on a Rocky Linux 10.2 server using NGINX, MySQL, and PHP, with firewall, SELinux, services, and testing.
 date: 2026-09-08
 author: BerojgarEngineer
 image: /images/blog/wordpress-using-nginx.jpg
@@ -10,7 +10,7 @@ categories: ["linux", "devops"]
 
 LEMP stack stands for:
 
-- Linux
+- Linux(I am on Rocky Linux 10.2)
 - Nginx(Engine X)
 - MySQL
 - PHP
@@ -60,13 +60,20 @@ I will have to investigate a bit on this, and surely will write up what I found 
 
 All I had to do was to wait for some time and I got the ip in my vm. I had not set static IP in the vm, so maybe that is why due to other devices in the same LAN occupying that IP address, it hesitated to get that IP again. I will write up on how to set static IP later on.
 
+PS I was getting too slow connection through Wifi in virtualbox, here is how I fixed it:
 
+- gave 2 cores of vCPU to the VM.
+- I am on acer aspire go 14, so under network->bridged adapter, I picked Realtex 8852be Wireless LAN WIFI 6 PCI-E NIC
+- And adapter type as paravirtualized network (virtio-net)
+- As well as system->acceleration->paravritualization interface=KVM
 
+![Para virtualization interface setting in virtualbox](images/blog/virtualbox.png)
+
+Now the speed over wifi is over MB/s, which was earlier only 10s of KBs per second.
 **Install LEMP stack(along with PHP's extensions) & enable services**
 
 ```
-dnf install -y epel-release
-dnf install -y nginx mysql mysql-server php php-mysqlnd php-pgsql php-curl php-json php-gd php-xml php-mbstring php-zip
+dnf install -y epel-release && dnf install -y nginx mysql mysql-server php php-mysqlnd php-pgsql php-curl php-json php-gd php-xml php-mbstring php-zip && 
 systemctl enable --now nginx.service && systemctl enable --now mysqld && sudo systemctl enable --now php-fpm
 ```
 My preferred way of executing these commands is saving them in a file (install-and-enable-services.sh), and executing them with:
@@ -74,6 +81,15 @@ My preferred way of executing these commands is saving them in a file (install-a
 ```
 bash install-and-enable-services.sh
 ```
+
+Here I was facing another problem where I was not finding mysql and mysql-server packages in dnf repo.
+
+```
+No match for argument: mysql-server
+Error: Unable to find a match: mysql-server
+```
+
+
 
 **mysql_secure_installation**
 
