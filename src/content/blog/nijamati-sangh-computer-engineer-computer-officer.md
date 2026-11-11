@@ -1,7 +1,7 @@
 ---
 title: Nepal Government Sangh Computer Engineer and Computer Officer preparation and cracking tips 
 description: How to prepare for Sangh Computer Engineer and Computer Officer roles, along with vacancy details, syllabus, books, resources, and previous year questions.
-date: 2026-11-03
+date: 2026-11-11
 author: BerojgarEngineer
 image: /images/blog/sangh2.png
 tags: ["sangh computer engineer syllabus", "sangh computer officer syllabus", "government IT jobs in Nepal", "sangh computer engineer and computer officer roadmap"]
@@ -233,4 +233,15 @@ Once you pay and send me the screenshot, I will e-mail you my review of these tw
 
 
 
+# Roadmap
+The roadmap is present in the blog given below:
 
+https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
+
+
+It contains the roadmap to cracking PSC and being a government computer engineer, IT officer.
+
+
+# Study techniques
+
+Are also present in the above blogs.
