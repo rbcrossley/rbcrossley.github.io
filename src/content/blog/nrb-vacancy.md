@@ -8,6 +8,14 @@ tags: ["nepal rastra bank IT Assistant Director syllabus", "NRB IT Assistant Dir
 categories: ["loksewa"]
 ---
 
+Update:
+NRB has posted 4 total seats for IT AD. Only 2 in open category.
+
+Fill the form here:
+
+https://jobs.nrb.org.np/recruitment/public/index
+
+
 
 # Introduction
 

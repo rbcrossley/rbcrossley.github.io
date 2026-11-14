@@ -99,23 +99,17 @@ mysql_secure_installation
 
 Just press enter for everything besides password where you enter mysql root user password.
 
-This script exists because a fresh MySQL install ships with anonymous users, a test database, and remote root login enabled. It walks you through removing all of them.
-
-> **On a real server, do not just press enter.** Answer yes to removing anonymous users, disallowing remote root login, and dropping the test database. Those defaults are exactly what automated scanners look for. Pressing enter through the prompts is a lab shortcut, nothing more.
-
-Login to mysql &:
-
+Login to mysql
+```
+mysql -u root -p
+```
+Enter password  &
 ```
 USE mysql;
 CREATE USER 'admin'@'localhost' IDENTIFIED BY 'admin';
 FLUSH privileges;
 ```
 
-The `'admin'@'localhost'` part is worth reading carefully. In MySQL, a user is identified by both a username **and** the host they connect from. `'admin'@'localhost'` and `'admin'@'%'` are two entirely different accounts. Restricting to `localhost` means this account cannot be used from another machine, which is what you want when the application and database live on the same server.
-
-`FLUSH PRIVILEGES` reloads the grant tables from disk. It is only strictly needed if you modified the `mysql` system tables directly rather than using `CREATE USER` and `GRANT`, but running it does no harm.
-
-> **`admin`/`admin` is a lab credential.** On anything reachable from a network, use a generated password and grant privileges only on the specific database that application needs, never globally.
 
 **phpmyadmin installation & configuration**
 
@@ -127,13 +121,11 @@ wget https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-all-language
 tar -xzvf php*
 mv php* phpmyadmin (rename)
 mv phpmyadmin /var/www/html/
-sudo ln -s /var/www/html/phpMyAdmin /usr/share/nginx/htmlhtml/
+sudo ln -s /var/www/html/phpMyAdmin /usr/share/nginx/html/
 chown -R nginx:nginx /var/www/html/phpmyadmin/ && sudo chmod 755  /var/www/html/phpmyadmin/
 ```
+Catch: Linux filenames are case sensitive, that is why it works.
 
-Two things to watch here. Linux filenames are case sensitive, so if you renamed the directory to lowercase `phpmyadmin`, the symlink must reference `phpmyadmin` and not `phpMyAdmin`. And check the destination path of that symlink against your actual NGINX document root, which is `/usr/share/nginx/html` on a default install.
-
-The `chown -R nginx:nginx` matters because PHP-FPM runs as the `nginx` user on Red Hat systems. If the files are owned by root, PHP cannot read them and you get a 403.
 
 Configuration part:
 
@@ -150,18 +142,6 @@ Make sure the above is true.
  $cfg['Lang'] = '';
 ```
 
-> **This configuration is for an isolated lab VM only.** What it does is store the MySQL root password in a plain text file and hand anyone who reaches the URL a fully authenticated root session with no login prompt. On an internet facing server this is a complete database compromise waiting to happen.
->
-> For anything beyond a disposable lab, set `auth_type` to `cookie` so phpMyAdmin prompts for credentials, leave `AllowNoPassword` as `false`, and restrict access by IP in your NGINX server block:
->
-> ```nginx
-> location /phpmyadmin {
->     allow 192.168.1.0/24;
->     deny all;
-> }
-> ```
->
-> Better still, do not expose phpMyAdmin publicly at all. Reach it over an SSH tunnel when you need it.
 
 The blowfish secret is what phpMyAdmin uses to encrypt the cookie holding your credentials. Generate a real one rather than leaving it blank:
 
@@ -234,14 +214,6 @@ server {
 
 Save this as `/etc/nginx/conf.d/lemp.conf` and replace `192.168.1.101` with your server's IP or domain name.
 
-Walking through the blocks that matter:
-
-**`location ~ \.php$`** is the handoff to PHP-FPM described earlier. Any request ending in `.php` is passed over the Unix socket at `/run/php-fpm/www.sock` instead of being served as a file. If you see your PHP source code rendered as plain text in the browser, this block is missing or not matching. If you get a 502 Bad Gateway, PHP-FPM is not running or the socket path is wrong. Check the real path with `grep listen /etc/php-fpm.d/www.conf`.
-
-**`try_files $uri $uri/ /index.php`** is what makes WordPress permalinks work. NGINX looks for a matching file, then a matching directory, and finally falls back to `index.php`, which is where WordPress reads the URL and decides what to render. Without this line every post URL returns a 404 while the homepage works fine.
-
-**`location ~ ^/(doc|sql|setup)/`** and **`location ~ /\.ht`** block access to phpMyAdmin's setup scripts and to Apache `.htaccess` files. Both are directories that automated scanners probe constantly.
-
 **Reload nginx**
 
 Test the syntax first. This catches unclosed braces and bad paths before they take the server down:
@@ -263,20 +235,13 @@ Add user blog with password b10g
 
 Do this through the phpMyAdmin interface, or run the SQL directly, which is faster and shows you what phpMyAdmin is doing under the hood:
 
-```sql
-CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'blog'@'localhost' IDENTIFIED BY 'b10g';
-GRANT ALL PRIVILEGES ON wordpress.* TO 'blog'@'localhost';
-FLUSH PRIVILEGES;
-```
 
-The `utf8mb4` character set is worth specifying explicitly. It is the one that stores the full Unicode range correctly, which matters for Devanagari content and for emoji. The older `utf8` in MySQL is a three byte subset that will mangle both.
-
-Note that the grant is scoped to `wordpress.*`, not `*.*`. WordPress has no reason to touch any other database, and limiting it means a compromised WordPress install cannot read the rest of your data.
 
 **Install wordpress**
 
 Now open `http://your-server-ip/wordpress` in the browser. WordPress detects that it has no configuration yet and starts its setup wizard.
+
+If you get 403 forbidden error, it might be due to nginx not able to read that folder. Remember, nginx us
 
 The wizard asks for four things:
 
