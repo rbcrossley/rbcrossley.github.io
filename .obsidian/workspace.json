@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "src/content/blog/secure jenkins server build.md",
+                "file": "src/content/blog/secure-jenkins-server-build.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "secure jenkins server build"
+              "title": "secure-jenkins-server-build"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "how-to-not-fall-behind-in-the-age-of-AI-in-Nepali-Tech-Industry"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -217,11 +216,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "1a307e429aaa8f59",
+  "active": "70243a7c704cb9bf",
   "lastOpenFiles": [
-    "src/content/blog/advertise-with-us-berojgarengineer.md",
     "src/content/blog/how-to-not-fall-behind-in-the-age-of-AI-in-Nepali-Tech-Industry.md",
-    "src/content/blog/secure jenkins server build.md",
+    "src/content/blog/advertise-with-us-berojgarengineer.md",
+    "src/content/blog/secure-jenkins-server-build.md",
     "public/images/blog/java version in ubuntu checking output.png",
     "public/images/blog/java version in ubuntu.png",
     "public/images/blog/nea-vacancy/gorkhpatra-pages-images-0.jpg",

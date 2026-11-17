@@ -1,3 +1,14 @@
+---
+title: Jenkins Lab Project
+description: Jenkins Lab Project
+date: 2026-11-17
+author: BerojgarEngineer
+image: /images/blog/thumbnail-nrb-it-ad.png
+categories:
+  - it-careers
+draft: true
+---
+
 # Three servers
 192.168.1.82
 - for jenkins
