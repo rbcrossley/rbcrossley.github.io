@@ -7,7 +7,7 @@ image: /images/blog/thumbnail-nrb-it-ad.png
 categories:
   - it-careers
   - loksewa
-draft: false
+draft: true
 ---
 
 Berojgarengineer is a growing blog in the space of Loksewa computer engineering and IT officer in Nepal. The core organic search and organic social audience of this website is mainly students who are preparing or thinking about preparing for loksewa computer engineer or it officer. Most of them are working with a full time job.

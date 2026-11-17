@@ -6,7 +6,7 @@ author: BerojgarEngineer
 image: /images/blog/thumbnail-nrb-it-ad.png
 categories:
   - it-careers
-draft: false
+draft: true
 ---
 # Problem statement
 AI is taking over the world.

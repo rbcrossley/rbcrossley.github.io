@@ -9,7 +9,7 @@ categories: ["loksewa", "devops"]
 ---
 
 
-**I guess this is not everyone's cup of tea. If this setup deployment seems tough to you, do not worry, you can hire me for an affordable price. I will take only 2,500 rupees to do this.**
+**I guess this is not everyone's cup of tea. If this setup deployment seems tough to you, do not worry, you can hire me for an affordable price. I will take only 1000 rupees to do this.**
 
 Contact me via e-mail:
 
