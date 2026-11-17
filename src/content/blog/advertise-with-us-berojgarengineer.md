@@ -4,7 +4,6 @@ description: Advertise with a high trust Computer Engineer and IT officer loksew
 date: 2026-11-17
 author: BerojgarEngineer
 image: /images/blog/thumbnail-nrb-it-ad.png
-tags:
 categories:
   - it-careers
   - loksewa
