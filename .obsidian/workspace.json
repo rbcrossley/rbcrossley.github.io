@@ -34,9 +34,23 @@
               "icon": "lucide-file",
               "title": "How to not fall behind in the age of AI in Nepali Tech Industry"
             }
+          },
+          {
+            "id": "1a307e429aaa8f59",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "src/content/blog/Promote with berojgarengineer.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Promote with berojgarengineer"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -94,8 +108,7 @@
               "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -204,10 +217,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "3d4fa8dd5b0330b1",
+  "active": "1a307e429aaa8f59",
   "lastOpenFiles": [
-    "src/content/blog/secure jenkins server build.md",
     "src/content/blog/How to not fall behind in the age of AI in Nepali Tech Industry.md",
+    "src/content/blog/Promote with berojgarengineer.md",
+    "src/content/blog/secure jenkins server build.md",
     "public/images/blog/java version in ubuntu checking output.png",
     "public/images/blog/java version in ubuntu.png",
     "public/images/blog/nea-vacancy/gorkhpatra-pages-images-0.jpg",
