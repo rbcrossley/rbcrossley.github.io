@@ -7,7 +7,7 @@ image: /images/blog/thumbnail-nrb-it-ad.png
 tags:
 categories:
   - it-careers
-draft: true
+draft: false
 ---
 # Problem statement
 AI is taking over the world.
