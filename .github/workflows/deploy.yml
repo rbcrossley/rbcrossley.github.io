@@ -24,11 +24,10 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          
+          node-version: 22.22.1
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Resolve site & base from repo name
         id: meta
@@ -46,7 +45,7 @@ jobs:
         env:
           SITE: ${{ steps.meta.outputs.SITE }}
           BASE: ${{ steps.meta.outputs.BASE }}
-        run: yarn build
+        run: npm run build
 
       - name: Add .nojekyll
         run: touch ./dist/.nojekyll
