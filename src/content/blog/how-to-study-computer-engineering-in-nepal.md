@@ -98,13 +98,15 @@ Sleep 8 hours every day.
 Meditate and/or exercise a few times per week.
 
 
-> One thing that has greatly helped me to be consistent in these habits(sleep and exercise mainly) is getting a smartwatch. I personally went for HUAWEI Band 10 because I was on a budget and wanted maximum value for money product. I am very happy with this product. Get it from the link below:
+> One thing that has greatly helped me to be consistent in these habits(sleep and exercise mainly) is getting a smartwatch. I personally went for HUAWEI Band 10 because I was on a budget and wanted maximum value for money product. I am very happy with this product. Get it by searching from the link below:
 
-https://s.daraz.com.np/s.ZSZ4b?cc
+
+https://s.daraz.com.np/s.ZqPZW?cc
+
 
 Interleave between subjects. I personally favored interleaving with Pomodoro.
 
-The interleaving technique that I use works like this
+The interleaving technique that I use works like thiss
 
 - study subject number 1 for 45 minutes
 - take a break(optional)
@@ -137,17 +139,15 @@ If you are looking for paid study libraries, there are various "study rooms" tha
 
 I use couple of apps that you can call productivity apps. I use Android phone btw.
 
-- CoffeePomodoro Premium(for pomodoros tracking and analysis)
+Use a basic pomodoro app.
 
-That is all to be honest. Or maybe I forgot. I will add more when I remember.
 
-Get a good chair. It makes a huge difference. I got a VBON Cude chair a year ago, and it has been directly impacting my productivity. I do not have to think about the pain of sitting in a plastic chair. I feel extremely comfortable when seated. And it is not even a very hi-fi chair. It is a basic office chair.
-
-VBON gives lots of warranty on their chair. You will not need any warranty because the chair is very good.
+Get a good chair. It makes a huge difference. I got a basic office a year ago, and it has been directly impacting my productivity. I do not have to think about the pain of sitting in a plastic chair. I feel extremely comfortable when seated. And it is not even a very hi-fi chair. It is a basic office chair.
 
 Buy the chair from the link provided below:
 
-https://s.daraz.com.np/s.ZhInu?cc
+https://s.daraz.com.np/s.ZqkAV?cc
+
 
 # Note-taking techniques
 
@@ -166,16 +166,16 @@ Link to buy UB-150 micro roller ball pen
 
 https://s.daraz.com.np/s.Z6hOD?cc
 
-For Chiyanotes copy, you can visit any stationery shops near you.
-But that yellow colored copy is only available in selected few stationaries, not every stationary seem to keep it. Maybe due to its pricing.
 
 To get the best of both worlds, you can buy a tablet. iPads are great but expensive. So I prefer Android. The one that I recommend is the Xiaomi Pad 8.
 
 Buy it from the link below and start creating beautiful handwritten notes digitally:
 
-https://s.daraz.com.np/s.Z6hFR?cc
+https://s.daraz.com.np/s.ZqPZW?cc
 
-> If you are planning to buy something or know someone who is planning to buy something via Daraz, please share this link with them. This is a Daraz affiliate link. It does not cost you anything extra. But Daraz pays me from its own pocket for promoting this product. This helps me create helpful content for free. It is not necessary that you buy the Xiaomi Pad itself from the link. If you click the link and purchase something else, I will still get a commission from Daraz's pocket.
+
+
+> If you are planning to buy something or know someone who is planning to buy something via Daraz, please share this link with them. This is a Daraz affiliate link. It does not cost you anything extra. But Daraz pays me from its own pocket for promoting this product. This helps me create helpful content for free. It is not necessary that you buy the Xiaomi Pad itself from the link. If you click the link and purchase something else, I will still get a commission from Daraz's pocket without costing anything extra to you.
 
 # How to really learn new and technical subjects
 

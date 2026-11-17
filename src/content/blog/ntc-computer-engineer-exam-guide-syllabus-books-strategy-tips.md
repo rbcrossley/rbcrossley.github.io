@@ -1,6 +1,6 @@
 ---
 title: NTC Computer Engineer exam guide 
-description: A Nepal Telecom Level 7 Computer Engineer roadmap covering the latest kartik 13 vacancy, syllabus, books, subjects, preparation strategy, and lessons.
+description: A Nepal Telecom Level 7 Computer Engineer roadmap covering the latest kartik 13 vacancy, NTC Computer Engineer syllabus, helpful books,preparation strategy, and lessons from my own journey.
 date: 2026-10-30
 author: BerojgarEngineer
 image: /images/blog/ntc.jpeg

@@ -1,6 +1,6 @@
 ---
-title: Everything you need to know about Computer Engineer and IT Officer Loksewa in Nepal
-description: A human written A-Z guide about loksewa computer engineer, computer officer, it officer in Nepal. It includes vacancy dates, exam syllabus, preparation strategy, eligibility and more.
+title: Computer Engineer and IT Officer Loksewa in Nepal
+description: A human written entry guide to Loksewa Computer Engineer, Computer Officer, IT Officer, IT Assistant Director and other government job careers in Nepal.
 date: 2026-05-07
 author: cst
 image: /images/blog/roadmap1.png
