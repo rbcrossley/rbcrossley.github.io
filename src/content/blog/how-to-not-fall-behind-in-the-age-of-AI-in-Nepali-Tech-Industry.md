@@ -4,7 +4,6 @@ description: My thoughts on how to upgrade, upskill at the strategic, tactical a
 date: 2026-11-17
 author: BerojgarEngineer
 image: /images/blog/thumbnail-nrb-it-ad.png
-tags:
 categories:
   - it-careers
 draft: false
