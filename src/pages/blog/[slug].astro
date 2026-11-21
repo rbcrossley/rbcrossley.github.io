@@ -5,6 +5,7 @@ import AuthorBio from '../../components/AuthorBio.astro';
 import NewsletterSignup from '../newslettersignup.astro';
 import PostCard from '../../components/PostCard.astro';
 import Icon from '../../components/Icon.astro';
+import SupportBanner from '../../components/SupportBanner.astro';
 import { getAuthor } from '../../config/author';
 import { link } from '../../lib/link';
 import theme from '../../../theme.config.js';
@@ -84,6 +85,7 @@ const jsonLd = {
   jsonLd={jsonLd}
 >
   <article class="blog-article">
+    <SupportBanner />
     <header class="head">
       <a href={link('/blog')} class="back"><Icon name="arrow-left" size={16} /> Back to the blog</a>
       <h1>{post.data.title}</h1>

@@ -1,0 +1,192 @@
+
+---
+const supportUrl = "https://buymemomo.com/sherpashell";
+---
+
+<section class="momo-banner">
+  <div class="momo-content">
+    <div class="momo-label">
+      <span class="momo-dot"></span>
+      SUPPORT INDEPENDENT CREATORS
+    </div>
+
+    <h2>Do you appreciate my Loksewa Computer Engineer and IT officer guidances?</h2>
+
+    <p>
+      Help me keep creating more content to tackle the information asymmetry prevalent in IT Government and Private Careers in Nepal. 
+    </p>
+
+    <a
+      href={supportUrl}
+      target="_blank"
+      rel="noopener noreferrer sponsored"
+      class="momo-button"
+    >
+      Buy Me a Momo
+      <span class="arrow">↗</span>
+    </a>
+
+    <small>Every donation means a lot. Thank you! ❤️</small>
+  </div>
+
+</section>
+
+<style>
+  .momo-banner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    max-width: 100%;
+    margin: 32px 0;
+    padding: 35px 42px;
+    overflow: hidden;
+    border: 1px solid #f4d6cd;
+    border-radius: 16px;
+    background: linear-gradient(120deg, #fff8f2, #fff0e9);
+    color: #292524;
+    font-family: inherit;
+  }
+
+  .momo-content {
+    position: relative;
+    z-index: 2;
+    max-width: 540px;
+  }
+
+  .momo-label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    color: #c73535;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+  }
+
+  .momo-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #dc3636;
+  }
+
+  .momo-content h2 {
+    margin: 15px 0 10px;
+    color: #242424;
+    font-size: clamp(25px, 4vw, 37px);
+    line-height: 1.15;
+    font-weight: 800;
+  }
+
+  .momo-content p {
+    max-width: 450px;
+    margin: 0 0 23px;
+    color: #625b57;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .momo-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    padding: 13px 23px;
+    border-radius: 9px;
+    background: #dc3838;
+    color: white !important;
+    font-size: 15px;
+    font-weight: 750;
+    text-decoration: none !important;
+    box-shadow: 0 5px 15px #dc38383b;
+    transition: 0.2s ease;
+  }
+
+  .momo-button:hover {
+    background: #b92323;
+    transform: translateY(-2px);
+  }
+
+  .arrow {
+    font-size: 18px;
+  }
+
+  .momo-content small {
+    display: block;
+    margin-top: 15px;
+    color: #81716b;
+    font-size: 12px;
+  }
+
+  .momo-art {
+    position: relative;
+    display: grid;
+    flex: 0 0 220px;
+    width: 220px;
+    height: 190px;
+    place-items: center;
+  }
+
+  .circle {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: #f8d7c7;
+  }
+
+  .momo-emoji {
+    position: relative;
+    z-index: 1;
+    font-size: 105px;
+    filter: drop-shadow(0 12px 8px #a15b4540);
+    transform: rotate(-12deg);
+  }
+
+  .floating-momo {
+    position: absolute;
+    z-index: 2;
+    font-size: 29px;
+  }
+
+  .one {
+    top: 8px;
+    right: 12px;
+    transform: rotate(20deg);
+  }
+
+  .two {
+    bottom: 20px;
+    left: 8px;
+    font-size: 23px;
+  }
+
+  .art-caption {
+    position: absolute;
+    bottom: -4px;
+    color: #a74c3c;
+    font-size: 11px;
+    font-weight: 700;
+  }
+
+  @media (max-width: 600px) {
+    .momo-banner {
+      padding: 26px 22px;
+    }
+
+    .momo-art {
+      display: none;
+    }
+
+    .momo-content p {
+      font-size: 14px;
+    }
+
+    .momo-button {
+      width: 100%;
+      box-sizing: border-box;
+    }
+  }
+</style>
