@@ -4,7 +4,7 @@ description: A Nepal Telecom Level 7 Computer Engineer roadmap covering the late
 date: 2026-10-30
 author: BerojgarEngineer
 image: /images/blog/ntc.jpeg
-tags: ["nepal telecom computer engineer syllabus", "NTC computer engineer", "NTC Computer Engineer vacancy 2083", "Level 7", "ntc computer engineer syllabus", "government IT jobs in Nepal", "telecom jobs in Nepal", "ntc computer  computer engineer 7th level past questions", "ntc computer engineer old question paper", "nt computer engineer syllabus", "nt computer engineer syllabus 2083", "notes for computer engineer ntc", "nepal telecom important qn for seventh level computer engineer", "govt bank vs nepal telecom which is good for career", "ntc vacancy 2083", "ntc syllabus computer engineer", "ntc 7th level computer engineer book", "ntc computer engneering", "ntc level 7th e and com engineering syllabus", "ntc engineer", "ntc job vacancy 2083", "nepal telecom computer engineer preparation book pdf"]
+tags: [ "NTC computer engineer", "NTC Computer Engineer vacancy 2083", "Level 7", "government IT jobs in Nepal", "telecom jobs in Nepal", "ntc computer  computer engineer 7th level past questions", "ntc computer engineer old question paper",  "nepal telecom important qn for seventh level computer engineer", "govt bank vs nepal telecom which is good for career", "ntc vacancy 2083", "ntc syllabus computer engineer", "ntc 7th level computer engineer book", "ntc computer engneering", "ntc engineer", "ntc job vacancy 2083", "nepal telecom computer engineer preparation book pdf"]
 categories: ["loksewa"]
 ---
 # Update Kartik 13,2083:
