@@ -84,26 +84,31 @@ const jsonLd = {
   publishedTime={post.data.date}
   jsonLd={jsonLd}
 >
-  <article class="blog-article">
-    <SupportBanner />
-    <header class="head">
-      <a href={link('/blog')} class="back"><Icon name="arrow-left" size={16} /> Back to the blog</a>
-      <h1>{post.data.title}</h1>
-      <div class="meta">
-        <a class="byline" href={link('/about')}>{author.shortName}</a>
-        <time datetime={new Date(post.data.date).toISOString()}>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+  <div class="blog-layout">
+    <article class="blog-article">
+      <header class="head">
+        <a href={link('/blog')} class="back"><Icon name="arrow-left" size={16} /> Back to the blog</a>
+        <h1>{post.data.title}</h1>
+        <div class="meta">
+          <a class="byline" href={link('/about')}>{author.shortName}</a>
+          <time datetime={new Date(post.data.date).toISOString()}>{new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time>
+        </div>
+      </header>
+      {post.data.image && (
+        <figure class="hero-banner">
+          <img src={link(post.data.image)} alt="" decoding="async" />
+        </figure>
+      )}
+      <div class="content">
+        <Content />
       </div>
-    </header>
-    {post.data.image && (
-      <figure class="hero-banner">
-        <img src={link(post.data.image)} alt="" decoding="async" />
-      </figure>
-    )}
-    <div class="content">
-      <Content />
-    </div>
-    <AuthorBio author={post.data.author} />
-  </article>
+      <AuthorBio author={post.data.author} />
+    </article>
+
+    <aside class="support-sidebar" aria-label="Support this site">
+      <SupportBanner />
+    </aside>
+  </div>
 
   <NewsletterSignup />
 
@@ -175,7 +180,18 @@ const jsonLd = {
 </script>
 
 <style>
-  .blog-article { max-width: 768px; margin: 0 auto; padding: 48px 24px 64px; }
+  .blog-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 768px) minmax(260px, 320px);
+    justify-content: center;
+    align-items: start;
+    gap: 40px;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+  .blog-article { min-width: 0; padding: 48px 24px 64px; }
+  .support-sidebar { position: sticky; top: calc(var(--header-h) + 24px); padding-top: 48px; }
   .head { margin-bottom: 32px; }
   .back {
     display: inline-flex;
@@ -275,10 +291,14 @@ const jsonLd = {
   .related-deck :global(.post-card:last-child) { border-bottom: 1px solid var(--c-border); }
 
   @media (max-width: 880px) {
+    .blog-layout { grid-template-columns: minmax(0, 768px); }
+    .blog-article { grid-row: 2; }
+    .support-sidebar { position: static; grid-row: 1; padding-top: 32px; }
     .hero-banner { margin: 0 0 32px; border-radius: 16px; }
   }
   @media (max-width: 720px) {
-    .blog-article { padding: 32px 16px 48px; }
+    .blog-layout { padding: 0 16px; }
+    .blog-article { padding: 32px 0 48px; }
     .head h1 { font-size: 36px; line-height: 40px; }
     .content { font-size: 16px; line-height: 28px; }
     .content :global(h1) { font-size: 30px; line-height: 36px; }

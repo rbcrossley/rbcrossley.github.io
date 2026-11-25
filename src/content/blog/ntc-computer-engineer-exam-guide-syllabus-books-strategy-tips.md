@@ -156,12 +156,8 @@ For getting all the past questions of loksewa computer engineer and IT officer(i
 https://berojgarengineer.com/blog/pyq-loksewa/
 
 # Books
-For GK+Technical textbooks recommendations, visit the blog given below:
 
-https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/
-
-
-TLDR(For GK):
+For GK:
 
 - get GK Saurav(For old questions solved):
 
@@ -179,15 +175,6 @@ The sad thing is that there are no alternative books if you do not buy those boo
 
 For technical part: use the notes you probably made during your university degree days.
 
-# Institutes
-
-- apex
-- line
-- iglobe
-- pragyanam
-
-and others.
-
 
 # Roadmap
 The roadmap is present in the blog given below:
@@ -195,7 +182,7 @@ The roadmap is present in the blog given below:
 https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
 
 
-It is not specific for NTC though. But it contains the gist of what you should do while preparing for any corporation specific exams.
+It is not specific for NTC though. But it contains the gist of what you should do while preparing for any corporation specific exams with helpful tips and tricks.
 
 
 # Government bank vs NTC job in Nepal
