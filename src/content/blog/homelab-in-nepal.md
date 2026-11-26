@@ -80,5 +80,4 @@ I am using a combination of VirtualBox virtualization and Proxmox VE virtualizat
 
 Note that you will be at ease if you use an Ethernet port for internet in your Proxmox VE machine(instead of wireless).
 
-The most useful thing I have deployed is **[changedetection.io](https://changedetection.io/)** for![monitoring loksewa vacancies](https://berojgarengineer.com/blog/monitor-loksewa-vacancies/).
-
+The most useful thing I have deployed is **[changedetection.io](https://changedetection.io/)** for monitoring loksewa vacancies.
