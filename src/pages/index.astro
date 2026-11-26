@@ -6,14 +6,11 @@ import PostCard from '../components/PostCard.astro';
 import NewsletterSignup from './newslettersignup.astro';
 import { link } from '../lib/link';
 import { isPublished } from '../config/hidden-posts';
-import { pickFeatured } from '../config/featured-posts';
 
 const allPosts = (await getCollection('blog'))
   .filter(isPublished)
   .sort((a, b) => +new Date(b.data.date) - +new Date(a.data.date));
 
-const featuredPosts = pickFeatured(allPosts);
-const [leadPost, ...sidePosts] = featuredPosts;
 const latestPosts = allPosts.slice(0, 3);
 ---
 
@@ -35,25 +32,6 @@ const latestPosts = allPosts.slice(0, 3);
 
     </div>
   </section>
-
-  {leadPost && (
-    <section class="featured" aria-labelledby="featured-title">
-      <div class="container">
-        <div class="section-head" data-reveal>
-          <h2 class="section-title" id="featured-title">Featured guides</h2>
-          <a class="text-link" href={link('/blog')}>See all guides <Icon name="arrow-right" size={16} /></a>
-        </div>
-        <div class="featured-grid">
-          <PostCard post={leadPost} variant="feature" />
-          {sidePosts.length > 0 && (
-            <div class="featured-side">
-              {sidePosts.map((post, i) => <PostCard post={post} variant="compact" index={i + 1} />)}
-            </div>
-          )}
-        </div>
-      </div>
-    </section>
-  )}
 
   <section class="latest" aria-labelledby="latest-title">
     <div class="container latest-grid">
@@ -143,7 +121,6 @@ const latestPosts = allPosts.slice(0, 3);
   .track:hover :global(.track-arrow) { transform: translateX(4px); }
 
   /* Section heads */
-  .section-head { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 32px; }
   .section-title { font-size: 36px; line-height: 40px; font-weight: 700; letter-spacing: -0.025em; color: var(--c-text); }
   .text-link {
     display: inline-flex;
@@ -160,17 +137,6 @@ const latestPosts = allPosts.slice(0, 3);
   .text-link :global(svg) { transition: transform var(--dur) var(--ease); }
   .text-link:hover :global(svg) { transform: translateX(4px); }
 
-  /* Featured: one lead story, two compact stories stacked beside it. */
-  .featured { padding: 144px 0 80px; }
-  .featured-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 48px; align-items: stretch; }
-  /* Side stories spread evenly down the full height of the lead story:
-     first one level with its image, last one level with its last line. */
-  .featured-side { display: flex; flex-direction: column; }
-  .featured-side :global(.post-card) { flex: 1 1 0; padding: 24px 0; border-radius: 0; }
-  .featured-side :global(.post-card:first-child) { padding-top: 0; }
-  .featured-side :global(.post-card:last-child) { padding-bottom: 0; }
-  .featured-side :global(.post-card + .post-card) { border-top: 1px solid var(--c-border); }
-
   /* Latest: sticky intro on the left, rows on the right. */
   .latest { padding: 64px 0 96px; }
   .latest-grid { display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); gap: 64px; align-items: start; }
@@ -181,9 +147,6 @@ const latestPosts = allPosts.slice(0, 3);
   @media (max-width: 1024px) {
     .hero-grid { grid-template-columns: 1fr; gap: 48px; }
     .tracks { margin-bottom: -96px; max-width: 560px; }
-    .featured { padding-top: 144px; }
-    .featured-grid { grid-template-columns: 1fr; }
-    .featured-side :global(.post-card) { flex: none; }
     .latest-grid { grid-template-columns: 1fr; gap: 32px; }
     .latest-head { position: static; }
   }
@@ -194,6 +157,5 @@ const latestPosts = allPosts.slice(0, 3);
     .tracks { padding: 12px; border-radius: 16px; }
     .tracks-title { margin: 8px 0 8px 12px; }
     .section-title { font-size: 30px; line-height: 36px; }
-    .featured { padding: 136px 0 64px; }
   }
 </style>
