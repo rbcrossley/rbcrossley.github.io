@@ -60,9 +60,7 @@ TU Computer Engineering syllabus:
 
 https://ioe.tu.edu.np/pages/computer-engineering-curriculum-structure-2635
 
-TU BSc. CSIT syllabus:
-
-https://cdcsit.edu.np/wp-content/uploads/2023/03/B.Sc_.-CSIT-Syllabus-Grading-System-2079.pdf
+Similarly you can google TU BSc. CSIT syllabus.
 
 
 Subjects Only in Computer Engineering:

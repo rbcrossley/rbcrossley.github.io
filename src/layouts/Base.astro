@@ -63,13 +63,6 @@ const structuredData = jsonLd ?? {
 <!doctype html>
 <html lang="en">
   <head>
-    <script is:inline src="https://analytics.ahrefs.com/analytics.js" data-key="HAwrf1L6M+9RiqT0qb12TQ" async></script>
-    <script is:inline async src="https://www.googletagmanager.com/gtm.js?id=G-PR6JJ0FR56"></script>
-    <script is:inline>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
@@ -103,11 +96,6 @@ const structuredData = jsonLd ?? {
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <title>{title}</title>
     <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
-    <script
-      async
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8753172609606936"
-      crossorigin="anonymous"
-    ></script>
     <style is:global define:vars={{
       'c-primary': c.primary,
       'c-primary-dark': c.primaryDark,

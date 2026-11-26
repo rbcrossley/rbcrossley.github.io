@@ -13,7 +13,7 @@ I specifically say your educational background in Nepal, because let's be real. 
 
 
 
-Since I am an ex-support engineer who is working towards being a DevOps engineer, I will be leaning more towards books that help DevOps professionals.
+Since I am a support engineer who is working towards being a DevOps engineer, I will be leaning more towards books that help DevOps professionals.
 
 I have found the top skills that DevOps engineers are required to have in Nepal. And thus I have listed the books for those purposes. The books that I list will not just be "books to learn that skill directly". Instead, they will help you indirectly throughout your career.
 
@@ -57,13 +57,7 @@ https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/
 
 Many people online will recommend using the Linux operating system on your daily driver computer. But I do not recommend it. The better way is to install a Virtualization tool, install Linux OS over it, and use it there. Linux OS as a daily driver OS on desktops is not that fun if I am being really honest. Mac is good, though.
 
-Since you have by now learnt the importance of Linux, immediately get this course:
-
-https://trk.udemy.com/QY03zx
-
-Mastering Linux: The Comprehensive Guide by Janis Seeman is the best course that is out there. It has its flaws. It gets boring soon. But it contains value. That is for sure. 
-
-Supplement this course with a Linux textbook. I recommend the Evi Nemeth Unix and Linux handbook. National Book Shop, Bhotahity, brought it to Nepal just a year ago. 
+Supplement this course with a Linux textbook. I recommend the Evi Nemeth Unix and Linux handbook. 
 
 ![Evi Nemeth Unix and Linux system admin handbook cover page](images/blog/evi-nemeth-sysadmin-handbook.jpg)
 
@@ -113,7 +107,7 @@ PostgreSQL is finding popularity, but these companies have not matured enough fo
 
 # Data Structures and Algorithms
 
-The best book purchase I ever made was buying Intro to Java Programming, Comprehensive Version. The 11th edition of this book is available in the National Book Shop, Bhotahity.
+The best book purchase I ever made was buying Intro to Java Programming, Comprehensive Version.
 
 Programming comes slowly to me. I had to practice all the exercises in half of that book, then I felt I was ready for data structures and algorithms.
 
@@ -150,7 +144,6 @@ But this(Coulouris et al's) book is very tough to read. I am supplementing it wi
 - PK Sinha's distributed operating system
 - YouTube lectures
 
-I do not watch the YouTube lectures; I just convert the videos to slides using ffmpeg and study from that PDF file. It saves my time. I made this workflow using Claude AI.
 
 Hence, these are the skills that one needs to learn to build the pillars of their IT career. Even more so in the era of Artificial Intelligence doing your work.
 
