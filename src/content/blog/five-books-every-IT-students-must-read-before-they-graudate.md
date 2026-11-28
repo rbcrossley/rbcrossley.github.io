@@ -111,12 +111,6 @@ The best book purchase I ever made was buying Intro to Java Programming, Compreh
 
 Programming comes slowly to me. I had to practice all the exercises in half of that book, then I felt I was ready for data structures and algorithms.
 
-While that book contains topics about data structures and algorithms, and is immensely useful, I supplemented my learning with the Udemy course whose link is given below:
-
-https://trk.udemy.com/L0g31Z
-
-This course is not that popular, and you probably have not heard of the course creator. But this is a very good course. It delivers perfectly on concepts and code. Get that course immediately if you are starting to learn data structures and algorithms.
-
 I have this one book, but I do not think it helped me heavily in learning data structures and algorithms. It is the book by Tenenbaum named "Data Structures Using C/C++".
 
 # Computer Organization and Architecture
@@ -137,9 +131,9 @@ I have spent a fortune on learning system design and distributed systems. I have
 
 If I were to suggest only one book to learn distributed systems, it would be: Distributed Systems: Concepts and Design by Coulouris et al.
 
-I know DDIA fanboys closed the tab here. But genuinely feel that DDIA is a surface-level book for someone with an Engineering/CS background. No harm in trying it, though. It is also available in the National Book Shop, Bhotahity.
+I know DDIA fanboys closed the tab here. But genuinely feel that DDIA is a surface-level book for someone with an Engineering/CS background. No harm in trying it, though. 
 
-But this(Coulouris et al's) book is very tough to read. I am supplementing it with various materials. They are:
+But this(Coulouris et al's) book is very tough to read. I had to supplement it with various materials. They are:
 
 - PK Sinha's distributed operating system
 - YouTube lectures

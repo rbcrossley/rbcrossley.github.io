@@ -34,20 +34,11 @@ The trade-off is less job security, especially at smaller companies, along with 
 
 ### Working Abroad
 
-If you manage to work abroad, you generally get exposure to cutting edge technology and larger scale systems, if that is what you are looking for. Foreign companies, especially in countries with mature tech industries, tend to be years ahead of what most Nepali companies are currently working with.
+If you manage to work abroad, you generally get exposure to cutting-edge technology and larger-scale systems, if that is what you are looking for. Foreign companies, especially in countries with mature tech industries, tend to be years ahead of what most Nepali companies are currently working with.
 
 The trade-off here is the difficulty of the process itself. Visas, relocation costs, distance from family, and adjusting to a new culture and cost of living are all real challenges that come with the opportunity.
 
 Each path has genuine pros and cons, so decide based on your own circumstances rather than what sounds most impressive to other people.
-
-If you are preparing for a government IT or computer job, the following guides will help you:
-
-- [Roadmap to Crack Loksewa Computer Engineer and IT Officer in Six Months](https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/)
-- [Loksewa Computer Engineer and IT Officer in Nepal](https://berojgarengineer.com/blog/loksewa-computer-engineer-and-it-officer-in-nepal/)
-
-If you want to read about my own experience in the private IT job market instead, take a look at [my guide for freshers in the Nepali IT industry](https://berojgarengineer.com/blog/guide-for-fresher-in-nepalese-it-industry/).
-
-The rest of this article focuses mainly on the private IT job landscape in Nepal.
 
 ## Best IT Companies Hiring in Nepal
 
@@ -110,7 +101,7 @@ One question that comes up again and again is simple: which IT companies in Nepa
 55. [Rara Labs](https://raralabs.com/career)
 56. [Swift Tech](https://swifttech.com.np/career/)
 
-Besides these companies, IT roles also exist in organizations where IT is not the core business but is still an essential support function. Think of hospitals, schools and colleges, manufacturing firms, hotels, and NGOs. These organizations usually need system administrators, network admins, and sometimes small development teams to keep their internal systems running, even though software is not what they sell.
+Besides these companies, IT roles also exist in organizations where IT is not the core business but is still an essential support function. Think of hospitals, schools and colleges, manufacturing firms, hotels, banks, and NGOs. These organizations usually need system administrators, network admins, and sometimes small development teams to keep their internal systems running, even though software is not what they sell.
 
 ### Is the Company Culture Good or Toxic?
 
@@ -118,7 +109,7 @@ It is impossible for me to tell you in advance which company culture is toxic an
 
 Smaller companies without stable cash flow are, in my experience, almost always going to be greedy and difficult to work for. I treat this as close to a rule rather than an exception.
 
-You will spend roughly a third of your after career life at your job once you join a company, so choose carefully. Talk to current or former employees if you can, check how long people typically stay at the company through LinkedIn, and pay attention to how the interviewers themselves treat you during the process. That alone tells you a lot.
+You will spend roughly a third of your after-career life at your job once you join a company, so choose carefully. Talk to current or former employees if you can, check how long people typically stay at the company through LinkedIn, and pay attention to how the interviewers themselves treat you during the process. That alone tells you a lot.
 
 Most established corporates will also have some degree of office politics in place. This is normal, and you will need to learn to navigate it. Ignoring it completely can make your life harder than it needs to be.
 
@@ -149,12 +140,6 @@ As an example, one institute I thought of attending for an RHCSA course charged 
 Instead, I believe platforms like Udemy offer far better value for money, although the quality still depends heavily on which instructor and course you choose. Here is the learning approach I recommend for picking up new skills.
 
 Start with one structured course on Udemy that covers your topic from the ground up. A good course gives you a syllabus and a logical order to follow, which matters more than people realize when you are learning something technical for the first time.
-
-If you are joining Udemy for the first time, please use [this link](https://trk.udemy.com/BnmL4B) when buying a course or subscription.
-
-> Please use the link above if you are buying a new course or subscription from Udemy. This is my Udemy affiliate link, and I earn a small commission at no additional cost to you. This helps support the time I put into creating free content like this one.
-
-Next, get one book from a publisher like Manning or Apress. These two publishers consistently produce high-quality technical books, and there is almost always a solid title covering whatever a fresher would want to learn. Once you have the digital copy, take it to a nearby printing shop and ask them to print it with proper book-style binding and a colored cover. Having a physical copy makes a real difference when you are trying to study consistently.
 
 Finally, use YouTube to fill in the gaps. YouTube is a fantastic learning resource, but it works best as a supplement rather than a starting point. Since you already have structure from your course and your book, you can use YouTube videos to clarify specific concepts instead of depending on it entirely, which is what most people who struggle with YouTube-only learning end up doing.
 
@@ -207,7 +192,7 @@ Regardless, here are the skills currently in demand for DevOps roles in Nepal:
 
 Do not let a lack of coding knowledge scare you away from IT jobs. You do not need a software developer's level of coding ability for most IT roles, with the clear exception of a backend software engineer position.
 
-Writing shell scripts or QA automation scripts is very different from writing real world software. When you write a script for DevOps or QA work, you are mostly using predefined commands and tools to solve a specific problem, rather than designing logic and architecture the way you would in actual software development. For example, automating a server backup with a bash script is a completely different skill from designing the backend logic of an e-commerce checkout system, even though both involve writing code.
+Writing shell scripts or QA automation scripts is very different from writing real-world software. When you write a script for DevOps or QA work, you are mostly using predefined commands and tools to solve a specific problem, rather than designing logic and architecture the way you would in actual software development. For example, automating a server backup with a bash script is a completely different skill from designing the backend logic of an e-commerce checkout system, even though both involve writing code.
 
 ## Startup vs Corporate
 
@@ -251,7 +236,7 @@ This section is a checklist rather than a tutorial. Treat each line as a topic t
 - NAT (Network Address Translation) types, including SNAT and DNAT, and when to use each
 - The DHCP process, known as DORA: Discover, Offer, Request, Acknowledge
 - DHCP lease, scope, and reservation
-- How DNS resolution works, including recursive vs iterative resolution (self-hosted DNS troubleshooting questions are common here)
+- How DNS resolution works, including recursive vs. iterative resolution (self-hosted DNS troubleshooting questions are common here)
 - DNS record types: A, AAAA, CNAME, MX, PTR, NS, SOA, and TXT
 - DNS zones, including forward vs reverse lookup
 - The difference between HTTP and HTTPS
@@ -447,7 +432,8 @@ These final few topics often come up as follow-up or review questions after the 
 
 # Salary
 
-The base salary is standard in almost all "established" companies. They are not released publicly. So everyone has to make an educated guess or tell from their own experience. I do not have a huge collection of people who are willing to disclose their salaries honestly, and neither do I have ways to cross-check the salaries. But I do have a general idea of the market rate.
+The base salary is standard in almost all "established" Nepali founded companies. They are not released publicly. So everyone has to make an educated guess or tell from their own experience. I do not have a huge collection of people who are willing to disclose their salaries honestly, and neither do I have ways to cross-check the salaries. But I do have a general idea of the market rate.
+
 What you receive will depend on your negotiation skills, indispensability in the organization, rapport in the team, and your perception in the company. If you have made the manager feel that you are indispensable, then you "might" get higher salaries.
 
 As a rule of thumb, here is the salary breakdown:
@@ -458,10 +444,8 @@ As a rule of thumb, here is the salary breakdown:
 - You "could" double your salary by switching jobs.
 
 
-Companies on profit provide annual bonuses. Dashain bonus is mandatory. Dashain bonus is one month salary in hand extra paid.
+Companies that are profitable provide annual bonuses. Dashain bonus is mandatory. Dashain bonus is one month's salary in hand, paid extra.
 
-
-I do not want to bring Glassdoor data and put it here. It will not be accurate. There are some websites like [salaryinbox](https://salaryinbox.com/) in Nepal. But I do not trust them for their collected data.
 
 # Support vs Development
 
@@ -470,7 +454,7 @@ There are two types of business functions within companies. They are:
 - Development 
 - Support
 
-Generally, Development is the team that brings revenue for the company.  And support is something that the company has to do in order to keep the product alive. It does not generate new business.
+Generally, Development is the team that brings revenue for the company.  Support is something that the company has to do in order to keep the product alive. It does not generate new business.
 
 That is the reason why the salaries of the development team will usually be much higher than their support counterpart.
 
@@ -499,9 +483,9 @@ Examples of support team:
 - Product Manager
 - Project Manager
 
-SRE and PM can be thought of as hybrid roles, i.e., somewhere between support and development. Because that role revolves around both categories. They can demand higher salaries, unlike generic support work.
+SRE and PM can be thought of as hybrid roles, i.e., somewhere between support and development because those roles revolve around both categories. They can demand higher salaries, unlike generic support work.
 
-I have to explain myself for this rigid classification of support vs development. Downtime kills revenue, but uptime does not directly generate revenue. So it can be thought of in many ways. It is just my observation in the Nepalese IT landscape. It might change. Both my opinion and the IT landscape in Nepal.
+I have to explain myself for this rigid classification of support vs. development. Downtime kills revenue, but uptime does not directly generate revenue. So it can be thought of in many ways. It is just my observation in the Nepalese IT landscape. It might change. Both my opinion and the IT landscape in Nepal might change.
 
 # About learning
 
@@ -511,7 +495,7 @@ However, another form of learning, which is "implicit learning," happens when wo
 
 # Remote work
 
-Nepali companies usually do not offer flexible working conditions. Mainly because there is no incentive for them. This is true especially for juniors. Maybe they would allow some flexibility to retain their seniors.
+Nepali companies usually do not offer flexible working conditions. Mainly because there is no incentive for them; this is especially true for juniors. Maybe they would allow some flexibility to retain their seniors.
 
 To find a remote job, I have heard of a few good ways(I myself have not been able to get one).
 
@@ -523,32 +507,32 @@ Step 2: Find the new startups listed there.
 
 Step 3: Go to their careers pages.
 
-Mail them with a resume + cover letter.
+Email them with a resume + cover letter.
 
-This sounds promising personally for me, if you ask me my opinion.
+This sounds promising to me, if you ask me my opinion.
 
 ## Way 2
 
-Try [himalayas.app](https://himalayas.app/). It is a remote jobs scraper website. It collects remote jobs from various websites and publishes in its site. I have not found success yet applying to these companies listed in himalays app website.
+Try [himalayas.app](https://himalayas.app/). It is a remote jobs scraper website. It collects remote jobs from various websites and publishes them on its site.
 
 ## Way 3
 
-Start posting content in places where recruiters live and breathe. For example: LinkedIn. Consistently write posts in the field you want to work in. Appear as an enthusiast if you are a fresher or an authority if you are experienced. This increases visibility. And in turn increases chances of getting a remote job.
+Start posting content in places where recruiters live and breathe. For example: LinkedIn. Consistently write posts in the field you want to work in. Appear as an enthusiast if you are a fresher or an authority if you are experienced. This increases visibility. And in turn, increases chances of getting a remote job.
 
-You can always cold email people from Nepal who work for remote companies. But I doubt the hit rate of such brute force methods.
+You can always cold email people from Nepal who work for remote companies. But I doubt the hit rate of such brute-force methods.
 
 
 # My experience
 
-I worked as a fresher production support engineer in Nepali Tech Company.
+I worked as a fresher production support engineer in a Nepali Tech Company.
 
 What did my day-to-day life look like?
 
 - 9 AM: Standup
-- 10AM: Tickets are assigned. You sort them based on priority(example: production being down will be looked upon first).
+- 10 AM: Tickets are assigned. You sort them based on priority(example: production being down will be looked at first).
 - Start solving the tickets.
 - Keep the clients informed in a timely manner. Even if the ticket is still being solved, keep the clients informed about it. 
-- 5PM: Report to the manager regarding today's tasks.
+- 5 PM: Report to the manager regarding today's tasks.
 - Update the clients regarding the remaining tickets.
 
 
@@ -556,9 +540,9 @@ What did my day-to-day life look like?
 If there are issues that need to be escalated, escalate them in a timely manner to the relevant team. Keep track of escalated tickets and their progress.
 
 
-Most of the support work is analyzing logs. So having intermediate Linux terminal skills helps a lot. You can do it even without fancy command line skills, but it will be time-consuming and annoying for yourself.
+Most of the support work is analyzing logs. So having intermediate Linux terminal skills helps a lot. You can do it even without fancy command-line skills, but it will be time-consuming and annoying for you.
 
-Restarting services was actually the most frequently done thing in support. Many freshers think restarting means rebooting the computer. But what I mean by restarting services is restarting specific services like the web server. For example, to restart the nginx server on Linux, you would use `systemctl restart nginx`. To restart a pod in kubernetes, you could apply kubectl ... (I forgot the command now, that is why I am doing 45 days of DevOps. Follow that blog for learning more about my journey.)
+Restarting services was actually the most frequently done thing in support. Many freshers think restarting means rebooting the computer. But what I mean by restarting services is restarting specific services like the web server. For example, to restart the nginx server on Linux, you would use `systemctl restart nginx`. 
 
 Skills required for the support work:
 
@@ -580,9 +564,9 @@ Nepalese employees are usually cheaper than AI subscriptions. But that also mean
 
 Likewise, DevOps and system administration are looking bleak. AI will reduce the number of junior hires. Leading to the death of the industry because at one point there will be no juniors who will transition into seniors or mid-level engineers. 
 
-But we need to work hard in our field of interest, keeping all of those worries and speculations aside. Worries, which we can do nothing about. If you're sinking, the entire world is also sinking along with you. So no need to worry at all.
+But we need to work hard in our field of interest, keeping all of those worries and speculations aside. Worries that we can do nothing about. If you're sinking, the entire world is also sinking along with you. So no need to worry at all.
 
-Plus, most of us have computer science as the only degree and cannot really afford to go to university for another degree. So we do not have any options.
+Plus, most of us have computer science as our only degree and cannot really afford to go to university for another degree. So we do not have any options.
 
 For these reasons, among others, I have decided to prepare for government jobs in the fields of IT and computer engineering.
 

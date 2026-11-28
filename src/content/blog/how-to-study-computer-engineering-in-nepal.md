@@ -144,10 +144,6 @@ Use a basic pomodoro app.
 
 Get a good chair. It makes a huge difference. I got a basic office a year ago, and it has been directly impacting my productivity. I do not have to think about the pain of sitting in a plastic chair. I feel extremely comfortable when seated. And it is not even a very hi-fi chair. It is a basic office chair.
 
-Buy the chair from the link provided below:
-
-https://s.daraz.com.np/s.ZqkAV?cc
-
 
 # Note-taking techniques
 
@@ -161,21 +157,6 @@ I used Obsidian for note-taking. One issue that you will face while writing digi
 For pen and paper notes, you will need good-quality pens and paper.
 
 For paper, I prefer Chiyanotes ' yellow-paged copy that costs Rs.200. For pens, I prefer the Uniball UB-150 micro roller ball pen.
-
-Link to buy UB-150 micro roller ball pen
-
-https://s.daraz.com.np/s.Z6hOD?cc
-
-
-To get the best of both worlds, you can buy a tablet. iPads are great but expensive. So I prefer Android. The one that I recommend is the Xiaomi Pad 8.
-
-Buy it from the link below and start creating beautiful handwritten notes digitally:
-
-https://s.daraz.com.np/s.ZqPZW?cc
-
-
-
-> If you are planning to buy something or know someone who is planning to buy something via Daraz, please share this link with them. This is a Daraz affiliate link. It does not cost you anything extra. But Daraz pays me from its own pocket for promoting this product. This helps me create helpful content for free. It is not necessary that you buy the Xiaomi Pad itself from the link. If you click the link and purchase something else, I will still get a commission from Daraz's pocket without costing anything extra to you.
 
 # How to really learn new and technical subjects
 
@@ -201,12 +182,7 @@ Communication skills are what differentiate a talented engineer from a successfu
 
 Keep that in mind. You will understand the value of communication the moment you take your first job/internship right after college.
 
-Take a public speaking course. Public speaking is a small part of communication. But it is what is widely available in the market. From there, you can grow in other areas. I have also taken a public speaking course. If you want me to share my experience, send me an e-mail. Even I am learning verbal and face-to-face communication skills, so I cannot comment a lot regarding this subject. I just put it here because the ChatGPT keyword gave this topic as well.
-
-
-Udemy can be a good source to learn new skills like communication. Join Udemy from the link provided below and enroll in a course that you love.
-
-https://trk.udemy.com/BnmL4B
+Take a public speaking course. Public speaking is a small part of communication. But it is what is widely available in the market. From there, you can grow in other areas. I have also taken a public speaking course. If you want me to share my experience, send me an e-mail. 
 
 # Daily study routine for Nepalese engineering students
 
@@ -225,10 +201,4 @@ So during weekdays, you will have 30 hours of self-study. on weekends, you shoul
 - not copying lab reports
 - not copying assignments
 - not copying projects
-
-If you want to further research on techniques to study or in general learn new skills, visit Udemy:
-
-https://trk.udemy.com/BnmL4B
-
-> Kindly please use the link above if you are buying a new course or a subscription from Udemy. This is udemy's affiliate link. I get commission from Udemy without any additional cost to you.
 
