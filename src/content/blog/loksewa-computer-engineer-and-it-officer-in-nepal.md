@@ -37,7 +37,7 @@ No job is good or bad. You need to weigh pros and cons of the type of jobs based
 
 The salary constitutes basic salary+various allowances+non-available stuffs like insurance etc. Salaries are in per month basis. The present list do not consider bonuses. Banks and other corporations in profit share bonuses upto 6 months to employees.
 
-> Note that these salaries will increase by 21% after the budget for FY 2083/84. I have not updated the salaries based on that.
+> Note that these salaries will increase by 21% after the budget for FY 2083/84. I have not updated the salaries based on that. It is not necessary that these corporations will increase the salary by 21% although it is more likely they will. Since they do not release their salaries publicly, it gives a big room for doubt.
 
 - Nepal Rastra Bank=1,33,347 
 
@@ -117,12 +117,6 @@ To check vacancies at sangh/nijamati
 
 [nijamati vacancies](https://psc.gov.np/category/notice-advertisement)
 
-The better solution is to automate this using changedetection software.
-
-https://berojgarengineer.com/blog/monitor-loksewa-vacancies/
-
-Read the blog above for how to achieve real time loksewa monitoring.
-
 ## Job titles
 Officer level positions' title that are open in these companies:
 
@@ -140,7 +134,7 @@ Officer level positions' title that are open in these companies:
 
 - System Administrator
 
-In some companies like Nepal Oil Corporation, you might also find a 5th level position generally called as "Head IT Assistant" instead of Officer level positions.
+In some companies like Nepal Oil Corporation, and government banks like RBB you might also find a 5th level position generally called as "Head IT Assistant" or "Senior IT Assistant" instead of Officer level positions. And it is usually the only position where you can apply as a Bachelors' degree graduate.
 
 ## Qualifications required
 
@@ -187,11 +181,7 @@ These appear fewer in between but are of higher priority.
 - Computer Graphics
 - Electrical / Electronics Fundamentals
 
-## previous year questions
 
-The previous year question papers can be found in the link provided below:
-
-https://berojgarengineer.com/blog/pyq-loksewa/
 
 ## Exam Pattern
 
@@ -201,9 +191,11 @@ Written exam is usually two papers. First paper is based on GK+IQ+Organizational
 
 The exact structure varies by corporation.
 
+NRB has three papers. All technical.
+
 ## How to study
 
-As you can see from the previous year questions, the questions being asked in Loksewa Computer Engineering, IT officer exams are different from what we used to get on our Bachelors of Engineering degree. They are conceptual and broad. 
+The questions being asked in Loksewa Computer Engineering, IT officer exams are different from what we used to get on our Bachelors of Engineering degree. They are conceptual and broad. 
 
 But here is the catch which I hope you have recognized already.
 
@@ -214,15 +206,8 @@ To add, engineering concepts stack one upon another. So you have to study everyt
 There are very few available question papers so you cannot extrapolate accurately. 
 
 > How long should I prepare Loksewa Computer Engineer/IT Officer to crack it?
-> The timeline can vary per individual basis. If you have solid foundations from Bachelors', it might not even take 2 months to fully prepare all subjects. If your foundations are not very strong, it will take you lot of time. But 6 months to 1 year of full time study is enough to be prepared to crack for most people.
+> The timeline can vary per individual basis. If you have solid foundations from Bachelors' and have notes of all subjects, it might not even take 2 months to fully prepare all subjects. If your foundations are not very strong, it will take you lot of time. But 6 months to 1 year of full time study is enough to be prepared to crack for most people.
 
-## Preparation providing institutes
-
-There are only three institutes providing classes for Loksewa computer engineer and IT officer. 
-
-- Line Academy
-- iGlobe Academy
-- APEX Academy 
 
 ## Notes
 
@@ -237,26 +222,137 @@ The best books are as I said earlier, the standard textbooks. The topics are in 
 There are no good books for technical paper.
 
 # best books for first paper
-I have researched a lot on this. I have bought many GK books, IQ books, and first paper books of NTC. So, far the only book that I liked is GK King by Ashman Upadhayay. 
 
-The book's link is given below:
-
-GK King(for structured GK study):
-
-https://s.daraz.com.np/s.ZPjHZ?cc
 
 GK Saurav(For old questions solved):
 
 https://s.daraz.com.np/s.ZPjry?cc
 
-If you can get any one of them, get the latter one. It rocks for real. It contains all old questions till 2083 baisakh of GK organized in an easy to digest form. It is organized syllabus unit wise.
+It contains all old questions till 2083 baisakh of GK organized in an easy to digest form. It is organized syllabus unit wise.
 
 
 ## job+Loksewa
 
 Many students start preparing for Loksewa along with a low paying job. It takes around 6 months to 1 year of full-time studies to complete the entire syllabus given rudimentary only knowledge. Most IT companies provide two days leaves. If you think you can manage that, go ahead. I feel that it is not manageable for many reasons. But I also started preparing along with a job. So you can start like that as well.
 
-If you have read this and are looking for actionable roadmap on cracking Loksewa Computer Engineer or IT officer in the next six months, I think you will like to read the blog below:
+# Roadmap to crack Loksewa computer engineer/IT officer in six months
 
-https://berojgarengineer.com/blog/roadmap-to-crack-loksewa-computer-engineer-and-it-officer-in-six-months/
 
+If you are fully directed, fully motivated,100% efficient, then 1 year of full-time study can be sufficient.
+
+The biggest problem that aspirants face is “which corporation syllabus should I prepare first?”. This is a big confusion because Loksewa vacancies in a specific field are unpredictable. The exams occur within around 3 months of vacancy publication. And 3 months is not enough time for studying the entire corporation curricula.
+
+But do not worry.
+
+It is true that the Loksewa computer engineer syllabus is very vast and differs corporation-wise. But there is a pattern. There are some common subjects in every corporation.
+
+The Loksewa computer engineer/IT officer exam contains two papers(except in NRB, which is 3 papers).
+
+The first paper could be about GK, IQ, corporation-specific knowledge, and management knowledge. Do not worry about the first paper currently.
+
+Firstly, focus on the second paper, i.e., the technical part.
+
+Do not get me wrong, though. The first paper is easier to score due to predominantly multiple-choice questions. And it is what differentiates people who crack vs people who do not crack the Loksewa exam.
+
+But since you will be just starting out, focus on the technical part first. After six months, start focusing on the first paper. For example: you study the technical part for six months. Complete it properly. Now a vacancy opens. Now what you have to do is study the first paper topics of that syllabus. It will not take more than one month to study the first paper if you do it full time.
+
+# How to study?
+
+First things first.
+
+Loksewa computer engineering and IT officer exams test on breadth of knowledge. In B.E or BSc.CSIT, you might have faced lots of numerical questions. Do not expect such numerical questions in the Loksewa Computer Engineer and IT Officer exam.
+
+The hardest part of the following Loksewa-provided syllabus for Computer Engineer and IT Officer is that the micro-level syllabus is not clear based on the provided syllabus in many corporations. That causes genuine frustration. I wasted a lot of time going too deep because of this reason.
+
+This is a huge problem. What do you study when the syllabus simply says Cryptography(case in point, RBB Sr. IT Assistant 5th level syllabus)? It is just teasing you.
+
+### How to get the micro-syllabus of each subject?
+- get a loksewa IT officer textbooks from bhotahity. Note that those books usually do not contain past question papers of loksewa computer engineer and IT officer. Most of the times, they are just copy-paste from Claude and Chatgpt. Specially if they are published few weeks after the vacancy is announced. cost=1500 onwards. And there is no surity that it will be worth the money.
+
+# Techniques to study
+
+Some techniques come in handy while studying.
+
+- Make notes. Make detailed notes. Do not cheap out on making notes. Invest time. Make sure the notes are what you can write in the exam if the exam was the next day. I know lot of people who copy paste from chatgpt, claude, geeksforgeeks without understanding. They think they will memorize it but not all can memorize that well.
+
+- I personally do a 45-minute Pomodoro session. I do not follow Pomodoro and its breaks too strictly, though. I just use it to give myself a structure and track my progress. I use an app for it.
+
+- Revise. It is the most important thing for learning as well as getting good marks. I learnt this late. And it wasted so much time for me. Revise frequently. If you are not revising what you are studying, it is all going down the drain. The time spent learning the material for the first time is wasted if you do not revise it continuously.
+
+# Resources to follow
+
+The best books are the standard textbooks. I have provided my recommendations for some of the core textbooks that you should read.
+
+You might not need them for writing answers in the Loksewa written exam.
+
+But I highly recommend reading those books because they are the foundations of IT/Computer. The concepts will help you in some way or the other.
+
+The topics are in the syllabus. And the possible questions and patterns are present in PYQs.
+
+You can visit shops and get any books from there.
+
+For some of the core subjects,get these textbooks.
+
+- operating system concepts 
+
+
+- database management systems
+If you can, get the database book by Conolly Begg as well. It is a terrific resource. But it is not sufficient on its own.
+
+- computer networking Kurose Ross
+
+- software engineering sommerville
+
+- COA
+
+
+Reading books will take time. Keep that in mind. But believe me, it is absolutely worth it. Do you want to be a government officer who cannot read? I guess not.
+
+
+# Month-by-month study routine
+
+You have to prioritize subjects really well. I urge you to target two subjects per month. But even if you do not, the last month is left free; you could finish it in the last month.
+
+I just want to say something actionable.
+
+Get  the book I mentioned earlier immediately. See the topic, observe how deeply it is covered, and start learning from it.
+
+month-1
+
+- COA
+- OS
+
+month-2
+
+- CN
+- DBMS
+
+month=3
+
+- Software engineering
+- DSA
+
+month-4
+
+- programming
+- digital logic
+
+month-5
+
+- Cryptography & Network Security
+- Emerging Technologies (AI, Big Data, Cloud, IoT)
+
+month-6
+
+- Wrap up studies.
+
+You are done with studies. 
+
+
+# Daily study routine
+
+Aim for 6 focused hours of studying each day or 10 hours of “thikthak” focus studies each day. I explicitly kept 10 hours of “thikthak” focus studies because nowadays most of us listen to music on headphones while studying, or study with a laptop, browsing social media and stuff. It is not really focused study. And that is why you will need to spend more time in that case.
+
+What to do in those 6 hours?
+
+From this book, pick the topics and learn them on your own. You could use YouTube, books, whatever to learn. It is totally on you.
